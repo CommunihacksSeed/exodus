@@ -31,7 +31,7 @@
       ]
     },
     {
-      "text": "City Council already approved this project in June 2026. The only change now is that the 4-storey base would be 1.2 metres taller.",
+      "text": "In June 2026 City Council approved a heritage permit for this project. The only design change now is that the 4-storey base would be 1.2 metres taller.",
       "citations": [
         {
           "source": "item",
@@ -81,6 +81,10 @@
       "caveat": "This is the opinion of City staff. No board or Council has agreed or disagreed with it yet.",
       "citations": [
         {
+          "source": "report",
+          "quote": "this section of south side of Queen Street West has neither a consistent nor a continuous street wall"
+        },
+        {
           "source": "item",
           "quote": "would not harm the character or appearance of the District or be contrary to the objectives of the PHCD Plan"
         }
@@ -98,7 +102,7 @@
       ]
     },
     {
-      "text": "Neighbours of the heritage building next door at 1347 Queen Street West: the new base would no longer match that building's height.",
+      "text": "The heritage building next door at 1347 Queen Street West: the new base would no longer match that building's height.",
       "citations": [
         {
           "source": "item",
@@ -107,11 +111,15 @@
       ]
     },
     {
-      "text": "People walking in the area: the design includes a walking route between Dunn Avenue and Masaryk Park.",
+      "text": "People walking in the area: the design includes a walking route between Dunn Avenue and Masaryk Park. That route was already in the approved design and is not changed by this item.",
       "citations": [
         {
           "source": "report",
           "quote": "an east-west pedestrian connection between Dunn Avenue and Masaryk Park"
+        },
+        {
+          "source": "report",
+          "quote": "All other details of the scheme remain as those approved by City Council in June 2026."
         }
       ]
     },
@@ -193,7 +201,12 @@
   ],
   "location": {
     "label": "1337 Queen Street West",
-    "points": [[43.640832976, -79.433921412]],
+    "points": [
+      [
+        43.640832976,
+        -79.433921412
+      ]
+    ],
     "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"1337 Queen St W\", retrieved 2026-11-12"
   },
   "participationCheck": {

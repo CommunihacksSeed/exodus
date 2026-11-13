@@ -27,6 +27,7 @@ export function ItemPage() {
   if (!item) {
     return (
       <section>
+        <title>Item not found — Clear Council</title>
         <h1>We do not have that item</h1>
         <p>
           <Link to="/">Back to the list</Link>
@@ -44,6 +45,7 @@ export function ItemPage() {
 
   return (
     <article className="item">
+      <title>{`${explanation?.plainTitle ?? record.title} — Clear Council`}</title>
       <p className="back">
         <Link to="/">← All decisions</Link>
       </p>

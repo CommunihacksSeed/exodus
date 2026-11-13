@@ -22,7 +22,8 @@ npm run dev    # open the printed http://localhost:5173 address
 ```
 
 ```bash
-npm test       # parser, stage and distance regression tests
+npm test              # parser, stage and distance regression tests
+npm run review-sheet  # write docs/REVIEW.md: each sentence beside its sources, for human sign-off
 ```
 
 `npm run data` stops with an error and publishes nothing if any quoted passage cannot be found
@@ -89,6 +90,16 @@ text uses Atkinson Hyperlegible, a typeface made for low-vision readers; both ar
 site makes no font requests to third parties. Every item page has a print view for passing a
 paper copy to someone who is not online.
 
+## Submission documents
+
+| Document | What it is |
+|---|---|
+| [docs/DESIGN.md](docs/DESIGN.md) | Requirements, UML diagrams, design rationale, scalability, code walk-through, AI disclosure, references |
+| [docs/readiness-report/](docs/readiness-report/) | Municipal Readiness Report (text and filled template) |
+| [docs/VIDEO_SCRIPT.md](docs/VIDEO_SCRIPT.md) | Script and shot list for the demo video |
+| [docs/REVIEW.md](docs/REVIEW.md) | Sheet for the human reviewer: each sentence beside its sources |
+| [docs/SUBMISSION.md](docs/SUBMISSION.md) | Devpost text and the final checklist |
+
 ## Known limits
 
 - Three items only. Item pages were captured through a normal browser session; the City site
@@ -107,8 +118,10 @@ This project was built with AI assistance, disclosed as the hackathon rules requ
 - **Code**: written with Claude (Anthropic) through Claude Code, directed and reviewed by the team.
 - **Plain-language explanations** in `data/explanations/`: drafted with Claude from the City's
   documents. Each sentence carries verbatim quotes that `pipeline/build.ts` checks against the
-  source text. `review.humanReviewedBy` records whether a person has signed off; the app shows
-  this on every page.
+  source text. A second, separate Claude session then compared each sentence with its sources and
+  flagged wording that went beyond them; those sentences were corrected. Neither step replaces a
+  person: `review.humanReviewedBy` records whether someone has signed off, the app shows this on
+  every page, and [docs/REVIEW.md](docs/REVIEW.md) is the sheet they work from.
 - **No AI at run time**: the published site calls no AI model. Stages, dates, votes and official
   wording are extracted by ordinary code.
 

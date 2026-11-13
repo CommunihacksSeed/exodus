@@ -54,7 +54,8 @@ async function loadSources(record: ItemRecord, itemText: string, docs: SourceDoc
       id: 'item',
       label: `City of Toronto item page ${record.id}`,
       url: record.sourceUrl,
-      date: `captured ${record.retrievedAt.slice(0, 10)}`,
+      // Toronto's calendar date, not UTC's, so it matches the date shown elsewhere on the page.
+      date: `captured ${new Date(record.retrievedAt).toLocaleDateString('en-CA', { timeZone: 'America/Toronto' })}`,
     },
     pages: [itemText],
     isPdf: false,

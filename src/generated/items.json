@@ -306,7 +306,7 @@
        "quote": "a mixed use building consisting of two, 59-storey towers on a connected 3 and 4-storey base, with retail at grade at 245 Eglinton Avenue East",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.NY34.12",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.12#:~:text=a%20mixed%20use%20building,245%20Eglinton%20Avenue%20East"
       },
@@ -315,7 +315,7 @@
        "quote": "City Council amend the Official Plan for the lands municipally known as 245 Eglinton Avenue East",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.NY34.12",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.12#:~:text=City%20Council%20amend%20the,245%20Eglinton%20Avenue%20East"
       }
@@ -330,7 +330,7 @@
        "quote": "1,202 residential dwelling units",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.NY34.12",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.12#:~:text=1%2C202%20residential%20dwelling%20units"
       },
@@ -385,7 +385,7 @@
    ],
    "why": [
     {
-     "text": "The area plan expects buildings of 20 to 35 storeys here. Going to 59 storeys needed a change to that plan, which is why this came to Council.",
+     "text": "The area plan expects buildings of 20 to 35 storeys here. Going to 59 storeys needed a change to that plan.",
      "citations": [
       {
        "source": "report",
@@ -486,6 +486,15 @@
      "citations": [
       {
        "source": "report",
+       "quote": "Vehicle accesses to the underground parking and loading are proposed via one full- movement site access via the public laneway situated off Taunton Road",
+       "verified": true,
+       "sourceLabel": "Staff report from the Director, Community Planning, North York District",
+       "sourceDate": "June 8, 2026",
+       "page": 13,
+       "url": "https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-287824.pdf#page=13"
+      },
+      {
+       "source": "report",
        "quote": "The laneway will run from Taunton Road along the southern property line.",
        "verified": true,
        "sourceLabel": "Staff report from the Director, Community Planning, North York District",
@@ -498,7 +507,7 @@
        "quote": "limit vehicle access southbound on Taunton Road from the limits of the subject development site",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.NY34.12",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.12#:~:text=limit%20vehicle%20access%20southbound,the%20subject%20development%20site"
       }
@@ -512,7 +521,7 @@
        "quote": "will not accept applications for a permit from residents of, visitors to, or tradespersons at the development located at 245 Eglinton Avenue East",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.NY34.12",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.12#:~:text=will%20not%20accept%20applications,245%20Eglinton%20Avenue%20East"
       }
@@ -529,7 +538,7 @@
        "quote": "to achieve a landscape buffer along the south property line abutting existing residential neighbourhoods",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.NY34.12",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.12#:~:text=to%20achieve%20a%20landscape,abutting%20existing%20residential%20neighbourhoods"
       },
@@ -538,7 +547,7 @@
        "quote": "work with the Owner through the Site Plan Control process",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.NY34.12",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.12#:~:text=work%20with%20the%20Owner,Site%20Plan%20Control%20process"
       }
@@ -576,7 +585,7 @@
        "quote": "City Council on July 29 and 30, 2026, adopted the following:",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.NY34.12",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.12#:~:text=City%20Council%20on%20July,2026%2C%20adopted%20the%20following%3A"
       }
@@ -621,7 +630,7 @@
        "quote": "Forwarded this item to City Council without recommendation.",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.NY34.12",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.12#:~:text=Forwarded%20this%20item%20to%20City%20Council%20without%20recommendation."
       }
@@ -635,7 +644,7 @@
        "quote": "City Council adopted this item on July 29 and 30, 2026 with amendments.",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.NY34.12",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.12#:~:text=City%20Council%20adopted%20this,30%2C%202026%20with%20amendments."
       }
@@ -651,7 +660,7 @@
        "quote": "See also By-laws 1249-2026, 1250-2026",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.NY34.12",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.12#:~:text=See%20also%20By%2Dlaws%201249%2D2026%2C%201250%2D2026"
       }
@@ -666,7 +675,7 @@
        "quote": "work with the Owner through the Site Plan Control process",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.NY34.12",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.12#:~:text=work%20with%20the%20Owner,Site%20Plan%20Control%20process"
       }
@@ -934,7 +943,7 @@
        "quote": "to investigate the feasibility and options for expanding Transit Priority Measures for the 505 Dundas streetcar outside of the currently implemented Transit Priority Measures",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.TE34.104",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.104#:~:text=to%20investigate%20the%20feasibility,implemented%20Transit%20Priority%20Measures"
       }
@@ -948,7 +957,7 @@
        "quote": "such investigation to include further analysis of the 505 Dundas streetcar performance and development of an engagement plan to support future Transit Priority Measures",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.TE34.104",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.104#:~:text=such%20investigation%20to%20include,future%20Transit%20Priority%20Measures"
       }
@@ -978,7 +987,7 @@
        "quote": "to further reduce travel times and improve reliability of the Dundas streetcar for transit riders",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.TE34.104",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.104#:~:text=to%20further%20reduce%20travel,streetcar%20for%20transit%20riders"
       }
@@ -1009,12 +1018,21 @@
      ]
     },
     {
-     "text": "Weekly ridership on the 505 rose by about 20%.",
+     "text": "Weekly ridership on the 505 rose by about 20% between fall 2025 and spring 2026, from about 187,000 to 224,000 a week.",
      "caveat": "Staff say the increase cannot be credited to the road measures alone, because streetcars also started running more often.",
      "citations": [
       {
        "source": "report",
        "quote": "This represents a 20% increase in ridership on the 505 Dundas streetcar route.",
+       "verified": true,
+       "sourceLabel": "Staff report from the Director, Congestion and Network Management, Transportation Services",
+       "sourceDate": "June 19, 2026",
+       "page": 3,
+       "url": "https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288607.pdf#page=3"
+      },
+      {
+       "source": "report",
+       "quote": "Weekly Total 187,000 224,000 20%",
        "verified": true,
        "sourceLabel": "Staff report from the Director, Congestion and Network Management, Transportation Services",
        "sourceDate": "June 19, 2026",
@@ -1042,7 +1060,7 @@
        "quote": "improve reliability of the Dundas streetcar for transit riders",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.TE34.104",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.104#:~:text=improve%20reliability%20of%20the,streetcar%20for%20transit%20riders"
       }
@@ -1071,7 +1089,7 @@
        "quote": "4 - Parkdale - High Park, 9 - Davenport, 10 - Spadina - Fort York, 13 - Toronto Centre",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.TE34.104",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.104#:~:text=4%20%2D%20Parkdale%20%2D,13%20%2D%20Toronto%20Centre"
       }
@@ -1087,7 +1105,7 @@
        "quote": "to report to the Infrastructure and Environment Committee with recommendations on Part 1 above in the first quarter of 2027",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.TE34.104",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.104#:~:text=to%20report%20to%20the,first%20quarter%20of%202027"
       }
@@ -1101,7 +1119,7 @@
        "quote": "to report back with recommendations on Part 1 above in the first quarter of 2027",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.TE34.104",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.104#:~:text=to%20report%20back%20with,first%20quarter%20of%202027"
       },
@@ -1110,7 +1128,7 @@
        "quote": "That City Council amend recommendation 2 so that it reads as follows:",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.TE34.104",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.104#:~:text=That%20City%20Council%20amend,it%20reads%20as%20follows%3A"
       }
@@ -1140,7 +1158,7 @@
        "quote": "The Toronto and East York Community Council recommends that:",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.TE34.104",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.104#:~:text=The%20Toronto%20and%20East,Community%20Council%20recommends%20that%3A"
       }
@@ -1154,7 +1172,7 @@
        "quote": "City Council adopted this item on July 29 and 30, 2026 with amendments.",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.TE34.104",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.104#:~:text=City%20Council%20adopted%20this,30%2C%202026%20with%20amendments."
       }
@@ -1163,7 +1181,7 @@
    },
    "whatHappensNext": [
     {
-     "text": "The report to the Infrastructure and Environment Committee is due in the first quarter of 2027. Any new street changes would need their own decision after that.",
+     "text": "The report to the Infrastructure and Environment Committee is due in the first quarter of 2027. The record does not say what happens after that report.",
      "caveat": "No meeting date for that report is in the record yet. When it is scheduled, the City's page for that new item will show whether you can comment or speak.",
      "citations": [
       {
@@ -1171,7 +1189,7 @@
        "quote": "to report to the Infrastructure and Environment Committee with recommendations on Part 1 above in the first quarter of 2027",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2026.TE34.104",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.104#:~:text=to%20report%20to%20the,first%20quarter%20of%202027"
       }
@@ -1350,7 +1368,7 @@
        "quote": "City Council approve the demolition of the non-contributing building and the erection of a new 16-storey mixed-use building at 1337 Queen Street West",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2027.PB1.6",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=City%20Council%20approve%20the,1337%20Queen%20Street%20West"
       }
@@ -1364,21 +1382,21 @@
        "quote": "a new 16-storey mixed-use tower with a 4-storey podium building that will include purpose-built affordable housing; and which will remain under ownership of the City",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2027.PB1.6",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=a%20new%2016%2Dstorey%20mixed%2Duse,ownership%20of%20the%20City"
       }
      ]
     },
     {
-     "text": "City Council already approved this project in June 2026. The only change now is that the 4-storey base would be 1.2 metres taller.",
+     "text": "In June 2026 City Council approved a heritage permit for this project. The only design change now is that the 4-storey base would be 1.2 metres taller.",
      "citations": [
       {
        "source": "item",
        "quote": "A heritage permit for the project was previously approved on June 24 and 25, 2026, by City Council.",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2027.PB1.6",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=A%20heritage%20permit%20for,2026%2C%20by%20City%20Council."
       },
@@ -1417,7 +1435,7 @@
        "quote": "It also does not include the 5.0m step back required by the PHCD Plan for any parts of the new building that are taller than the adjacent contributing property.",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2027.PB1.6",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=It%20also%20does%20not,the%20adjacent%20contributing%20property."
       },
@@ -1426,7 +1444,7 @@
        "quote": "Consequently, a new Section 42 approval under the Ontario Heritage Act is required.",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2027.PB1.6",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=Consequently%2C%20a%20new%20Section,Heritage%20Act%20is%20required."
       }
@@ -1451,11 +1469,20 @@
      "caveat": "This is the opinion of City staff. No board or Council has agreed or disagreed with it yet.",
      "citations": [
       {
+       "source": "report",
+       "quote": "this section of south side of Queen Street West has neither a consistent nor a continuous street wall",
+       "verified": true,
+       "sourceLabel": "Staff report from the Senior Manager, Heritage Planning",
+       "sourceDate": "October 28, 2026",
+       "page": 1,
+       "url": "https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf#page=1"
+      },
+      {
        "source": "item",
        "quote": "would not harm the character or appearance of the District or be contrary to the objectives of the PHCD Plan",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2027.PB1.6",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=would%20not%20harm%20the,of%20the%20PHCD%20Plan"
       }
@@ -1478,25 +1505,34 @@
      ]
     },
     {
-     "text": "Neighbours of the heritage building next door at 1347 Queen Street West: the new base would no longer match that building's height.",
+     "text": "The heritage building next door at 1347 Queen Street West: the new base would no longer match that building's height.",
      "citations": [
       {
        "source": "item",
        "quote": "it no longer matches the height of the adjacent contributing building at 1347 Queen Street West",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2027.PB1.6",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=it%20no%20longer%20matches,1347%20Queen%20Street%20West"
       }
      ]
     },
     {
-     "text": "People walking in the area: the design includes a walking route between Dunn Avenue and Masaryk Park.",
+     "text": "People walking in the area: the design includes a walking route between Dunn Avenue and Masaryk Park. That route was already in the approved design and is not changed by this item.",
      "citations": [
       {
        "source": "report",
        "quote": "an east-west pedestrian connection between Dunn Avenue and Masaryk Park",
+       "verified": true,
+       "sourceLabel": "Staff report from the Senior Manager, Heritage Planning",
+       "sourceDate": "October 28, 2026",
+       "page": 4,
+       "url": "https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf#page=4"
+      },
+      {
+       "source": "report",
+       "quote": "All other details of the scheme remain as those approved by City Council in June 2026.",
        "verified": true,
        "sourceLabel": "Staff report from the Senior Manager, Heritage Planning",
        "sourceDate": "October 28, 2026",
@@ -1513,7 +1549,7 @@
        "quote": "There are no financial implications resulting from the recommendations included in this report in the current budget year or in future years.",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2027.PB1.6",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=There%20are%20no%20financial,or%20in%20future%20years."
       }
@@ -1529,7 +1565,7 @@
        "quote": "constructed substantially in accordance with the plans and elevations prepared by LGA Architectural Partners dated September 25, 2026",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2027.PB1.6",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=constructed%20substantially%20in%20accordance,dated%20September%2025%2C%202026"
       }
@@ -1590,7 +1626,7 @@
        "quote": "This item will be considered by Toronto Preservation Board on November 16, 2026.",
        "verified": true,
        "sourceLabel": "City of Toronto item page 2027.PB1.6",
-       "sourceDate": "captured 2026-11-13",
+       "sourceDate": "captured 2026-11-12",
        "page": null,
        "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=This%20item%20will%20be,on%20November%2016%2C%202026."
       }

@@ -185,7 +185,7 @@ button:hover, .button:hover { background: var(--line-dark); border-color: var(--
 button:disabled { opacity: 0.6; cursor: wait; }
 .button-secondary { background: #fff; color: var(--line); }
 .button-secondary:hover { background: #e8eefc; color: var(--line-dark); }
-.link-button { font: inherit; background: none; border: none; color: var(--line); padding: 0; text-decoration: underline; }
+.link-button { font: inherit; background: none; border: none; color: var(--line); padding: 0.2rem 0; text-decoration: underline; }
 .link-button:hover { background: none; color: var(--line-dark); }
 .privacy-note { font-size: 0.78rem; color: var(--ink-2); margin-top: 0.4rem; max-width: 36rem; }
 .form-error { color: var(--stop); font-size: 0.9rem; margin-top: 0.4rem; }
@@ -200,6 +200,7 @@ button:disabled { opacity: 0.6; cursor: wait; }
 
 /* ---------- Item page ---------- */
 .back { margin-bottom: 0.9rem; font-size: 0.9rem; }
+.back a { display: inline-block; padding: 0.2rem 0; }
 .item-kicker { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; }
 .item-id { font-family: var(--mono); font-size: 0.8rem; color: var(--ink-2); }
 .item-header h1 { margin: 0.55rem 0 0.4rem; }
@@ -304,10 +305,14 @@ details summary:hover { color: var(--line-dark); }
   .brand-mark i { background: #000; }
   .brand-mark i + i::before { background: #000; }
   main { max-width: none; padding: 0.5rem 0 0; }
-  .panel, .glance, .route-wrap { break-inside: avoid; border-color: #999; box-shadow: none !important; }
+  .panel, .glance, .route-wrap { border-color: #999; box-shadow: none !important; }
+  /* Keep a sentence with its sources, but let long sections flow across pages to save paper. */
+  .glance, .route-wrap, .claim, .panel-say { break-inside: avoid; }
+  h2 { break-after: avoid; }
   details::details-content { content-visibility: visible; display: block; }
   details summary { color: #000; }
   a { color: #000; }
-  .sources a::after, .say-facts a[href^='http']::after { content: ' <' attr(href) '>'; font-size: 0.7em; word-break: break-all; }
+  /* Print the address of each source, except deep links that are too long to retype. */
+  .sources a:not([href*=':~:'])::after, .say-facts a[href^='http']::after { content: ' <' attr(href) '>'; font-size: 0.7em; word-break: break-all; }
   * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }

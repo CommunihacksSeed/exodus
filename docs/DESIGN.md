@@ -533,11 +533,14 @@ back.
 | Type check and build | `npm run build` | The pipeline output matches what the app expects |
 | Lint | `npm run lint` | oxlint, no warnings |
 | Manual browser check | — | All three item pages at phone and desktop widths; address lookup end to end; no console errors |
+| Contrast and naming script | run in the browser console | On an item page: every text element against its background (all at least 4.5:1, except the map library's own attribution link at 3.6:1), every control has an accessible name, headings are in order |
+| Print view | headless Chrome print to PDF, pages inspected | Layout, expanded sources, printed web addresses, no map or form controls |
+| Meaning review sheet | `npm run review-sheet` | Writes `docs/REVIEW.md` for the human reviewer |
 
 The regression tests run against the real saved City pages, so they also document what each
 test item is expected to say.
 
-**Not yet tested**: screen-reader walkthrough, automated accessibility audit, usability
+**Not yet tested**: screen-reader walkthrough, a full WCAG audit by a specialist, usability
 sessions with residents, behaviour when the geocoder is slow.
 
 ---
@@ -549,7 +552,7 @@ The hackathon rules require disclosure. This section says exactly what AI did.
 | Part | AI involvement | How it was checked |
 |---|---|---|
 | Application and pipeline code | Written with Claude (Anthropic) in Claude Code, under the team's direction on scope and design rules | Type-checked, linted, covered by the tests in section 9, and exercised in a browser. The team can explain each module (section 8) |
-| Plain-language explanations | Drafted by Claude from the City documents | Every quote machine-verified by `build.ts`. Human sign-off recorded per item in `review.humanReviewedBy` and displayed on the page |
+| Plain-language explanations | Drafted by Claude from the City documents | Every quote machine-verified by `build.ts`. A separate Claude session, given only the files, compared all 62 sentences with their sources: none was wrong, 6 said slightly more than the source or could be misread and were reworded, and 4 gained an extra quote. Human sign-off is recorded per item in `review.humanReviewedBy` and displayed on the page; until then the page says no person has signed off |
 | Stage timeline, dates, votes, official wording | **None.** Rule-based code | Regression tests against real records |
 | Run-time behaviour | **None.** The site calls no AI model | — |
 | This document | Drafted with Claude | Reviewed by the team against the code |
@@ -563,6 +566,8 @@ Bugs found and fixed during development, as evidence the code was read and not j
 - Distance to a streetcar route was first measured to the nearest corner point of the line,
   overstating it by up to several hundred metres. Now measured to the nearest point on any
   segment.
+- Source quotes were dated in UTC, so a page captured on the evening of November 12 in Toronto
+  said "captured 2026-11-13" beside a header that said November 12. Both now use Toronto's date.
 - The entry-point check in `extract-pdf.ts` failed silently when the project path contained a
   space. Now uses `pathToFileURL`.
 

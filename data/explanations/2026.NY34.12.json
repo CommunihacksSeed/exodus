@@ -71,7 +71,7 @@
   ],
   "why": [
     {
-      "text": "The area plan expects buildings of 20 to 35 storeys here. Going to 59 storeys needed a change to that plan, which is why this came to Council.",
+      "text": "The area plan expects buildings of 20 to 35 storeys here. Going to 59 storeys needed a change to that plan.",
       "citations": [
         {
           "source": "report",
@@ -135,6 +135,10 @@
     {
       "text": "People on Taunton Road: cars and trucks would reach the building's parking and loading area by a new public laneway off Taunton Road. Council asked staff to work on limiting traffic heading south on Taunton Road from the site.",
       "citations": [
+        {
+          "source": "report",
+          "quote": "Vehicle accesses to the underground parking and loading are proposed via one full- movement site access via the public laneway situated off Taunton Road"
+        },
         {
           "source": "report",
           "quote": "The laneway will run from Taunton Road along the southern property line."
@@ -256,7 +260,12 @@
   ],
   "location": {
     "label": "245 Eglinton Avenue East",
-    "points": [[43.708252048, -79.389544639]],
+    "points": [
+      [
+        43.708252048,
+        -79.389544639
+      ]
+    ],
     "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"245 Eglinton Ave E\", retrieved 2026-11-12"
   },
   "participationCheck": null,

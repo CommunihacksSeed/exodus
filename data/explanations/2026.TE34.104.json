@@ -65,12 +65,16 @@
       ]
     },
     {
-      "text": "Weekly ridership on the 505 rose by about 20%.",
+      "text": "Weekly ridership on the 505 rose by about 20% between fall 2025 and spring 2026, from about 187,000 to 224,000 a week.",
       "caveat": "Staff say the increase cannot be credited to the road measures alone, because streetcars also started running more often.",
       "citations": [
         {
           "source": "report",
           "quote": "This represents a 20% increase in ridership on the 505 Dundas streetcar route."
+        },
+        {
+          "source": "report",
+          "quote": "Weekly Total 187,000 224,000 20%"
         },
         {
           "source": "report",
@@ -164,7 +168,7 @@
   },
   "whatHappensNext": [
     {
-      "text": "The report to the Infrastructure and Environment Committee is due in the first quarter of 2027. Any new street changes would need their own decision after that.",
+      "text": "The report to the Infrastructure and Environment Committee is due in the first quarter of 2027. The record does not say what happens after that report.",
       "caveat": "No meeting date for that report is in the record yet. When it is scheduled, the City's page for that new item will show whether you can comment or speak.",
       "citations": [
         {
@@ -177,19 +181,58 @@
   "location": {
     "label": "Dundas Street West and East, along the 505 streetcar route",
     "points": [
-      [43.6559, -79.45265],
-      [43.6517, -79.44575],
-      [43.64969, -79.43502],
-      [43.64946, -79.43193],
-      [43.6498, -79.41947],
-      [43.65198, -79.40841],
-      [43.65315, -79.39782],
-      [43.6542, -79.38971],
-      [43.6558, -79.38395],
-      [43.65619, -79.38044],
-      [43.65738, -79.37396],
-      [43.65923, -79.36776],
-      [43.66009, -79.36194]
+      [
+        43.6559,
+        -79.45265
+      ],
+      [
+        43.6517,
+        -79.44575
+      ],
+      [
+        43.64969,
+        -79.43502
+      ],
+      [
+        43.64946,
+        -79.43193
+      ],
+      [
+        43.6498,
+        -79.41947
+      ],
+      [
+        43.65198,
+        -79.40841
+      ],
+      [
+        43.65315,
+        -79.39782
+      ],
+      [
+        43.6542,
+        -79.38971
+      ],
+      [
+        43.6558,
+        -79.38395
+      ],
+      [
+        43.65619,
+        -79.38044
+      ],
+      [
+        43.65738,
+        -79.37396
+      ],
+      [
+        43.65923,
+        -79.36776
+      ],
+      [
+        43.66009,
+        -79.36194
+      ]
     ],
     "geocodeSource": "approximate line joining 13 Dundas Street addresses (2333 Dundas St W to 585 Dundas St E) matched with the City of Toronto geocoder on 2026-11-12. The City record names wards, not exact blocks"
   },
