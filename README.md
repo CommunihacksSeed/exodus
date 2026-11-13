@@ -80,6 +80,15 @@ All data is public. Retrieved 2026-11-12 unless noted.
 
 City data is used under the [Open Government Licence – Toronto](https://open.toronto.ca/open-data-license/).
 
+## Design
+
+The interface borrows from transit wayfinding: a decision is drawn as a route with one stop per
+step (staff, committee, Council), and a stop is filled only when the City record contains that
+body's decision. Quoted source passages are shown highlighted. Headings use Overpass and reading
+text uses Atkinson Hyperlegible, a typeface made for low-vision readers; both are bundled, so the
+site makes no font requests to third parties. Every item page has a print view for passing a
+paper copy to someone who is not online.
+
 ## Known limits
 
 - Three items only. Item pages were captured through a normal browser session; the City site
@@ -106,4 +115,6 @@ This project was built with AI assistance, disclosed as the hackathon rules requ
 ## Credits
 
 React, Vite, TypeScript, React Router, Leaflet, cheerio, pdf.js (pdfjs-dist), tsx, oxlint.
+Fonts: Overpass and Overpass Mono (SIL Open Font License), Atkinson Hyperlegible (SIL Open Font
+License, Braille Institute), via Fontsource.
 Versions, licences and algorithm references are listed in [docs/DESIGN.md](docs/DESIGN.md#11-references).

@@ -92,6 +92,13 @@ export function buildStages(record: ItemRecord): Stage[] {
   return stages
 }
 
+/** The stop the item is waiting at: the first undecided body, else the last decided one. */
+export function currentIndex(stages: Stage[]): number {
+  const waiting = stages.findIndex((s) => s.state === 'scheduled')
+  if (waiting >= 0) return waiting
+  return stages.reduce((last, s, i) => (s.state === 'decided' ? i : last), 0)
+}
+
 export type ItemStatus = 'open' | 'decided' | 'in-progress'
 
 /** Overall status, again from the record only. */

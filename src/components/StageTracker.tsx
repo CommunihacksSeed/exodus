@@ -11,6 +11,10 @@ function VoteLine({ motion }: { motion: Motion }) {
       {motion.votes.map((v, i) => (
         <details key={i} className="vote">
           <summary>
+            <span className="votebar" aria-hidden="true">
+              <span className="votebar-yes" style={{ flexGrow: v.yes.length }} />
+              <span className="votebar-no" style={{ flexGrow: v.no.length }} />
+            </span>
             Recorded vote: {v.yes.length} yes, {v.no.length} no
             {v.absent.length ? `, ${v.absent.length} absent` : ''} — {v.result}
           </summary>

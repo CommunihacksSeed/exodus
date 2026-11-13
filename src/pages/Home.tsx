@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { AddressSearch } from '../components/AddressSearch.tsx'
+import { RouteMini } from '../components/RouteStrip.tsx'
 import { items } from '../lib/data.ts'
 import { formatDistance, nearestDistance } from '../lib/geo.ts'
 import { usePlace } from '../lib/place.tsx'
@@ -22,6 +23,7 @@ function ItemCard({ item, distance }: { item: PublishedItem; distance: number | 
       <h3>
         <Link to={`/item/${record.id}`}>{explanation?.plainTitle ?? record.title}</Link>
       </h3>
+      <RouteMini record={record} />
       <p className="card-meta">
         {record.wards.map((w) => `Ward ${w.number} ${w.name}`).join(' · ')}
         {distance !== null && <strong> · {formatDistance(distance)} from your address</strong>}
@@ -52,7 +54,10 @@ export function Home() {
   return (
     <>
       <section className="hero">
-        <h1>City Hall decisions, in plain words.</h1>
+        <p className="eyebrow">Toronto · City Council and committees</p>
+        <h1>
+          City Hall decisions, <span className="mark">in plain words.</span>
+        </h1>
         <p className="lede">
           See what is being proposed, whether it is near you, who has decided what so far, and whether you can still have
           a say. Every statement links to the City’s own record.

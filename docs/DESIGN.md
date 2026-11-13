@@ -498,6 +498,11 @@ look more exact than a single address point justifies. `findAddress` calls the C
 **`lib/place.tsx`** — a React context holding the chosen address, mirrored to `sessionStorage`
 with try/catch so the app still works where storage is blocked.
 
+**`components/RouteStrip.tsx`** — draws the stages as a transit-style route, full size on the item
+page and as a row of dots on list cards. `currentIndex` (in `lib/stages.ts`) picks the stop the
+item is waiting at. **`components/AtAGlance.tsx`** gives four short answers at the top of the
+page; its "What" line reuses the first source-checked claim instead of adding new text.
+
 **`components/Claim.tsx`** — one sentence, an optional "Keep in mind" caveat, and a native
 `<details>` listing each quote with its document, page, date and link.
 
@@ -581,6 +586,8 @@ Known limits of the AI-drafted text are stated in section 6.
 | [tsx](https://tsx.is) | 4.23 | MIT | Running TypeScript pipeline scripts and tests |
 | [oxlint](https://oxc.rs) | 1.90 | MIT | Linting |
 | Node.js built-in test runner (`node:test`) | Node 24 | MIT | Tests |
+| [Overpass, Overpass Mono](https://overpassfont.org) via Fontsource | 5.x | SIL OFL 1.1 | Headings, labels, item numbers |
+| [Atkinson Hyperlegible](https://www.brailleinstitute.org/freefont/) via Fontsource | 5.x | SIL OFL 1.1 | Reading text, chosen for low-vision legibility |
 
 ### Algorithms and standards
 

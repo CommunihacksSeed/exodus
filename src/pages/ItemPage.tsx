@@ -1,13 +1,23 @@
 import { Link, useParams } from 'react-router-dom'
 import { AddressSearch } from '../components/AddressSearch.tsx'
+import { AtAGlance } from '../components/AtAGlance.tsx'
 import { ClaimList } from '../components/Claim.tsx'
 import { HaveYourSay } from '../components/HaveYourSay.tsx'
 import { ItemMap } from '../components/ItemMap.tsx'
+import { RouteStrip } from '../components/RouteStrip.tsx'
 import { StageTracker } from '../components/StageTracker.tsx'
 import { findItem, formatCaptured } from '../lib/data.ts'
 import { formatDistance, nearestDistance, walkMinutes } from '../lib/geo.ts'
 import { usePlace } from '../lib/place.tsx'
 import { itemStatus, STATUS_LABEL } from '../lib/stages.ts'
+
+/** In-page jumps. Plain anchors would clash with the hash-based router. */
+function jumpTo(id: string) {
+  const el = document.getElementById(id)
+  if (!el) return
+  el.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' })
+  el.focus({ preventScroll: true })
+}
 
 export function ItemPage() {
   const { id = '' } = useParams()
@@ -39,21 +49,53 @@ export function ItemPage() {
       </p>
 
       <header className="item-header">
-        <p>
+        <p className="item-kicker">
           <span className={`badge badge-status-${status}`}>{STATUS_LABEL[status]}</span>
+          <span className="item-id">Item {record.id}</span>
         </p>
         <h1>{explanation?.plainTitle ?? record.title}</h1>
-        <p className="official-title">
-          Official title: {record.title} (item {record.id})
-        </p>
+        <p className="official-title">Official title: {record.title}</p>
+
+        <section aria-label="Where this proposal is in the process" className="route-wrap">
+          <RouteStrip record={record} />
+        </section>
+
+        <AtAGlance item={item} />
+
         <p className="provenance">
           Based on the{' '}
           <a href={record.sourceUrl} target="_blank" rel="noreferrer">
             City of Toronto’s page for this item
           </a>{' '}
-          as it was on <strong>{captured}</strong>. The City can change it after that date.
+          as it was on <strong>{captured}</strong>. The City can change it after that date.{' '}
+          <button type="button" className="link-button no-print" onClick={() => window.print()}>
+            Print this page
+          </button>{' '}
+          <span className="no-print">for someone who is not online.</span>
         </p>
       </header>
+
+      <nav className="jump no-print" aria-label="On this page">
+        {(
+          [
+            ['say-h', 'Have a say'],
+            ...(explanation
+              ? ([
+                  ['what-h', 'What'],
+                  ['why-h', 'Why'],
+                  ['where-h', 'Near me?'],
+                  ['cond-h', 'Conditions'],
+                ] as const)
+              : []),
+            ['stages-h', 'Who decided'],
+            ['trust-h', 'Sources'],
+          ] as const
+        ).map(([id, label]) => (
+          <button key={id} type="button" onClick={() => jumpTo(id)}>
+            {label}
+          </button>
+        ))}
+      </nav>
 
       {!explanation && (
         <p className="notice">
@@ -63,24 +105,24 @@ export function ItemPage() {
       )}
 
       <section aria-labelledby="say-h" className="panel panel-say">
-        <h2 id="say-h">Can I still have a say?</h2>
+        <h2 id="say-h" tabIndex={-1}>Can I still have a say?</h2>
         <HaveYourSay item={item} />
       </section>
 
       {explanation && (
         <>
           <section aria-labelledby="what-h" className="panel">
-            <h2 id="what-h">What is being proposed?</h2>
+            <h2 id="what-h" tabIndex={-1}>What is being proposed?</h2>
             <ClaimList claims={explanation.whatIsProposed} />
           </section>
 
           <section aria-labelledby="why-h" className="panel">
-            <h2 id="why-h">Why?</h2>
+            <h2 id="why-h" tabIndex={-1}>Why?</h2>
             <ClaimList claims={explanation.why} />
           </section>
 
           <section aria-labelledby="where-h" className="panel">
-            <h2 id="where-h">Is this near me? Who does it affect?</h2>
+            <h2 id="where-h" tabIndex={-1}>Is this near me? Who does it affect?</h2>
             <p className="where-line">
               <strong>{explanation.location.label}</strong>, {record.wards.map((w) => `Ward ${w.number} (${w.name})`).join(', ')}
             </p>
@@ -105,14 +147,14 @@ export function ItemPage() {
           </section>
 
           <section aria-labelledby="cond-h" className="panel">
-            <h2 id="cond-h">Conditions and things not settled</h2>
+            <h2 id="cond-h" tabIndex={-1}>Conditions and things not settled</h2>
             <ClaimList claims={explanation.conditionsAndUnknowns} />
           </section>
         </>
       )}
 
       <section aria-labelledby="stages-h" className="panel">
-        <h2 id="stages-h">Who has decided what so far?</h2>
+        <h2 id="stages-h" tabIndex={-1}>Who has decided what so far?</h2>
         <p className="section-intro">
           A proposal usually passes through three kinds of steps. Staff advice and committee votes are not final. Only
           City Council’s decision is.
@@ -135,13 +177,13 @@ export function ItemPage() {
 
       {explanation && explanation.whatHappensNext.length > 0 && (
         <section aria-labelledby="next-h" className="panel">
-          <h2 id="next-h">What happens next?</h2>
+          <h2 id="next-h" tabIndex={-1}>What happens next?</h2>
           <ClaimList claims={explanation.whatHappensNext} />
         </section>
       )}
 
       <section aria-labelledby="trust-h" className="panel panel-trust">
-        <h2 id="trust-h">How this page was made</h2>
+        <h2 id="trust-h" tabIndex={-1}>How this page was made</h2>
         <ul className="plain-list">
           <li>
             The steps, dates, votes and official wording are copied by a program from the City’s item page. No AI is
