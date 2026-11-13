@@ -1,5 +1,5 @@
 import type { PublishedItem } from '../types.ts'
-import { buildStages, currentIndex, itemStatus } from '../lib/stages.ts'
+import { buildStages, CAN_ACT, currentIndex, itemStatus } from '../lib/stages.ts'
 
 /**
  * Four short answers for someone who will read nothing else.
@@ -10,11 +10,7 @@ export function AtAGlance({ item }: { item: PublishedItem }) {
   const status = itemStatus(record)
   const stages = buildStages(record)
   const here = stages[currentIndex(stages)]
-  const canAct = {
-    open: 'Yes. The City is taking comments and requests to speak.',
-    decided: 'Not through the City’s comment form. Council has decided.',
-    'in-progress': 'Not right now. The City’s page shows no comment form.',
-  }[status]
+  const canAct = CAN_ACT[status]
 
   return (
     <dl className="glance">

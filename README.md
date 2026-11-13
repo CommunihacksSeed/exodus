@@ -6,7 +6,9 @@
 For a real City of Toronto agenda item, Clear Council shows a resident:
 
 - **What is proposed and why**, in plain language
-- **Is it near me?** A map, the ward, and the distance from an address they choose
+- **Is it near me?** The home page is a map of the city with a marker for each decision; choosing
+  a marker shows what it is. Each item also has its own map, the ward, and the distance from an
+  address they choose
 - **Who has decided what so far**, keeping staff advice, committee review and the final
   City Council decision clearly apart
 - **Can I still have a say?** Only what the City's own item page offers, with the date it was
@@ -51,8 +53,8 @@ build.ts         joins everything, verifies every quote, adds deep links, writes
         ▼  src/  (React, runs in the browser, no server)
 lib/stages.ts    record -> staff / committee / council timeline (rules only)
 lib/geo.ts       distance maths and the City address lookup
-components/      Claim (statement + sources), StageTracker, HaveYourSay, ItemMap, AddressSearch
-pages/           Home (list) and ItemPage
+components/      Claim (statement + sources), StageTracker, HaveYourSay, CityMap, ItemMap, AddressSearch
+pages/           Home (city map with the same decisions as a list) and ItemPage
 ```
 
 Design rules that come straight from the challenge brief:

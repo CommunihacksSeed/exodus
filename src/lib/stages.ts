@@ -114,3 +114,10 @@ export const STATUS_LABEL: Record<ItemStatus, string> = {
   decided: 'Decided',
   'in-progress': 'In progress',
 }
+
+/** Short answer to "can I have a say?", from the record only. */
+export const CAN_ACT: Record<ItemStatus, string> = {
+  open: 'Yes. The City is taking comments and requests to speak.',
+  decided: 'Not through the City’s comment form. Council has decided.',
+  'in-progress': 'Not right now. The City’s page shows no comment form.',
+}

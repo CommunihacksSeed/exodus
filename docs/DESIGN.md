@@ -31,7 +31,7 @@ Each requirement is traced to the challenge brief and to the code that implement
 | ID | Requirement | Brief | Implemented in |
 |---|---|---|---|
 | F1 | Show in plain language what is proposed and why | "What is being proposed, and why" | `data/explanations/*.json`, `components/Claim.tsx` |
-| F2 | Show where it applies, and its distance from an address the resident chooses | "Is this near me?" | `components/ItemMap.tsx`, `components/AddressSearch.tsx`, `lib/geo.ts` |
+| F2 | Show where it applies, and its distance from an address the resident chooses | "Is this near me?" | `components/CityMap.tsx` (home page), `components/ItemMap.tsx`, `components/AddressSearch.tsx`, `lib/geo.ts` |
 | F3 | Show staff recommendation, committee outcome and Council decision as separate steps | "Distinguish staff recommendations, committee decisions and final council decisions" | `lib/stages.ts`, `components/StageTracker.tsx` |
 | F4 | Show whether and how the resident can still take part | "Key dates, and how and when to have a say" | `components/HaveYourSay.tsx` |
 | F5 | Never state a deadline unless it was read from the official page | "Do not infer a submission deadline from a meeting date" | `participationCheck.deadlineText` in `types.ts`; `HaveYourSay.tsx` |
@@ -518,7 +518,15 @@ and votes behind `<details>`. Each vote carries a note that it may be on an amen
 outline, site marker or route line, and the resident's marker. Scroll-wheel zoom is off so the
 page scrolls normally on phones.
 
-**`pages/Home.tsx`**, **`pages/ItemPage.tsx`** — list and detail views. On the item page the
+**`components/CityMap.tsx`** — the home page's map of the whole city. One marker per decision,
+drawn like the stops of the route strip and coloured by status; a streetcar route is a line with
+a marker at its middle. Choosing a marker (click, Enter or Space) tells the page which decision
+to summarise. The map is built once; the resident's address and the chosen marker are applied
+by separate effects so the map is not rebuilt. When the summary card overlaps the map on a wide
+screen, the map pans so the chosen marker stays visible. Every marker has a spoken name, and
+the same decisions are listed beside the map, so nothing depends on using the map.
+
+**`pages/Home.tsx`**, **`pages/ItemPage.tsx`** — map and detail views. On the item page the
 participation panel comes first, because a deadline is the one thing a resident cannot get
 back.
 
@@ -532,7 +540,7 @@ back.
 | Unit and regression tests | `npm test` | Date and ward parsing; stage states for an upcoming and a decided item; vote tallies (2–4 lost at committee, 25–1 at Council); no resident names in output; no double-counted correspondence; haversine and point-to-line distance |
 | Type check and build | `npm run build` | The pipeline output matches what the app expects |
 | Lint | `npm run lint` | oxlint, no warnings |
-| Manual browser check | — | All three item pages at phone and desktop widths; address lookup end to end; no console errors |
+| Manual browser check | — | All three item pages and the map home page at phone and desktop widths; choosing a marker by click and by keyboard; address lookup end to end; no console errors |
 | Contrast and naming script | run in the browser console | On an item page: every text element against its background (all at least 4.5:1, except the map library's own attribution link at 3.6:1), every control has an accessible name, headings are in order |
 | Print view | headless Chrome print to PDF, pages inspected | Layout, expanded sources, printed web addresses, no map or form controls |
 | Meaning review sheet | `npm run review-sheet` | Writes `docs/REVIEW.md` for the human reviewer |

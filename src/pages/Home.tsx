@@ -1,21 +1,48 @@
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AddressSearch } from '../components/AddressSearch.tsx'
+import { CityMap, type MapPin } from '../components/CityMap.tsx'
 import { RouteMini } from '../components/RouteStrip.tsx'
 import { items } from '../lib/data.ts'
 import { formatDistance, nearestDistance } from '../lib/geo.ts'
 import { usePlace } from '../lib/place.tsx'
-import { itemStatus, STATUS_LABEL } from '../lib/stages.ts'
+import { CAN_ACT, itemStatus, STATUS_LABEL } from '../lib/stages.ts'
 import type { PublishedItem } from '../types.ts'
 
 const TOPIC_LABEL = { development: 'New building', transit: 'Transit', heritage: 'Heritage and housing' } as const
 const ORDER = { open: 0, 'in-progress': 1, decided: 2 } as const
 
-function ItemCard({ item, distance }: { item: PublishedItem; distance: number | null }) {
+/** One marker per item that has a checked explanation (and so a location). */
+const PINS: MapPin[] = items.flatMap(({ record, explanation }) =>
+  explanation
+    ? [
+        {
+          id: record.id,
+          label: explanation.location.label,
+          description: `${explanation.plainTitle}. ${STATUS_LABEL[itemStatus(record)]}.`,
+          points: explanation.location.points,
+          status: itemStatus(record),
+        },
+      ]
+    : [],
+)
+
+function ItemCard({
+  item,
+  distance,
+  selected,
+  onPoint,
+}: {
+  item: PublishedItem
+  distance: number | null
+  selected: boolean
+  onPoint: () => void
+}) {
   const { record, explanation } = item
   const status = itemStatus(record)
   const last = record.considerations.at(-1)
   return (
-    <li className="card">
+    <li className="card" data-selected={selected || undefined} onMouseEnter={onPoint} onFocus={onPoint}>
       <p className="card-top">
         <span className={`badge badge-status-${status}`}>{STATUS_LABEL[status]}</span>
         {explanation && <span className="topic">{TOPIC_LABEL[explanation.topic]}</span>}
@@ -38,8 +65,44 @@ function ItemCard({ item, distance }: { item: PublishedItem; distance: number | 
   )
 }
 
+/** What a marker stands for: enough to decide whether to read the full page. */
+function Preview({ item, distance, onClose }: { item: PublishedItem; distance: number | null; onClose: () => void }) {
+  const { record, explanation } = item
+  const status = itemStatus(record)
+  return (
+    <section className="preview" aria-live="polite" aria-label="Decision at the chosen marker">
+      <button type="button" className="preview-close" onClick={onClose} aria-label="Close this summary">
+        ×
+      </button>
+      <p className="card-top">
+        <span className={`badge badge-status-${status}`}>{STATUS_LABEL[status]}</span>
+        {explanation && <span className="topic">{explanation.location.label}</span>}
+      </p>
+      <h2>{explanation?.plainTitle ?? record.title}</h2>
+      {explanation && <p className="preview-what">{explanation.whatIsProposed[0].text}</p>}
+      <RouteMini record={record} />
+      <dl className="preview-facts">
+        {distance !== null && (
+          <div>
+            <dt>How far</dt>
+            <dd>{formatDistance(distance)} from your address</dd>
+          </div>
+        )}
+        <div>
+          <dt>Can I have a say?</dt>
+          <dd>{CAN_ACT[status]}</dd>
+        </div>
+      </dl>
+      <Link className="button" to={`/item/${record.id}`}>
+        Read the full page
+      </Link>
+    </section>
+  )
+}
+
 export function Home() {
   const { place } = usePlace()
+  const [selectedId, setSelectedId] = useState<string | null>(null)
   const rows = items
     .map((item) => ({
       item,
@@ -50,33 +113,93 @@ export function Home() {
         ORDER[itemStatus(a.item.record)] - ORDER[itemStatus(b.item.record)] ||
         (a.distance ?? Infinity) - (b.distance ?? Infinity),
     )
+  const selected = rows.find((r) => r.item.record.id === selectedId)
+
+  // On a phone the summary sits below the map, so bring it into view after a marker is chosen.
+  const fromMap = useRef(false)
+  function selectFromMap(id: string) {
+    fromMap.current = true
+    setSelectedId(id)
+  }
+  useEffect(() => {
+    if (!fromMap.current) return
+    fromMap.current = false
+    const card = document.querySelector<HTMLElement>('.preview')
+    if (card && getComputedStyle(card).position !== 'absolute') {
+      // Instant, not smooth: the map is animating at the same moment and can cancel a smooth scroll.
+      card.scrollIntoView({ block: 'nearest' })
+    }
+  }, [selectedId])
 
   return (
-    <>
-      <section className="hero">
+    <div className="home">
+      <section className="home-intro">
         <p className="eyebrow">Toronto · City Council and committees</p>
         <h1>
           City Hall decisions, <span className="mark">in plain words.</span>
         </h1>
         <p className="lede">
-          See what is being proposed, whether it is near you, who has decided what so far, and whether you can still have
-          a say. Every statement links to the City’s own record.
+          Choose a marker to see what is proposed there, who has decided what so far, and whether you can still have a
+          say. Every statement links to the City’s own record.
         </p>
-        <AddressSearch />
       </section>
 
-      <section aria-labelledby="items-heading">
-        <h2 id="items-heading">Decisions you can look up</h2>
-        <ul className="cards">
-          {rows.map(({ item, distance }) => (
-            <ItemCard key={item.record.id} item={item} distance={distance} />
-          ))}
+      <div className="home-map">
+        <div className="city-map-frame">
+          <CityMap
+            pins={PINS}
+            selectedId={selectedId}
+            onSelect={selectFromMap}
+            home={place ? { point: place.point, label: place.label } : null}
+          />
+          {selected && <Preview item={selected.item} distance={selected.distance} onClose={() => setSelectedId(null)} />}
+        </div>
+        <ul className="legend" aria-label="What the markers mean">
+          <li>
+            <span className="pin pin-open" aria-hidden="true">
+              <span className="pin-dot" />
+            </span>
+            You can still have a say
+          </li>
+          <li>
+            <span className="pin pin-decided" aria-hidden="true">
+              <span className="pin-dot" />
+            </span>
+            Decided
+          </li>
+          {place && (
+            <li>
+              <span className="pin pin-home" aria-hidden="true">
+                <span className="pin-dot" />
+              </span>
+              Your address
+            </li>
+          )}
+          <li className="legend-note">Thin blue lines are ward boundaries.</li>
         </ul>
-        <p className="fine">
-          This is a proof of concept covering {items.length} real City of Toronto agenda items. It is not a complete list
-          of what City Council is deciding.
-        </p>
-      </section>
-    </>
+      </div>
+
+      <div className="home-side">
+        <AddressSearch />
+        <section aria-labelledby="items-heading">
+          <h2 id="items-heading">All decisions on the map</h2>
+          <ul className="cards">
+            {rows.map(({ item, distance }) => (
+              <ItemCard
+                key={item.record.id}
+                item={item}
+                distance={distance}
+                selected={item.record.id === selectedId}
+                onPoint={() => setSelectedId(item.record.id)}
+              />
+            ))}
+          </ul>
+          <p className="fine">
+            This is a proof of concept covering {items.length} real City of Toronto agenda items. It is not a complete
+            list of what City Council is deciding.
+          </p>
+        </section>
+      </div>
+    </div>
   )
 }
