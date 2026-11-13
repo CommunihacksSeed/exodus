@@ -21,6 +21,10 @@ npm run data   # parse City records, check every quote, write src/generated/
 npm run dev    # open the printed http://localhost:5173 address
 ```
 
+```bash
+npm test       # parser, stage and distance regression tests
+```
+
 `npm run data` stops with an error and publishes nothing if any quoted passage cannot be found
 word for word in its source.
 
@@ -28,6 +32,9 @@ To re-create the page text used for quote checking, download the PDFs listed und
 [Data sources](#data-sources) into `data/documents/` and run `npm run pdf-text`.
 
 ## How it works
+
+Full design document with UML diagrams, rationale, scalability and references:
+[docs/DESIGN.md](docs/DESIGN.md).
 
 ```
 data/snapshots/*.html        saved copies of the City's item pages (source URL + capture time in line 1)
@@ -98,4 +105,5 @@ This project was built with AI assistance, disclosed as the hackathon rules requ
 
 ## Credits
 
-React, Vite, TypeScript, React Router, Leaflet, cheerio, pdf.js (pdfjs-dist), tsx.
+React, Vite, TypeScript, React Router, Leaflet, cheerio, pdf.js (pdfjs-dist), tsx, oxlint.
+Versions, licences and algorithm references are listed in [docs/DESIGN.md](docs/DESIGN.md#11-references).
