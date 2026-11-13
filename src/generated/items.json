@@ -1,0 +1,909 @@
+[
+ {
+  "record": {
+   "id": "2026.NY34.12",
+   "title": "245 Eglinton Avenue East - Official Plan Amendment and Zoning By-law Amendment Application- Decision Report - Approval",
+   "sourceUrl": "https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.12",
+   "retrievedAt": "2026-11-13T02:35:47.679Z",
+   "wards": [
+    {
+     "number": 15,
+     "name": "Don Valley West"
+    }
+   ],
+   "trackingStatus": [
+    "City Council adopted this item on July 29 and 30, 2026 with amendments.",
+    "This item was considered by North York Community Council on July 7, 2026. It is being forwarded to City Council without recommendations. It will be considered by City Council on July 29 and 30, 2026."
+   ],
+   "bylaws": [
+    {
+     "label": "By-law 1249-2026",
+     "url": "https://www.toronto.ca/legdocs/bylaws/2026/law1249.pdf"
+    },
+    {
+     "label": "By-law 1250-2026",
+     "url": "https://www.toronto.ca/legdocs/bylaws/2026/law1250.pdf"
+    }
+   ],
+   "considerations": [
+    {
+     "body": "North York Community Council",
+     "kind": "committee",
+     "dateText": "July 7, 2026",
+     "dates": [
+      "2026-07-07"
+     ],
+     "meta": {
+      "Decision Type": "ACTION",
+      "Status": "Without Recs",
+      "Ward": "15 - Don Valley West"
+     },
+     "wards": [
+      {
+       "number": 15,
+       "name": "Don Valley West"
+      }
+     ],
+     "notices": [
+      "Public Notice Given",
+      "Statutory - Planning Act, RSO 1990"
+     ],
+     "sections": [
+      {
+       "heading": "Community Council Recommendations",
+       "paragraphs": [
+        "North York Community Council:",
+        "1. Forwarded this item to City Council without recommendation."
+       ]
+      },
+      {
+       "heading": "Decision Advice and Other Information",
+       "paragraphs": [
+        "The North York Community Council held a statutory public meeting on July 7, 2026, and notice was given in accordance with the Planning Act, RSO 1990."
+       ]
+      },
+      {
+       "heading": "Origin",
+       "paragraphs": [
+        "(June 8, 2026) Report from the Director, Community Planning, North York District"
+       ]
+      },
+      {
+       "heading": "Summary",
+       "paragraphs": [
+        "This Report recommends approval of the application to amend the Official Plan and Zoning By-law for a mixed use building consisting of two, 59-storey towers on a connected 3 and 4-storey base, with retail at grade at 245 Eglinton Avenue East. The towers would have heights of approximately 190 metres each, plus 6 metre mechanical penthouses.",
+        "The total gross floor area (GFA) of the proposal is 82,742 square metres, with a resulting Floor Space Index (FSI) of 17.2 times the lot area. The proposal includes 2,802 square metres of retail uses at grade, 1,202 residential dwelling units, and a total of 4,837 square metres of amenity space (indoor and outdoor amenity combined)."
+       ]
+      }
+     ],
+     "documents": [
+      {
+       "group": "Background Information",
+       "label": "(June 8, 2026) Report and Attachments 1 to 4 and 7 to 8b from the Director, Community Planning, North York District on 245 Eglinton Avenue East - Official Plan Amendment and Zoning By-law Amendment Application - Decision Report - Approval",
+       "url": "https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-287824.pdf"
+      },
+      {
+       "group": "Background Information",
+       "label": "Attachment 5 - Draft Zoning Bylaw Amendment",
+       "url": "https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288626.pdf"
+      },
+      {
+       "group": "Background Information",
+       "label": "Attachment 6 - Draft Zoning Bylaw Amendment",
+       "url": "https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288625.pdf"
+      },
+      {
+       "group": "Background Information",
+       "label": "Notice of Public Meeting",
+       "url": "https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-287838.pdf"
+      }
+     ],
+     "communicationsCount": 7,
+     "speakersCount": 4,
+     "motions": [
+      {
+       "header": "Motion to Amend Item (Additional) moved by Councillor Rachel Chernos Lin",
+       "result": "Carried",
+       "paragraphs": [
+        "That North York Community Council recommends that:",
+        "1. City Council requests that the Executive Director, Development Review, work with the Owner through the Site Plan Control process to limit vehicle access southbound on Taunton Road from the limits of the subject development site, through signage or other means as deemed appropriate.",
+        "2. City Council requests that the Executive Director, Development Review, work with the Owner through the Site Plan Control process to achieve a landscape buffer along the south property line abutting existing residential neighbourhoods.",
+        "3. City Council amend Schedule D of City of Toronto Municipal Code Chapter 925, Permit Parking, such that, despite anything in the chapter to the contrary, the General Manager, Transportation Services, will not accept applications for a permit from residents of, visitors to, or tradespersons at the development located at 245 Eglinton Avenue East."
+       ],
+       "votes": [
+        {
+         "motionType": "Amend Item (Additional)",
+         "when": "Jul-07-2026",
+         "result": "Carried",
+         "note": "Majority Required",
+         "yes": [
+          "Jon Burnside",
+          "Shelley Carroll",
+          "Lily Cheng",
+          "Rachel Chernos Lin",
+          "Mike Colle",
+          "James Pasternak (Chair)"
+         ],
+         "no": [],
+         "absent": []
+        }
+       ]
+      },
+      {
+       "header": "Motion to Adopt Item as Amended moved by Councillor Rachel Chernos Lin",
+       "result": "Lost",
+       "paragraphs": [],
+       "votes": [
+        {
+         "motionType": "Adopt Item as Amended",
+         "when": "Jul-07-2026",
+         "result": "Lost",
+         "note": "Majority Required",
+         "yes": [
+          "Shelley Carroll",
+          "James Pasternak (Chair)"
+         ],
+         "no": [
+          "Jon Burnside",
+          "Lily Cheng",
+          "Rachel Chernos Lin",
+          "Mike Colle"
+         ],
+         "absent": []
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "body": "City Council",
+     "kind": "council",
+     "dateText": "July 29 and 30, 2026",
+     "dates": [
+      "2026-07-29",
+      "2026-07-30"
+     ],
+     "meta": {
+      "Decision Type": "ACTION",
+      "Status": "Amended",
+      "Ward": "15 - Don Valley West"
+     },
+     "wards": [
+      {
+       "number": 15,
+       "name": "Don Valley West"
+      }
+     ],
+     "notices": [
+      "Public Notice Given",
+      "Statutory - Planning Act, RSO 1990"
+     ],
+     "sections": [
+      {
+       "heading": "City Council Decision",
+       "paragraphs": [
+        "City Council on July 29 and 30, 2026, adopted the following:",
+        "1. City Council amend the Official Plan for the lands municipally known as 245 Eglinton Avenue East substantially in accordance with the draft Official Plan Amendment included as Attachment 5 to the report (June 8, 2026) from the Director, Community Planning North York District.",
+        "2. City Council amend City of Toronto Zoning By-law 569-2013 for the lands municipally known as 245 Eglinton Avenue East substantially in accordance with the draft Zoning By-law Amendment included as Attachment 6 to the report (June 8, 2026) from the Director, Community Planning North York District.",
+        "3. City Council authorize the City Solicitor to make such stylistic and technical changes to the draft Official Plan Amendment and draft Zoning By-law Amendment as may be required.",
+        "4. City Council request the Executive Director, Development Review to work with the Owner through the Site Plan Control process to limit vehicle access southbound on Taunton Road from the limits of the subject development site, through signage or other means as deemed appropriate.",
+        "5. City Council request the Executive Director, Development Review to work with the Owner through the Site Plan Control process to achieve a landscape buffer along the south property line abutting existing residential neighbourhoods.",
+        "6. City Council amend Schedule D of City of Toronto Municipal Code Chapter 925, Permit Parking, such that, despite anything in the chapter to the contrary, the General Manager, Transportation Services, will not accept applications for a permit from residents of, visitors to, or tradespersons at the development located at 245 Eglinton Avenue East."
+       ]
+      }
+     ],
+     "documents": [
+      {
+       "group": "Background Information (Community Council)",
+       "label": "(June 8, 2026) Report and Attachments 1 to 4 and 7 to 8b from the Director, Community Planning, North York District on 245 Eglinton Avenue East - Official Plan Amendment and Zoning By-law Amendment Application - Decision Report - Approval",
+       "url": "https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-287824.pdf"
+      },
+      {
+       "group": "Background Information (Community Council)",
+       "label": "Attachment 5 - Draft Zoning Bylaw Amendment",
+       "url": "https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288626.pdf"
+      },
+      {
+       "group": "Background Information (Community Council)",
+       "label": "Attachment 6 - Draft Zoning Bylaw Amendment",
+       "url": "https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288625.pdf"
+      },
+      {
+       "group": "Background Information (Community Council)",
+       "label": "Notice of Public Meeting",
+       "url": "https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-287838.pdf"
+      }
+     ],
+     "communicationsCount": 1,
+     "speakersCount": 0,
+     "motions": [
+      {
+       "header": "1 - Motion to Amend Item moved by Councillor Shelley Carroll",
+       "result": "Carried",
+       "paragraphs": [
+        "That:",
+        "1. City Council amend the Official Plan for the lands municipally known as 245 Eglinton Avenue East substantially in accordance with the draft Official Plan Amendment included as Attachment 5 to the report (June 8, 2026) from the Director, Community Planning North York District.",
+        "2. City Council amend City of Toronto Zoning By-law 569-2013 for the lands municipally known as 245 Eglinton Avenue East substantially in accordance with the draft Zoning By-law Amendment included as Attachment 6 to the report (June 8, 2026) from the Director, Community Planning North York District.",
+        "3. City Council authorize the City Solicitor to make such stylistic and technical changes to the draft Official Plan Amendment and draft Zoning By-law Amendment as may be required.",
+        "4. City Council request the Executive Director, Development Review to work with the Owner through the Site Plan Control process to limit vehicle access southbound on Taunton Road from the limits of the subject development site, through signage or other means as deemed appropriate.",
+        "5. City Council request the Executive Director, Development Review to work with the Owner through the Site Plan Control process to achieve a landscape buffer along the south property line abutting existing residential neighbourhoods.",
+        "6. City Council amend Schedule D of City of Toronto Municipal Code Chapter 925, Permit Parking, such that, despite anything in the chapter to the contrary, the General Manager, Transportation Services, will not accept applications for a permit from residents of, visitors to, or tradespersons at the development located at 245 Eglinton Avenue East."
+       ],
+       "votes": [
+        {
+         "motionType": "Amend Item",
+         "when": "Jul-30-2026 2:40 PM",
+         "result": "Carried",
+         "note": "Majority Required - NY34.12 - Carroll - motion 1",
+         "yes": [
+          "Paul Ainslie",
+          "Brad Bradford",
+          "Alejandra Bravo",
+          "Jon Burnside",
+          "Shelley Carroll",
+          "Lily Cheng",
+          "Olivia Chow",
+          "Mike Colle",
+          "Vincent Crisanti",
+          "Paula Fletcher",
+          "Stephen Holyday",
+          "Parthi Kandavel",
+          "Ausma Malik",
+          "Nick Mantas",
+          "Josh Matlow",
+          "Chris Moise",
+          "Amber Morley",
+          "Jamaal Myers",
+          "Frances Nunziata (Chair)",
+          "James Pasternak",
+          "Gord Perks",
+          "Anthony Perruzza",
+          "Dianne Saxe",
+          "Neethan Shan",
+          "Michael Thompson"
+         ],
+         "no": [
+          "Rachel Chernos Lin"
+         ],
+         "absent": []
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "participation": {
+    "commentsUrl": null,
+    "speakUrl": null
+   }
+  },
+  "explanation": null
+ },
+ {
+  "record": {
+   "id": "2026.TE34.104",
+   "title": "Initial Findings Report: Transit Priority Measures to Support the 505 Dundas 6-Minute Network",
+   "sourceUrl": "https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.104",
+   "retrievedAt": "2026-11-13T02:36:00.613Z",
+   "wards": [
+    {
+     "number": 4,
+     "name": "Parkdale - High Park"
+    },
+    {
+     "number": 9,
+     "name": "Davenport"
+    },
+    {
+     "number": 10,
+     "name": "Spadina - Fort York"
+    },
+    {
+     "number": 13,
+     "name": "Toronto Centre"
+    }
+   ],
+   "trackingStatus": [
+    "City Council adopted this item on July 29 and 30, 2026 with amendments.",
+    "This item was considered by Toronto and East York Community Council on July 8 and 9, 2026 and was adopted with amendments. It will be considered by City Council on July 29 and 30, 2026."
+   ],
+   "bylaws": [],
+   "considerations": [
+    {
+     "body": "Toronto and East York Community Council",
+     "kind": "committee",
+     "dateText": "July 8 and 9, 2026",
+     "dates": [
+      "2026-07-08",
+      "2026-07-09"
+     ],
+     "meta": {
+      "Decision Type": "ACTION",
+      "Status": "Amended",
+      "Wards": "4 - Parkdale - High Park, 9 - Davenport, 10 - Spadina - Fort York, 13 - Toronto Centre"
+     },
+     "wards": [
+      {
+       "number": 4,
+       "name": "Parkdale - High Park"
+      },
+      {
+       "number": 9,
+       "name": "Davenport"
+      },
+      {
+       "number": 10,
+       "name": "Spadina - Fort York"
+      },
+      {
+       "number": 13,
+       "name": "Toronto Centre"
+      }
+     ],
+     "notices": [],
+     "sections": [
+      {
+       "heading": "Community Council Recommendations",
+       "paragraphs": [
+        "The Toronto and East York Community Council recommends that:",
+        "1. City Council request the General Manager, Transportation Services, in collaboration with the Chief Executive Officer, Toronto Transit Commission, to investigate the feasibility and options for expanding Transit Priority Measures for the 505 Dundas streetcar outside of the currently implemented Transit Priority Measures, to further reduce travel times and improve reliability of the Dundas streetcar for transit riders; such investigation to include further analysis of the 505 Dundas streetcar performance and development of an engagement plan to support future Transit Priority Measures.",
+        "2. City Council request the General Manager, Transportation Services, in collaboration with the Chief Executive Officer, Toronto Transit Commission, to report back with recommendations on Part 1 above in the first quarter of 2027."
+       ]
+      },
+      {
+       "heading": "Origin",
+       "paragraphs": [
+        "(June 19, 2026) Report from the Director, Congestion and Network Management, Transportation Services"
+       ]
+      },
+      {
+       "heading": "Summary",
+       "paragraphs": [
+        "In December 2025, Transportation Services recommended permanent parking and traffic amendments to Dundas Street East and West to enhance transit service as part of 2025.TE27.51 Transit Priority Measures to Support the 505 Dundas 6-Minute Network. The transit priority measures (TPMs) implemented included expanding �No Stopping� coverage of the AM and PM peak periods on weekdays, as well as new and expanded left-turn restrictions.",
+        "These changes were in support of 6-minute headways on the 505 Dundas streetcar route from 7:00 a.m. to 7:00 p.m. daily, which began on November 15, 2026. The goal of the TPMs is to help improve the speed and reliability of the 505 Dundas route and minimize the risk of increased bunching and gapping associated with moving to a more frequent headway."
+       ]
+      }
+     ],
+     "documents": [
+      {
+       "group": "Background Information",
+       "label": "(June 19, 2026) Report from the Director, Congestion and Network Management, Transportation Services on Initial Findings Report: Transit Priority Measures to Support the 505 Dundas 6-Minute Network",
+       "url": "https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288607.pdf"
+      }
+     ],
+     "communicationsCount": 3,
+     "speakersCount": 0,
+     "motions": [
+      {
+       "header": "Motion to Amend Item moved by Deputy Mayor Ausma Malik",
+       "result": "Carried",
+       "paragraphs": [
+        "That:",
+        "1. City Council request the General Manager, Transportation Services, in collaboration with the Chief Executive Officer, Toronto Transit Commission, to investigate the feasibility and options for expanding Transit Priority Measures for the 505 Dundas streetcar outside of the currently implemented Transit Priority Measures, to further reduce travel times and improve reliability of the Dundas streetcar for transit riders; such investigation to include further analysis of the 505 Dundas streetcar performance and development of an engagement plan to support future Transit Priority Measures.",
+        "2. City Council request the General Manager, Transportation Services, in collaboration with the Chief Executive Officer, Toronto Transit Commission, to report back with recommendations on Part 1 above in the first quarter of 2027."
+       ],
+       "votes": []
+      }
+     ]
+    },
+    {
+     "body": "City Council",
+     "kind": "council",
+     "dateText": "July 29 and 30, 2026",
+     "dates": [
+      "2026-07-29",
+      "2026-07-30"
+     ],
+     "meta": {
+      "Decision Type": "ACTION",
+      "Status": "Amended",
+      "Wards": "4 - Parkdale - High Park, 9 - Davenport, 10 - Spadina - Fort York, 13 - Toronto Centre"
+     },
+     "wards": [
+      {
+       "number": 4,
+       "name": "Parkdale - High Park"
+      },
+      {
+       "number": 9,
+       "name": "Davenport"
+      },
+      {
+       "number": 10,
+       "name": "Spadina - Fort York"
+      },
+      {
+       "number": 13,
+       "name": "Toronto Centre"
+      }
+     ],
+     "notices": [],
+     "sections": [
+      {
+       "heading": "City Council Decision",
+       "paragraphs": [
+        "City Council on July 29 and 30, 2026, adopted the following:",
+        "1. City Council request the General Manager, Transportation Services, in collaboration with the Chief Executive Officer, Toronto Transit Commission, to investigate the feasibility and options for expanding Transit Priority Measures for the 505 Dundas streetcar outside of the currently implemented Transit Priority Measures, to further reduce travel times and improve reliability of the Dundas streetcar for transit riders; such investigation to include further analysis of the 505 Dundas streetcar performance and development of an engagement plan to support future Transit Priority Measures.",
+        "2. City Council request the General Manager, Transportation Services, in collaboration with the Chief Executive Officer, Toronto Transit Commission, to report to the Infrastructure and Environment Committee with recommendations on Part 1 above in the first quarter of 2027."
+       ]
+      }
+     ],
+     "documents": [
+      {
+       "group": "Background Information (Community Council)",
+       "label": "(June 19, 2026) Report from the Director, Congestion and Network Management, Transportation Services on Initial Findings Report: Transit Priority Measures to Support the 505 Dundas 6-Minute Network",
+       "url": "https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288607.pdf"
+      }
+     ],
+     "communicationsCount": 2,
+     "speakersCount": 0,
+     "motions": [
+      {
+       "header": "1 - Motion to Amend Item moved by Councillor Shelley Carroll",
+       "result": "Carried",
+       "paragraphs": [
+        "That City Council amend recommendation 2 so that it reads as follows:",
+        "2 .City Council request the General Manager, Transportation Services, in collaboration with the Chief Executive Officer, Toronto Transit Commission, to report to the Infrastructure and Environment Committee and with recommendations on Part 1 above in the first quarter of 2027"
+       ],
+       "votes": []
+      },
+      {
+       "header": "Motion to Adopt Item as Amended",
+       "result": "Carried",
+       "paragraphs": [],
+       "votes": [
+        {
+         "motionType": "Adopt Item as Amended",
+         "when": "Jul-30-2026 6:01 PM",
+         "result": "Carried",
+         "note": "Majority Required - TE34.104 - Adopt the Item as Amended",
+         "yes": [
+          "Paul Ainslie",
+          "Alejandra Bravo",
+          "Shelley Carroll",
+          "Rachel Chernos Lin",
+          "Olivia Chow",
+          "Vincent Crisanti",
+          "Paula Fletcher",
+          "Parthi Kandavel",
+          "Ausma Malik",
+          "Josh Matlow",
+          "Chris Moise",
+          "Amber Morley",
+          "Jamaal Myers",
+          "Frances Nunziata (Chair)",
+          "James Pasternak",
+          "Gord Perks",
+          "Anthony Perruzza",
+          "Dianne Saxe",
+          "Neethan Shan",
+          "Michael Thompson"
+         ],
+         "no": [
+          "Lily Cheng",
+          "Stephen Holyday"
+         ],
+         "absent": [
+          "Brad Bradford",
+          "Jon Burnside",
+          "Mike Colle",
+          "Nick Mantas"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "participation": {
+    "commentsUrl": null,
+    "speakUrl": null
+   }
+  },
+  "explanation": null
+ },
+ {
+  "record": {
+   "id": "2027.PB1.6",
+   "title": "1337 Queen Street West - Demolition and New Construction on a Designated Heritage Property under Part V, Section 42 of the Ontario Heritage Act - Approval",
+   "sourceUrl": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6",
+   "retrievedAt": "2026-11-13T02:35:39.492Z",
+   "wards": [
+    {
+     "number": 4,
+     "name": "Parkdale - High Park"
+    }
+   ],
+   "trackingStatus": [
+    "This item will be considered by Toronto Preservation Board on November 16, 2026."
+   ],
+   "bylaws": [],
+   "considerations": [
+    {
+     "body": "Toronto Preservation Board",
+     "kind": "committee",
+     "dateText": "November 16, 2026",
+     "dates": [
+      "2026-11-16"
+     ],
+     "meta": {
+      "Consideration Type": "ACTION",
+      "Ward": "4 - Parkdale - High Park"
+     },
+     "wards": [
+      {
+       "number": 4,
+       "name": "Parkdale - High Park"
+      }
+     ],
+     "notices": [],
+     "sections": [
+      {
+       "heading": "Origin",
+       "paragraphs": [
+        "(October 28, 2026) Report from the Senior Manager, Heritage Planning, Urban Design, City Planning"
+       ]
+      },
+      {
+       "heading": "Recommendations",
+       "paragraphs": [
+        "The Senior Manager, Heritage Planning, Urban Design, City Planning recommends that:",
+        "1. City Council approve the demolition of the non-contributing building and the erection of a new 16-storey mixed-use building at 1337 Queen Street West, in the Parkdale Main Street Heritage Conservation District in accordance with subsections 42(1) 4 and 42(1) 2 of the Ontario Heritage Act, and subject to the following conditions:",
+        "a. that the replacement building for 1337 Queen Street West is constructed substantially in accordance with the plans and elevations prepared by LGA Architectural Partners dated September 25, 2026, on file with the Senior Manager, Heritage Planning."
+       ]
+      },
+      {
+       "heading": "Summary",
+       "paragraphs": [
+        "This report recommends that City Council approve the demolition of an existing building on a non-contributing property located at 1337 Queen Street West within the Parkdale Main Street Heritage Conservation District (PHCD) and approve the erection of a replacement building in accordance with Section 42 of the Ontario Heritage Act in connection with the City-led Parkdale Hub project.",
+        "The proposed development is for the West Block of the Parkdale Hub project to erect a new 16-storey mixed-use tower with a 4-storey podium building that will include purpose-built affordable housing; and which will remain under ownership of the City.",
+        "A heritage permit for the project was previously approved on June 24 and 25, 2026, by City Council. The current proposal is largely the same as the previous approval, but a change has been made to the height of the podium of the new building. The street wall height of the new podium building has been increased by 1.2m which means that it no longer matches the height of the adjacent contributing building at 1347 Queen Street West. It also does not include the 5.0m step back required by the PHCD Plan for any parts of the new building that are taller than the adjacent contributing property. Consequently, a new Section 42 approval under the Ontario Heritage Act is required.",
+        "One of the objectives of the PHCD Plan is to conserve the consistent and continuous streetwall that characterises most of the PHCD but this section of south side of Queen Street West has neither a consistent nor a continuous street wall. Therefore, the proposed modest height increase for the podium of the new Parkdale Hub West Block development would not harm the character or appearance of the District or be contrary to the objectives of the PHCD Plan. As such staff have no concern with the lack of a step back of the top of the new podium building in this location."
+       ]
+      },
+      {
+       "heading": "Financial Impact",
+       "paragraphs": [
+        "There are no financial implications resulting from the recommendations included in this report in the current budget year or in future years.",
+        "The Chief Financial Officer and Treasurer has reviewed this report and agrees with the information as presented in the Financial Impact Section."
+       ]
+      }
+     ],
+     "documents": [
+      {
+       "group": "Background Information",
+       "label": "(October 28, 2026) Report and Attachments 1 to 4 from the Senior Manager, Heritage Planning, Urban Design, City Planning on 1337 Queen Street West - Demolition and New Construction on a Designated Heritage Property under Part V, Section 42 of the Ontario Heritage Act - Approval",
+       "url": "https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf"
+      }
+     ],
+     "communicationsCount": 0,
+     "speakersCount": 0,
+     "motions": []
+    }
+   ],
+   "participation": {
+    "commentsUrl": "https://secure.toronto.ca/council/#/public-participation/2027.PB1.6/comments",
+    "speakUrl": "https://secure.toronto.ca/council/#/public-participation/2027.PB1.6/speaking-request"
+   }
+  },
+  "explanation": {
+   "itemId": "2027.PB1.6",
+   "plainTitle": "A taller base for the new affordable housing building at 1337 Queen Street West",
+   "topic": "heritage",
+   "sources": [
+    {
+     "id": "report",
+     "label": "Staff report from the Senior Manager, Heritage Planning",
+     "url": "https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf",
+     "date": "October 28, 2026",
+     "textFile": "backgroundfile-290746.pages.json"
+    }
+   ],
+   "whatIsProposed": [
+    {
+     "text": "City staff recommend that City Council allow the existing building at 1337 Queen Street West to be torn down and a new 16-storey building to be built in its place.",
+     "citations": [
+      {
+       "source": "item",
+       "quote": "City Council approve the demolition of the non-contributing building and the erection of a new 16-storey mixed-use building at 1337 Queen Street West",
+       "verified": true,
+       "sourceLabel": "City of Toronto item page 2027.PB1.6",
+       "sourceDate": "captured 2026-11-13",
+       "page": null,
+       "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=City%20Council%20approve%20the,1337%20Queen%20Street%20West"
+      }
+     ]
+    },
+    {
+     "text": "The new building would be a 16-storey tower on a 4-storey base. It would include affordable housing, and the City would keep owning it.",
+     "citations": [
+      {
+       "source": "item",
+       "quote": "a new 16-storey mixed-use tower with a 4-storey podium building that will include purpose-built affordable housing; and which will remain under ownership of the City",
+       "verified": true,
+       "sourceLabel": "City of Toronto item page 2027.PB1.6",
+       "sourceDate": "captured 2026-11-13",
+       "page": null,
+       "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=a%20new%2016%2Dstorey%20mixed%2Duse,ownership%20of%20the%20City"
+      }
+     ]
+    },
+    {
+     "text": "City Council already approved this project in June 2026. The only change now is that the 4-storey base would be 1.2 metres taller.",
+     "citations": [
+      {
+       "source": "item",
+       "quote": "A heritage permit for the project was previously approved on June 24 and 25, 2026, by City Council.",
+       "verified": true,
+       "sourceLabel": "City of Toronto item page 2027.PB1.6",
+       "sourceDate": "captured 2026-11-13",
+       "page": null,
+       "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=A%20heritage%20permit%20for,2026%2C%20by%20City%20Council."
+      },
+      {
+       "source": "report",
+       "quote": "All other details of the scheme remain as those approved by City Council in June 2026.",
+       "verified": true,
+       "sourceLabel": "Staff report from the Senior Manager, Heritage Planning",
+       "sourceDate": "October 28, 2026",
+       "page": 4,
+       "url": "https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf#page=4"
+      }
+     ]
+    }
+   ],
+   "why": [
+    {
+     "text": "The base was made taller so the community space on the ground floor can have higher ceilings.",
+     "citations": [
+      {
+       "source": "report",
+       "quote": "The revised proposal increases the height of the 4-storey podium building by 1.2m in order to increase the floor-to-ceiling heights within the ground floor community space.",
+       "verified": true,
+       "sourceLabel": "Staff report from the Senior Manager, Heritage Planning",
+       "sourceDate": "October 28, 2026",
+       "page": 4,
+       "url": "https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf#page=4"
+      }
+     ]
+    },
+    {
+     "text": "With the taller base, the design no longer follows two rules in the Parkdale Main Street heritage district plan. That is why a new heritage approval is needed.",
+     "citations": [
+      {
+       "source": "item",
+       "quote": "It also does not include the 5.0m step back required by the PHCD Plan for any parts of the new building that are taller than the adjacent contributing property.",
+       "verified": true,
+       "sourceLabel": "City of Toronto item page 2027.PB1.6",
+       "sourceDate": "captured 2026-11-13",
+       "page": null,
+       "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=It%20also%20does%20not,the%20adjacent%20contributing%20property."
+      },
+      {
+       "source": "item",
+       "quote": "Consequently, a new Section 42 approval under the Ontario Heritage Act is required.",
+       "verified": true,
+       "sourceLabel": "City of Toronto item page 2027.PB1.6",
+       "sourceDate": "captured 2026-11-13",
+       "page": null,
+       "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=Consequently%2C%20a%20new%20Section,Heritage%20Act%20is%20required."
+      }
+     ]
+    },
+    {
+     "text": "The building is part of the City-led Parkdale Hub project, which is meant to add affordable rental housing, better community facilities and updated public spaces.",
+     "citations": [
+      {
+       "source": "report",
+       "quote": "to provide new affordable rental housing, improved community facilities, and modernized public spaces",
+       "verified": true,
+       "sourceLabel": "Staff report from the Senior Manager, Heritage Planning",
+       "sourceDate": "October 28, 2026",
+       "page": 3,
+       "url": "https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf#page=3"
+      }
+     ]
+    },
+    {
+     "text": "Staff's opinion is that the taller base would not harm the heritage character of the area, because this part of Queen Street West does not have a consistent row of building fronts today.",
+     "caveat": "This is the opinion of City staff. No board or Council has agreed or disagreed with it yet.",
+     "citations": [
+      {
+       "source": "item",
+       "quote": "would not harm the character or appearance of the District or be contrary to the objectives of the PHCD Plan",
+       "verified": true,
+       "sourceLabel": "City of Toronto item page 2027.PB1.6",
+       "sourceDate": "captured 2026-11-13",
+       "page": null,
+       "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=would%20not%20harm%20the,of%20the%20PHCD%20Plan"
+      }
+     ]
+    }
+   ],
+   "whoIsAffected": [
+    {
+     "text": "The site is on the south side of Queen Street West, between Dunn Avenue and Cowan Avenue, in Ward 4 (Parkdale-High Park).",
+     "citations": [
+      {
+       "source": "report",
+       "quote": "an interior lot located between Dunn Avenue and Cowan Avenue on the south side of Queen Street West",
+       "verified": true,
+       "sourceLabel": "Staff report from the Senior Manager, Heritage Planning",
+       "sourceDate": "October 28, 2026",
+       "page": 3,
+       "url": "https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf#page=3"
+      }
+     ]
+    },
+    {
+     "text": "Neighbours of the heritage building next door at 1347 Queen Street West: the new base would no longer match that building's height.",
+     "citations": [
+      {
+       "source": "item",
+       "quote": "it no longer matches the height of the adjacent contributing building at 1347 Queen Street West",
+       "verified": true,
+       "sourceLabel": "City of Toronto item page 2027.PB1.6",
+       "sourceDate": "captured 2026-11-13",
+       "page": null,
+       "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=it%20no%20longer%20matches,1347%20Queen%20Street%20West"
+      }
+     ]
+    },
+    {
+     "text": "People walking in the area: the design includes a walking route between Dunn Avenue and Masaryk Park.",
+     "citations": [
+      {
+       "source": "report",
+       "quote": "an east-west pedestrian connection between Dunn Avenue and Masaryk Park",
+       "verified": true,
+       "sourceLabel": "Staff report from the Senior Manager, Heritage Planning",
+       "sourceDate": "October 28, 2026",
+       "page": 4,
+       "url": "https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf#page=4"
+      }
+     ]
+    },
+    {
+     "text": "City budget: staff say this recommendation has no cost to the City budget this year or in future years.",
+     "citations": [
+      {
+       "source": "item",
+       "quote": "There are no financial implications resulting from the recommendations included in this report in the current budget year or in future years.",
+       "verified": true,
+       "sourceLabel": "City of Toronto item page 2027.PB1.6",
+       "sourceDate": "captured 2026-11-13",
+       "page": null,
+       "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=There%20are%20no%20financial,or%20in%20future%20years."
+      }
+     ]
+    }
+   ],
+   "conditionsAndUnknowns": [
+    {
+     "text": "Condition: the new building must be built substantially as shown in the architect's plans dated September 25, 2026.",
+     "citations": [
+      {
+       "source": "item",
+       "quote": "constructed substantially in accordance with the plans and elevations prepared by LGA Architectural Partners dated September 25, 2026",
+       "verified": true,
+       "sourceLabel": "City of Toronto item page 2027.PB1.6",
+       "sourceDate": "captured 2026-11-13",
+       "page": null,
+       "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=constructed%20substantially%20in%20accordance,dated%20September%2025%2C%202026"
+      }
+     ]
+    },
+    {
+     "text": "A separate minor variance application is also needed for this change.",
+     "caveat": "The record does not say when that application will be decided or how to comment on it.",
+     "citations": [
+      {
+       "source": "report",
+       "quote": "A separate minor variance application is also required for the proposed revisions.",
+       "verified": true,
+       "sourceLabel": "Staff report from the Senior Manager, Heritage Planning",
+       "sourceDate": "October 28, 2026",
+       "page": 4,
+       "url": "https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf#page=4"
+      }
+     ]
+    },
+    {
+     "text": "Under the heritage district plan, demolition cannot start until City Council has approved the plans for the replacement building and a heritage permit has been issued.",
+     "citations": [
+      {
+       "source": "report",
+       "quote": "demolition activity shall not begin until plans for the replacement building(s) or structure(s) have been submitted and approved by Toronto City Council, and a heritage permit issued by the City",
+       "verified": true,
+       "sourceLabel": "Staff report from the Senior Manager, Heritage Planning",
+       "sourceDate": "October 28, 2026",
+       "page": 6,
+       "url": "https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf#page=6"
+      }
+     ]
+    }
+   ],
+   "stageSummaries": {
+    "staff": {
+     "text": "Staff recommend approval, with one condition about following the architect's plans.",
+     "citations": [
+      {
+       "source": "report",
+       "quote": "It is therefore recommended that City Council approve the application under Section 42 of the Ontario Heritage Act.",
+       "verified": true,
+       "sourceLabel": "Staff report from the Senior Manager, Heritage Planning",
+       "sourceDate": "October 28, 2026",
+       "page": 9,
+       "url": "https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf#page=9"
+      }
+     ]
+    }
+   },
+   "whatHappensNext": [
+    {
+     "text": "The Toronto Preservation Board will consider this item on November 16, 2026.",
+     "citations": [
+      {
+       "source": "item",
+       "quote": "This item will be considered by Toronto Preservation Board on November 16, 2026.",
+       "verified": true,
+       "sourceLabel": "City of Toronto item page 2027.PB1.6",
+       "sourceDate": "captured 2026-11-13",
+       "page": null,
+       "url": "https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6#:~:text=This%20item%20will%20be,on%20November%2016%2C%202026."
+      }
+     ]
+    },
+    {
+     "text": "The staff report is also addressed to Toronto and East York Community Council, and it asks City Council to make the final decision.",
+     "caveat": "The City's item page does not yet list dates for those later steps.",
+     "citations": [
+      {
+       "source": "report",
+       "quote": "Toronto and East York Community Council",
+       "verified": true,
+       "sourceLabel": "Staff report from the Senior Manager, Heritage Planning",
+       "sourceDate": "October 28, 2026",
+       "page": 1,
+       "url": "https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf#page=1"
+      },
+      {
+       "source": "report",
+       "quote": "It is therefore recommended that City Council approve the application under Section 42 of the Ontario Heritage Act.",
+       "verified": true,
+       "sourceLabel": "Staff report from the Senior Manager, Heritage Planning",
+       "sourceDate": "October 28, 2026",
+       "page": 9,
+       "url": "https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf#page=9"
+      }
+     ]
+    }
+   ],
+   "location": {
+    "label": "1337 Queen Street West",
+    "points": [
+     [
+      43.640832976,
+      -79.433921412
+     ]
+    ],
+    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"1337 Queen St W\", retrieved 2026-11-12"
+   },
+   "participationCheck": {
+    "checkedOn": "2026-11-12",
+    "deadlineText": null,
+    "contact": {
+     "label": "Toronto Preservation Board secretariat, City Clerk's Office",
+     "email": "hertpb@toronto.ca",
+     "phone": "416-397-4592",
+     "sourceUrl": "https://secure.toronto.ca/council/#/committees/3032/28421"
+    }
+   },
+   "review": {
+    "aiAssisted": true,
+    "humanReviewedBy": null,
+    "reviewedOn": null
+   }
+  }
+ }
+]

@@ -1,0 +1,214 @@
+{
+  "itemId": "2027.PB1.6",
+  "plainTitle": "A taller base for the new affordable housing building at 1337 Queen Street West",
+  "topic": "heritage",
+  "sources": [
+    {
+      "id": "report",
+      "label": "Staff report from the Senior Manager, Heritage Planning",
+      "url": "https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf",
+      "date": "October 28, 2026",
+      "textFile": "backgroundfile-290746.pages.json"
+    }
+  ],
+  "whatIsProposed": [
+    {
+      "text": "City staff recommend that City Council allow the existing building at 1337 Queen Street West to be torn down and a new 16-storey building to be built in its place.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council approve the demolition of the non-contributing building and the erection of a new 16-storey mixed-use building at 1337 Queen Street West"
+        }
+      ]
+    },
+    {
+      "text": "The new building would be a 16-storey tower on a 4-storey base. It would include affordable housing, and the City would keep owning it.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "a new 16-storey mixed-use tower with a 4-storey podium building that will include purpose-built affordable housing; and which will remain under ownership of the City"
+        }
+      ]
+    },
+    {
+      "text": "City Council already approved this project in June 2026. The only change now is that the 4-storey base would be 1.2 metres taller.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "A heritage permit for the project was previously approved on June 24 and 25, 2026, by City Council."
+        },
+        {
+          "source": "report",
+          "quote": "All other details of the scheme remain as those approved by City Council in June 2026."
+        }
+      ]
+    }
+  ],
+  "why": [
+    {
+      "text": "The base was made taller so the community space on the ground floor can have higher ceilings.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The revised proposal increases the height of the 4-storey podium building by 1.2m in order to increase the floor-to-ceiling heights within the ground floor community space."
+        }
+      ]
+    },
+    {
+      "text": "With the taller base, the design no longer follows two rules in the Parkdale Main Street heritage district plan. That is why a new heritage approval is needed.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "It also does not include the 5.0m step back required by the PHCD Plan for any parts of the new building that are taller than the adjacent contributing property."
+        },
+        {
+          "source": "item",
+          "quote": "Consequently, a new Section 42 approval under the Ontario Heritage Act is required."
+        }
+      ]
+    },
+    {
+      "text": "The building is part of the City-led Parkdale Hub project, which is meant to add affordable rental housing, better community facilities and updated public spaces.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "to provide new affordable rental housing, improved community facilities, and modernized public spaces"
+        }
+      ]
+    },
+    {
+      "text": "Staff's opinion is that the taller base would not harm the heritage character of the area, because this part of Queen Street West does not have a consistent row of building fronts today.",
+      "caveat": "This is the opinion of City staff. No board or Council has agreed or disagreed with it yet.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "would not harm the character or appearance of the District or be contrary to the objectives of the PHCD Plan"
+        }
+      ]
+    }
+  ],
+  "whoIsAffected": [
+    {
+      "text": "The site is on the south side of Queen Street West, between Dunn Avenue and Cowan Avenue, in Ward 4 (Parkdale-High Park).",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "an interior lot located between Dunn Avenue and Cowan Avenue on the south side of Queen Street West"
+        }
+      ]
+    },
+    {
+      "text": "Neighbours of the heritage building next door at 1347 Queen Street West: the new base would no longer match that building's height.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "it no longer matches the height of the adjacent contributing building at 1347 Queen Street West"
+        }
+      ]
+    },
+    {
+      "text": "People walking in the area: the design includes a walking route between Dunn Avenue and Masaryk Park.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "an east-west pedestrian connection between Dunn Avenue and Masaryk Park"
+        }
+      ]
+    },
+    {
+      "text": "City budget: staff say this recommendation has no cost to the City budget this year or in future years.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "There are no financial implications resulting from the recommendations included in this report in the current budget year or in future years."
+        }
+      ]
+    }
+  ],
+  "conditionsAndUnknowns": [
+    {
+      "text": "Condition: the new building must be built substantially as shown in the architect's plans dated September 25, 2026.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "constructed substantially in accordance with the plans and elevations prepared by LGA Architectural Partners dated September 25, 2026"
+        }
+      ]
+    },
+    {
+      "text": "A separate minor variance application is also needed for this change.",
+      "caveat": "The record does not say when that application will be decided or how to comment on it.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "A separate minor variance application is also required for the proposed revisions."
+        }
+      ]
+    },
+    {
+      "text": "Under the heritage district plan, demolition cannot start until City Council has approved the plans for the replacement building and a heritage permit has been issued.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "demolition activity shall not begin until plans for the replacement building(s) or structure(s) have been submitted and approved by Toronto City Council, and a heritage permit issued by the City"
+        }
+      ]
+    }
+  ],
+  "stageSummaries": {
+    "staff": {
+      "text": "Staff recommend approval, with one condition about following the architect's plans.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "It is therefore recommended that City Council approve the application under Section 42 of the Ontario Heritage Act."
+        }
+      ]
+    }
+  },
+  "whatHappensNext": [
+    {
+      "text": "The Toronto Preservation Board will consider this item on November 16, 2026.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "This item will be considered by Toronto Preservation Board on November 16, 2026."
+        }
+      ]
+    },
+    {
+      "text": "The staff report is also addressed to Toronto and East York Community Council, and it asks City Council to make the final decision.",
+      "caveat": "The City's item page does not yet list dates for those later steps.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Toronto and East York Community Council"
+        },
+        {
+          "source": "report",
+          "quote": "It is therefore recommended that City Council approve the application under Section 42 of the Ontario Heritage Act."
+        }
+      ]
+    }
+  ],
+  "location": {
+    "label": "1337 Queen Street West",
+    "points": [[43.640832976, -79.433921412]],
+    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"1337 Queen St W\", retrieved 2026-11-12"
+  },
+  "participationCheck": {
+    "checkedOn": "2026-11-12",
+    "deadlineText": null,
+    "contact": {
+      "label": "Toronto Preservation Board secretariat, City Clerk's Office",
+      "email": "hertpb@toronto.ca",
+      "phone": "416-397-4592",
+      "sourceUrl": "https://secure.toronto.ca/council/#/committees/3032/28421"
+    }
+  },
+  "review": {
+    "aiAssisted": true,
+    "humanReviewedBy": null,
+    "reviewedOn": null
+  }
+}
