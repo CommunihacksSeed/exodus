@@ -43,8 +43,8 @@ TABLE = [
     ('Council item pages, staff reports, public notice',
      'City of Toronto (TMMIS, toronto.ca), retrieved 2026-11-12; assumed current then'),
     ('City Wards; Council Voting Record', 'Toronto Open Data'),
-    ('Address lookup; base map', 'City of Toronto geocoder; OpenStreetMap'),
-    ('React, Leaflet, cheerio, pdf.js', 'Open-source libraries'),
+    ('Address lookup; 3D base map', 'City of Toronto geocoder; OpenStreetMap'),
+    ('React, MapLibre, cheerio, pdf.js', 'Open-source libraries'),
     ('Claude (Anthropic)',
      'Wrote code and drafted summaries; software verified every quote. No AI on the live site'),
 ]

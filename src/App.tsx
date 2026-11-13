@@ -43,7 +43,7 @@ export default function App() {
         <footer className="site-footer">
           <p>
             Built for CIVIC Hack 2026. Data: City of Toronto council records and Open Data, under the Open Government
-            Licence – Toronto. Map: © OpenStreetMap contributors.
+            Licence – Toronto. Map: © OpenStreetMap contributors, tiles by OpenFreeMap.
           </p>
         </footer>
       </HashRouter>

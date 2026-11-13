@@ -6,8 +6,9 @@
 For a real City of Toronto agenda item, Clear Council shows a resident:
 
 - **What is proposed and why**, in plain language
-- **Is it near me?** The home page is a map of the city with a marker for each decision; choosing
-  a marker shows what it is. Each item also has its own map, the ward, and the distance from an
+- **Is it near me?** The home page is a 3D map of the city with a marker for each decision;
+  choosing a marker flies down to the street and shows what is proposed, with a block as tall
+  as the proposed building beside the buildings there now. Each item also has its own map, the ward, and the distance from an
   address they choose
 - **Who has decided what so far**, keeping staff advice, committee review and the final
   City Council decision clearly apart
@@ -79,7 +80,7 @@ All data is public. Retrieved 2026-11-12 unless noted.
 | [City Wards](https://open.toronto.ca/dataset/city-wards/), Toronto Open Data (refreshed 2026-02-20) | Ward outlines on the map |
 | [Members of Toronto City Council – Voting Record](https://open.toronto.ca/dataset/members-of-toronto-city-council-voting-record/), Toronto Open Data (refreshed 2026-11-07) | Choosing test items with recorded votes |
 | City of Toronto geocoder (`map.toronto.ca/cotgeocoder`) | Address lookup and site coordinates |
-| OpenStreetMap tiles | Base map |
+| OpenStreetMap data, served as vector tiles by [OpenFreeMap](https://openfreemap.org) (no key or account) | 3D base map and the heights of existing buildings |
 
 City data is used under the [Open Government Licence – Toronto](https://open.toronto.ca/open-data-license/).
 
@@ -109,6 +110,11 @@ paper copy to someone who is not online.
   own meeting system instead.
 - A page reflects the City record on its capture date. Agendas change.
 - The map shows one point per site, not the legal boundary of the land.
+- On the 3D map, existing buildings come from OpenStreetMap and can be missing or out of date.
+  The yellow block for a proposed building shows height only (storeys from a checked quote, at
+  about 3 metres a storey) on a plain square; it is not the building's real shape. Toronto is
+  drawn flat: ground elevation is not shown.
+- The 3D map needs WebGL. Without it the page says so and the list still works.
 - The voting record covers recorded votes only, and a vote may be on an amendment rather than
   the item. The app labels each vote with its motion.
 - English only so far. No offline or phone channel.
@@ -129,7 +135,7 @@ This project was built with AI assistance, disclosed as the hackathon rules requ
 
 ## Credits
 
-React, Vite, TypeScript, React Router, Leaflet, cheerio, pdf.js (pdfjs-dist), tsx, oxlint.
+React, Vite, TypeScript, React Router, MapLibre GL JS, cheerio, pdf.js (pdfjs-dist), tsx, oxlint.
 Fonts: Overpass and Overpass Mono (SIL Open Font License), Atkinson Hyperlegible (SIL Open Font
 License, Braille Institute), via Fontsource.
 Versions, licences and algorithm references are listed in [docs/DESIGN.md](docs/DESIGN.md#11-references).

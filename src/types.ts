@@ -149,6 +149,11 @@ export interface Explanation<C = Citation> {
     points: [number, number][]
     /** Where the coordinates came from. */
     geocodeSource: string
+    /**
+     * Storeys of each proposed building, for the height block on the 3D map.
+     * The build refuses a number that is not in a checked quote ("16-storey").
+     */
+    proposedStoreys?: number[]
   }
   /**
    * What a person checked on the City's own participation pages, and when.

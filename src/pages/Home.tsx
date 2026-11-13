@@ -22,6 +22,7 @@ const PINS: MapPin[] = items.flatMap(({ record, explanation }) =>
           description: `${explanation.plainTitle}. ${STATUS_LABEL[itemStatus(record)]}.`,
           points: explanation.location.points,
           status: itemStatus(record),
+          proposedStoreys: explanation.location.proposedStoreys,
         },
       ]
     : [],
@@ -103,6 +104,7 @@ function Preview({ item, distance, onClose }: { item: PublishedItem; distance: n
 export function Home() {
   const { place } = usePlace()
   const [selectedId, setSelectedId] = useState<string | null>(null)
+  const [pointedId, setPointedId] = useState<string | null>(null)
   const rows = items
     .map((item) => ({
       item,
@@ -139,7 +141,7 @@ export function Home() {
           City Hall decisions, <span className="mark">in plain words.</span>
         </h1>
         <p className="lede">
-          Choose a marker to see what is proposed there, who has decided what so far, and whether you can still have a
+          Choose a marker to fly there and see what is proposed, who has decided what so far, and whether you can still have a
           say. Every statement links to the City’s own record.
         </p>
       </section>
@@ -149,6 +151,7 @@ export function Home() {
           <CityMap
             pins={PINS}
             selectedId={selectedId}
+            highlightId={pointedId}
             onSelect={selectFromMap}
             home={place ? { point: place.point, label: place.label } : null}
           />
@@ -175,7 +178,11 @@ export function Home() {
               Your address
             </li>
           )}
-          <li className="legend-note">Thin blue lines are ward boundaries.</li>
+          <li>
+            <span className="swatch-proposed" aria-hidden="true" />
+            Height of a proposed building (shape not shown)
+          </li>
+          <li className="legend-note">Blue lines are ward boundaries. Drag with the right mouse button, or two fingers, to turn and tilt.</li>
         </ul>
       </div>
 
@@ -190,7 +197,7 @@ export function Home() {
                 item={item}
                 distance={distance}
                 selected={item.record.id === selectedId}
-                onPoint={() => setSelectedId(item.record.id)}
+                onPoint={() => setPointedId(item.record.id)}
               />
             ))}
           </ul>

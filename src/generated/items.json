@@ -690,7 +690,11 @@
       -79.389544639
      ]
     ],
-    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"245 Eglinton Ave E\", retrieved 2026-11-12"
+    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"245 Eglinton Ave E\", retrieved 2026-11-12",
+    "proposedStoreys": [
+     59,
+     59
+    ]
    },
    "participationCheck": null,
    "review": {
@@ -1665,7 +1669,10 @@
       -79.433921412
      ]
     ],
-    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"1337 Queen St W\", retrieved 2026-11-12"
+    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"1337 Queen St W\", retrieved 2026-11-12",
+    "proposedStoreys": [
+     16
+    ]
    },
    "participationCheck": {
     "checkedOn": "2026-11-12",

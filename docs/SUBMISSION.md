@@ -31,7 +31,7 @@ Deadline: **Saturday, November 14, 2026, 10:00 a.m. ET** on Devpost.
 > clerk signs off each summary, other languages, and a phone or paper channel. Only the page
 > reader is specific to Toronto, so a city on eSCRIBE or Legistar needs one adapter.
 
-**Built with:** TypeScript, React, Vite, Leaflet, OpenStreetMap, cheerio, pdf.js, Node.js,
+**Built with:** TypeScript, React, Vite, MapLibre GL JS, OpenStreetMap (OpenFreeMap tiles), cheerio, pdf.js, Node.js,
 City of Toronto Open Data, Claude (Anthropic).
 
 ## Checkpoint 1 (Friday, November 13, 8:00 a.m. ET, on Discord)

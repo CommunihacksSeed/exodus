@@ -99,7 +99,7 @@ main:has(.home) { max-width: 84rem; }
 }
 
 /* Markers borrow the route's stops. */
-.pin { display: grid; place-items: center; background: none; border: none; cursor: pointer; }
+.pin { display: grid; place-items: center; width: 32px; height: 32px; background: none; border: none; cursor: pointer; }
 .pin-dot { display: block; width: 22px; height: 22px; border-radius: 50%; border: 4px solid #fff; background: var(--ink); box-shadow: 0 0 0 2px var(--ink), 0 2px 6px rgb(15 27 38 / 0.35); }
 .pin-open .pin-dot { background: #fff; border-color: var(--go); border-width: 6px; box-shadow: 0 0 0 2px #fff, 0 2px 6px rgb(15 27 38 / 0.35); }
 .pin-in-progress .pin-dot { background: var(--advice); box-shadow: 0 0 0 2px var(--advice), 0 2px 6px rgb(15 27 38 / 0.35); }
@@ -107,13 +107,20 @@ main:has(.home) { max-width: 84rem; }
 .pin.is-selected .pin-dot { outline: 5px solid var(--hi); outline-offset: 2px; }
 .pin:focus-visible { outline: none; box-shadow: none; }
 .pin:focus-visible .pin-dot { outline: 4px solid var(--ink); outline-offset: 3px; }
-.leaflet-tooltip.pin-label {
-  font-family: var(--display); font-weight: 700; font-size: 0.8rem; color: var(--ink); background: #fff;
-  border: 1.5px solid var(--ink); border-radius: 4px; padding: 0.18rem 0.45rem 0.05rem; box-shadow: none;
+.pin-name {
+  position: absolute; bottom: calc(100% + 2px); left: 50%; translate: -50% 0; width: max-content; max-width: 11.5rem; text-align: center;
+  font-family: var(--display); font-weight: 700; font-size: 0.8rem; line-height: 1.25; color: var(--ink); background: #fff;
+  border: 1.5px solid var(--ink); border-radius: 4px; padding: 0.18rem 0.45rem 0.05rem; pointer-events: none;
 }
-.leaflet-tooltip.pin-label::before { display: none; }
-.leaflet-tooltip.pin-label { white-space: normal; width: max-content; max-width: 11.5rem; text-align: center; line-height: 1.25; }
-.leaflet-tooltip.pin-label-home { color: var(--line-dark); border-color: var(--line); }
+.pin-home .pin-name { top: calc(100% + 2px); bottom: auto; color: var(--line-dark); border-color: var(--line); }
+.pin-site .pin-dot { background: var(--stop); box-shadow: 0 0 0 2px var(--stop), 0 2px 6px rgb(15 27 38 / 0.35); }
+.pin-site, .pin-home { cursor: default; }
+.pin.is-highlighted .pin-dot { outline: 4px solid var(--line); outline-offset: 2px; }
+.legend .pin-name { display: none; }
+.swatch-proposed { width: 14px; height: 18px; background: #ffd21f; border: 1.5px solid var(--ink); border-radius: 2px; }
+.map-fallback { padding: 1rem; border: 1px dashed var(--rule); border-radius: 6px; color: var(--ink-2); font-size: 0.9rem; }
+.maplibregl-map { font-family: var(--text); }
+.maplibregl-ctrl-attrib { font-size: 0.68rem; }
 
 .legend { display: flex; flex-wrap: wrap; gap: 0.35rem 1.1rem; align-items: center; margin-top: 0.55rem; font-size: 0.82rem; color: var(--ink-2); }
 .legend li { display: flex; align-items: center; gap: 0.4rem; }
@@ -286,7 +293,7 @@ details summary:hover { color: var(--line-dark); }
 /* Where */
 .where-line { margin-bottom: 0.4rem; }
 .near-result { background: var(--surface); border: 2px solid var(--line); border-radius: 6px; padding: 0.6rem 0.8rem; margin: 0.5rem 0; }
-.item-map { height: 19rem; border-radius: 6px; border: 1px solid var(--rule); margin-top: 0.5rem; z-index: 0; }
+.item-map { height: 24rem; border-radius: 6px; border: 1px solid var(--rule); margin-top: 0.5rem; z-index: 0; }
 .panel .claims { margin-top: 1rem; }
 .panel h2 + .claims { margin-top: 0; }
 

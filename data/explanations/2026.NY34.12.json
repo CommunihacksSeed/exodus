@@ -266,7 +266,11 @@
         -79.389544639
       ]
     ],
-    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"245 Eglinton Ave E\", retrieved 2026-11-12"
+    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"245 Eglinton Ave E\", retrieved 2026-11-12",
+    "proposedStoreys": [
+      59,
+      59
+    ]
   },
   "participationCheck": null,
   "review": {

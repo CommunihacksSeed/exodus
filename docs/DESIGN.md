@@ -138,7 +138,7 @@ flowchart TB
   end
 
   X[["City geocoder<br/>map.toronto.ca"]]
-  Y[["OpenStreetMap tiles"]]
+  Y[["OpenStreetMap vector tiles (OpenFreeMap)"]]
 
   A -->|"captured in a browser"| D
   B --> P2 --> E
@@ -373,7 +373,8 @@ flowchart LR
 | **Static site, no backend** | Server-rendered app with a database | A municipality can host it anywhere, including on its existing web server. Nothing to patch, nothing storing personal data |
 | **Saved snapshots with capture time** | Fetch the City page live | A page can show exactly which version of the record it explains. The City site also does not permit scripted downloads, and we did not try to get around that |
 | **City's own geocoder for addresses** | Commercial or third-party geocoder | The resident's address goes only to the City, which already holds address data. No third party learns who looked up what |
-| **Leaflet + OpenStreetMap** | Commercial map SDK | No API key, no billing, open licence, small bundle |
+| **MapLibre GL JS + OpenStreetMap vector tiles (OpenFreeMap)** | Google photorealistic 3D tiles; Leaflet (flat, used at first) | A tilted 3D view with buildings at their recorded heights, with no API key, billing or account, and an open licence. Google's 3D tiles need an API key tied to a billing account. Cost: a larger bundle and a WebGL requirement, so the page falls back to text when WebGL is missing |
+| **Proposed height drawn as a plain block** | Model the building; draw nothing | Residents judge a proposal by how it compares with what is there. The record gives storeys, not an outline, so the block uses only the storey count, which the build checks against a quoted passage, and the page says the shape is not real |
 | **Text beside every map** | Map only | Screen-reader users and people on slow connections get the same facts |
 | **Hash-based routing** | History API routing | Works on any static host without rewrite rules |
 | **One shared `types.ts`** | Separate schemas for pipeline and app | The compiler catches any mismatch between what is written and what is read |
@@ -514,11 +515,16 @@ comments become public records, which the City states on its comment form.
 **`components/StageTracker.tsx`** — renders stages as an ordered list with the official wording
 and votes behind `<details>`. Each vote carries a note that it may be on an amendment.
 
-**`components/ItemMap.tsx`** — Leaflet map created in an effect and removed on cleanup; ward
-outline, site marker or route line, and the resident's marker. Scroll-wheel zoom is off so the
-page scrolls normally on phones.
+**`lib/map3d.ts`** — shared 3D map setup: MapLibre map tilted 58° and turned 17° to match
+Toronto's street grid, ward outlines, route lines, markers, and `addProposedHeights`, which
+draws one square block per proposed building at `storeys × 3 m`. `build.ts` refuses a storey
+count that does not appear as "N-storey" in a checked quote under *What is being proposed*.
 
-**`components/CityMap.tsx`** — the home page's map of the whole city. One marker per decision,
+**`components/ItemMap.tsx`** — the item page's 3D map, created in an effect and removed on
+cleanup: site marker or route line, ward outline, height block and the resident's marker.
+Cooperative gestures are on, so one finger scrolls the page and two move the map.
+
+**`components/CityMap.tsx`** — the home page's 3D map of the whole city. Choosing a marker flies down to street level. One marker per decision,
 drawn like the stops of the route strip and coloured by status; a streetcar route is a line with
 a marker at its middle. Choosing a marker (click, Enter or Space) tells the page which decision
 to summarise. The map is built once; the resident's address and the chosen marker are applied
@@ -591,7 +597,8 @@ Known limits of the AI-drafted text are stated in section 6.
 |---|---|---|---|
 | [React](https://react.dev) | 19.3 | MIT | UI components |
 | [React Router](https://reactrouter.com) | 7.18 | MIT | Hash-based routing |
-| [Leaflet](https://leafletjs.com) | 1.9.4 | BSD-2-Clause | Map |
+| [MapLibre GL JS](https://maplibre.org) | 6.18 | BSD-3-Clause | 3D map rendering |
+| [OpenFreeMap](https://openfreemap.org) "liberty" style and tiles | — | Data © OpenStreetMap contributors (ODbL), OpenMapTiles schema; see openfreemap.org for the style's terms | Base map and building heights |
 | [Vite](https://vite.dev) | 8.3 | MIT | Dev server and bundler |
 | [TypeScript](https://www.typescriptlang.org) | 7.0 | Apache-2.0 | Static typing across pipeline and app |
 | [cheerio](https://cheerio.js.org) | 1.2 | MIT | HTML parsing in the pipeline |
