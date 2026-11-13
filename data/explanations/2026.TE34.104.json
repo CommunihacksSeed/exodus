@@ -1,0 +1,202 @@
+{
+  "itemId": "2026.TE34.104",
+  "plainTitle": "A study of more ways to speed up the 505 Dundas streetcar",
+  "topic": "transit",
+  "sources": [
+    {
+      "id": "report",
+      "label": "Staff report from the Director, Congestion and Network Management, Transportation Services",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288607.pdf",
+      "date": "June 19, 2026",
+      "textFile": "backgroundfile-288607.pages.json"
+    }
+  ],
+  "whatIsProposed": [
+    {
+      "text": "City Council asked City staff and the TTC to look into adding more measures that give the 505 Dundas streetcar priority on the road, beyond the ones already in place.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "to investigate the feasibility and options for expanding Transit Priority Measures for the 505 Dundas streetcar outside of the currently implemented Transit Priority Measures"
+        }
+      ]
+    },
+    {
+      "text": "This decision asks for a study and a plan for consulting the public. It does not change any parking or turning rules.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "such investigation to include further analysis of the 505 Dundas streetcar performance and development of an engagement plan to support future Transit Priority Measures"
+        }
+      ]
+    },
+    {
+      "text": "The measures already in place are longer no-stopping hours in weekday rush hours and more left-turn restrictions on Dundas Street.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "expanding ‘No Stopping’ coverage of the AM and PM peak periods on weekdays, as well as new and expanded left-turn restrictions"
+        }
+      ]
+    }
+  ],
+  "why": [
+    {
+      "text": "The aim is to make streetcar trips shorter and more reliable.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "to further reduce travel times and improve reliability of the Dundas streetcar for transit riders"
+        }
+      ]
+    },
+    {
+      "text": "Early results from the first measures: on the sections that were changed, trips became up to 5 minutes faster.",
+      "caveat": "Staff say only one week of data after the changes was usable, because of diversions and patio installations.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "These impacts reflect travel time improvements of up to 5 minutes"
+        },
+        {
+          "source": "report",
+          "quote": "the only representative week of data post-implementation of TPMs was April 6 to April 12, 2026"
+        }
+      ]
+    },
+    {
+      "text": "Weekly ridership on the 505 rose by about 20%.",
+      "caveat": "Staff say the increase cannot be credited to the road measures alone, because streetcars also started running more often.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "This represents a 20% increase in ridership on the 505 Dundas streetcar route."
+        },
+        {
+          "source": "report",
+          "quote": "Impacts to ridership cannot be solely attributed to the more frequent service or the TPMs impact on travel times"
+        }
+      ]
+    }
+  ],
+  "whoIsAffected": [
+    {
+      "text": "People who ride the 505 Dundas streetcar.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "improve reliability of the Dundas streetcar for transit riders"
+        }
+      ]
+    },
+    {
+      "text": "People who drive, park, make deliveries or run a business on Dundas Street. The first measures changed parking and traffic rules on Dundas Street East and West, and an expansion could change more.",
+      "caveat": "The record does not say which blocks or which rules a future expansion would involve.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "permanent parking and traffic amendments to Dundas Street East and West"
+        }
+      ]
+    },
+    {
+      "text": "The City lists four wards for this item: 4 (Parkdale-High Park), 9 (Davenport), 10 (Spadina-Fort York) and 13 (Toronto Centre).",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "4 - Parkdale - High Park, 9 - Davenport, 10 - Spadina - Fort York, 13 - Toronto Centre"
+        }
+      ]
+    }
+  ],
+  "conditionsAndUnknowns": [
+    {
+      "text": "Staff and the TTC are asked to come back with recommendations in the first three months of 2027.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "to report to the Infrastructure and Environment Committee with recommendations on Part 1 above in the first quarter of 2027"
+        }
+      ]
+    },
+    {
+      "text": "City Council made one change to the community council's version: it named the committee that must receive the report. The community council's wording only said “report back”.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "to report back with recommendations on Part 1 above in the first quarter of 2027"
+        },
+        {
+          "source": "item",
+          "quote": "That City Council amend recommendation 2 so that it reads as follows:"
+        }
+      ]
+    }
+  ],
+  "stageSummaries": {
+    "staff": {
+      "text": "Staff only asked that their report be received for information. They did not recommend expanding the measures.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Toronto and East York Community Council receive this report for information."
+        }
+      ]
+    },
+    "committee": {
+      "text": "The community council went further than staff. It recommended that City Council ask for a study of expanding the measures.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "The Toronto and East York Community Council recommends that:"
+        }
+      ]
+    },
+    "council": {
+      "text": "City Council approved the request for a study, and added that the report must go to the Infrastructure and Environment Committee.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council adopted this item on July 29 and 30, 2026 with amendments."
+        }
+      ]
+    }
+  },
+  "whatHappensNext": [
+    {
+      "text": "The report to the Infrastructure and Environment Committee is due in the first quarter of 2027. Any new street changes would need their own decision after that.",
+      "caveat": "No meeting date for that report is in the record yet. When it is scheduled, the City's page for that new item will show whether you can comment or speak.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "to report to the Infrastructure and Environment Committee with recommendations on Part 1 above in the first quarter of 2027"
+        }
+      ]
+    }
+  ],
+  "location": {
+    "label": "Dundas Street West and East, along the 505 streetcar route",
+    "points": [
+      [43.6559, -79.45265],
+      [43.6517, -79.44575],
+      [43.64969, -79.43502],
+      [43.64946, -79.43193],
+      [43.6498, -79.41947],
+      [43.65198, -79.40841],
+      [43.65315, -79.39782],
+      [43.6542, -79.38971],
+      [43.6558, -79.38395],
+      [43.65619, -79.38044],
+      [43.65738, -79.37396],
+      [43.65923, -79.36776],
+      [43.66009, -79.36194]
+    ],
+    "geocodeSource": "approximate line joining 13 Dundas Street addresses (2333 Dundas St W to 585 Dundas St E) matched with the City of Toronto geocoder on 2026-11-12. The City record names wards, not exact blocks"
+  },
+  "participationCheck": null,
+  "review": {
+    "aiAssisted": true,
+    "humanReviewedBy": null,
+    "reviewedOn": null
+  }
+}

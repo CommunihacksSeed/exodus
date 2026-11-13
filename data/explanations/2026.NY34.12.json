@@ -1,0 +1,268 @@
+{
+  "itemId": "2026.NY34.12",
+  "plainTitle": "Two 59-storey towers approved at 245 Eglinton Avenue East",
+  "topic": "development",
+  "sources": [
+    {
+      "id": "report",
+      "label": "Staff report from the Director, Community Planning, North York District",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-287824.pdf",
+      "date": "June 8, 2026",
+      "textFile": "backgroundfile-287824.pages.json"
+    },
+    {
+      "id": "notice",
+      "label": "Notice of Public Meeting from the City Clerk",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-287838.pdf",
+      "date": "May 29, 2026",
+      "textFile": "backgroundfile-287838.pages.json"
+    }
+  ],
+  "whatIsProposed": [
+    {
+      "text": "City Council changed the Official Plan and the zoning rules for 245 Eglinton Avenue East so that two 59-storey towers can be built there. The towers would share a 3 to 4-storey base with shops at street level.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "a mixed use building consisting of two, 59-storey towers on a connected 3 and 4-storey base, with retail at grade at 245 Eglinton Avenue East"
+        },
+        {
+          "source": "item",
+          "quote": "City Council amend the Official Plan for the lands municipally known as 245 Eglinton Avenue East"
+        }
+      ]
+    },
+    {
+      "text": "The plan includes 1,202 homes, 128 car parking spaces and 1,445 bicycle parking spaces.",
+      "caveat": "Another part of the same staff report gives a total of 124 car parking spaces. The record does not explain the difference.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "1,202 residential dwelling units"
+        },
+        {
+          "source": "report",
+          "quote": "a total of 128 parking spaces, and 1,445 bicycle parking spaces will be provided"
+        },
+        {
+          "source": "report",
+          "quote": "a total of 124 parking spaces (including 83 residential,14 visitors, and 27 retail parking spaces)"
+        }
+      ]
+    },
+    {
+      "text": "The towers are lower than first proposed. The original application asked for 65 and 60 storeys.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "the tower heights have been reduced from 65 and 60-storeys to two 59-storey towers"
+        }
+      ]
+    },
+    {
+      "text": "The towers would replace a 3-storey building that has shops on the ground floor and offices above.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The site currently contains a 3-storey non-residential building containing retail at grade and office uses above."
+        }
+      ]
+    }
+  ],
+  "why": [
+    {
+      "text": "The area plan expects buildings of 20 to 35 storeys here. Going to 59 storeys needed a change to that plan, which is why this came to Council.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Heights for the Mount Pleasant Station Character Area are anticipated to range between 20 and 35-storeys."
+        },
+        {
+          "source": "report",
+          "quote": "An Amendment to the Yonge-Eglinton Secondary Plan is required to permit the height proposed"
+        }
+      ]
+    },
+    {
+      "text": "City staff supported the application. They said it fits provincial planning policy, given what exists and is planned in the area.",
+      "caveat": "This is the opinion of City staff. The community council did not endorse it (see the steps below).",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Given the existing and planned context, Staff find the proposal consistent with the PPS (2024)."
+        }
+      ]
+    },
+    {
+      "text": "The area plan normally requires all existing office space to be replaced. Here, 25% of it would be replaced, as non-residential space, affordable housing, or both.",
+      "caveat": "The wording is “and/or”, so the record does not promise that any affordable housing will be built.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "the draft Official Plan Amendment alternatively seeks to replace 25% of the existing office gross floor area (3,577 square metres) as non-residential uses and/or affordable housing"
+        }
+      ]
+    }
+  ],
+  "whoIsAffected": [
+    {
+      "text": "The site is at the southeast corner of Mount Pleasant Road and Eglinton Avenue East, in Ward 15 (Don Valley West).",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The subject site is located at the southeast corner of Mount Pleasant Road and Eglinton Avenue East."
+        }
+      ]
+    },
+    {
+      "text": "Eglinton Junior Public School is right beside the site, to the west.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Immediately west of the subject site is the Eglinton Junior Public School."
+        }
+      ]
+    },
+    {
+      "text": "People in the low-rise homes east of the site: the towers would cast shadows on that neighbourhood in the late afternoon in March and September.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "the proposal will cast shadow on the adjacent Neighbourhoods to the east of the site beginning in the late afternoon in March and September at 3:18 pm"
+        }
+      ]
+    },
+    {
+      "text": "People on Taunton Road: cars and trucks would reach the building's parking and loading area by a new public laneway off Taunton Road. Council asked staff to work on limiting traffic heading south on Taunton Road from the site.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The laneway will run from Taunton Road along the southern property line."
+        },
+        {
+          "source": "item",
+          "quote": "limit vehicle access southbound on Taunton Road from the limits of the subject development site"
+        }
+      ]
+    },
+    {
+      "text": "People who move into the new building, their visitors and tradespeople will not be able to get on-street permit parking.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "will not accept applications for a permit from residents of, visitors to, or tradespersons at the development located at 245 Eglinton Avenue East"
+        }
+      ]
+    }
+  ],
+  "conditionsAndUnknowns": [
+    {
+      "text": "Council added two requests for the later site plan stage: limit vehicles heading south on Taunton Road, and add a landscaped buffer along the south edge of the site next to existing homes.",
+      "caveat": "These are requests for staff to “work with the Owner”. The record does not guarantee the result.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "to achieve a landscape buffer along the south property line abutting existing residential neighbourhoods"
+        },
+        {
+          "source": "item",
+          "quote": "work with the Owner through the Site Plan Control process"
+        }
+      ]
+    },
+    {
+      "text": "The staff report says the new zoning comes with a hold. The land cannot be used for the towers until conditions in the by-law are met, including showing that water and sewer systems can handle the development.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "restricting the proposed use of the lands until the conditions to lifting the holding provision, as set out in the By-law, are satisfied"
+        }
+      ]
+    },
+    {
+      "text": "Parkland: staff recommended that the owner try to provide park land somewhere off the site, or pay cash instead. Those recommendations do not appear in the decision text on the City's item page.",
+      "caveat": "The record does not explain why. This page has not confirmed how the parkland requirement is being handled.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "a suitable off-site parkland dedication, as a substitution for an on-site parkland dedication"
+        },
+        {
+          "source": "item",
+          "quote": "City Council on July 29 and 30, 2026, adopted the following:"
+        }
+      ]
+    },
+    {
+      "text": "Appeals: the City's public notice says that only certain parties can appeal to the Ontario Land Tribunal, and only if they spoke at a public meeting or wrote to the City before the decision.",
+      "caveat": "This page has not checked whether anyone appealed.",
+      "citations": [
+        {
+          "source": "notice",
+          "quote": "is not entitled to appeal the decision to adopt the proposed Official Plan Amendment or the by-law"
+        }
+      ]
+    }
+  ],
+  "stageSummaries": {
+    "staff": {
+      "text": "Staff recommended approval.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "This Report recommends approval of the application to amend the Official Plan and Zoning By-law"
+        }
+      ]
+    },
+    "committee": {
+      "text": "The community council held the public meeting and voted to add requests about the site. Then a motion to approve the item lost, so it went to City Council with no recommendation either way.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "Forwarded this item to City Council without recommendation."
+        }
+      ]
+    },
+    "council": {
+      "text": "City Council approved the Official Plan and zoning changes, with the two added requests and the permit parking rule.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council adopted this item on July 29 and 30, 2026 with amendments."
+        }
+      ]
+    }
+  },
+  "whatHappensNext": [
+    {
+      "text": "Two by-laws have been passed for this item: 1249-2026 and 1250-2026.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "See also By-laws 1249-2026, 1250-2026"
+        }
+      ]
+    },
+    {
+      "text": "Details such as traffic on Taunton Road and the landscaped buffer are to be worked out in a later step called Site Plan Control.",
+      "caveat": "The record gives no dates for that step and does not say whether the public can comment on it.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "work with the Owner through the Site Plan Control process"
+        }
+      ]
+    }
+  ],
+  "location": {
+    "label": "245 Eglinton Avenue East",
+    "points": [[43.708252048, -79.389544639]],
+    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"245 Eglinton Ave E\", retrieved 2026-11-12"
+  },
+  "participationCheck": null,
+  "review": {
+    "aiAssisted": true,
+    "humanReviewedBy": null,
+    "reviewedOn": null
+  }
+}

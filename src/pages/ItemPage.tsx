@@ -99,7 +99,7 @@ export function ItemPage() {
               home={place ? { point: place.point, label: place.label } : null}
             />
             <p className="fine">
-              Red marks the site. The dashed line is the ward boundary. Location from: {explanation.location.geocodeSource}.
+              Red marks the {explanation.location.points.length > 1 ? 'route' : 'site'}. The dashed line is the ward boundary. Location from: {explanation.location.geocodeSource}.
             </p>
             <ClaimList claims={explanation.whoIsAffected} />
           </section>

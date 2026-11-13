@@ -12,9 +12,28 @@ export function distanceMetres(a: LatLng, b: LatLng): number {
   return 2 * R * Math.asin(Math.sqrt(h))
 }
 
-/** Shortest distance from a point to any of the item's points. */
+/**
+ * Shortest distance from a point to an item's location: a single point, or a
+ * line through several points (e.g. a streetcar route). For a line we measure
+ * to the nearest spot on each segment, not just to its corner points.
+ */
 export function nearestDistance(from: LatLng, points: LatLng[]): number {
-  return Math.min(...points.map((p) => distanceMetres(from, p)))
+  if (points.length === 1) return distanceMetres(from, points[0])
+  // Flat-earth projection around `from`; accurate to well under 1% at city scale.
+  const mPerLat = 111320
+  const mPerLng = 111320 * Math.cos((from[0] * Math.PI) / 180)
+  const xy = points.map(([lat, lng]) => [(lng - from[1]) * mPerLng, (lat - from[0]) * mPerLat])
+  let best = Infinity
+  for (let i = 0; i < xy.length - 1; i++) {
+    const [ax, ay] = xy[i]
+    const [bx, by] = xy[i + 1]
+    const dx = bx - ax
+    const dy = by - ay
+    const len2 = dx * dx + dy * dy
+    const t = len2 === 0 ? 0 : Math.max(0, Math.min(1, -(ax * dx + ay * dy) / len2))
+    best = Math.min(best, Math.hypot(ax + t * dx, ay + t * dy))
+  }
+  return best
 }
 
 /** "about 350 m" / "about 2.4 km" — rounded so it does not look more exact than it is. */
