@@ -376,3 +376,25 @@ details summary:hover { color: var(--line-dark); }
   .sources a:not([href*=':~:'])::after, .say-facts a[href^='http']::after { content: ' <' attr(href) '>'; font-size: 0.7em; word-break: break-all; }
   * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 }
+
+/* ---------- Resident tools: listen, calendar, share, print ---------- */
+.tools { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; align-items: center; margin-top: 0.9rem; padding-top: 0.9rem; border-top: 1px solid var(--rule); }
+.tool { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; }
+.tools button { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.9rem; padding: 0.45rem 0.85rem; }
+.tool-icon { font-size: 0.8em; line-height: 1; }
+.tool-listen > button:first-child { background: var(--ink); border-color: var(--ink); color: #fff; }
+.tool-listen > button:first-child:hover { background: #24384a; border-color: #24384a; }
+.tool-rate select { font: inherit; font-size: 0.9rem; padding: 0.4rem 0.5rem; border: 2px solid var(--line); border-radius: 6px; background: #fff; color: var(--ink); }
+.tool-note { font-size: 0.8rem; color: var(--ink-2); }
+.tool-cal { flex-basis: 100%; }
+
+/* The section being read aloud: a highlighter stripe down the side. */
+.is-reading { box-shadow: inset 6px 0 0 var(--hi), 0 0 0 3px var(--hi) !important; }
+.item-header.is-reading { border-radius: 8px; }
+@media (prefers-reduced-motion: no-preference) {
+  .panel, .item-header { transition: box-shadow 200ms ease-out; }
+}
+.tool-select { display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.85rem; color: var(--ink-2); }
+.tool-select-label { font-family: var(--display); font-weight: 700; }
+.tool-select select { font: inherit; font-size: 0.88rem; padding: 0.4rem 0.5rem; border: 2px solid var(--rule); border-radius: 6px; background: #fff; color: var(--ink); max-width: 13rem; }
+.tool-select select:hover { border-color: var(--line); }

@@ -114,6 +114,8 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
   }, [home, ready])
 
   // Fly to the chosen decision, or back out to the whole city.
+  // With "reduce motion" set in the operating system, jump instead of flying.
+  const motion = (ms: number) => (window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : ms)
   useEffect(() => {
     const map = mapRef.current
     // Wait for the first draw: an animated move requested before it never starts.
@@ -124,13 +126,13 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
     const pin = pins.find((p) => p.id === selectedId)
     if (!pin) {
       const all = [...pins.flatMap((p) => p.points), ...(home ? [home.point] : [])]
-      map.fitBounds(boundsOf(all), { padding: 70, pitch: TILT, bearing: GRID_BEARING, duration: firstView.current ? 0 : 1400 })
+      map.fitBounds(boundsOf(all), { padding: 70, pitch: TILT, bearing: GRID_BEARING, duration: firstView.current ? 0 : motion(1400) })
     } else if (pin.points.length > 1) {
       map.fitBounds(boundsOf(pin.points), {
         padding: { top: 70, bottom: 70, right: 60, left: 60 + covered },
         pitch: TILT,
         bearing: GRID_BEARING,
-        duration: 1800,
+        duration: motion(1800),
       })
     } else {
       map.flyTo({
@@ -139,7 +141,7 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
         pitch: 64,
         bearing: GRID_BEARING,
         padding: { top: 0, bottom: 0, right: 0, left: covered },
-        duration: 2200,
+        duration: motion(2200),
       })
     }
     firstView.current = false
