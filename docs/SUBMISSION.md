@@ -24,11 +24,15 @@ Deadline: **Saturday, November 14, 2026, 10:00 a.m. ET** on Devpost.
 > decision are never blended. Every sentence shows the exact passage it rests on, and a program
 > checks each quote word for word against the City's record before anything is published. If
 > the City's page does not state a comment deadline, the page says so and does not guess one.
-> It works today on three real City of Toronto items, with a print view for neighbours who are
-> not online. The summaries were drafted with an AI model; the live site uses none.
+> It works today on three real City of Toronto items. Around them: a 3D city map with each
+> proposed building drawn storey by storey and a guided tour; pages that explain how City Hall
+> decides and what its words mean, with every fact quoted from the City; a ward page; read-aloud
+> and add-to-calendar on every item; an interface in English, French and Chinese; offline use and
+> a print view for neighbours who are not online. The summaries were drafted with an AI model;
+> the live site uses none.
 >
 > **What is next.** Automatic intake from a city's own meeting system, a review screen where a
-> clerk signs off each summary, other languages, and a phone or paper channel. Only the page
+> clerk signs off each summary, explanations reviewed in other languages, and a phone channel. Only the page
 > reader is specific to Toronto, so a city on eSCRIBE or Legistar needs one adapter.
 
 **Built with:** TypeScript, React, Vite, MapLibre GL JS, OpenStreetMap (OpenFreeMap tiles), cheerio, pdf.js, Node.js,
@@ -53,6 +57,12 @@ City of Toronto Open Data, Claude (Anthropic).
 - [x] Contrast, control names and heading order checked by script; print view inspected
 
 ## What only a team member can do
+
+- [ ] **Merge the open pull requests in order, before submitting:** #1 security → #2 resident tools
+      → #3 3D map → #4 new pages → #5 languages and offline → #6 these documents. Each is
+      stacked on the one before, so merging in order needs no conflict fixes. CI must be green.
+- [ ] **Skim the French and Chinese interface** (language menu, top right) or ask a speaker to;
+      they have not had a native-speaker review.
 
 - [ ] **Sign off the three explanations.** Work through [REVIEW.md](REVIEW.md), then set
       `review.humanReviewedBy` and `review.reviewedOn` in each file under `data/explanations/`

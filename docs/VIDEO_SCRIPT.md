@@ -55,10 +55,22 @@ visuals; storytelling. Each scene below is marked with the part it covers.
   afterwards.
 - Add captions. They help the same people the tool is for, and judges watching without sound.
 
+## If pull requests #1–#5 are merged before recording
+
+The timings above still work. Swap in these shots without adding time:
+
+- **0:20–0:32**: instead of a still home page, press **▶ Tour** and let the map fly to the first
+  decision, with the storey-by-storey building visible. Switch to **Night** first if the room is
+  dark; it reads better on video.
+- **0:50–1:12**: point at **Listen to this page** and **Add the Monday, November 16 meeting to my
+  calendar** while you say "here are the City's own forms". Do not play the audio over narration.
+- **2:15–2:35**: add "and it works in French and Chinese" while switching the language menu, and
+  show **How we check** for two seconds instead of the GitHub diagram.
+
 ## Five-minute live pitch (finalists only)
 
 Use the same order with more room: 45 seconds on the problem and who is left out, 2 minutes of
-live demo (address, route, have-a-say, sources), 45 seconds on the failing source check,
+live demo (address, route, have-a-say, sources, then the tour and the *How decisions are made* page), 45 seconds on the failing source check,
 45 seconds on what a municipality needs before a pilot (first-party data feed, clerk sign-off,
 accessibility audit, languages), 30 seconds on adapting to other cities. Expect questions on
 how summaries are checked, what AI did, and cost; the answers are in `docs/DESIGN.md` sections

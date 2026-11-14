@@ -16,6 +16,22 @@ For a real City of Toronto agenda item, Clear Council shows a resident:
   checked. A deadline is never worked out from a meeting date.
 - **Where every statement comes from**: the exact quoted passage, the document, its date and a link
 
+Around the item pages:
+
+- **A game-style 3D city.** Day, dusk and night; each proposed building drawn storey by storey
+  beside the buildings there now; a guided tour that flies to every decision; fly with W A S D;
+  full screen. The camera picks a side where existing towers do not hide the proposal.
+- **Listen, add to calendar, share.** Any item page can be read aloud. An upcoming meeting can go
+  in your calendar, labelled as a meeting date and never as a deadline.
+- **How decisions are made**: the route every item takes, with the real items at each stop.
+- **Words**: City Hall words in plain language, also explained in place on item pages.
+- **My ward**: everything in your ward, by address or from a list.
+- **How we check**: live numbers from the published data and one sentence beside its source.
+- **English, Français, 中文** for the interface. Explanations stay in English because each
+  sentence is checked word for word against the City's English record.
+- **Works offline** for pages already opened. See [SECURITY.md](SECURITY.md) for what the site
+  contacts and how it is locked down.
+
 ## Run it
 
 ```bash
@@ -25,7 +41,7 @@ npm run dev    # open the printed http://localhost:5173 address
 ```
 
 ```bash
-npm test              # parser, stage and distance regression tests
+npm test              # parser, stages, distance, links, calendar, voices, explainer quotes, translations
 npm run review-sheet  # write docs/REVIEW.md: each sentence beside its sources, for human sign-off
 ```
 
@@ -117,7 +133,9 @@ paper copy to someone who is not online.
 - The 3D map needs WebGL. Without it the page says so and the list still works.
 - The voting record covers recorded votes only, and a vote may be on an amendment rather than
   the item. The app labels each vote with its motion.
-- English only so far. No offline or phone channel.
+- Interface in English, French and Chinese; explanations and City records in English only. The
+  translations have not been reviewed by native speakers yet.
+- Offline only for pages already opened; the map and address lookup need a connection. No phone channel.
 
 ## Use of AI
 
