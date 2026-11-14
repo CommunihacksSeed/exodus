@@ -115,3 +115,61 @@ test('coordinates outside Toronto and malformed saved places are rejected', () =
   assert.equal(isPlaceMatch({ label: 'x', point: [99, 99], wardNumber: null, wardName: null }), false)
   assert.equal(isPlaceMatch('<script>'), false)
 })
+
+import { meetingsToIcs, upcomingMeetings } from '../src/lib/calendar.ts'
+import { speechSegments } from '../src/lib/speech.ts'
+import itemsData from '../src/generated/items.json' with { type: 'json' }
+import type { PublishedItem } from '../src/types.ts'
+
+const published = itemsData as unknown as PublishedItem[]
+const byId = (id: string) => published.find((i) => i.record.id === id)!
+
+test('calendar offers only scheduled, undecided, upcoming meeting dates', () => {
+  // 2027.PB1.6: the Preservation Board is scheduled for November 16, 2026 and has not decided.
+  const pb = byId('2027.PB1.6').record
+  assert.deepEqual(upcomingMeetings(pb, '2026-11-14').map((m) => m.date), ['2026-11-16'])
+  // Once the date has passed, nothing is offered (the record may be stale; we do not guess).
+  assert.deepEqual(upcomingMeetings(pb, '2026-11-17'), [])
+  // A decided item never offers a meeting.
+  assert.deepEqual(upcomingMeetings(byId('2026.NY34.12').record, '2000-01-01'), [])
+})
+
+test('calendar file is valid, escaped, and says it is not a deadline', () => {
+  const pb = byId('2027.PB1.6').record
+  const ics = meetingsToIcs(pb, 'A title; with, commas', upcomingMeetings(pb, '2026-11-14'), new Date('2026-11-14T12:00:00Z'))
+  assert.match(ics, /^BEGIN:VCALENDAR\r\n/)
+  assert.match(ics, /DTSTART;VALUE=DATE:20261116\r\n/)
+  assert.match(ics, /DTEND;VALUE=DATE:20261117\r\n/)
+  assert.ok(ics.includes('A title\\; with\\, commas'), 'semicolons and commas escaped')
+  assert.match(ics.replace(/\r\n /g, ''), /not a deadline to comment/)
+  assert.ok(ics.split('\r\n').every((l) => l.length <= 75), 'lines folded at 75')
+  assert.ok(!/deadline:/i.test(ics))
+})
+
+test('read-aloud uses only text already on the page, in page order', () => {
+  const item = byId('2027.PB1.6')
+  const segs = speechSegments(item)
+  const ex = item.explanation!
+  assert.equal(segs[0].text, ex.plainTitle)
+  for (const c of ex.whatIsProposed) assert.ok(segs.some((s) => s.text === c.text && s.sectionId === 'what-h'))
+  const order = segs.map((s) => s.sectionId).filter((v, i, a) => a.indexOf(v) === i)
+  assert.deepEqual(order, ['top', 'say-h', 'what-h', 'why-h', 'where-h', 'cond-h', ...(ex.whatHappensNext.length ? ['next-h'] : []), 'trust-h'])
+})
+
+import { rankVoices, voiceLabel } from '../src/lib/voices.ts'
+
+test('read-aloud never offers novelty voices and prefers natural, on-device ones', () => {
+  const v = (name: string, lang = 'en-US', localService = true) => ({ name, lang, voiceURI: name, localService })
+  const ranked = rankVoices([
+    v('Zarvox'), v('Bad News'), v('Bubbles'), v('Fred'), v('Grandpa (English (US))'),
+    v('Albert'), v('Samantha'), v('Daniel', 'en-GB'), v('Ava (Premium)'), v('Thomas', 'fr-FR'),
+    v('Microsoft Aria Online (Natural) - English (United States)', 'en-US', false),
+  ]).map((x) => x.name)
+  assert.equal(ranked[0], 'Ava (Premium)')
+  assert.ok(ranked.indexOf('Samantha') < ranked.indexOf('Microsoft Aria Online (Natural) - English (United States)'), 'on-device before online')
+  for (const bad of ['Zarvox', 'Bad News', 'Bubbles', 'Fred', 'Grandpa (English (US))', 'Albert', 'Thomas']) {
+    assert.ok(!ranked.includes(bad), bad)
+  }
+  assert.equal(voiceLabel(v('Microsoft Aria Online (Natural) - English (United States)', 'en-US', false)), 'Aria (US, online)')
+  assert.equal(voiceLabel(v('Samantha')), 'Samantha (US)')
+})

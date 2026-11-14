@@ -4,6 +4,7 @@ import { AtAGlance } from '../components/AtAGlance.tsx'
 import { ClaimList } from '../components/Claim.tsx'
 import { HaveYourSay } from '../components/HaveYourSay.tsx'
 import { ItemMap } from '../components/ItemMap.tsx'
+import { ResidentTools } from '../components/ResidentTools.tsx'
 import { RouteStrip } from '../components/RouteStrip.tsx'
 import { StageTracker } from '../components/StageTracker.tsx'
 import { findItem, formatCaptured } from '../lib/data.ts'
@@ -71,12 +72,10 @@ export function ItemPage() {
           <a href={safeHref(record.sourceUrl)} target="_blank" rel="noreferrer">
             City of Toronto’s page for this item
           </a>{' '}
-          as it was on <strong>{captured}</strong>. The City can change it after that date.{' '}
-          <button type="button" className="link-button no-print" onClick={() => window.print()}>
-            Print this page
-          </button>{' '}
-          <span className="no-print">for someone who is not online.</span>
+          as it was on <strong>{captured}</strong>. The City can change it after that date.
         </p>
+
+        <ResidentTools item={item} />
       </header>
 
       <nav className="jump no-print" aria-label="On this page">
