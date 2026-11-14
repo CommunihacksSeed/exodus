@@ -1,0 +1,11 @@
+{
+  "name": "Clear Council — City Hall decisions in plain words",
+  "short_name": "Clear Council",
+  "description": "Plain-language explanations of City of Toronto council decisions, with every statement linked to the official record.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#eef2f5",
+  "theme_color": "#0f1b26",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

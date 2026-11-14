@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useId, useRef, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { GLOSSARY, type Term as TermEntry } from '../content/civics.ts'
+import { useLang } from '../i18n/index.tsx'
 
 /** Longest first, so "Zoning By-law" wins over "By-law". */
 const MATCHERS = GLOSSARY.flatMap((t) => [t.term, ...(t.aliases ?? [])].map((w) => ({ word: w.toLowerCase(), term: t }))).sort(
@@ -15,6 +16,7 @@ const byWord = new Map(MATCHERS.map((m) => [m.word, m.term]))
  * The underlying text is never changed: the word is shown exactly as it was written.
  */
 export function Term({ entry, children }: { entry: TermEntry; children: ReactNode }) {
+  const { t } = useLang()
   const [open, setOpen] = useState(false)
   const id = useId()
   const ref = useRef<HTMLSpanElement>(null)
@@ -42,9 +44,9 @@ export function Term({ entry, children }: { entry: TermEntry; children: ReactNod
       {open && (
         <span className="term-pop" id={id} role="note">
           <strong className="term-pop-title">{entry.term}</strong>
-          <span>{entry.meaning}</span>
+          <span>{t(entry.meaning)}</span>
           <Link to={`/words#${entry.id}`} className="term-pop-link">
-            More in Words
+            {t('More in Words')}
           </Link>
         </span>
       )}

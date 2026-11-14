@@ -3,6 +3,7 @@ import { meetingsToIcs, upcomingMeetings } from '../lib/calendar.ts'
 import { speechSegments } from '../lib/speech.ts'
 import { rankVoices, voiceLabel } from '../lib/voices.ts'
 import type { PublishedItem } from '../types.ts'
+import { useLang } from '../i18n/index.tsx'
 
 const RATES = [
   { value: 0.85, label: 'Slower' },
@@ -41,8 +42,8 @@ function savedVoice(): string {
   }
 }
 
-function formatDay(iso: string): string {
-  return new Date(`${iso}T12:00:00`).toLocaleDateString('en-CA', { weekday: 'long', month: 'long', day: 'numeric' })
+function formatDay(iso: string, locale: string): string {
+  return new Date(`${iso}T12:00:00`).toLocaleDateString(locale, { weekday: 'long', month: 'long', day: 'numeric' })
 }
 
 /**
@@ -51,6 +52,8 @@ function formatDay(iso: string): string {
  * the resident picks one marked "online".
  */
 export function ResidentTools({ item }: { item: PublishedItem }) {
+  const { t, lang } = useLang()
+  const locale = lang === 'fr' ? 'fr-CA' : lang === 'zh' ? 'zh-CN' : 'en-CA'
   const title = item.explanation?.plainTitle ?? item.record.title
   const segments = useMemo(() => speechSegments(item), [item])
   const meetings = useMemo(() => upcomingMeetings(item.record), [item])
@@ -160,35 +163,35 @@ export function ResidentTools({ item }: { item: PublishedItem }) {
         return
       }
       await navigator.clipboard.writeText(url)
-      setShareNote('Link copied.')
+      setShareNote(t('Link copied.'))
     } catch (err) {
       if ((err as DOMException)?.name === 'AbortError') return
-      setShareNote('Could not copy. The address in your browser bar is the link to this page.')
+      setShareNote(t('Could not copy. The address in your browser bar is the link to this page.'))
     }
     setTimeout(() => setShareNote(''), 4000)
   }
 
   return (
-    <div className="tools no-print" role="group" aria-label="Tools for this page">
+    <div className="tools no-print" role="group" aria-label={t('Tools for this page')}>
       {canSpeak && (
         <div className="tool tool-listen">
           {speaking === 'playing' ? (
-            <button type="button" onClick={pause} aria-label="Pause reading">
-              <span aria-hidden="true" className="tool-icon">❚❚</span> Pause
+            <button type="button" onClick={pause} aria-label={t('Pause reading')}>
+              <span aria-hidden="true" className="tool-icon">❚❚</span> {t('Pause')}
             </button>
           ) : (
             <button type="button" onClick={play}>
-              <span aria-hidden="true" className="tool-icon">▶</span> {speaking === 'paused' ? 'Resume' : 'Listen to this page'}
+              <span aria-hidden="true" className="tool-icon">▶</span> {speaking === 'paused' ? t('Resume') : t('Listen to this page')}
             </button>
           )}
           {speaking !== 'idle' && (
             <button type="button" className="button-secondary" onClick={stop}>
-              Stop
+              {t('Stop')}
             </button>
           )}
           {voices.length > 1 && (
             <label className="tool-select">
-              <span className="tool-select-label">Voice</span>
+              <span className="tool-select-label">{t('Voice')}</span>
               <select
                 value={voice?.voiceURI ?? ''}
                 onChange={(e) => {
@@ -212,7 +215,7 @@ export function ResidentTools({ item }: { item: PublishedItem }) {
             </label>
           )}
           <label className="tool-select">
-            <span className="tool-select-label">Speed</span>
+            <span className="tool-select-label">{t('Speed')}</span>
             <select
               value={rate}
               onChange={(e) => {
@@ -224,32 +227,32 @@ export function ResidentTools({ item }: { item: PublishedItem }) {
             >
               {RATES.map((r) => (
                 <option key={r.value} value={r.value}>
-                  {r.label}
+                  {t(r.label)}
                 </option>
               ))}
             </select>
           </label>
           <span className="sr-only" aria-live="polite">
-            {speaking === 'playing' ? 'Reading the page aloud.' : speaking === 'paused' ? 'Paused.' : ''}
+            {speaking === 'playing' ? t('Reading the page aloud.') : speaking === 'paused' ? t('Paused.') : ''}
           </span>
         </div>
       )}
 
       <div className="tool">
         <button type="button" className="button-secondary" onClick={share}>
-          <span aria-hidden="true" className="tool-icon">↗</span> Share
+          <span aria-hidden="true" className="tool-icon">↗</span> {t('Share')}
         </button>
         <button type="button" className="button-secondary" onClick={() => window.print()}>
-          <span aria-hidden="true" className="tool-icon">⎙</span> Print
+          <span aria-hidden="true" className="tool-icon">⎙</span> {t('Print')}
         </button>
         <span role="status" className="tool-note">{shareNote}</span>
       </div>
       {meetings.length > 0 && (
         <div className="tool tool-cal">
           <button type="button" className="button-secondary" onClick={downloadCalendar}>
-            <span aria-hidden="true" className="tool-icon">＋</span> Add {meetings.length === 1 ? `the ${formatDay(meetings[0].date)} meeting` : `${meetings.length} meeting days`} to my calendar
+            <span aria-hidden="true" className="tool-icon">＋</span> {meetings.length === 1 ? t('Add the {day} meeting to my calendar', { day: formatDay(meetings[0].date, locale) }) : t('Add {n} meeting days to my calendar', { n: meetings.length })}
           </button>
-          <span className="tool-note">A meeting date from the City record, not a deadline to comment.</span>
+          <span className="tool-note">{t('A meeting date from the City record, not a deadline to comment.')}</span>
         </div>
       )}
 

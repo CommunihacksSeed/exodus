@@ -180,3 +180,50 @@ test('every quote on the explainer pages is found word for word in its saved sou
   assert.ok(civicQuotes().length >= 25)
   assert.deepEqual(checkCivics(), [])
 })
+
+import { readdirSync, statSync } from 'node:fs'
+import { fr } from '../src/i18n/fr.ts'
+import { zh } from '../src/i18n/zh.ts'
+import { GLOSSARY, PROCESS } from '../src/content/civics.ts'
+import { CAN_ACT, STATUS_LABEL, STATUS_WORDS } from '../src/lib/stages.ts'
+import { THEMES } from '../src/lib/mapTheme.ts'
+
+function sourceFiles(dir: string): string[] {
+  return readdirSync(dir).flatMap((f) => {
+    const p = path.join(dir, f)
+    return statSync(p).isDirectory() ? sourceFiles(p) : /\.tsx?$/.test(f) ? [p] : []
+  })
+}
+
+test('every interface string has a French and a Chinese translation with the same placeholders', () => {
+  const src = path.resolve(import.meta.dirname, '../src')
+  const keys = new Set<string>()
+  // Literal calls: t('...') and t("...")
+  for (const file of sourceFiles(src)) {
+    if (file.includes(`${path.sep}i18n${path.sep}`)) continue
+    const text = readFileSync(file, 'utf8')
+    for (const m of text.matchAll(/\bt\(\s*'((?:[^'\\]|\\.)*)'/g)) keys.add(m[1].replace(/\\'/g, "'"))
+  }
+  // Data passed to t() at run time
+  const data = [
+    ...Object.values(STATUS_LABEL), ...Object.values(CAN_ACT), ...Object.values(STATUS_WORDS), ...THEMES.map((x) => x.label),
+    ...PROCESS.flatMap((s) => [s.title, s.who, s.youCan]), ...GLOSSARY.map((g) => g.meaning), ...new Set(GLOSSARY.map((g) => g.group)),
+    'City staff advice', 'City Council — final decision', 'Committee or board review',
+    'Advice only — not a decision', 'Scheduled — not decided yet', 'No date in the City record yet', 'Considered',
+    'Map', 'My ward', 'How decisions are made', 'Words', 'How we check',
+    'New building', 'Transit', 'Heritage and housing', 'Staff', 'Committee', 'Council', 'Slower', 'Normal', 'Faster',
+    'Have a say', 'What', 'Why', 'Near me?', 'Conditions', 'Who decided', 'Sources',
+  ]
+  for (const d of data) keys.add(d)
+  const placeholders = (s: string) => [...s.matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort().join(',')
+  const missing: string[] = []
+  for (const k of keys) {
+    for (const [name, dict] of [['fr', fr], ['zh', zh]] as const) {
+      if (!(k in dict)) missing.push(`${name}: ${k}`)
+      else if (placeholders(dict[k]) !== placeholders(k)) missing.push(`${name} placeholders differ: ${k}`)
+    }
+  }
+  assert.deepEqual(missing, [])
+  assert.ok(keys.size > 200, `found ${keys.size} strings`)
+  assert.deepEqual(Object.keys(fr).sort(), Object.keys(zh).sort(), 'French and Chinese cover the same strings')
+})

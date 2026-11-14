@@ -1,5 +1,6 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { HashRouter, Link, NavLink, Route, Routes, useLocation } from 'react-router-dom'
+import { EnglishContentNote, LangPicker, LangProvider, useLang } from './i18n/index.tsx'
 import { PlaceProvider } from './lib/place.tsx'
 import { Home } from './pages/Home.tsx'
 import { HowItWorks } from './pages/HowItWorks.tsx'
@@ -29,11 +30,42 @@ function ScrollToTop() {
 
 export default function App() {
   return (
+    <LangProvider>
+      <Shell />
+    </LangProvider>
+  )
+}
+
+/** Tells the reader when the connection drops, and what still works. */
+function OfflineNote() {
+  const { t } = useLang()
+  const [online, setOnline] = useState(() => navigator.onLine)
+  useEffect(() => {
+    const on = () => setOnline(true)
+    const off = () => setOnline(false)
+    window.addEventListener('online', on)
+    window.addEventListener('offline', off)
+    return () => {
+      window.removeEventListener('online', on)
+      window.removeEventListener('offline', off)
+    }
+  }, [])
+  if (online) return null
+  return (
+    <p className="offline-note" role="status">
+      {t('You are offline. Pages you have opened still work; the map and the address lookup need a connection.')}
+    </p>
+  )
+}
+
+function Shell() {
+  const { t } = useLang()
+  return (
     <PlaceProvider>
       <HashRouter>
         <ScrollToTop />
         <a className="skip-link" href="#main">
-          Skip to content
+          {t('Skip to content')}
         </a>
         <header className="site-header">
           <Link to="/" className="brand">
@@ -44,16 +76,19 @@ export default function App() {
             </span>
             Clear Council
           </Link>
-          <span className="brand-note">Independent prototype. Not a City of Toronto service.</span>
+          <span className="brand-note">{t('Independent prototype. Not a City of Toronto service.')}</span>
           <nav className="site-nav" aria-label="Main">
             {NAV.map(([to, label]) => (
               <NavLink key={to} to={to} end={to === '/'}>
-                {label}
+                {t(label)}
               </NavLink>
             ))}
           </nav>
+          <LangPicker />
         </header>
+        <OfflineNote />
         <main id="main">
+          <EnglishContentNote />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/item/:id" element={<ItemPage />} />
@@ -65,8 +100,7 @@ export default function App() {
         </main>
         <footer className="site-footer">
           <p>
-            Built for CIVIC Hack 2026. Data: City of Toronto council records and Open Data, under the Open Government
-            Licence – Toronto. Map: © OpenStreetMap contributors, tiles by OpenFreeMap.
+            {t('Built for CIVIC Hack 2026. Data: City of Toronto council records and Open Data, under the Open Government Licence – Toronto. Map: © OpenStreetMap contributors, tiles by OpenFreeMap.')}
           </p>
         </footer>
       </HashRouter>

@@ -2,11 +2,13 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { SourceLine } from '../components/SourcedQuote.tsx'
 import { GLOSSARY, type Term } from '../content/civics.ts'
+import { fill, translate, useLang } from '../i18n/index.tsx'
 
 const GROUPS: Term['group'][] = ['People and meetings', 'Decisions and votes', 'Planning', 'Heritage']
 
 /** The glossary: City Hall words in plain language, each shown in use in a real City document. */
 export function Words() {
+  const { t, lang } = useLang()
   const [q, setQ] = useState('')
   const { hash } = useLocation()
 
@@ -22,44 +24,43 @@ export function Words() {
   const shown = useMemo(() => {
     const needle = q.trim().toLowerCase()
     if (!needle) return GLOSSARY
-    return GLOSSARY.filter((t) =>
-      [t.term, t.meaning, ...(t.aliases ?? [])].some((s) => s.toLowerCase().includes(needle)),
+    return GLOSSARY.filter((term) =>
+      [term.term, term.meaning, translate(lang, term.meaning), ...(term.aliases ?? [])].some((s) => s.toLowerCase().includes(needle)),
     )
-  }, [q])
+  }, [q, lang])
 
   return (
     <article className="page words">
-      <title>Words — Clear Council</title>
-      <p className="kicker">Glossary</p>
-      <h1>City Hall words, in plain language</h1>
+      <title>{`${t('Words')} — Clear Council`}</title>
+      <p className="kicker">{t('Glossary')}</p>
+      <h1>{t('City Hall words, in plain language')}</h1>
       <p className="lede">
-        The meanings are written in plain words by the Clear Council team. Under each one is a passage from a City
-        document where the word is used, so you can see it in context and check it.
+        {t('The meanings are written in plain words by the Clear Council team. Under each one is a passage from a City document where the word is used, so you can see it in context and check it.')}
       </p>
 
       <label className="words-search">
-        <span>Find a word</span>
-        <input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="e.g. zoning, motion, heritage" maxLength={60} />
+        <span>{t('Find a word')}</span>
+        <input type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder={t('e.g. zoning, motion, heritage')} maxLength={60} />
       </label>
       <p className="sr-only" aria-live="polite">
-        {shown.length} {shown.length === 1 ? 'word' : 'words'} shown.
+        {t('{n} words shown.', { n: shown.length })}
       </p>
 
       {GROUPS.map((group) => {
-        const terms = shown.filter((t) => t.group === group)
+        const terms = shown.filter((term) => term.group === group)
         if (terms.length === 0) return null
         return (
           <section key={group} className="words-group" aria-labelledby={`g-${group}`}>
-            <h2 id={`g-${group}`}>{group}</h2>
+            <h2 id={`g-${group}`}>{t(group)}</h2>
             <dl>
-              {terms.map((t) => (
-                <div key={t.id} id={t.id} tabIndex={-1} className="word" data-target={hash === `#${t.id}` || undefined}>
-                  <dt>{t.term}</dt>
+              {terms.map((term) => (
+                <div key={term.id} id={term.id} tabIndex={-1} className="word" data-target={hash === `#${term.id}` || undefined}>
+                  <dt>{term.term}</dt>
                   <dd>
-                    <p>{t.meaning}</p>
+                    <p>{t(term.meaning)}</p>
                     <details className="sources">
-                      <summary>Used in a City document</summary>
-                      <SourceLine quote={t.inContext.quote} source={t.inContext.source} />
+                      <summary>{t('Used in a City document')}</summary>
+                      <SourceLine quote={term.inContext.quote} source={term.inContext.source} />
                     </details>
                   </dd>
                 </div>
@@ -68,9 +69,9 @@ export function Words() {
           </section>
         )
       })}
-      {shown.length === 0 && <p className="notice">No word matches “{q}”. Try a shorter word.</p>}
+      {shown.length === 0 && <p className="notice">{t('No word matches “{q}”. Try a shorter word.', { q })}</p>}
       <p className="fine">
-        See how these fit together in <Link to="/how-decisions-are-made">How decisions are made</Link>.
+        {fill(t('See how these fit together in {link}.'), { link: <Link to="/how-decisions-are-made">{t('How decisions are made')}</Link> })}
       </p>
     </article>
   )

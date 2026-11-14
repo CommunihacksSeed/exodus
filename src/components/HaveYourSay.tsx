@@ -2,6 +2,7 @@ import type { PublishedItem } from '../types.ts'
 import { formatCaptured } from '../lib/data.ts'
 import { itemStatus } from '../lib/stages.ts'
 import { safeHref } from '../lib/safe.ts'
+import { fill, useLang } from '../i18n/index.tsx'
 
 /**
  * Participation information. Hard rule: only show what the City's own item
@@ -9,6 +10,7 @@ import { safeHref } from '../lib/safe.ts'
  * meeting date.
  */
 export function HaveYourSay({ item }: { item: PublishedItem }) {
+  const { t } = useLang()
   const { record, explanation } = item
   const status = itemStatus(record)
   const { commentsUrl, speakUrl } = record.participation
@@ -20,57 +22,62 @@ export function HaveYourSay({ item }: { item: PublishedItem }) {
     return (
       <div className="say say-open">
         <p className="say-lead">
-          Yes. When we checked on {captured}, the City’s page for this item offered {commentsUrl && speakUrl ? 'two ways' : 'a way'} to take part
-          {next ? ` before the ${next.body} meeting on ${next.dateText}` : ''}.
+          {next
+            ? commentsUrl && speakUrl
+              ? t('Yes. When we checked on {date}, the City’s page for this item offered two ways to take part before the {body} meeting on {when}.', { date: captured, body: next.body, when: next.dateText })
+              : t('Yes. When we checked on {date}, the City’s page for this item offered a way to take part before the {body} meeting on {when}.', { date: captured, body: next.body, when: next.dateText })
+            : commentsUrl && speakUrl
+              ? t('Yes. When we checked on {date}, the City’s page for this item offered two ways to take part.', { date: captured })
+              : t('Yes. When we checked on {date}, the City’s page for this item offered a way to take part.', { date: captured })}
         </p>
         <div className="say-actions">
           {commentsUrl && (
             <a className="button" href={safeHref(commentsUrl)} target="_blank" rel="noreferrer">
-              Send a written comment<span className="sr-only"> on the City’s website (opens in a new tab)</span>
+              {t('Send a written comment')}<span className="sr-only"> on the City’s website (opens in a new tab)</span>
             </a>
           )}
           {speakUrl && (
             <a className="button button-secondary" href={safeHref(speakUrl)} target="_blank" rel="noreferrer">
-              Ask to speak at the meeting<span className="sr-only"> on the City’s website (opens in a new tab)</span>
+              {t('Ask to speak at the meeting')}<span className="sr-only"> on the City’s website (opens in a new tab)</span>
             </a>
           )}
         </div>
         <dl className="say-facts">
-          <dt>Deadline</dt>
+          <dt>{t('Deadline')}</dt>
           <dd>
             {check?.deadlineText ? (
               <>“{check.deadlineText}”</>
             ) : (
               <>
-                <strong>Not stated on the City’s page.</strong> We do not work out a deadline from the meeting date, because
-                that could be wrong. To be safe, send your comment as early as you can
-                {check ? ' or confirm the cut-off with the contact below' : ''}.
+                <strong>{t('Not stated on the City’s page.')}</strong>{' '}
+                {check
+                  ? t('We do not work out a deadline from the meeting date, because that could be wrong. To be safe, send your comment as early as you can or confirm the cut-off with the contact below.')
+                  : t('We do not work out a deadline from the meeting date, because that could be wrong. To be safe, send your comment as early as you can.')}
               </>
             )}
           </dd>
           {check && (
             <>
-              <dt>Who to ask</dt>
+              <dt>{t('Who to ask')}</dt>
               <dd>
                 {check.contact.label}: <a href={`mailto:${check.contact.email}`}>{check.contact.email}</a> or{' '}
                 <a href={`tel:${check.contact.phone.replace(/\D/g, '')}`}>{check.contact.phone}</a> (
                 <a href={safeHref(check.contact.sourceUrl)} target="_blank" rel="noreferrer">
-                  source
+                  {t('source')}
                 </a>
-                , checked {check.checkedOn})
+                , {t('checked {date}', { date: check.checkedOn })})
               </dd>
             </>
           )}
-          <dt>Before you write</dt>
+          <dt>{t('Before you write')}</dt>
           <dd>
-            The City treats comments as public records. Your name and your comment will appear online with the meeting
-            record.
+            {t('The City treats comments as public records. Your name and your comment will appear online with the meeting record.')}
           </dd>
           {check && (
             <>
-              <dt>No internet?</dt>
+              <dt>{t('No internet?')}</dt>
               <dd>
-                Call {check.contact.phone} and ask how to comment on item {record.id}.
+                {t('Call {phone} and ask how to comment on item {id}.', { phone: check.contact.phone, id: record.id })}
               </dd>
             </>
           )}
@@ -84,22 +91,22 @@ export function HaveYourSay({ item }: { item: PublishedItem }) {
     return (
       <div className="say say-closed">
         <p className="say-lead">
-          Not through the City’s comment form. City Council made its decision on {council?.dateText}, and when we checked on{' '}
-          {captured} the City’s page for this item no longer offered a comment or speaker form.
+          {t('Not through the City’s comment form. City Council made its decision on {when}, and when we checked on {date} the City’s page for this item no longer offered a comment or speaker form.', { when: council?.dateText ?? '', date: captured })}
         </p>
         <dl className="say-facts">
-          <dt>What you can still do</dt>
+          <dt>{t('What you can still do')}</dt>
           <dd>
-            Contact your councillor about how the decision is carried out. Find them at{' '}
-            <a href="https://www.toronto.ca/city-government/council/members-of-council/" target="_blank" rel="noreferrer">
-              toronto.ca: Members of Council
-            </a>
-            .
+            {fill(t('Contact your councillor about how the decision is carried out. Find them at {link}.'), {
+              link: (
+                <a href="https://www.toronto.ca/city-government/council/members-of-council/" target="_blank" rel="noreferrer">
+                  {t('toronto.ca: Members of Council')}
+                </a>
+              ),
+            })}
           </dd>
-          <dt>Appeals</dt>
+          <dt>{t('Appeals')}</dt>
           <dd>
-            Some decisions can be appealed and some cannot. This tool has not checked whether this one can be, so it does
-            not say either way.
+            {t('Some decisions can be appealed and some cannot. This tool has not checked whether this one can be, so it does not say either way.')}
           </dd>
         </dl>
       </div>
@@ -109,12 +116,11 @@ export function HaveYourSay({ item }: { item: PublishedItem }) {
   return (
     <div className="say say-closed">
       <p className="say-lead">
-        When we checked on {captured}, the City’s page for this item did not offer a comment or speaker form. That can
-        change as the item moves forward.
+        {t('When we checked on {date}, the City’s page for this item did not offer a comment or speaker form. That can change as the item moves forward.', { date: captured })}
       </p>
       <p>
         <a href={safeHref(record.sourceUrl)} target="_blank" rel="noreferrer">
-          Check the City’s page for item {record.id}
+          {t('Check the City’s page for item {id}', { id: record.id })}
         </a>
       </p>
     </div>

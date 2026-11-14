@@ -2,6 +2,7 @@ import type { Claim, ItemRecord, Motion, StageKind, VerifiedCitation } from '../
 import { buildStages, type Stage } from '../lib/stages.ts'
 import { safeHref } from '../lib/safe.ts'
 import { withTerms } from './Term.tsx'
+import { useLang } from '../i18n/index.tsx'
 
 function VoteLine({ motion }: { motion: Motion }) {
   return (
@@ -41,16 +42,17 @@ function VoteLine({ motion }: { motion: Motion }) {
 
 function StageCard({ stage, summary, sourceUrl }: { stage: Stage; summary?: Claim<VerifiedCitation>; sourceUrl: string }) {
   const seen = new Set<string>()
+  const { t } = useLang()
   const c = stage.consideration
   return (
     <li className={`stage stage-${stage.state}`}>
       <div className="stage-marker" aria-hidden="true" />
       <div className="stage-body">
-        <p className="stage-kind">{stage.title}</p>
+        <p className="stage-kind">{t(stage.title)}</p>
         <h3>{stage.who}</h3>
         <p className="stage-meta">
           {stage.dateText && <span>{stage.dateText}</span>}
-          <span className={`badge badge-${stage.state}`}>{stage.badge}</span>
+          <span className={`badge badge-${stage.state}`}>{t(stage.badge)}</span>
         </p>
         {summary && <p className="stage-summary">{summary.text}</p>}
         {stage.state === 'not-in-record' && (
