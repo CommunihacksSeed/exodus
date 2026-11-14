@@ -1,11 +1,12 @@
 import type { Claim, VerifiedCitation } from '../types.ts'
+import { withTerms } from './Term.tsx'
 import { safeHref } from '../lib/safe.ts'
 
 /** One plain-language statement with its sources one tap away. */
-export function ClaimItem({ claim }: { claim: Claim<VerifiedCitation> }) {
+export function ClaimItem({ claim, seen }: { claim: Claim<VerifiedCitation>; seen?: Set<string> }) {
   return (
     <li className="claim">
-      <p className="claim-text">{claim.text}</p>
+      <p className="claim-text">{withTerms(claim.text, seen)}</p>
       {claim.caveat && (
         <p className="claim-caveat">
           <span className="caveat-tag">Keep in mind</span> {claim.caveat}
@@ -35,10 +36,12 @@ export function ClaimItem({ claim }: { claim: Claim<VerifiedCitation> }) {
 }
 
 export function ClaimList({ claims }: { claims: Claim<VerifiedCitation>[] }) {
+  // A glossary word is explained the first time it appears in a section, not every time.
+  const seen = new Set<string>()
   return (
     <ul className="claims">
       {claims.map((c, i) => (
-        <ClaimItem key={i} claim={c} />
+        <ClaimItem key={i} claim={c} seen={seen} />
       ))}
     </ul>
   )

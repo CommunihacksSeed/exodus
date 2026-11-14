@@ -24,7 +24,7 @@ export interface Stage {
 }
 
 /** Plain wording for the City's "Status" field. Unknown values pass through verbatim. */
-const STATUS_WORDS: Record<string, string> = {
+export const STATUS_WORDS: Record<string, string> = {
   Adopted: 'Approved as recommended',
   Amended: 'Approved with changes',
   'Without Recs': 'Passed on with no recommendation',

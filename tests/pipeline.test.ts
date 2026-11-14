@@ -173,3 +173,10 @@ test('read-aloud never offers novelty voices and prefers natural, on-device ones
   assert.equal(voiceLabel(v('Microsoft Aria Online (Natural) - English (United States)', 'en-US', false)), 'Aria (US, online)')
   assert.equal(voiceLabel(v('Samantha')), 'Samantha (US)')
 })
+
+import { checkCivics, civicQuotes } from '../pipeline/civics.ts'
+
+test('every quote on the explainer pages is found word for word in its saved source', () => {
+  assert.ok(civicQuotes().length >= 25)
+  assert.deepEqual(checkCivics(), [])
+})

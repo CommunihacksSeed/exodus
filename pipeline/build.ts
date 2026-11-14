@@ -9,6 +9,7 @@
  * Usage: npm run data
  */
 import { findUnsafeLinks } from '../src/lib/safe.ts'
+import { checkCivics } from './civics.ts'
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
 import { existsSync } from 'node:fs'
 import path from 'node:path'
@@ -156,6 +157,13 @@ const wards = wardsGeo.features.map((f: any) => ({
     poly[0].filter((_, i, ring) => i % 4 === 0 || i === ring.length - 1).map(([lng, lat]) => [round(lat), round(lng)]),
   ),
 }))
+const civic = checkCivics()
+if (civic.length > 0) {
+  console.error('\nRefusing to publish: quotes on the explainer pages not found in their sources:')
+  for (const c of civic) console.error('  ' + c)
+  process.exit(1)
+}
+
 const unsafe = findUnsafeLinks(items)
 if (unsafe.length > 0) {
   console.error('\nRefusing to publish: these links are not https links to a City of Toronto site:')
