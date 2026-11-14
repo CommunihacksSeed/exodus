@@ -1,0 +1,309 @@
+{
+  "itemId": "2026.SC32.2",
+  "plainTitle": "A 14-storey building with shops and a bigger park at Danforth Road and Birchmount Road",
+  "topic": "development",
+  "sources": [
+    {
+      "id": "report",
+      "label": "Staff report from the Director, Community Planning, Scarborough District",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf",
+      "date": "May 14, 2026",
+      "textFile": "backgroundfile-286852.pages.json"
+    }
+  ],
+  "whatIsProposed": [
+    {
+      "text": "City Council changed the zoning rules for 468 to 480 Danforth Road and 509 Birchmount Road. This allows a 14-storey building with homes above and shops on the ground floor.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council amend City of Toronto Zoning By-law 569-2013, as amended, for the lands municipally known as 468 to 480 Danforth Road and 509 Birchmount Road"
+        },
+        {
+          "source": "report",
+          "quote": "to permit the development of a 14 storey mixed used building (plus mechanical penthouse)"
+        }
+      ]
+    },
+    {
+      "text": "The plan has about 524 homes and 1,563 square metres of retail space.",
+      "caveat": "The staff report gives two different home counts: 524 in some places and 526 in others. The record does not explain the difference.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "a 14 storey mixed used building at 468 to 480 Danforth Road with a total of 524 units and 1,563 square metres of retail gross floor area"
+        },
+        {
+          "source": "report",
+          "quote": "The proposal contains a total of 526 residential units and 1,563 square metres of ground floor retail."
+        }
+      ]
+    },
+    {
+      "text": "The building steps down to lower heights at its edges: 4 storeys next to the park, 8 storeys along Birchmount Road and 6 storeys along Danforth Road.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The proposal has a maximum height of 14 storeys (53.5 meters)"
+        },
+        {
+          "source": "report",
+          "quote": "The built form transition s down to 4 storeys (19 met res) fronting Sadler Parkette"
+        }
+      ]
+    },
+    {
+      "text": "The owner must give the City land to make the nearby Sadler Parkette bigger. Council set a minimum of 742 square metres. The plan describes about 754 square metres, including the whole lot at 509 Birchmount Road, where a house now stands.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "the Owner shall convey to the City an on-site parkland dedication, having a minimum size of 742 square metres"
+        },
+        {
+          "source": "report",
+          "quote": "The proposal also provides approximately 754 square metres of on-site parkland dedication that would expand the adjacent Sadler Parkette"
+        },
+        {
+          "source": "report",
+          "quote": "The portion of the subject site known as 509 Birchmount Road is currently occupied by a single-storey detached dwelling."
+        }
+      ]
+    },
+    {
+      "text": "The plan includes 340 car parking spaces, mostly in a two-level underground garage, and 394 bicycle parking spaces.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The proposal includes a total of 340 vehicular parking spaces, of which, 330 parking spaces are proposed in a two level underground parking garage."
+        },
+        {
+          "source": "report",
+          "quote": "A total of 394 bicycle parking spaces are proposed"
+        }
+      ]
+    }
+  ],
+  "why": [
+    {
+      "text": "The site is zoned for commercial use only. The zoning allows no homes and a height of up to 11 metres, so a zoning change was needed.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The CR zoning category permits commercial uses with a maximum height of 11 metres"
+        },
+        {
+          "source": "report",
+          "quote": "there is no density permissions allocated to residential uses on the site"
+        }
+      ]
+    },
+    {
+      "text": "City staff supported the application. They said it fits provincial policy and the City's Official Plan, and that the site has transit on both roads.",
+      "caveat": "This is the opinion of City staff.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The proposed Zoning By-law Amendment application is consistent with the Provincial Planning Statement (2024) and conforms to the City's Official Plan."
+        },
+        {
+          "source": "report",
+          "quote": "it is serviced by public transit on both Birchmount Road and Danforth Road"
+        }
+      ]
+    },
+    {
+      "text": "The site now has a one-storey plaza that held a grocery store, which has closed. The new retail space is smaller than today's, but staff say it is big enough for a food store. The applicant told staff it is talking with a grocer.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "While the grocery store has officially closed, the remaining commercial/retail businesses continue to operate."
+        },
+        {
+          "source": "report",
+          "quote": "it is generally large enough to accommodate a food store, or another significant retail/commercial space"
+        },
+        {
+          "source": "report",
+          "quote": "The applicant has advised they are in discussion with a grocer to tenant this space."
+        }
+      ]
+    }
+  ],
+  "whoIsAffected": [
+    {
+      "text": "The site is at the corner of Danforth Road and Birchmount Road, in Ward 20 (Scarborough Southwest).",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The subject site is located within the diagonal intersection of Danforth Road and Birchmount Road"
+        },
+        {
+          "source": "item",
+          "quote": "Ward: 20 - Scarborough Southwest"
+        }
+      ]
+    },
+    {
+      "text": "The businesses still operating in the existing plaza. The new building would replace the existing one-storey building.",
+      "caveat": "The record does not say what happens to the current businesses or when.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "468 to 480 Danforth Road contains a single storey building with a staggered front elevation"
+        }
+      ]
+    },
+    {
+      "text": "Neighbours to the north and users of Sadler Parkette: the building would cast some shadow there. Staff said the shadows are similar to what an 8-storey building following City guidelines would cause, and found them acceptable.",
+      "caveat": "This is the opinion of City staff.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The proposed building results in some shadow on Neighbourhoods to the north of the site."
+        },
+        {
+          "source": "report",
+          "quote": "thus the resulting shadow impacts are considered acceptable"
+        }
+      ]
+    },
+    {
+      "text": "Families with school-age children: the public school board said local schools may not have room for more students. The Catholic board said its local elementary school has room.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "the local elementary and secondary schools may not have sufficient space to accommodate additional students"
+        },
+        {
+          "source": "report",
+          "quote": "the local Catholic elementary school ha s sufficient space to accommodate additional students"
+        }
+      ]
+    },
+    {
+      "text": "Drivers in the area: the building is expected to add 250 to 310 car trips in rush hours. Staff accepted a study saying the effect on traffic would be minor.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The site is anticipated to generate a total of 250 and 310 new two-way vehicle trips"
+        },
+        {
+          "source": "report",
+          "quote": "Site-generated traffic impacts at signalized intersections within the study area are anticipated to be minor."
+        }
+      ]
+    }
+  ],
+  "conditionsAndUnknowns": [
+    {
+      "text": "The owner may build better-than-basic park features. In return, the City would reduce part of the owner's development charges (fees for parks and recreation).",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council approve a development charge credit against the Parks and Recreation component of the Development Charges for the design and construction by the Owner of the Above Base Park Improvements"
+        }
+      ]
+    },
+    {
+      "text": "Council asked staff to explore with the owner a possible package of community benefits, which may include public art. Staff are to report back on any offer.",
+      "caveat": "This is a request to explore. The record does not say what, if anything, will be provided.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "to work with the Owner to explore the feasibility of an in-kind community benefit package"
+        },
+        {
+          "source": "item",
+          "quote": "that may include the provision of Public Art"
+        }
+      ]
+    },
+    {
+      "text": "The detailed design still needs site plan approval. No site plan application had been filed when the report was written.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The proposal is subject to Site Plan Control. A Site Plan application has not been submitted."
+        }
+      ]
+    },
+    {
+      "text": "Council approved a revised version of the draft zoning by-law, not the version first attached to the staff report.",
+      "caveat": "This page has not compared the two versions.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "substantially in accordance with the draft Zoning By-law Amendment included as revised Attachment 5"
+        }
+      ]
+    }
+  ],
+  "stageSummaries": {
+    "staff": {
+      "text": "Staff recommended approval.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Staff recommend that Council approve the Zoning By-law Amendment application."
+        }
+      ]
+    },
+    "committee": {
+      "text": "Scarborough Community Council held the required public meeting and recommended approval without changes.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "The Scarborough Community Council held a statutory public meeting on May 28, 2026"
+        },
+        {
+          "source": "item",
+          "quote": "This item was considered by the Scarborough Community Council on May 28, 2026 and adopted without amendment."
+        }
+      ]
+    },
+    "council": {
+      "text": "City Council approved the zoning change without changes and without debate.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council adopted this item on June 24 and 25, 2026 without amendments and without debate."
+        }
+      ]
+    }
+  },
+  "whatHappensNext": [
+    {
+      "text": "The City's item page links this decision to By-law 617-2026. Next, the detailed design goes through site plan review, where staff say they will settle details such as wind measures and tree planting.",
+      "caveat": "The record does not give a construction start date. This page has not checked whether anyone appealed.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "See also By-law 617-2026"
+        },
+        {
+          "source": "report",
+          "quote": "Any necessary mitigation measures will be determined and secured through the Site Plan application process."
+        }
+      ]
+    }
+  ],
+  "location": {
+    "label": "468 to 480 Danforth Road and 509 Birchmount Road",
+    "points": [
+      [
+        43.70881,
+        -79.2685
+      ]
+    ],
+    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"509 Birchmount Rd\" (the parkland part of the site), retrieved 2026-11-14. The geocoder returned no match for 468 to 480 Danforth Road",
+    "proposedStoreys": [
+      14
+    ]
+  },
+  "participationCheck": null,
+  "review": {
+    "aiAssisted": true,
+    "humanReviewedBy": null,
+    "reviewedOn": null
+  }
+}

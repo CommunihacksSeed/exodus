@@ -404,9 +404,9 @@ flowchart LR
 
 ### 7.1 More items
 
-| Concern | Now (3 items) | At 3,000 items |
+| Concern | Now (15 items) | At 3,000 items |
 |---|---|---|
-| Data file | One 73 kB `items.json` bundled with the app | Split into one JSON per item plus a small index; load an item on demand. The build already produces records one at a time |
+| Data file | One `items.json` (about 450 kB before compression) bundled with the app | Split into one JSON per item plus a small index; load an item on demand. The build already produces records one at a time |
 | Build time | Under 1 second | Linear. Parsing is about 10 ms per item; quote checking is substring search |
 | Finding things | A short list | Add client-side search over the index, and filter by ward using the ward already in each record |
 | Authoring | By hand | See 7.3 |
@@ -600,7 +600,7 @@ back.
 
 | Check | Command | What it covers |
 |---|---|---|
-| Quote verification | `npm run data` | Every citation in every explanation, against page text. Currently 3 items, all passing |
+| Quote verification | `npm run data` | Every citation in every explanation, against page text. Currently 15 items, all passing |
 | Unit and regression tests | `npm test` (15 tests) | Date and ward parsing; stage states for an upcoming and a decided item; vote tallies (2–4 lost at committee, 25–1 at Council); no resident names in output; no double-counted correspondence; haversine and point-to-line distance; link allowlist (`javascript:`, `data:`, look-alike hosts, credentials) and every link in the published data; coordinate and saved-place validation; calendar rules and `.ics` format; read-aloud order; voice ranking |
 | Explainer quotes | `npm test`, `npm run data` | All 31 quotes on the guide and glossary found word for word in their saved sources |
 | Translations | `npm test` | Every interface string has a French and a Chinese translation with the same `{placeholders}` |
@@ -610,7 +610,7 @@ back.
 | Headless browser checks | Playwright's Chromium with SwiftShader WebGL, against the built site | The 3D map under the CSP; night mode; storey slabs visible from the chosen viewpoint; tour and keyboard flight; the four new pages; glossary popover; Chinese interface; a page opened offline |
 | Type check and build | `npm run build` | The pipeline output matches what the app expects |
 | Lint | `npm run lint` | oxlint, no warnings |
-| Manual browser check | — | All three item pages and the map home page at phone and desktop widths; choosing a marker by click and by keyboard; address lookup end to end; no console errors |
+| Manual browser check | — | All 15 item pages and the map home page at phone and desktop widths; choosing a marker by click and by keyboard; address lookup end to end; no console errors |
 | Contrast and naming script | run in the browser console | On an item page: every text element against its background (all at least 4.5:1, except the map library's own attribution link at 3.6:1), every control has an accessible name, headings are in order |
 | Print view | headless Chrome print to PDF, pages inspected | Layout, expanded sources, printed web addresses, no map or form controls |
 | Meaning review sheet | `npm run review-sheet` | Writes `docs/REVIEW.md` for the human reviewer |
@@ -716,7 +716,7 @@ Known limits of the AI-drafted text are stated in section 6.
 
 | Source | Retrieved | Licence |
 |---|---|---|
-| City of Toronto, TMMIS agenda item pages 2027.PB1.6, 2026.NY34.12, 2026.TE34.104 | 2026-11-12 | Open Government Licence – Toronto |
+| City of Toronto, TMMIS agenda item pages 2027.PB1.6, 2026.NY34.12, 2026.TE34.104 (2026-11-12); 2026.EY29.6, 2026.EY32.1, 2026.IE31.9, 2026.NY34.8, 2026.NY34.25, 2026.PH30.2, 2026.SC30.8, 2026.SC32.2, 2026.SC33.12, 2026.TE31.24, 2026.TE32.46, 2026.TE34.21 (2026-11-14) | 2026-11-12 and 2026-11-14 | Open Government Licence – Toronto |
 | City of Toronto staff reports and public notice (PDF), linked in the README | 2026-11-12 | Open Government Licence – Toronto |
 | Toronto Open Data, *City Wards* | 2026-11-12 (dataset refreshed 2026-02-20) | Open Government Licence – Toronto |
 | Toronto Open Data, *Members of Toronto City Council – Voting Record* | 2026-11-12 (dataset refreshed 2026-11-07) | Open Government Licence – Toronto |

@@ -1,0 +1,321 @@
+{
+  "itemId": "2026.PH30.2",
+  "plainTitle": "Taller towers with 840 rental homes approved on City land at 970 Kipling Avenue",
+  "topic": "development",
+  "sources": [
+    {
+      "id": "report",
+      "label": "Staff report from the Interim Executive Director, Development Review",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf",
+      "date": "April 23, 2026",
+      "textFile": "backgroundfile-286388.pages.json"
+    }
+  ],
+  "whatIsProposed": [
+    {
+      "text": "City Council changed the zoning for 970 Kipling Avenue to allow a 43-storey tower and a 28-storey tower on a shared 5-storey base, with shops at street level.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The proposal consists of a 43-storey tower and a 28-storey tower"
+        },
+        {
+          "source": "item",
+          "quote": "City Council amend City of Toronto Zoning By-law 569-2013, as amended by Site-Specific Zoning By-law 825-2021, for the lands municipally known as 970 Kipling Avenue"
+        }
+      ]
+    },
+    {
+      "text": "This changes an earlier approval. The old zoning allowed two towers of 42 and 91 metres. The new towers are 94.7 and 140.3 metres tall, and one has moved to a different corner of the site.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Whereas the approved zoning allows for a two-tower development with heights of 42.0 and 91.0 metres"
+        },
+        {
+          "source": "report",
+          "quote": "One tower has been repositioned from the southeast corner to the northeast corner of the site"
+        }
+      ]
+    },
+    {
+      "text": "There would be about 840 homes, including 198 affordable homes. All homes would be rentals, because this is City-owned land under the Toronto Builds program.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Approximately 840 residential units are proposed, including 198 affordable units."
+        },
+        {
+          "source": "report",
+          "quote": "Projects on City-owned land will deliver projects with the residential component being 100% purpose-built rental housing in tenure."
+        }
+      ]
+    },
+    {
+      "text": "Shop and office space would shrink from 3,519 to 1,000 square metres, mostly because the second-floor offices were dropped.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "amount of non-residential space (from 3,519 square metre to 1,000 square metres), largely due to the elimination of the second storey office component"
+        }
+      ]
+    },
+    {
+      "text": "There would be 229 car parking spaces underground and 644 bicycle parking spaces. Cars and trucks would enter from Beamish Drive.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The proposal includes 229 vehicular parking spaces across two below-grade levels"
+        },
+        {
+          "source": "report",
+          "quote": "A single vehicle access point is provided off Beamish Drive"
+        },
+        {
+          "source": "report",
+          "quote": "of 644 bicycle parking spaces is provided"
+        }
+      ]
+    },
+    {
+      "text": "The plan still includes a long, narrow public park of 2,703 square metres on the north part of the site, along the old path of Dundas Street West.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The proposal continues to include a 2,703 square metre linear public park"
+        }
+      ]
+    }
+  ],
+  "why": [
+    {
+      "text": "The site is City land picked for affordable housing. It is being built through Toronto Builds, the City's plan for more affordable rental homes on public land.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "This development proposal on City-owned land is being delivered through the Toronto Builds Policy Framework."
+        },
+        {
+          "source": "report",
+          "quote": "setting out the Toronto Builds policy framework to build more affordable rental homes on public land"
+        }
+      ]
+    },
+    {
+      "text": "Staff said the height and density are right for the area, which is planned for tall, dense buildings near Kipling Station. Other tall buildings of up to 45 storeys are approved nearby.",
+      "caveat": "This is the opinion of City staff.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "the proposed height and density are appropriate"
+        },
+        {
+          "source": "report",
+          "quote": "the multi-tower phased redevelopment of Six Points Plaza with heights up to 45 storeys (140 metres)"
+        }
+      ]
+    },
+    {
+      "text": "The tower floors are larger than the City's tall building guidelines suggest. Staff said the tower positions and spacing reduce the effects on light, shadow, sky view and privacy.",
+      "caveat": "This is the opinion of City staff.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "While the tower floor plates are larger than the 750 square metres identified in the Tall Building Design Guidelines"
+        },
+        {
+          "source": "report",
+          "quote": "mitigate potential light, shadow, skyview, and privacy impacts of the larger floor plates"
+        }
+      ]
+    },
+    {
+      "text": "The City gives up fees, charges and property taxes on the affordable homes. These are not cash payments.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "These incentives are not a direct capital payment as they represent the forgiveness of City levies and charges and are thus foregone revenue to the City."
+        }
+      ]
+    }
+  ],
+  "whoIsAffected": [
+    {
+      "text": "The site is bounded by Dundas Street West, Kipling Avenue and Beamish Drive, in Ward 3 (Etobicoke-Lakeshore). It used to be part of the old “spaghetti junction” road interchange.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "frontages of 67 metres along Dundas Street West, 89 metres along Kipling Avenue, and 46 metres along Beamish Drive"
+        },
+        {
+          "source": "report",
+          "quote": "the site formed part of the “spaghetti junction” interchange"
+        },
+        {
+          "source": "item",
+          "quote": "Ward: 3 - Etobicoke - Lakeshore"
+        }
+      ]
+    },
+    {
+      "text": "People who need affordable housing. The affordable homes would be filled through the City's central application system.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "will be accessed through the City’s centralized affordable housing access system"
+        }
+      ]
+    },
+    {
+      "text": "Users of nearby public spaces: the towers would shade the southwest corner of Dunkip Park at 2:18 pm in March and September, and the future Etobicoke Civic Centre plaza in the early evening.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "the proposal will cast a shadow on the south-west corner of Dunkip Park during the spring and fall equinoxes at 2:18 pm"
+        },
+        {
+          "source": "report",
+          "quote": "Shadow will be cast onto the future Etobicoke Civic Centre Plaza from 5:18 pm to 6:18 pm."
+        }
+      ]
+    },
+    {
+      "text": "Neighbours raised concerns about parking spilling onto local streets, traffic, pressure on hospitals and schools, and tree loss.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Traffic impacts arising from the increased population, congestion, and traffic infiltration into residential areas."
+        },
+        {
+          "source": "report",
+          "quote": "Impacts on local community services and facilities including hospitals and schools;"
+        }
+      ]
+    }
+  ],
+  "conditionsAndUnknowns": [
+    {
+      "text": "Staff said the water and sewer reports still need revisions. They recommended a hold in the zoning, so the land cannot be used for the towers until the owner shows the pipes can handle it.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "revisions are required to confirm that adequate servicing capacity is available within the existing municipal infrastructure"
+        },
+        {
+          "source": "report",
+          "quote": "Staff recommend that the zoning bylaw be subject to a holding provision under Section 36 of the Planning Act"
+        }
+      ]
+    },
+    {
+      "text": "The project does not have to give land or cash for parks, because the site was named a Housing Now site in 2019.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "This proposal is exempt from the parkland dedication requirement"
+        }
+      ]
+    },
+    {
+      "text": "Staff expect more car trips than in the old approval: 135 two-way trips, up from 105, and 160 in the afternoon rush hour, up from 125. Staff found this acceptable.",
+      "caveat": "The report does not say which time period the 135 figure covers.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The revised proposal results in 135 two-way trips (compared to 105 for the original approval) and 160 in the afternoon peak hour (compared to 125 previously)."
+        },
+        {
+          "source": "report",
+          "quote": "Staff consider the proposed development acceptable from a traffic impact standpoint."
+        }
+      ]
+    },
+    {
+      "text": "Trees: the project would remove 1 tree and injure 23, and keep 28.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The proposed development will remove 1, injure 23 and preserve 28 existing by-law regulated trees."
+        }
+      ]
+    }
+  ],
+  "stageSummaries": {
+    "staff": {
+      "text": "Staff recommended approval.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "This report recommends approval of the application to amend Zoning By-law 569-2013"
+        }
+      ]
+    },
+    "committee": {
+      "text": "The Planning and Housing Committee held the public meeting and recommended approval without changes.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "This item was considered by the Planning and Housing Committee on May 7, 2026 and adopted without amendment."
+        }
+      ]
+    },
+    "council": {
+      "text": "City Council approved the zoning change without changes. The vote was 20 to 1.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council adopted this item on May 20 and 21, 2026 without amendments."
+        },
+        {
+          "source": "item",
+          "quote": "Total members that voted Yes: 20"
+        }
+      ]
+    }
+  },
+  "whatHappensNext": [
+    {
+      "text": "A by-law has been passed for this item: 492-2026.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "See also By-law 492-2026"
+        }
+      ]
+    },
+    {
+      "text": "Details such as energy standards, tree soil and wind measures are to be settled in a later step called Site Plan Control.",
+      "caveat": "The record gives no dates for that step and does not say whether the public can comment on it.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Performance measures to achieve this requirement will be secured through the Site Plan Control application process."
+        },
+        {
+          "source": "report",
+          "quote": "Soil volumes on the site will continue to be evaluated through the Site Plan Control process"
+        }
+      ]
+    }
+  ],
+  "location": {
+    "label": "970 Kipling Avenue",
+    "points": [
+      [
+        43.64071179,
+        -79.535713186
+      ]
+    ],
+    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"970 Kipling Ave\", retrieved 2026-11-14",
+    "proposedStoreys": [
+      43,
+      28
+    ]
+  },
+  "participationCheck": null,
+  "review": {
+    "aiAssisted": true,
+    "humanReviewedBy": null,
+    "reviewedOn": null
+  }
+}

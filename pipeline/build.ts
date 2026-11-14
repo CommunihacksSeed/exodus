@@ -128,7 +128,7 @@ for (const file of (await readdir(SNAPSHOTS)).filter((f) => f.endsWith('.html'))
     // The 3D map draws a block this many storeys high, so the number must come from a checked quote.
     const proposedQuotes = explanation.whatIsProposed.flatMap((c) => c.citations.map((q) => norm(q.quote)))
     for (const storeys of raw.location.proposedStoreys ?? []) {
-      if (!proposedQuotes.some((q) => new RegExp(`(^|\\D)${storeys}-storey`).test(q))) {
+      if (!proposedQuotes.some((q) => new RegExp(`(^|\\D)${storeys}[- ]storey`).test(q))) {
         failures.push(`${record.id}: proposedStoreys ${storeys} is not in any quote under whatIsProposed`)
       }
     }

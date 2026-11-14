@@ -16,7 +16,7 @@ Clear Council gives each agenda item one web page. Residents see a plain-languag
 
 ## What changes (30 words)
 
-Today the record is published but not explained. Clear Council explains it without loosening accuracy: unverified text cannot be published and deadlines are never guessed. Tested on three Toronto items.
+Today the record is published but not explained. Clear Council explains it without loosening accuracy: unverified text cannot be published and deadlines are never guessed. Tested on 15 Toronto items.
 
 ## Data sources and tools
 
@@ -30,7 +30,7 @@ Today the record is published but not explained. Clear Council explains it witho
 
 ## What could be piloted today (40 words)
 
-Ready: item pages, source checking, decision route, address distance and print view, for three items. Not built: automatic intake of new items, a staff review screen, alerts. Next priority: other languages, and a phone or paper channel for offline residents.
+Ready: item pages, source checking, decision route, address distance and print view, for 15 items. Not built: automatic intake of new items, a staff review screen, alerts. Next priority: other languages, and a phone or paper channel for offline residents.
 
 ## Adopting or scaling it
 

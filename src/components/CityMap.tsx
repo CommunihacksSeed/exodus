@@ -94,6 +94,29 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
       markers.set(pin.id, new maplibregl.Marker({ element: el, anchor: 'center' }).setLngLat(lngLat(at)).addTo(map))
     }
 
+    // With many decisions, names of nearby markers overlap. Show a name only where it fits;
+    // a hidden name comes back on hover and keyboard focus. The chosen marker's name wins.
+    let declutterQueued = false
+    const declutter = () => {
+      declutterQueued = false
+      const placed: DOMRect[] = []
+      const order = [...markers.entries()].sort(([a], [b]) => Number(b === selectedRef.current) - Number(a === selectedRef.current))
+      for (const [, marker] of order) {
+        const name = marker.getElement().querySelector<HTMLElement>('.pin-name')
+        if (!name) continue
+        name.classList.remove('is-crowded')
+        const r = name.getBoundingClientRect()
+        const hit = placed.some((p) => r.left < p.right + 4 && r.right > p.left - 4 && r.top < p.bottom + 2 && r.bottom > p.top - 2)
+        if (hit) name.classList.add('is-crowded')
+        else placed.push(r)
+      }
+    }
+    map.on('render', () => {
+      if (declutterQueued) return
+      declutterQueued = true
+      requestAnimationFrame(declutter)
+    })
+
     map.on('load', () => {
       addWards(map)
       addBeacons(map, pins.map((p) => ({ point: p.points[Math.floor(p.points.length / 2)], colour: BEACON_COLOUR[p.status] })))

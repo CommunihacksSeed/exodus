@@ -1,0 +1,253 @@
+{
+  "itemId": "2026.SC30.8",
+  "plainTitle": "Four speed cushions and a lower speed limit on Nightstar Road",
+  "topic": "transit",
+  "sources": [
+    {
+      "id": "report",
+      "label": "Staff report from the Director, Enforcement and Street Management, Transportation Services",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf",
+      "date": "March 17, 2026",
+      "textFile": "backgroundfile-285242.pages.json"
+    }
+  ],
+  "whatIsProposed": [
+    {
+      "text": "City Council approved four speed cushions on Nightstar Road, between Morningside Avenue and Mantis Road/Knotwood Crescent/Flower Crescent. Speed cushions are raised bumps that slow cars down.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council authorize the installation of traffic calming (four speed cushions) on Nightstar Road, between Morningside Avenue and Mantis Road/Knotwood Crescent/Flower Crescent"
+        }
+      ]
+    },
+    {
+      "text": "The speed limit on that part of Nightstar Road goes down from 40 km/h to 30 km/h.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council reduce the speed limit from 40 km/h to 30 km/h on Nightstar Road"
+        }
+      ]
+    },
+    {
+      "text": "Some parking and stopping rules change near the speed cushions, so that TTC buses can get through. One short-term 30-minute parking spot in front of Thomas Lester Wells Public School will be removed.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Parking amendments on Nightstar Road are required in conjunction with the installation of proposed speed cushions in order for TTC vehicles to be able to navigate the route."
+        },
+        {
+          "source": "report",
+          "quote": "one short term 30-minute parking spot in front of the Thomas Lester Wells Public School will be eliminated"
+        }
+      ]
+    },
+    {
+      "text": "Heavy vehicles are banned at all times on this part of Nightstar Road. Staff said this fixes a mismatch between the by-law and the posted sign.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council prohibit heavy vehicles at all times on Nightstar Road, between Morningside Avenue and Mantis Road/Knotwood Crescent/Flower Crescent."
+        },
+        {
+          "source": "report",
+          "quote": "there is discrepancy between the by-lawed heavy vehicle prohibition and the posted sign on Nightstar Road"
+        }
+      ]
+    }
+  ],
+  "why": [
+    {
+      "text": "Area residents are worried that drivers go too fast on Nightstar Road. The local councillor asked staff to look into speed cushions.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The residents are concerned that motorists travel at a high rate of speed on Nightstar Road."
+        }
+      ]
+    },
+    {
+      "text": "Staff measured speeds in October 2025. Most drivers (85%) went 43 km/h or slower, and 95% went 49 km/h or slower. About 2,700 vehicles use the road each day.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The operating speed, which is the speed at which 85 percent of traffic is travelling at or below, was observed at 43 km/h"
+        },
+        {
+          "source": "report",
+          "quote": "The 95th percentile speed, which is the speed at which 95 percent of traffic is travelling at or below, was observed at 49 km/h"
+        },
+        {
+          "source": "report",
+          "quote": "24-hour total vehicle volume is 2,700 vehicles"
+        }
+      ]
+    },
+    {
+      "text": "Staff said these speeds were too low to meet the City's traffic calming policy, so staff did not recommend speed cushions. Council approved them anyway.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The operating speed was recorded at 43 km/h, which is 5 km/h under the required speed of 48 km/h."
+        },
+        {
+          "source": "report",
+          "quote": "Therefore, staff do not recommend the installation of speed cushions on Nightstar Road."
+        }
+      ]
+    }
+  ],
+  "whoIsAffected": [
+    {
+      "text": "People who live on or drive along Nightstar Road, in Ward 25 (Scarborough-Rouge Park). The area has homes, Nightstar Park and Thomas Lester Wells Public School.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The land use in the area consists of single-family residential dwellings, Nightstar Park and Thomas Lester Wells Public School."
+        },
+        {
+          "source": "item",
+          "quote": "Ward: 25 - Scarborough - Rouge Park"
+        }
+      ]
+    },
+    {
+      "text": "TTC riders: the 116, 133 and 939C bus routes use Nightstar Road.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "There is Toronto Transit Commission (TTC) service provided by the 116, 133 and 939C bus routes"
+        }
+      ]
+    },
+    {
+      "text": "Emergency services: speed cushions slow down all vehicles, including ambulances, fire trucks and police. Paramedic Services warned of possible delays, but said it supports safety measures.",
+      "caveat": "Police and Fire Services had not commented when the report was written.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Installing speed cushions will result in slower operating speeds for all vehicles, including emergency service vehicles."
+        },
+        {
+          "source": "report",
+          "quote": "Toronto Paramedic Services responded and advised of potential delays in emergency responses but expressed support for initiatives that enhance community safety."
+        },
+        {
+          "source": "report",
+          "quote": "Toronto Police Service and Toronto Fire Services have not provided comments at the time of writing this report."
+        }
+      ]
+    }
+  ],
+  "conditionsAndUnknowns": [
+    {
+      "text": "Staff estimate the four speed cushions cost $16,000. The money depends on what is available in the 2026 Transportation Services budget.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "the estimated cost of installing four speed cushions is $16,000.00"
+        },
+        {
+          "source": "report",
+          "quote": "Funding would be subject to availability and competing priorities within the Transportation Services 2026 Capital Budget."
+        }
+      ]
+    },
+    {
+      "text": "If there are more approved speed cushion requests than money, the City ranks them. Nightstar Road scored 22 out of 100 points.",
+      "caveat": "The record does not say when the speed cushions will be installed.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "funding for approved installations will be prioritized using a Prioritization Score"
+        },
+        {
+          "source": "report",
+          "quote": "scored 22 ranking points out of a possible 100"
+        }
+      ]
+    }
+  ],
+  "stageSummaries": {
+    "staff": {
+      "text": "Staff recommended against speed cushions, because the speeds measured did not meet the policy. Staff did recommend banning heavy vehicles at all times.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "City Council not authorize the installation of speed cushions on Nightstar Road"
+        },
+        {
+          "source": "report",
+          "quote": "City Council prohibit heavy vehicles at all times on Nightstar Road"
+        }
+      ]
+    },
+    "committee": {
+      "text": "Scarborough Community Council went against the staff advice. It recommended the four speed cushions, the lower speed limit and the parking changes, plus the heavy vehicle ban.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "This item was considered by Scarborough Community Council on April 1, 2026 and was adopted with amendments."
+        }
+      ]
+    },
+    "council": {
+      "text": "City Council approved the community council's version, without changes.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council adopted this item on April 22 and 23, 2026 without amendments."
+        }
+      ]
+    }
+  },
+  "whatHappensNext": [
+    {
+      "text": "The City's item page links this decision to By-law 386-2026. Installation depends on budget and the City's ranking of approved locations.",
+      "caveat": "The record does not give an installation date.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "See also By-law 386-2026"
+        },
+        {
+          "source": "report",
+          "quote": "funding for approved installations will be prioritized using a Prioritization Score"
+        }
+      ]
+    }
+  ],
+  "location": {
+    "label": "Nightstar Road, between Morningside Avenue and Mantis Road/Knotwood Crescent/Flower Crescent",
+    "points": [
+      [
+        43.82337,
+        -79.23016
+      ],
+      [
+        43.82404,
+        -79.22856
+      ],
+      [
+        43.82437,
+        -79.22713
+      ],
+      [
+        43.82497,
+        -79.22521
+      ],
+      [
+        43.82546,
+        -79.22409
+      ]
+    ],
+    "geocodeSource": "approximate line joining 5 Nightstar Road addresses (2 to 99 Nightstar Rd) matched with the City of Toronto geocoder (map.toronto.ca), retrieved 2026-11-14. The exact speed cushion spots are shown only on the report's drawings"
+  },
+  "participationCheck": null,
+  "review": {
+    "aiAssisted": true,
+    "humanReviewedBy": null,
+    "reviewedOn": null
+  }
+}

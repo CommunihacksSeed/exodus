@@ -15,6 +15,322 @@ For each sentence, ask:
 To sign off an item, set `review.humanReviewedBy` and `review.reviewedOn` (YYYY-MM-DD) in its
 file under `data/explanations/`, then run `npm run data`. The page then shows who checked it.
 
+## 2026.EY29.6: Weston Lions Arena added to the City's Heritage Register
+
+- Official title: 2125 Lawrence Avenue West - Inclusion on the Heritage Register
+- City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.EY29.6
+- Location shown: 2125 Lawrence Avenue West (Weston Lions Arena) (City of Toronto geocoder (map.toronto.ca), address match for "2125 Lawrence Ave W", retrieved 2026-11-14)
+- Signed off by: **nobody yet**
+
+### What is being proposed?
+
+- [ ] **City Council added 2125 Lawrence Avenue West, the Weston Lions Arena, to the City's Heritage Register as a “listed” property.**
+  - > “City Council include 2125 Lawrence Avenue West on the City of Toronto's Heritage Register”
+    — [City of Toronto item page 2026.EY29.6](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY29.6#:~:text=City%20Council%20include%202125,of%20Toronto's%20Heritage%20Register)
+  - > “historically known as the Weston Lions Arena”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 1](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=1)
+- [ ] **The City owns the property. It holds an ice arena built around 1948-49 of concrete block, with a front wall of rough brick and imitation stone.**
+  - > “It contains an ice- skating arena constructed c.1948-49 of concrete block with rugged-brick and simulated- stone main facade.”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 1](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=1)
+  - > “The subject property at 2125 Lawrence Avenue West, City-owned facility”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 1](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=1)
+- [ ] **Listing is not the same as full heritage designation. It is a first step that gives the City time to decide on designation if someone applies to demolish or redevelop.**
+  - > “provides an opportunity for City Council to determine whether the property warrants conservation through designation under the Act should a development or demolition application be submitted”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 2](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=2)
+
+### Why?
+
+- [ ] **Staff say the building is a good example of a 1940s arena, with a curved roof and an open interior held up by heavy timber trusses.**
+  - Keep in mind: This is the evaluation of City staff.
+  - > “The property has design and physical value for being representative of a 1940s-era ice-skating-arena building type.”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 6](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=6)
+  - > “with its heavy-timber, open-truss roof system”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 6](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=6)
+- [ ] **Staff say it has history: since 1949 it has hosted hockey teams, figure skating, recreational skaters and curlers. The Weston Lions, a community-service group, built it with local donations and volunteer work.**
+  - > “The property has historical value because it has direct associations with recreational activities in Weston since its opening in 1949.”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 6](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=6)
+  - > “primarily funded by local donations and local fund-raising efforts”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 6](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=6)
+- [ ] **Staff say it is linked to its setting. It stands on part of the old Weston Fairgrounds, a place for recreation since the 1800s that is now Lions Park.**
+  - > “The property occupies part of what was formerly the Weston Fairgrounds and has historically been a place of recreation in the community.”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 6](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=6)
+
+### Who does it affect?
+
+- [ ] **The arena is in Lions Park, on the south side of Lawrence Avenue next to the Humber River, in Ward 5 (York South-Weston).**
+  - > “is in the Weston neighbourhood on the south side of Lawrence Avenue, in Lions Park adjacent to the Humber River”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 1](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=1)
+  - > “Ward: 5 - York South - Weston”
+    — [City of Toronto item page 2026.EY29.6](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY29.6#:~:text=Ward%3A%205%20%2D%20York%20South%20%2D%20Weston)
+- [ ] **In November 2025, City Council allowed City staff to negotiate a low-cost lease of the arena with MLSE LaunchPad.**
+  - Keep in mind: The community council's chair ruled that the use of the arena was not the question before it. The record does not say how listing affects the lease.
+  - > “to negotiate and enter into a nominal lease agreement with MLSE LaunchPad”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 2](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=2)
+  - > “ruled that the use of the arena, current or prior, is not before the Etobicoke York Community Council”
+    — [City of Toronto item page 2026.EY29.6](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY29.6#:~:text=ruled%20that%20the%20use,Etobicoke%20York%20Community%20Council)
+
+### Conditions and things not settled
+
+- [ ] **Listing gives limited protection. The owner must give Council at least 60 days' notice before demolishing or removing a building.**
+  - > “an owner must give Council at least 60 days’ notice of their intention to demolish or remove a structure on the property”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 4](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=4)
+- [ ] **Listing does not stop renovations or other changes that do not involve demolition, and does not add maintenance rules.**
+  - > “Listing does not trigger maintenance requirements over and above existing property standards and it does not restrict altering, removing or adding any features on the property.”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 4](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=4)
+- [ ] **Under provincial law, a listing now lasts only two years.**
+  - > “The Act now also limits listing to a period of two years.”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 1](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=1)
+- [ ] **Owners can object to a listing at any time. Council would then have to decide again.**
+  - > “Owners can object to listings at any time.”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 4](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=4)
+
+### What happens next?
+
+- [ ] **No further step is scheduled. If a demolition or development application is made, Council could then decide whether to fully designate the arena. Such applications would also need a Heritage Impact Assessment.**
+  - > “Heritage Impact Assessments (HIA) are required for development applications that affect listed properties.”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 2](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=2)
+  - > “provides an opportunity for City Council to determine whether the property warrants conservation through designation under the Act should a development or demolition application be submitted”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 2](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=2)
+
+### One-line summary of each step
+
+*staff*
+
+- [ ] **Heritage staff recommended adding the property to the Heritage Register. The Toronto Preservation Board recommended the same on February 11, 2026.**
+  - > “This report recommends that City Council include 2125 Lawrence Avenue West on the City of Toronto's Heritage Register”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 1](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf#page=1)
+  - > “The Toronto Preservation Board recommends that:”
+    — [Decision letter from the Toronto Preservation Board, page 1](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-284429.pdf#page=1)
+
+*committee*
+
+- [ ] **Etobicoke York Community Council recommended the listing without changes, by a vote of 5 to 0.**
+  - > “This item was considered by the Etobicoke York Community Council on February 18, 2026 and adopted without amendment.”
+    — [City of Toronto item page 2026.EY29.6](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY29.6#:~:text=This%20item%20was%20considered,and%20adopted%20without%20amendment.)
+  - > “Total members that voted Yes: 5”
+    — [City of Toronto item page 2026.EY29.6](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY29.6#:~:text=Total%20members%20that%20voted%20Yes%3A%205)
+
+*council*
+
+- [ ] **City Council approved the listing without changes and without debate.**
+  - > “City Council adopted this item on March 25 and 26, 2026 without amendments and without debate.”
+    — [City of Toronto item page 2026.EY29.6](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY29.6#:~:text=City%20Council%20adopted%20this,amendments%20and%20without%20debate.)
+
+## 2026.EY32.1: A 12-storey rental building approved at 2686 and 2688 Lake Shore Boulevard West
+
+- Official title: 2686 and 2688 Lake Shore Boulevard West - Official Plan and Zoning By-law Amendment Application - Decision Report - Approval
+- City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.EY32.1
+- Location shown: 2686 and 2688 Lake Shore Boulevard West (City of Toronto geocoder (map.toronto.ca), address match for "2686 Lake Shore Blvd W" (2688 matched about 20 m west), retrieved 2026-11-14)
+- Signed off by: **nobody yet**
+
+### What is being proposed?
+
+- [ ] **City Council changed the Official Plan and the zoning rules for 2686 and 2688 Lake Shore Boulevard West so that a 12-storey apartment building can be built there. It would be 47 metres tall, counting the equipment room on the roof.**
+  - > “A 12-storey (47 metres, including the Mechanical Penthouse) residential building with approximately 172 dwelling units, including four live/work units on the ground floor.”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 3](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=3)
+  - > “City Council amend the Official Plan for the lands municipally known as 2686 and 2688 Lake Shore Boulevard West”
+    — [City of Toronto item page 2026.EY32.1](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY32.1#:~:text=City%20Council%20amend%20the,Lake%20Shore%20Boulevard%20West)
+- [ ] **The building would have about 172 homes, including four live/work units on the ground floor facing Lake Shore Boulevard West. The staff report lists all 172 as rental homes.**
+  - Keep in mind: One section of the same staff report says the proposal would result in 150 units. The record does not explain the difference.
+  - > “four live/work units on the ground floor fronting Lake Shore Boulevard West”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 3](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=3)
+  - > “Rental: 5 5 172 172”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 14](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=14)
+  - > “This proposal would result in 150 dwelling units”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 11](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=11)
+- [ ] **The mix is 23 studios, 103 one-bedroom, 28 two-bedroom and 18 three-bedroom units. The zoning requires at least 15% two-bedroom and 10% three-bedroom units.**
+  - > “23 studios (13%), 103 one- bedroom (60%), 28 two-bedroom (16%), and 18 three-bedroom units (10%)”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 3](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=3)
+  - > “The draft zoning by-law amendment secures a minimum of 15% two-bedroom units, and 10% three-bedroom units”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 11](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=11)
+- [ ] **There would be 100 car parking spaces in two underground levels and 132 bicycle parking spaces. Cars and trucks would enter from Lake Shore Boulevard West, on the east side of the site.**
+  - > “The proposal includes 100 vehicular parking spaces with two-levels of underground parking”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 3](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=3)
+  - > “The proposal includes 132 bicycle parking spaces”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 3](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=3)
+  - > “is from Lake Shore Boulevard West along the east side of the property.”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 3](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=3)
+- [ ] **The site is now a fenced-off vacant lot and a house with five rental apartments. That house would be torn down.**
+  - > “a one and a half storey single detached dwelling with five rental dwelling units (2688 Lake Shore Boulevard West)”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 2](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=2)
+  - > “Currently, the 2686 Lake Shore Boulevard West site is fenced off due to prior construction activity”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 2](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=2)
+  - > “The proposed development includes the demolition of five occupied rental dwelling units.”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 7](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=7)
+
+### Why?
+
+- [ ] **The current rules for part of the site only allow a three-storey building. The land was also designated for low-rise homes. Both had to change for a 12-storey building.**
+  - > “Site and Area Specific Policy (SASP) 365 which limits development on the site to a three-storey residential building”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 4](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=4)
+  - > “redesignating the subject lands from Neighbourhoods to Apartment Neighbourhoods and deleting Site and Area Specific Policy (SASP) 365”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 1](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=1)
+- [ ] **Lake Shore Boulevard West here is an “Avenue”, a main street where the City plans mid-rise buildings. Staff said this lot is deep enough to support a building taller than eight storeys.**
+  - Keep in mind: This is the opinion of City staff.
+  - > “Avenues are intended to develop in mid-rise scale that is generally no taller than the planned ROW.”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 8](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=8)
+  - > “can support a mid-rise building taller than eight storeys (27 metres)”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 8](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=8)
+- [ ] **Staff found the plan fits provincial policy and the City's Official Plan. They also found the shadow and wind effects acceptable.**
+  - Keep in mind: These are the opinions of City staff.
+  - > “The application is consistent with the Provincial Planning Statement (2024) and conforms to the City's Official Plan.”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 1](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=1)
+  - > “City staff find the shadow impact resulting from the proposal to be acceptable.”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 9](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=9)
+  - > “no pedestrian areas surrounding the subject site would experience unsafe conditions”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 9](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=9)
+
+### Who does it affect?
+
+- [ ] **The site is on the north side of Lake Shore Boulevard West, between Royal York Road and Dwight Avenue, in Ward 3 (Etobicoke-Lakeshore).**
+  - > “The site is located on the north side of Lake Shore Boulevard West, between Royal York Road and Dwight Avenue”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 2](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=2)
+  - > “Ward: 3 - Etobicoke - Lakeshore”
+    — [City of Toronto item page 2026.EY32.1](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY32.1#:~:text=Ward%3A%203%20%2D%20Etobicoke%20%2D%20Lakeshore)
+- [ ] **Tenants of the five rental apartments that would be torn down. The owner must give eligible tenants a Tenant Assistance Plan. Staff say it includes longer notice, help with the rent difference, moving money and a leasing agent.**
+  - > “provide and implement an acceptable Tenant Assistance Plan for eligible tenants of the five existing rental dwelling unit(s) proposed to be demolished”
+    — [City of Toronto item page 2026.EY32.1](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY32.1#:~:text=provide%20and%20implement%20an,proposed%20to%20be%20demolished)
+  - > “The accepted tenant assistance plan includes extended notice to move out, rent gap assistance, moving allowances and the services of a leasing agent.”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 7](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=7)
+- [ ] **People in the low-rise homes north of the site: staff say shadows would reach them mostly in the morning, from about 9:18 to 11:18 am, in March and September.**
+  - > “The proposal would minimize impacts on the low-rise Neighbourhoods properties to the north, primarily experienced during the morning hours of 9:18 am to 11:18 am”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 9](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=9)
+- [ ] **Neighbours raised concerns about height, shadows, parking, school space and construction impacts, including on groundwater.**
+  - > “Concerns over the proposed height and massing;”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 6](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=6)
+  - > “Concerns with potential hydro geologic impacts as a result of construction activities;”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 6](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=6)
+  - > “Lack of local school capacity for additional residents”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 6](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=6)
+
+### Conditions and things not settled
+
+- [ ] **Before the by-laws could be passed, the owner had to legally secure the Tenant Assistance Plan, through a lawyer's promise or an agreement registered on the property title.**
+  - > “provide a lawyer’s undertaking to the City, or alternatively enter into a legal agreement and register a Section 118 restriction on title”
+    — [City of Toronto item page 2026.EY32.1](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY32.1#:~:text=provide%20a%20lawyer%E2%80%99s%20undertaking,118%20restriction%20on%20title)
+- [ ] **City Council added three requests: look at safety of cars going in and out of the site, consider asking for a construction plan that deals with digging and groundwater pumping and involves neighbours, and consider spending the project's Community Benefits Charges on local streets and parks.**
+  - Keep in mind: These are requests to “consider”. The record does not guarantee the results.
+  - > “safety implications related to sightlines and vehicular movements into and out of the site from Lake Shore Boulevard West”
+    — [City of Toronto item page 2026.EY32.1](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY32.1#:~:text=safety%20implications%20related%20to,Lake%20Shore%20Boulevard%20West)
+  - > “the potential impacts of excavation and dewatering”
+    — [City of Toronto item page 2026.EY32.1](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY32.1#:~:text=the%20potential%20impacts%20of%20excavation%20and%20dewatering)
+  - > “improvements to the local street and intersection design, and parkland expansion and improvement”
+    — [City of Toronto item page 2026.EY32.1](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY32.1#:~:text=improvements%20to%20the%20local,parkland%20expansion%20and%20improvement)
+- [ ] **The owner must pay cash instead of giving land for parks.**
+  - > “the owner is required to satisfy the parkland dedication requirement through cash-in-lieu”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 10](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=10)
+- [ ] **Trees: the project would remove one City tree and one private tree, and injure eight private trees.**
+  - > “including removal of one city-owned tree and one private tree, and injury to eight private trees”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 11](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=11)
+
+### What happens next?
+
+- [ ] **Two by-laws have been passed for this item: 661-2026 and 662-2026.**
+  - > “See also By-laws 661-2026, 662-2026”
+    — [City of Toronto item page 2026.EY32.1](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY32.1#:~:text=See%20also%20By%2Dlaws%20661%2D2026%2C%20662%2D2026)
+- [ ] **Details such as site access, screening and wind features are to be reviewed in a later step called Site Plan Control.**
+  - Keep in mind: The record gives no dates for that step and does not say whether the public can comment on it.
+  - > “as part of their review of a potential site plan control application for the development”
+    — [City of Toronto item page 2026.EY32.1](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY32.1#:~:text=as%20part%20of%20their,application%20for%20the%20development)
+  - > “Additional screening around outdoor amenity areas and private terraces will be reviewed and secured through the Site Plan Control process.”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 8](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=8)
+
+### One-line summary of each step
+
+*staff*
+
+- [ ] **Staff recommended approval, with a Tenant Assistance Plan for the five rental homes.**
+  - > “This Report recommends approval of the application to amend the Official Plan and Zoning By-law”
+    — [Staff report from the Director, Community Planning, Etobicoke York District, page 1](https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf#page=1)
+
+*committee*
+
+- [ ] **Etobicoke York Community Council held the public meeting and recommended approval without changes.**
+  - > “This item was considered by the Etobicoke York Community Council on May 26, 2026 and adopted without amendment.”
+    — [City of Toronto item page 2026.EY32.1](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY32.1#:~:text=This%20item%20was%20considered,and%20adopted%20without%20amendment.)
+
+*council*
+
+- [ ] **City Council approved the Official Plan and zoning changes and added three requests about site safety, construction and Community Benefits Charges. The vote was 19 to 1.**
+  - > “City Council adopted this item on June 24 and 25, 2026 with amendments.”
+    — [City of Toronto item page 2026.EY32.1](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY32.1#:~:text=City%20Council%20adopted%20this,25%2C%202026%20with%20amendments.)
+  - > “Total members that voted Yes: 19”
+    — [City of Toronto item page 2026.EY32.1](https://secure.toronto.ca/council/agenda-item.do?item=2026.EY32.1#:~:text=Total%20members%20that%20voted%20Yes%3A%2019)
+
+## 2026.IE31.9: A study of ways to speed up the College streetcar
+
+- Official title: Speeding Up the College Streetcar Study
+- City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.IE31.9
+- Location shown: College Street in Ward 11, from Yonge Street west to about 801 College Street (approximate line joining 8 College Street addresses (1 College St to 801 College St) matched with the City of Toronto geocoder, all in Ward 11, retrieved 2026-11-14. The City record names the College streetcar and Ward 11, not exact blocks, so this shows the Ward 11 stretch of College Street)
+- Signed off by: **nobody yet**
+
+### What is being proposed?
+
+- [ ] **The committee asked City transportation staff and the TTC to study how to make the College streetcar faster and more reliable.**
+  - > “with recommendations how to improve the speed and reliability of the College Streetcar through transit priority measures that are within the control of the city”
+    — [City of Toronto item page 2026.IE31.9](https://secure.toronto.ca/council/agenda-item.do?item=2026.IE31.9#:~:text=with%20recommendations%20how%20to,control%20of%20the%20city)
+- [ ] **The study is about "transit priority measures". Examples given are changes to traffic signals and limits on parking and turns.**
+  - Keep in mind: These examples come from the motion's summary. The decision itself does not name any specific measure for College Street.
+  - > “Transit priority measures (including signal changes, and parking and turn restrictions)”
+    — [Motion to the Infrastructure and Environment Committee from the Ward 11 Councillor, page 1](https://www.toronto.ca/legdocs/mmis/2026/ie/bgrd/backgroundfile-289576.pdf#page=1)
+- [ ] **Staff and the TTC are asked to consult the community as part of this work. The decision asks for a study only. It does not change any road rules now.**
+  - > “to consult the community and to report back to Infrastructure and Environment Committee in the first quarter of 2027”
+    — [City of Toronto item page 2026.IE31.9](https://secure.toronto.ca/council/agenda-item.do?item=2026.IE31.9#:~:text=to%20consult%20the%20community,first%20quarter%20of%202027)
+
+### Why?
+
+- [ ] **The motion says more than half of Ward 11 residents do not have a car and rely on transit, walking or cycling.**
+  - > “More than half of Ward 11 residents do not have private vehicles and depend on transit and active transportation.”
+    — [City of Toronto item page 2026.IE31.9](https://secure.toronto.ca/council/agenda-item.do?item=2026.IE31.9#:~:text=More%20than%20half%20of,transit%20and%20active%20transportation.)
+- [ ] **The motion says Toronto streetcars are slow mainly because they get stuck in regular traffic.**
+  - Keep in mind: This is the motion's summary of outside research. The record does not include that research.
+  - > “due primarily to the vehicles being stuck in mixed traffic and lacking appropriate transit priority”
+    — [City of Toronto item page 2026.IE31.9](https://secure.toronto.ca/council/agenda-item.do?item=2026.IE31.9#:~:text=due%20primarily%20to%20the,lacking%20appropriate%20transit%20priority)
+- [ ] **The motion points to similar measures on Spadina, Bathurst and Dundas as showing that big improvements are possible.**
+  - > “that have been rolled out on Spadina, Bathurst and Dundas have demonstrated that considerable improvements are possible when transit gets the priority it deserves”
+    — [City of Toronto item page 2026.IE31.9](https://secure.toronto.ca/council/agenda-item.do?item=2026.IE31.9#:~:text=that%20have%20been%20rolled,the%20priority%20it%20deserves)
+
+### Who does it affect?
+
+- [ ] **People who ride the College streetcar.**
+  - > “improve the speed and reliability of the College Streetcar”
+    — [City of Toronto item page 2026.IE31.9](https://secure.toronto.ca/council/agenda-item.do?item=2026.IE31.9#:~:text=improve%20the%20speed%20and,of%20the%20College%20Streetcar)
+- [ ] **People who drive, park, make deliveries or run a business on College Street could be affected later if parking or turning rules change.**
+  - Keep in mind: The record does not say which blocks or which rules could change. That would come after the study.
+  - > “Now it’s time to learn what is possible and achievable on College Street.”
+    — [Motion to the Infrastructure and Environment Committee from the Ward 11 Councillor, page 1](https://www.toronto.ca/legdocs/mmis/2026/ie/bgrd/backgroundfile-289576.pdf#page=1)
+- [ ] **The City lists one ward for this item: 11 (University-Rosedale).**
+  - > “11 - University - Rosedale”
+    — [City of Toronto item page 2026.IE31.9](https://secure.toronto.ca/council/agenda-item.do?item=2026.IE31.9#:~:text=11%20%2D%20University%20%2D%20Rosedale)
+
+### Conditions and things not settled
+
+- [ ] **The study only covers measures that the City itself controls.**
+  - > “transit priority measures that are within the control of the city”
+    — [City of Toronto item page 2026.IE31.9](https://secure.toronto.ca/council/agenda-item.do?item=2026.IE31.9#:~:text=transit%20priority%20measures%20that,control%20of%20the%20city)
+- [ ] **One committee member declared a conflict of interest and was absent from the votes.**
+  - > “The following member(s) declared an interest:”
+    — [City of Toronto item page 2026.IE31.9](https://secure.toronto.ca/council/agenda-item.do?item=2026.IE31.9#:~:text=The%20following%20member(s)%20declared%20an%20interest%3A)
+  - > “(Interest Declared)”
+    — [City of Toronto item page 2026.IE31.9](https://secure.toronto.ca/council/agenda-item.do?item=2026.IE31.9#:~:text=(Interest%20Declared))
+
+### What happens next?
+
+- [ ] **Staff and the TTC are due to report back to the Infrastructure and Environment Committee in the first three months of 2027, with recommendations.**
+  - Keep in mind: No meeting date for that report is in the record yet. When it is scheduled, the City's page for that new item will show whether you can comment or speak.
+  - > “to report back to Infrastructure and Environment Committee in the first quarter of 2027”
+    — [City of Toronto item page 2026.IE31.9](https://secure.toronto.ca/council/agenda-item.do?item=2026.IE31.9#:~:text=to%20report%20back%20to,first%20quarter%20of%202027)
+
+### One-line summary of each step
+
+*committee*
+
+- [ ] **The Infrastructure and Environment Committee adopted the motion without changes. The vote was 5 to 0.**
+  - > “This item was considered by Infrastructure and Environment Committee on July 15, 2026 and was adopted without amendment.”
+    — [City of Toronto item page 2026.IE31.9](https://secure.toronto.ca/council/agenda-item.do?item=2026.IE31.9#:~:text=This%20item%20was%20considered,was%20adopted%20without%20amendment.)
+  - > “Yes: 5”
+    — [City of Toronto item page 2026.IE31.9](https://secure.toronto.ca/council/agenda-item.do?item=2026.IE31.9#:~:text=Yes%3A%205)
+
 ## 2026.NY34.12: Two 59-storey towers approved at 245 Eglinton Avenue East
 
 - Official title: 245 Eglinton Avenue East - Official Plan Amendment and Zoning By-law Amendment Application- Decision Report - Approval
@@ -134,6 +450,956 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
   - > “City Council adopted this item on July 29 and 30, 2026 with amendments.”
     — [City of Toronto item page 2026.NY34.12](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.12#:~:text=City%20Council%20adopted%20this,30%2C%202026%20with%20amendments.)
 
+## 2026.NY34.25: City Council refused a 7-storey building at 922 Millwood Road
+
+- Official title: 922 Millwood Road - Official Plan Amendment and Zoning By-law Amendment Application - Decision Report - Approval
+- City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.25
+- Location shown: 922 Millwood Road (City of Toronto geocoder (map.toronto.ca), address match for "922 Millwood Rd", retrieved 2026-11-14)
+- Signed off by: **nobody yet**
+
+### What is being proposed?
+
+- [ ] **The owner asked to change the Official Plan and the zoning rules for 922 Millwood Road to build a 7-storey building. It would have homes above and a small shop on the ground floor. City Council said no.**
+  - > “The application proposes a 7-storey (21 metres plus 4 metre mechanical penthouse and rooftop amenity space) mixed-use building at 922 Millwood Road.”
+    — [Revised staff report from the Director, Community Planning, North York District, page 3](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=3)
+  - > “City Council refuse the application to amend the Official Plan for the lands municipally known as 922 Millwood Road.”
+    — [City of Toronto item page 2026.NY34.25](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.25#:~:text=City%20Council%20refuse%20the,as%20922%20Millwood%20Road.)
+- [ ] **The building would have 44 homes, 29 car parking spaces underground and 52 bicycle parking spaces. Most homes would have one bedroom.**
+  - > “The proposal includes 44 dwelling units, 33 one-bedroom (75%), 6 two-bedroom (13.6%), and 5 three-bedroom units (11.4%).”
+    — [Revised staff report from the Director, Community Planning, North York District, page 3](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=3)
+  - > “The proposal includes a total of 29 vehicular parking spaces (25 resident and 4 visitor)”
+    — [Revised staff report from the Director, Community Planning, North York District, page 4](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=4)
+  - > “A total of 52 bicycle parking spaces”
+    — [Revised staff report from the Director, Community Planning, North York District, page 4](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=4)
+- [ ] **The top floor would hold only shared amenity space and equipment, with no homes. It would cover about half the roof.**
+  - > “The seventh storey is a partial storey and consists solely of amenity space and mechanical penthouse and is limited to approximately 50 percent of the roof area.”
+    — [Revised staff report from the Director, Community Planning, North York District, page 9](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=9)
+- [ ] **The plan is smaller than first proposed. The original application asked for 8 storeys and 60 homes.**
+  - > “The original application was for an 8 storey (26.3 metres plus a 4 metre mechanical penthouse) residential building”
+    — [Revised staff report from the Director, Community Planning, North York District, page 1](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=1)
+  - > “60 residential dwelling units and 29 vehicular parking spaces”
+    — [Revised staff report from the Director, Community Planning, North York District, page 1](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=1)
+- [ ] **The site is empty now. It used to hold a one-storey dry cleaner.**
+  - > “The site is generally flat and is currently vacant.”
+    — [Revised staff report from the Director, Community Planning, North York District, page 3](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=3)
+  - > “The subject site was previously occupied by a single storey dry-cleaning establishment”
+    — [Revised staff report from the Director, Community Planning, North York District, page 3](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=3)
+
+### Why?
+
+- [ ] **The site is in an area planned for low-rise homes, where buildings can be up to four storeys. A 7-storey building needed a change to the Official Plan.**
+  - > “While the Neighbourhoods designation only permits buildings up to four storeys in height”
+    — [Revised staff report from the Director, Community Planning, North York District, page 7](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=7)
+  - > “An Official Plan Amendment application is required to permit a 7-storey mixed-use building in a Neighbourhoods designation.”
+    — [Revised staff report from the Director, Community Planning, North York District, page 4](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=4)
+- [ ] **City staff supported the building. They said Millwood Road already has a mix of building types, and that nearby apartment buildings range from three to seven storeys.**
+  - Keep in mind: This is the opinion of City staff. City Council did not follow it.
+  - > “Staff are of the opinion that the proposed 7-storey residential apartment building is an acceptable form of modest intensification”
+    — [Revised staff report from the Director, Community Planning, North York District, page 8](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=8)
+  - > “a number of existing apartment buildings with heights ranging from three to seven storeys”
+    — [Revised staff report from the Director, Community Planning, North York District, page 8](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=8)
+- [ ] **City Council voted 12 to 11 to refuse the application.**
+  - Keep in mind: The City's item page does not state Council's reasons for refusing.
+  - > “City Council refuse the application to amend City of Toronto Zoning By-law 569-2013”
+    — [City of Toronto item page 2026.NY34.25](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.25#:~:text=City%20Council%20refuse%20the,Toronto%20Zoning%20By%2Dlaw%20569%2D2013)
+  - > “Yes: 12”
+    — [City of Toronto item page 2026.NY34.25](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.25#:~:text=Yes%3A%2012)
+  - > “No: 11”
+    — [City of Toronto item page 2026.NY34.25](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.25#:~:text=No%3A%2011)
+
+### Who does it affect?
+
+- [ ] **The site is at the northeast corner of Millwood Road and Randolph Road, in Ward 15 (Don Valley West).**
+  - > “The site is located at the north east corner of Millwood Road and Randolph Road.”
+    — [Revised staff report from the Director, Community Planning, North York District, page 3](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=3)
+- [ ] **People in the two-storey houses across Krawchuk Lane to the north: cars and delivery trucks would use a driveway off the lane.**
+  - > “Krawchuk Lane and two-storey single detached homes to the north.”
+    — [Revised staff report from the Director, Community Planning, North York District, page 3](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=3)
+  - > “Parking and loading are proposed to be accessed via a private driveway from Krawchuk Lane.”
+    — [Revised staff report from the Director, Community Planning, North York District, page 4](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=4)
+- [ ] **At a public meeting run by staff, about 98 people attended. Concerns included height, traffic, parking, shadows and privacy. Some people supported more housing.**
+  - > “attended by approximately 98 members of the public”
+    — [Revised staff report from the Director, Community Planning, North York District, page 6](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=6)
+  - > “Concerns regarding shadowing, privacy, overlook, setbacks, and impacts on adjacent residential properties”
+    — [Revised staff report from the Director, Community Planning, North York District, page 6](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=6)
+  - > “Support for additional housing, mixed-use development, walkability, and senior housing options.”
+    — [Revised staff report from the Director, Community Planning, North York District, page 6](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=6)
+
+### Conditions and things not settled
+
+- [ ] **The owner may appeal the refusal to the Ontario Land Tribunal. Council allowed the City's lawyer to defend the decision there if that happens.**
+  - Keep in mind: This page has not checked whether an appeal was filed.
+  - > “City Council authorize the City Solicitor to attend at the Ontario Land Tribunal if the matter is appealed and to retain outside consultants as necessary.”
+    — [City of Toronto item page 2026.NY34.25](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.25#:~:text=City%20Council%20authorize%20the,outside%20consultants%20as%20necessary.)
+- [ ] **Before its vote on the item, the community council voted to add requests for privacy screening on the rooftop and a less blank side wall.**
+  - Keep in mind: City Council refused the application, so the record does not show these requests as part of any approval.
+  - > “appropriate buffer / screening is provided between the rooftop amenity area and the residential neighbourhood across Krawchuk Lane”
+    — [City of Toronto item page 2026.NY34.25](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.25#:~:text=appropriate%20buffer%20%2F%20screening,neighbourhood%20across%20Krawchuk%20Lane)
+  - > “Forwarded this item to City Council without recomendation.”
+    — [City of Toronto item page 2026.NY34.25](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.25#:~:text=Forwarded%20this%20item%20to%20City%20Council%20without%20recomendation.)
+
+### What happens next?
+
+- [ ] **The building cannot go ahead under this decision. If the owner appeals, the Ontario Land Tribunal would decide the matter.**
+  - Keep in mind: The record does not say whether an appeal has been made.
+  - > “if the matter is appealed”
+    — [City of Toronto item page 2026.NY34.25](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.25#:~:text=if%20the%20matter%20is%20appealed)
+
+### One-line summary of each step
+
+*staff*
+
+- [ ] **Staff recommended approval.**
+  - > “This report reviews and recommends approval of the application”
+    — [Revised staff report from the Director, Community Planning, North York District, page 1](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf#page=1)
+
+*committee*
+
+- [ ] **The community council held the public meeting. A motion to approve the item lost, 2 to 3, so it went to City Council with no recommendation either way.**
+  - > “Forwarded this item to City Council without recomendation.”
+    — [City of Toronto item page 2026.NY34.25](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.25#:~:text=Forwarded%20this%20item%20to%20City%20Council%20without%20recomendation.)
+  - > “Result: Lost Majority Required Total members that voted Yes: 2”
+    — [City of Toronto item page 2026.NY34.25](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.25#:~:text=Result%3A%20Lost%20Majority%20Required,that%20voted%20Yes%3A%202)
+
+*council*
+
+- [ ] **City Council refused the Official Plan and zoning changes, against staff's advice.**
+  - > “City Council adopted this item on July 29 and 30, 2026 with amendments.”
+    — [City of Toronto item page 2026.NY34.25](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.25#:~:text=City%20Council%20adopted%20this,30%2C%202026%20with%20amendments.)
+  - > “City Council refuse the application to amend the Official Plan for the lands municipally known as 922 Millwood Road.”
+    — [City of Toronto item page 2026.NY34.25](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.25#:~:text=City%20Council%20refuse%20the,as%20922%20Millwood%20Road.)
+
+## 2026.NY34.8: 14-storey apartment building approved at 1-11 Vinci Crescent
+
+- Official title: 1-11 Vinci Crescent - Official Plan Amendment and Zoning Amendment Applications - Decision Report - Approval
+- City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.8
+- Location shown: 1-11 Vinci Crescent (City of Toronto geocoder (map.toronto.ca), address match for "1 Vinci Cres", retrieved 2026-11-14)
+- Signed off by: **nobody yet**
+
+### What is being proposed?
+
+- [ ] **City Council changed the Official Plan and the zoning rules for 1-11 Vinci Crescent so that a 14-storey apartment building can be built there.**
+  - > “to permit the development of a 14-storey residential building at 1-11 Vinci Cres”
+    — [Staff report from the Director, Community Planning, North York District, page 1](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=1)
+  - > “City Council amend the Official Plan for the lands municipally known as 1-11 Vinci Crescent”
+    — [City of Toronto item page 2026.NY34.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.8#:~:text=City%20Council%20amend%20the,as%201%2D11%20Vinci%20Crescent)
+- [ ] **The building would have 299 homes. Most would have two bedrooms. There would be 126 car parking spaces underground and 225 bicycle parking spaces.**
+  - > “The proposal includes 299 dwelling units comprised of 67 one-bedroom (22%), 202 two- bedroom (67%), and 30 three-bedroom units (10%).”
+    — [Staff report from the Director, Community Planning, North York District, page 3](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=3)
+  - > “A total of 126 vehicular parking spaces and 225 bicycle parking spaces are proposed”
+    — [Staff report from the Director, Community Planning, North York District, page 1](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=1)
+- [ ] **The building would replace six houses. These contain seven homes, and two of those homes are rented.**
+  - > “The subject site is currently developed with six single-detached dwellings”
+    — [Staff report from the Director, Community Planning, North York District, page 2](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=2)
+  - > “the proposal includes the demolition of seven residential dwelling units, two of which are rental”
+    — [Staff report from the Director, Community Planning, North York District, page 1](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=1)
+- [ ] **Cars would enter and leave from Vinci Crescent. This was moved from the laneway to the south after feedback from staff and residents.**
+  - > “relocating the main vehicle access from the public laneway (Lane Total N Wilson E Faywood) to Vinci Crescent”
+    — [Staff report from the Director, Community Planning, North York District, page 3](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=3)
+
+### Why?
+
+- [ ] **The land is now planned for low-rise homes. Rules allow buildings of up to four storeys. A building this tall needed a change to the Official Plan.**
+  - > “multiplexes and apartment buildings with heights up to four storeys are permitted”
+    — [Staff report from the Director, Community Planning, North York District, page 6](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=6)
+  - > “An amendment to the Official Plan is required to permit a more intensive residential development at the proposed height and density.”
+    — [Staff report from the Director, Community Planning, North York District, page 4](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=4)
+- [ ] **City staff supported the change. They pointed out the site sits between areas already planned for bigger buildings, and is close to Wilson subway station.**
+  - Keep in mind: This is the opinion of City staff.
+  - > “Staff are of the opinion that the proposed redesignation is appropriate given the site’s location between Mixed Use Areas and Apartment Neighbourhoods designations”
+    — [Staff report from the Director, Community Planning, North York District, page 9](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=9)
+  - > “It is within 500 metres of the centre point of the delineated Wilson Station”
+    — [Staff report from the Director, Community Planning, North York District, page 5](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=5)
+- [ ] **Staff said the building steps back from the houses to the east to ease the change in height. On the east side it is set back 10.8 metres, and 20 metres for the top three floors.**
+  - Keep in mind: This is the opinion of City staff.
+  - > “the building maintains an increased setback of 10.80 metres up to the 11 th storey adjacent to existing low-rise residential dwellings”
+    — [Staff report from the Director, Community Planning, North York District, page 10](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=10)
+  - > “This setback increases to 20 metres starting from the 12 th to the 14 th storey.”
+    — [Staff report from the Director, Community Planning, North York District, page 10](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=10)
+
+### Who does it affect?
+
+- [ ] **The site is at the southeast corner of Vinci Crescent and Faywood Boulevard, in Ward 6 (York Centre).**
+  - > “The subject site is located at the southeast corner of Vinci Crescent and Faywood Boulevard.”
+    — [Staff report from the Director, Community Planning, North York District, page 2](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=2)
+- [ ] **Tenants who live there now: staff say a Tenant Assistance Plan will help them. Their rented homes do not have to be replaced, because fewer than six are being torn down.**
+  - > “A Tenant Assistance Plan will be secured to lessen hardship for existing tenants.”
+    — [Staff report from the Director, Community Planning, North York District, page 1](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=1)
+  - > “Replacement of the demolished rental units is not required”
+    — [Staff report from the Director, Community Planning, North York District, page 9](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=9)
+- [ ] **The house next door at 15 Vinci Crescent: the building's driveway would run beside it. The original shadow study found most added shadow on that house in the late afternoon in spring and fall.**
+  - Keep in mind: Staff say the building was later changed to reduce shadows. The report does not give updated shadow times for 15 Vinci Crescent.
+  - > “will be located along the east side of the property between the subject lands and 15 Vinci Crescent”
+    — [Staff report from the Director, Community Planning, North York District, page 11](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=11)
+  - > “particularly on 15 Vinci Crescent between 3:18pm and 6:18pm during the spring and fall equinoxes”
+    — [Staff report from the Director, Community Planning, North York District, page 12](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=12)
+- [ ] **Families with school-age children: the public school board says local schools do not have room for students from new buildings.**
+  - > “TDSB staff have determined that there is insufficient capacity at the local schools to accommodate students from new residential developments.”
+    — [Staff report from the Director, Community Planning, North York District, page 16](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=16)
+
+### Conditions and things not settled
+
+- [ ] **The new zoning comes with a hold. Building cannot go ahead until the owner shows that water and sewer systems can handle it, and until studies on air quality, noise and vibration are accepted.**
+  - > “restrict development on the site until such time as the owner has addressed servicing and stormwater management, land use compatibility, air quality, noise and vibration matters”
+    — [Staff report from the Director, Community Planning, North York District, page 1](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=1)
+- [ ] **Council asked the owner to try to buy 15 Vinci Crescent, so the site could include a park instead of the owner paying cash. If that does not happen and building starts, Council directed a construction plan that protects that house and limits noise.**
+  - Keep in mind: This only asks the owner to try. The record does not say whether the purchase will happen.
+  - > “City Council request the owners of 1-11 Vinci Crescent to contact the owner of 15 Vinci Crescent”
+    — [City of Toronto item page 2026.NY34.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.8#:~:text=City%20Council%20request%20the,of%2015%20Vinci%20Crescent)
+  - > “a shoring-support system adjacent to 15 Vinci Crescent that will not affect the structure, frame, foundation of the property at 15 Vinci Crescent”
+    — [City of Toronto item page 2026.NY34.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.8#:~:text=a%20shoring%2Dsupport%20system%20adjacent,at%2015%20Vinci%20Crescent)
+  - > “mitigation of construction noise and drilling”
+    — [City of Toronto item page 2026.NY34.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.8#:~:text=mitigation%20of%20construction%20noise%20and%20drilling)
+- [ ] **Council also asked the owner to look for park land nearby instead. This could include improving the City laneway to the south that leads to the new Faywood Park. If no land is found, the owner pays cash instead.**
+  - > “that such could include enhancing the existing city-owned laneway to the south of the subject site to the newly opened Faywood Park”
+    — [City of Toronto item page 2026.NY34.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.8#:~:text=that%20such%20could%20include,newly%20opened%20Faywood%20Park)
+  - > “the Owner will be required to satisfy the parkland dedication requirement through a cash-in-lieu of parkland payment”
+    — [City of Toronto item page 2026.NY34.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.8#:~:text=the%20Owner%20will%20be,cash%2Din%2Dlieu%20of%20parkland%20payment)
+- [ ] **Council asked staff to keep working with the owner to lower the building's height and to look at other ways in and out of the building.**
+  - Keep in mind: This is a request. The by-laws allow 14 storeys, and the record does not say the height will change.
+  - > “continue to work with the applicant through site plan to reduce the height of the building, explore alternative exit and entry routes to the building”
+    — [City of Toronto item page 2026.NY34.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.8#:~:text=continue%20to%20work%20with,routes%20to%20the%20building)
+- [ ] **Traffic: the owner's consultant says nearby streets can handle the new traffic. City transportation staff said more study is needed.**
+  - > “Transportation staff have identified that further analysis is required”
+    — [Staff report from the Director, Community Planning, North York District, page 14](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=14)
+
+### What happens next?
+
+- [ ] **Two by-laws have been passed for this item: 986-2026 and 987-2026.**
+  - > “See also By-laws 986-2026, 987-2026”
+    — [City of Toronto item page 2026.NY34.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.8#:~:text=See%20also%20By%2Dlaws%20986%2D2026%2C%20987%2D2026)
+- [ ] **City transportation staff are to study a no-right-turn sign at the building's exit and an all-way stop at Faywood Avenue and Vinci Crescent, and add them where possible.**
+  - > “no right turn sign at the exit of 1-11 Vinci Crescent”
+    — [City of Toronto item page 2026.NY34.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.8#:~:text=no%20right%20turn%20sign,of%201%2D11%20Vinci%20Crescent)
+  - > “an all way stop at Faywood Avenue and Vinci Crescent”
+    — [City of Toronto item page 2026.NY34.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.8#:~:text=an%20all%20way%20stop,Avenue%20and%20Vinci%20Crescent)
+- [ ] **Other details, such as landscaping, wind protection and an updated traffic study, are to be settled in a later step called Site Plan Control.**
+  - Keep in mind: The record gives no dates for that step.
+  - > “An updated TIS is required through a future Site Plan Control application”
+    — [Staff report from the Director, Community Planning, North York District, page 14](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=14)
+  - > “Outstanding items will be dealt with through the Site Plan Approval application and through the clearing of the holding provision.”
+    — [Staff report from the Director, Community Planning, North York District, page 16](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=16)
+
+### One-line summary of each step
+
+*staff*
+
+- [ ] **Staff recommended approval.**
+  - > “This Report recommends approval of the application to amend the Official Plan and Zoning By-law”
+    — [Staff report from the Director, Community Planning, North York District, page 1](https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf#page=1)
+
+*committee*
+
+- [ ] **The community council held the public meeting. It recommended approval and added requests about buying the house next door, construction protections, a traffic study and the ravine path. A proposal to have the City look at buying 1 Vinci Crescent for a park did not make it into its recommendations.**
+  - > “on July 7, 2026 and was adopted with amendments.”
+    — [City of Toronto item page 2026.NY34.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.8#:~:text=on%20July%207%2C%202026,was%20adopted%20with%20amendments.)
+  - > “explore the purchase of 1 Vinci Crescent with the north parkland acquisition fund”
+    — [City of Toronto item page 2026.NY34.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.8#:~:text=explore%20the%20purchase%20of,north%20parkland%20acquisition%20fund)
+
+*council*
+
+- [ ] **City Council approved the Official Plan and zoning changes. It added the community council's requests and more about park land, a lower height and help for tenants.**
+  - > “City Council adopted this item on July 29 and 30, 2026 with amendments.”
+    — [City of Toronto item page 2026.NY34.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.8#:~:text=City%20Council%20adopted%20this,30%2C%202026%20with%20amendments.)
+
+## 2026.PH30.2: Taller towers with 840 rental homes approved on City land at 970 Kipling Avenue
+
+- Official title: Toronto Builds: 970 Kipling Avenue - Zoning By-law Amendment Application - Decision Report - Approval
+- City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.PH30.2
+- Location shown: 970 Kipling Avenue (City of Toronto geocoder (map.toronto.ca), address match for "970 Kipling Ave", retrieved 2026-11-14)
+- Signed off by: **nobody yet**
+
+### What is being proposed?
+
+- [ ] **City Council changed the zoning for 970 Kipling Avenue to allow a 43-storey tower and a 28-storey tower on a shared 5-storey base, with shops at street level.**
+  - > “The proposal consists of a 43-storey tower and a 28-storey tower”
+    — [Staff report from the Interim Executive Director, Development Review, page 12](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=12)
+  - > “City Council amend City of Toronto Zoning By-law 569-2013, as amended by Site-Specific Zoning By-law 825-2021, for the lands municipally known as 970 Kipling Avenue”
+    — [City of Toronto item page 2026.PH30.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.PH30.2#:~:text=City%20Council%20amend%20City,as%20970%20Kipling%20Avenue)
+- [ ] **This changes an earlier approval. The old zoning allowed two towers of 42 and 91 metres. The new towers are 94.7 and 140.3 metres tall, and one has moved to a different corner of the site.**
+  - > “Whereas the approved zoning allows for a two-tower development with heights of 42.0 and 91.0 metres”
+    — [Staff report from the Interim Executive Director, Development Review, page 1](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=1)
+  - > “One tower has been repositioned from the southeast corner to the northeast corner of the site”
+    — [Staff report from the Interim Executive Director, Development Review, page 6](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=6)
+- [ ] **There would be about 840 homes, including 198 affordable homes. All homes would be rentals, because this is City-owned land under the Toronto Builds program.**
+  - > “Approximately 840 residential units are proposed, including 198 affordable units.”
+    — [Staff report from the Interim Executive Director, Development Review, page 1](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=1)
+  - > “Projects on City-owned land will deliver projects with the residential component being 100% purpose-built rental housing in tenure.”
+    — [Staff report from the Interim Executive Director, Development Review, page 5](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=5)
+- [ ] **Shop and office space would shrink from 3,519 to 1,000 square metres, mostly because the second-floor offices were dropped.**
+  - > “amount of non-residential space (from 3,519 square metre to 1,000 square metres), largely due to the elimination of the second storey office component”
+    — [Staff report from the Interim Executive Director, Development Review, page 7](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=7)
+- [ ] **There would be 229 car parking spaces underground and 644 bicycle parking spaces. Cars and trucks would enter from Beamish Drive.**
+  - > “The proposal includes 229 vehicular parking spaces across two below-grade levels”
+    — [Staff report from the Interim Executive Director, Development Review, page 7](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=7)
+  - > “A single vehicle access point is provided off Beamish Drive”
+    — [Staff report from the Interim Executive Director, Development Review, page 15](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=15)
+  - > “of 644 bicycle parking spaces is provided”
+    — [Staff report from the Interim Executive Director, Development Review, page 7](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=7)
+- [ ] **The plan still includes a long, narrow public park of 2,703 square metres on the north part of the site, along the old path of Dundas Street West.**
+  - > “The proposal continues to include a 2,703 square metre linear public park”
+    — [Staff report from the Interim Executive Director, Development Review, page 7](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=7)
+
+### Why?
+
+- [ ] **The site is City land picked for affordable housing. It is being built through Toronto Builds, the City's plan for more affordable rental homes on public land.**
+  - > “This development proposal on City-owned land is being delivered through the Toronto Builds Policy Framework.”
+    — [Staff report from the Interim Executive Director, Development Review, page 1](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=1)
+  - > “setting out the Toronto Builds policy framework to build more affordable rental homes on public land”
+    — [Staff report from the Interim Executive Director, Development Review, page 2](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=2)
+- [ ] **Staff said the height and density are right for the area, which is planned for tall, dense buildings near Kipling Station. Other tall buildings of up to 45 storeys are approved nearby.**
+  - Keep in mind: This is the opinion of City staff.
+  - > “the proposed height and density are appropriate”
+    — [Staff report from the Interim Executive Director, Development Review, page 12](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=12)
+  - > “the multi-tower phased redevelopment of Six Points Plaza with heights up to 45 storeys (140 metres)”
+    — [Staff report from the Interim Executive Director, Development Review, page 6](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=6)
+- [ ] **The tower floors are larger than the City's tall building guidelines suggest. Staff said the tower positions and spacing reduce the effects on light, shadow, sky view and privacy.**
+  - Keep in mind: This is the opinion of City staff.
+  - > “While the tower floor plates are larger than the 750 square metres identified in the Tall Building Design Guidelines”
+    — [Staff report from the Interim Executive Director, Development Review, page 12](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=12)
+  - > “mitigate potential light, shadow, skyview, and privacy impacts of the larger floor plates”
+    — [Staff report from the Interim Executive Director, Development Review, page 12](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=12)
+- [ ] **The City gives up fees, charges and property taxes on the affordable homes. These are not cash payments.**
+  - > “These incentives are not a direct capital payment as they represent the forgiveness of City levies and charges and are thus foregone revenue to the City.”
+    — [Staff report from the Interim Executive Director, Development Review, page 2](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=2)
+
+### Who does it affect?
+
+- [ ] **The site is bounded by Dundas Street West, Kipling Avenue and Beamish Drive, in Ward 3 (Etobicoke-Lakeshore). It used to be part of the old “spaghetti junction” road interchange.**
+  - > “frontages of 67 metres along Dundas Street West, 89 metres along Kipling Avenue, and 46 metres along Beamish Drive”
+    — [Staff report from the Interim Executive Director, Development Review, page 6](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=6)
+  - > “the site formed part of the “spaghetti junction” interchange”
+    — [Staff report from the Interim Executive Director, Development Review, page 6](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=6)
+  - > “Ward: 3 - Etobicoke - Lakeshore”
+    — [City of Toronto item page 2026.PH30.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.PH30.2#:~:text=Ward%3A%203%20%2D%20Etobicoke%20%2D%20Lakeshore)
+- [ ] **People who need affordable housing. The affordable homes would be filled through the City's central application system.**
+  - > “will be accessed through the City’s centralized affordable housing access system”
+    — [Staff report from the Interim Executive Director, Development Review, page 5](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=5)
+- [ ] **Users of nearby public spaces: the towers would shade the southwest corner of Dunkip Park at 2:18 pm in March and September, and the future Etobicoke Civic Centre plaza in the early evening.**
+  - > “the proposal will cast a shadow on the south-west corner of Dunkip Park during the spring and fall equinoxes at 2:18 pm”
+    — [Staff report from the Interim Executive Director, Development Review, page 13](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=13)
+  - > “Shadow will be cast onto the future Etobicoke Civic Centre Plaza from 5:18 pm to 6:18 pm.”
+    — [Staff report from the Interim Executive Director, Development Review, page 13](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=13)
+- [ ] **Neighbours raised concerns about parking spilling onto local streets, traffic, pressure on hospitals and schools, and tree loss.**
+  - > “Traffic impacts arising from the increased population, congestion, and traffic infiltration into residential areas.”
+    — [Staff report from the Interim Executive Director, Development Review, page 10](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=10)
+  - > “Impacts on local community services and facilities including hospitals and schools;”
+    — [Staff report from the Interim Executive Director, Development Review, page 10](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=10)
+
+### Conditions and things not settled
+
+- [ ] **Staff said the water and sewer reports still need revisions. They recommended a hold in the zoning, so the land cannot be used for the towers until the owner shows the pipes can handle it.**
+  - > “revisions are required to confirm that adequate servicing capacity is available within the existing municipal infrastructure”
+    — [Staff report from the Interim Executive Director, Development Review, page 13](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=13)
+  - > “Staff recommend that the zoning bylaw be subject to a holding provision under Section 36 of the Planning Act”
+    — [Staff report from the Interim Executive Director, Development Review, page 13](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=13)
+- [ ] **The project does not have to give land or cash for parks, because the site was named a Housing Now site in 2019.**
+  - > “This proposal is exempt from the parkland dedication requirement”
+    — [Staff report from the Interim Executive Director, Development Review, page 15](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=15)
+- [ ] **Staff expect more car trips than in the old approval: 135 two-way trips, up from 105, and 160 in the afternoon rush hour, up from 125. Staff found this acceptable.**
+  - Keep in mind: The report does not say which time period the 135 figure covers.
+  - > “The revised proposal results in 135 two-way trips (compared to 105 for the original approval) and 160 in the afternoon peak hour (compared to 125 previously).”
+    — [Staff report from the Interim Executive Director, Development Review, page 15](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=15)
+  - > “Staff consider the proposed development acceptable from a traffic impact standpoint.”
+    — [Staff report from the Interim Executive Director, Development Review, page 15](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=15)
+- [ ] **Trees: the project would remove 1 tree and injure 23, and keep 28.**
+  - > “The proposed development will remove 1, injure 23 and preserve 28 existing by-law regulated trees.”
+    — [Staff report from the Interim Executive Director, Development Review, page 16](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=16)
+
+### What happens next?
+
+- [ ] **A by-law has been passed for this item: 492-2026.**
+  - > “See also By-law 492-2026”
+    — [City of Toronto item page 2026.PH30.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.PH30.2#:~:text=See%20also%20By%2Dlaw%20492%2D2026)
+- [ ] **Details such as energy standards, tree soil and wind measures are to be settled in a later step called Site Plan Control.**
+  - Keep in mind: The record gives no dates for that step and does not say whether the public can comment on it.
+  - > “Performance measures to achieve this requirement will be secured through the Site Plan Control application process.”
+    — [Staff report from the Interim Executive Director, Development Review, page 9](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=9)
+  - > “Soil volumes on the site will continue to be evaluated through the Site Plan Control process”
+    — [Staff report from the Interim Executive Director, Development Review, page 16](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=16)
+
+### One-line summary of each step
+
+*staff*
+
+- [ ] **Staff recommended approval.**
+  - > “This report recommends approval of the application to amend Zoning By-law 569-2013”
+    — [Staff report from the Interim Executive Director, Development Review, page 1](https://www.toronto.ca/legdocs/mmis/2026/ph/bgrd/backgroundfile-286388.pdf#page=1)
+
+*committee*
+
+- [ ] **The Planning and Housing Committee held the public meeting and recommended approval without changes.**
+  - > “This item was considered by the Planning and Housing Committee on May 7, 2026 and adopted without amendment.”
+    — [City of Toronto item page 2026.PH30.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.PH30.2#:~:text=This%20item%20was%20considered,and%20adopted%20without%20amendment.)
+
+*council*
+
+- [ ] **City Council approved the zoning change without changes. The vote was 20 to 1.**
+  - > “City Council adopted this item on May 20 and 21, 2026 without amendments.”
+    — [City of Toronto item page 2026.PH30.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.PH30.2#:~:text=City%20Council%20adopted%20this,21%2C%202026%20without%20amendments.)
+  - > “Total members that voted Yes: 20”
+    — [City of Toronto item page 2026.PH30.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.PH30.2#:~:text=Total%20members%20that%20voted%20Yes%3A%2020)
+
+## 2026.SC30.8: Four speed cushions and a lower speed limit on Nightstar Road
+
+- Official title: Nightstar Road - Traffic Calming (Speed Cushions) and Heavy Vehicle Prohibition
+- City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.SC30.8
+- Location shown: Nightstar Road, between Morningside Avenue and Mantis Road/Knotwood Crescent/Flower Crescent (approximate line joining 5 Nightstar Road addresses (2 to 99 Nightstar Rd) matched with the City of Toronto geocoder (map.toronto.ca), retrieved 2026-11-14. The exact speed cushion spots are shown only on the report's drawings)
+- Signed off by: **nobody yet**
+
+### What is being proposed?
+
+- [ ] **City Council approved four speed cushions on Nightstar Road, between Morningside Avenue and Mantis Road/Knotwood Crescent/Flower Crescent. Speed cushions are raised bumps that slow cars down.**
+  - > “City Council authorize the installation of traffic calming (four speed cushions) on Nightstar Road, between Morningside Avenue and Mantis Road/Knotwood Crescent/Flower Crescent”
+    — [City of Toronto item page 2026.SC30.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC30.8#:~:text=City%20Council%20authorize%20the,Mantis%20Road%2FKnotwood%20Crescent%2FFlower%20Crescent)
+- [ ] **The speed limit on that part of Nightstar Road goes down from 40 km/h to 30 km/h.**
+  - > “City Council reduce the speed limit from 40 km/h to 30 km/h on Nightstar Road”
+    — [City of Toronto item page 2026.SC30.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC30.8#:~:text=City%20Council%20reduce%20the,km%2Fh%20on%20Nightstar%20Road)
+- [ ] **Some parking and stopping rules change near the speed cushions, so that TTC buses can get through. One short-term 30-minute parking spot in front of Thomas Lester Wells Public School will be removed.**
+  - > “Parking amendments on Nightstar Road are required in conjunction with the installation of proposed speed cushions in order for TTC vehicles to be able to navigate the route.”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 5](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=5)
+  - > “one short term 30-minute parking spot in front of the Thomas Lester Wells Public School will be eliminated”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 5](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=5)
+- [ ] **Heavy vehicles are banned at all times on this part of Nightstar Road. Staff said this fixes a mismatch between the by-law and the posted sign.**
+  - > “City Council prohibit heavy vehicles at all times on Nightstar Road, between Morningside Avenue and Mantis Road/Knotwood Crescent/Flower Crescent.”
+    — [City of Toronto item page 2026.SC30.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC30.8#:~:text=City%20Council%20prohibit%20heavy,Mantis%20Road%2FKnotwood%20Crescent%2FFlower%20Crescent.)
+  - > “there is discrepancy between the by-lawed heavy vehicle prohibition and the posted sign on Nightstar Road”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 1](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=1)
+
+### Why?
+
+- [ ] **Area residents are worried that drivers go too fast on Nightstar Road. The local councillor asked staff to look into speed cushions.**
+  - > “The residents are concerned that motorists travel at a high rate of speed on Nightstar Road.”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 2](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=2)
+- [ ] **Staff measured speeds in October 2025. Most drivers (85%) went 43 km/h or slower, and 95% went 49 km/h or slower. About 2,700 vehicles use the road each day.**
+  - > “The operating speed, which is the speed at which 85 percent of traffic is travelling at or below, was observed at 43 km/h”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 3](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=3)
+  - > “The 95th percentile speed, which is the speed at which 95 percent of traffic is travelling at or below, was observed at 49 km/h”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 3](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=3)
+  - > “24-hour total vehicle volume is 2,700 vehicles”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 3](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=3)
+- [ ] **Staff said these speeds were too low to meet the City's traffic calming policy, so staff did not recommend speed cushions. Council approved them anyway.**
+  - > “The operating speed was recorded at 43 km/h, which is 5 km/h under the required speed of 48 km/h.”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 3](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=3)
+  - > “Therefore, staff do not recommend the installation of speed cushions on Nightstar Road.”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 1](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=1)
+
+### Who does it affect?
+
+- [ ] **People who live on or drive along Nightstar Road, in Ward 25 (Scarborough-Rouge Park). The area has homes, Nightstar Park and Thomas Lester Wells Public School.**
+  - > “The land use in the area consists of single-family residential dwellings, Nightstar Park and Thomas Lester Wells Public School.”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 3](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=3)
+  - > “Ward: 25 - Scarborough - Rouge Park”
+    — [City of Toronto item page 2026.SC30.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC30.8#:~:text=Ward%3A%2025%20%2D%20Scarborough%20%2D%20Rouge%20Park)
+- [ ] **TTC riders: the 116, 133 and 939C bus routes use Nightstar Road.**
+  - > “There is Toronto Transit Commission (TTC) service provided by the 116, 133 and 939C bus routes”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 3](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=3)
+- [ ] **Emergency services: speed cushions slow down all vehicles, including ambulances, fire trucks and police. Paramedic Services warned of possible delays, but said it supports safety measures.**
+  - Keep in mind: Police and Fire Services had not commented when the report was written.
+  - > “Installing speed cushions will result in slower operating speeds for all vehicles, including emergency service vehicles.”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 5](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=5)
+  - > “Toronto Paramedic Services responded and advised of potential delays in emergency responses but expressed support for initiatives that enhance community safety.”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 5](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=5)
+  - > “Toronto Police Service and Toronto Fire Services have not provided comments at the time of writing this report.”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 5](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=5)
+
+### Conditions and things not settled
+
+- [ ] **Staff estimate the four speed cushions cost $16,000. The money depends on what is available in the 2026 Transportation Services budget.**
+  - > “the estimated cost of installing four speed cushions is $16,000.00”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 2](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=2)
+  - > “Funding would be subject to availability and competing priorities within the Transportation Services 2026 Capital Budget.”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 2](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=2)
+- [ ] **If there are more approved speed cushion requests than money, the City ranks them. Nightstar Road scored 22 out of 100 points.**
+  - Keep in mind: The record does not say when the speed cushions will be installed.
+  - > “funding for approved installations will be prioritized using a Prioritization Score”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 4](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=4)
+  - > “scored 22 ranking points out of a possible 100”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 5](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=5)
+
+### What happens next?
+
+- [ ] **The City's item page links this decision to By-law 386-2026. Installation depends on budget and the City's ranking of approved locations.**
+  - Keep in mind: The record does not give an installation date.
+  - > “See also By-law 386-2026”
+    — [City of Toronto item page 2026.SC30.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC30.8#:~:text=See%20also%20By%2Dlaw%20386%2D2026)
+  - > “funding for approved installations will be prioritized using a Prioritization Score”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 4](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=4)
+
+### One-line summary of each step
+
+*staff*
+
+- [ ] **Staff recommended against speed cushions, because the speeds measured did not meet the policy. Staff did recommend banning heavy vehicles at all times.**
+  - > “City Council not authorize the installation of speed cushions on Nightstar Road”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 1](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=1)
+  - > “City Council prohibit heavy vehicles at all times on Nightstar Road”
+    — [Staff report from the Director, Enforcement and Street Management, Transportation Services, page 1](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-285242.pdf#page=1)
+
+*committee*
+
+- [ ] **Scarborough Community Council went against the staff advice. It recommended the four speed cushions, the lower speed limit and the parking changes, plus the heavy vehicle ban.**
+  - > “This item was considered by Scarborough Community Council on April 1, 2026 and was adopted with amendments.”
+    — [City of Toronto item page 2026.SC30.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC30.8#:~:text=This%20item%20was%20considered,was%20adopted%20with%20amendments.)
+
+*council*
+
+- [ ] **City Council approved the community council's version, without changes.**
+  - > “City Council adopted this item on April 22 and 23, 2026 without amendments.”
+    — [City of Toronto item page 2026.SC30.8](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC30.8#:~:text=City%20Council%20adopted%20this,23%2C%202026%20without%20amendments.)
+
+## 2026.SC32.2: A 14-storey building with shops and a bigger park at Danforth Road and Birchmount Road
+
+- Official title: 468 to 480 Danforth Road and 509 Birchmount Road - Zoning By-law Amendment Application - Decision Report - Approval
+- City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.SC32.2
+- Location shown: 468 to 480 Danforth Road and 509 Birchmount Road (City of Toronto geocoder (map.toronto.ca), address match for "509 Birchmount Rd" (the parkland part of the site), retrieved 2026-11-14. The geocoder returned no match for 468 to 480 Danforth Road)
+- Signed off by: **nobody yet**
+
+### What is being proposed?
+
+- [ ] **City Council changed the zoning rules for 468 to 480 Danforth Road and 509 Birchmount Road. This allows a 14-storey building with homes above and shops on the ground floor.**
+  - > “City Council amend City of Toronto Zoning By-law 569-2013, as amended, for the lands municipally known as 468 to 480 Danforth Road and 509 Birchmount Road”
+    — [City of Toronto item page 2026.SC32.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC32.2#:~:text=City%20Council%20amend%20City,and%20509%20Birchmount%20Road)
+  - > “to permit the development of a 14 storey mixed used building (plus mechanical penthouse)”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 1](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=1)
+- [ ] **The plan has about 524 homes and 1,563 square metres of retail space.**
+  - Keep in mind: The staff report gives two different home counts: 524 in some places and 526 in others. The record does not explain the difference.
+  - > “a 14 storey mixed used building at 468 to 480 Danforth Road with a total of 524 units and 1,563 square metres of retail gross floor area”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 3](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=3)
+  - > “The proposal contains a total of 526 residential units and 1,563 square metres of ground floor retail.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 1](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=1)
+- [ ] **The building steps down to lower heights at its edges: 4 storeys next to the park, 8 storeys along Birchmount Road and 6 storeys along Danforth Road.**
+  - > “The proposal has a maximum height of 14 storeys (53.5 meters)”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 8](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=8)
+  - > “The built form transition s down to 4 storeys (19 met res) fronting Sadler Parkette”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 8](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=8)
+- [ ] **The owner must give the City land to make the nearby Sadler Parkette bigger. Council set a minimum of 742 square metres. The plan describes about 754 square metres, including the whole lot at 509 Birchmount Road, where a house now stands.**
+  - > “the Owner shall convey to the City an on-site parkland dedication, having a minimum size of 742 square metres”
+    — [City of Toronto item page 2026.SC32.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC32.2#:~:text=the%20Owner%20shall%20convey,of%20742%20square%20metres)
+  - > “The proposal also provides approximately 754 square metres of on-site parkland dedication that would expand the adjacent Sadler Parkette”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 1](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=1)
+  - > “The portion of the subject site known as 509 Birchmount Road is currently occupied by a single-storey detached dwelling.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 3](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=3)
+- [ ] **The plan includes 340 car parking spaces, mostly in a two-level underground garage, and 394 bicycle parking spaces.**
+  - > “The proposal includes a total of 340 vehicular parking spaces, of which, 330 parking spaces are proposed in a two level underground parking garage.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 4](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=4)
+  - > “A total of 394 bicycle parking spaces are proposed”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 4](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=4)
+
+### Why?
+
+- [ ] **The site is zoned for commercial use only. The zoning allows no homes and a height of up to 11 metres, so a zoning change was needed.**
+  - > “The CR zoning category permits commercial uses with a maximum height of 11 metres”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 5](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=5)
+  - > “there is no density permissions allocated to residential uses on the site”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 4](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=4)
+- [ ] **City staff supported the application. They said it fits provincial policy and the City's Official Plan, and that the site has transit on both roads.**
+  - Keep in mind: This is the opinion of City staff.
+  - > “The proposed Zoning By-law Amendment application is consistent with the Provincial Planning Statement (2024) and conforms to the City's Official Plan.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 1](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=1)
+  - > “it is serviced by public transit on both Birchmount Road and Danforth Road”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 8](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=8)
+- [ ] **The site now has a one-storey plaza that held a grocery store, which has closed. The new retail space is smaller than today's, but staff say it is big enough for a food store. The applicant told staff it is talking with a grocer.**
+  - > “While the grocery store has officially closed, the remaining commercial/retail businesses continue to operate.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 3](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=3)
+  - > “it is generally large enough to accommodate a food store, or another significant retail/commercial space”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 8](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=8)
+  - > “The applicant has advised they are in discussion with a grocer to tenant this space.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 14](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=14)
+
+### Who does it affect?
+
+- [ ] **The site is at the corner of Danforth Road and Birchmount Road, in Ward 20 (Scarborough Southwest).**
+  - > “The subject site is located within the diagonal intersection of Danforth Road and Birchmount Road”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 8](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=8)
+  - > “Ward: 20 - Scarborough Southwest”
+    — [City of Toronto item page 2026.SC32.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC32.2#:~:text=Ward%3A%2020%20%2D%20Scarborough%20Southwest)
+- [ ] **The businesses still operating in the existing plaza. The new building would replace the existing one-storey building.**
+  - Keep in mind: The record does not say what happens to the current businesses or when.
+  - > “468 to 480 Danforth Road contains a single storey building with a staggered front elevation”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 3](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=3)
+- [ ] **Neighbours to the north and users of Sadler Parkette: the building would cast some shadow there. Staff said the shadows are similar to what an 8-storey building following City guidelines would cause, and found them acceptable.**
+  - Keep in mind: This is the opinion of City staff.
+  - > “The proposed building results in some shadow on Neighbourhoods to the north of the site.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 9](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=9)
+  - > “thus the resulting shadow impacts are considered acceptable”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 10](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=10)
+- [ ] **Families with school-age children: the public school board said local schools may not have room for more students. The Catholic board said its local elementary school has room.**
+  - > “the local elementary and secondary schools may not have sufficient space to accommodate additional students”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 13](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=13)
+  - > “the local Catholic elementary school ha s sufficient space to accommodate additional students”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 13](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=13)
+- [ ] **Drivers in the area: the building is expected to add 250 to 310 car trips in rush hours. Staff accepted a study saying the effect on traffic would be minor.**
+  - > “The site is anticipated to generate a total of 250 and 310 new two-way vehicle trips”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 12](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=12)
+  - > “Site-generated traffic impacts at signalized intersections within the study area are anticipated to be minor.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 12](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=12)
+
+### Conditions and things not settled
+
+- [ ] **The owner may build better-than-basic park features. In return, the City would reduce part of the owner's development charges (fees for parks and recreation).**
+  - > “City Council approve a development charge credit against the Parks and Recreation component of the Development Charges for the design and construction by the Owner of the Above Base Park Improvements”
+    — [City of Toronto item page 2026.SC32.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC32.2#:~:text=City%20Council%20approve%20a,Above%20Base%20Park%20Improvements)
+- [ ] **Council asked staff to explore with the owner a possible package of community benefits, which may include public art. Staff are to report back on any offer.**
+  - Keep in mind: This is a request to explore. The record does not say what, if anything, will be provided.
+  - > “to work with the Owner to explore the feasibility of an in-kind community benefit package”
+    — [City of Toronto item page 2026.SC32.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC32.2#:~:text=to%20work%20with%20the,in%2Dkind%20community%20benefit%20package)
+  - > “that may include the provision of Public Art”
+    — [City of Toronto item page 2026.SC32.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC32.2#:~:text=that%20may%20include%20the%20provision%20of%20Public%20Art)
+- [ ] **The detailed design still needs site plan approval. No site plan application had been filed when the report was written.**
+  - > “The proposal is subject to Site Plan Control. A Site Plan application has not been submitted.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 6](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=6)
+- [ ] **Council approved a revised version of the draft zoning by-law, not the version first attached to the staff report.**
+  - Keep in mind: This page has not compared the two versions.
+  - > “substantially in accordance with the draft Zoning By-law Amendment included as revised Attachment 5”
+    — [City of Toronto item page 2026.SC32.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC32.2#:~:text=substantially%20in%20accordance%20with,as%20revised%20Attachment%205)
+
+### What happens next?
+
+- [ ] **The City's item page links this decision to By-law 617-2026. Next, the detailed design goes through site plan review, where staff say they will settle details such as wind measures and tree planting.**
+  - Keep in mind: The record does not give a construction start date. This page has not checked whether anyone appealed.
+  - > “See also By-law 617-2026”
+    — [City of Toronto item page 2026.SC32.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC32.2#:~:text=See%20also%20By%2Dlaw%20617%2D2026)
+  - > “Any necessary mitigation measures will be determined and secured through the Site Plan application process.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 10](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=10)
+
+### One-line summary of each step
+
+*staff*
+
+- [ ] **Staff recommended approval.**
+  - > “Staff recommend that Council approve the Zoning By-law Amendment application.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 14](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-286852.pdf#page=14)
+
+*committee*
+
+- [ ] **Scarborough Community Council held the required public meeting and recommended approval without changes.**
+  - > “The Scarborough Community Council held a statutory public meeting on May 28, 2026”
+    — [City of Toronto item page 2026.SC32.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC32.2#:~:text=The%20Scarborough%20Community%20Council,on%20May%2028%2C%202026)
+  - > “This item was considered by the Scarborough Community Council on May 28, 2026 and adopted without amendment.”
+    — [City of Toronto item page 2026.SC32.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC32.2#:~:text=This%20item%20was%20considered,and%20adopted%20without%20amendment.)
+
+*council*
+
+- [ ] **City Council approved the zoning change without changes and without debate.**
+  - > “City Council adopted this item on June 24 and 25, 2026 without amendments and without debate.”
+    — [City of Toronto item page 2026.SC32.2](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC32.2#:~:text=City%20Council%20adopted%20this,amendments%20and%20without%20debate.)
+
+## 2026.SC33.12: New 9-storey long-term care home approved at 60 Guildwood Parkway
+
+- Official title: 60 Guildwood Parkway - Official Plan and Zoning By-law Amendment - Decision Report - Approval
+- City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.12
+- Location shown: 60 Guildwood Parkway (City of Toronto geocoder (map.toronto.ca), address match for "60 Guildwood Pkwy" (Extendicare Guildwood), retrieved 2026-11-14)
+- Signed off by: **nobody yet**
+
+### What is being proposed?
+
+- [ ] **City Council changed the Official Plan and the zoning rules for 60 Guildwood Parkway so that a 9-storey long-term care home can be built there.**
+  - > “to permit a 9-storey long-term care facility at 60 Guildwood Parkway”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 1](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=1)
+  - > “City Council amend the Official Plan for the lands municipally known as 60 Guildwood Parkway”
+    — [City of Toronto item page 2026.SC33.12](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.12#:~:text=City%20Council%20amend%20the,as%2060%20Guildwood%20Parkway)
+- [ ] **The new home would replace a one-storey long-term care home on the site. The number of resident rooms would go from 169 to 512.**
+  - > “The subject lands are currently occupied by a one-storey long-term care home consisting of 169 long-term care rooms and a surface parking lot.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 2](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=2)
+  - > “The proposed long-term care home includes a total of 512 long-term care resident rooms”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 3](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=3)
+- [ ] **The plan has 149 surface parking spaces and 88 bicycle parking spaces. Cars would enter from two driveways on Guildwood Parkway.**
+  - > “A total of 149 vehicular parking spaces”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 3](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=3)
+  - > “A total of 88 bicycle parking spaces”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 3](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=3)
+  - > “proposed via two accesses on Guildwood Parkway”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 11](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=11)
+- [ ] **The land is changed from an area for low-rise homes to an area for institutions such as schools and health care. A special policy limits the site to a long-term care home.**
+  - > “redesignate the subject lands from Neighbourhoods to Institutional Areas”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 4](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=4)
+  - > “a Site and Area Specific Policy will scope the permitted uses to a long-term care facility”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 7](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=7)
+
+### Why?
+
+- [ ] **Low-rise areas usually allow buildings up to four storeys, or six on major streets like Guildwood Parkway. A 9-storey building needed the change.**
+  - > “Generally the Neighbourhoods designation provides for buildings up to four storeys in height.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 6](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=6)
+  - > “permit 6 storey residential development on lands designated Neighbourhoods fronting on Major Streets like Guildwood Parkway”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 6](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=6)
+- [ ] **City staff supported the plan. They said the site's large size, shape and slope make the height work, and that it is near Kingston Road and a planned rapid transit line.**
+  - Keep in mind: This is the opinion of City staff. The community council did not endorse it (see the steps below).
+  - > “staff finds the redesignation of the property to Institutional Areas to be appropriate due to the property's distinct size, shape, and location”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 7](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=7)
+  - > “within 400 metres of Kingston Road and the future Scarborough East Rapid Transit Line”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 7](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=7)
+- [ ] **Staff said the area needs more long-term care beds. The share of local residents over 64 grew from 15% in 2016 to 16.4% in 2021.**
+  - > “providing much needed additional long-term care beds to support the needs of Toronto's growing and aging population”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 1](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=1)
+  - > “identified 16.4% of residents over the age of 64 years, an increase from the 15% from the 2016 census”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 9](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=9)
+
+### Who does it affect?
+
+- [ ] **The site is on the north side of Guildwood Parkway, west of Livingston Road, in Ward 24 (Scarborough-Guildwood).**
+  - > “The site is an irregularly shaped corner lot located on the north side of Guildwood Parkway, west of Livingston Road.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 2](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=2)
+- [ ] **Neighbours to the east and north: the building would be about 24.5 metres from the townhouses to the east and about 15.9 metres from the nearest houses to the north.**
+  - > “an approximately 24.5 metre setback from the townhouses to the east, as well as an approximately 15.9 metre setback from the nearest single detached dwellings to the north”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 8](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=8)
+- [ ] **In spring and fall, shadows would reach some houses to the northeast from 1:18 pm. They would reach part of the townhouses to the east from 3:18 pm.**
+  - > “no shadows will be cast on the adjacent Neighbourhood lots until 1:18pm”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 10](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=10)
+  - > “There will be no shadow impacts on the townhomes to the east until 3:18pm”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 10](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=10)
+- [ ] **Trees: 39 private trees and 4 City street trees would be removed. The owner plans to plant 91 new trees on the site and 4 on the street.**
+  - > “this development would require the removal of 39 by-law protect privately-owned trees and 4 City-owned street trees”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 12](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=12)
+  - > “The submitted landscape plans propose the planting of 91 large-growing shade trees on the subject lands”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 12](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=12)
+  - > “the planting of 4 new trees within the adjacent road allowances”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 12](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=12)
+- [ ] **About 100 people came to a public meeting run by staff. Concerns included traffic, privacy, construction, height and trees.**
+  - > “Approximately 100 members of the public were in attendance”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 5](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=5)
+  - > “Concerns about possible impacts on trees as a result of excavation.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 6](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=6)
+
+### Conditions and things not settled
+
+- [ ] **The new zoning comes with a hold. The new building cannot go ahead until the owner shows that sewer and water systems can handle it. Until then, only the existing uses are allowed.**
+  - > “Revisions are required to the Functional Servicing Report to demonstrate adequate servicing capacity”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 10](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=10)
+  - > “the subject site shall not be used for any purpose s other than those uses and buildings that currently exist on the site”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 13](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=13)
+- [ ] **The draft zoning by-law was not included in the staff report. It was to be provided before the community council meeting.**
+  - Keep in mind: This page has not checked the zoning by-law that was later added to the item.
+  - > “This attachment will be provided prior to the July 9, 2026, Scarborough Community Council Meeting.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 21](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=21)
+- [ ] **Long-term care homes do not have to give land for parks or pay cash instead.**
+  - > “This proposed long-term care use is exempt from the parkland dedication requirement”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 11](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=11)
+
+### What happens next?
+
+- [ ] **Two by-laws have been passed for this item: 1222-2026 and 1223-2026.**
+  - > “See also By-laws 1222-2026, 1223-2026”
+    — [City of Toronto item page 2026.SC33.12](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.12#:~:text=See%20also%20By%2Dlaws%201222%2D2026%2C%201223%2D2026)
+- [ ] **Details such as wind protection at the outdoor garden and transit passes for staff are to be settled in a later step called Site Plan Control. The owner had not yet applied for it when the report was written.**
+  - Keep in mind: The record gives no dates for that step.
+  - > “A Site Plan application has not been submitted.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 5](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=5)
+  - > “will work with the applicant through the Site Plan application process to secure this along with other potential TDM measures”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 11](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=11)
+
+### One-line summary of each step
+
+*staff*
+
+- [ ] **Staff recommended approval.**
+  - > “Staff recommend that Council approve the Official Plan Amendment and Zoning By-law Amendment application.”
+    — [Staff report from the Director, Community Planning, Scarborough District, page 13](https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf#page=13)
+
+*committee*
+
+- [ ] **The community council held the public meeting. A motion to approve tied 3 to 3 and lost, so it went to City Council with no recommendation either way.**
+  - > “Scarborough Community Council forwards the item to City Council without recommendation as the motion to adopt the item lost on a tie vote.”
+    — [City of Toronto item page 2026.SC33.12](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.12#:~:text=Scarborough%20Community%20Council%20forwards,on%20a%20tie%20vote.)
+
+*council*
+
+- [ ] **City Council voted to adopt staff's recommendations and approved the Official Plan and zoning changes.**
+  - > “City Council adopted this item on July 29 and 30, 2026 with amendments.”
+    — [City of Toronto item page 2026.SC33.12](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.12#:~:text=City%20Council%20adopted%20this,30%2C%202026%20with%20amendments.)
+  - > “That City Council adopt the following recommendations in the report (June 22, 2026) from the Director, Community Planning, Scarborough District:”
+    — [City of Toronto item page 2026.SC33.12](https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.12#:~:text=That%20City%20Council%20adopt,Community%20Planning%2C%20Scarborough%20District%3A)
+
+## 2026.TE31.24: New windows allowed, front entrance change refused at heritage house at 9 Drumsnab Road
+
+- Official title: 9 Drumsnab Road - Alterations to a Designated Heritage Property in the South Rosedale Heritage Conservation District - Refusal
+- City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24
+- Location shown: 9 Drumsnab Road (City of Toronto geocoder (map.toronto.ca), address match for "9 Drumsnab Rd", retrieved 2026-11-14)
+- Signed off by: **nobody yet**
+
+### What is being proposed?
+
+- [ ] **The owner of 9 Drumsnab Road asked for a heritage permit to replace the original windows and to make the front entrance bigger, including the side windows, the window above the door and the door opening.**
+  - > “The applicant proposes to remove the existing original windows and to enlarge certain features of the entryway assembly, including the sidelights, transom window, and door opening.”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 1](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-284621.pdf#page=1)
+- [ ] **The house is in the South Rosedale Heritage Conservation District. Changes to the outside of a house in such a district need permission under the Ontario Heritage Act.**
+  - > “Permission is required under Section 42(1)1 of the Ontario Heritage Act to alter any part of a property other than the interior of any structure or building on the property within a heritage conservation district.”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 2](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-284621.pdf#page=2)
+- [ ] **City Council approved the window part of the application and refused the front entrance part.**
+  - > “City Council approve the portion of the application to alter the windows of the designated heritage property at 9 Drumsnab Road”
+    — [City of Toronto item page 2026.TE31.24](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24#:~:text=City%20Council%20approve%20the,at%209%20Drumsnab%20Road)
+  - > “City Council refuse the portion of the application to alter the front entryway of the designated heritage property at 9 Drumsnab Road”
+    — [City of Toronto item page 2026.TE31.24](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24#:~:text=City%20Council%20refuse%20the,at%209%20Drumsnab%20Road)
+
+### Why?
+
+- [ ] **The entrance would be made longer because the ground floor inside the house was lowered by about 45 centimetres to make the ceilings higher. A longer door would give a level entry.**
+  - > “The purpose of the alteration is to lengthen the door and sidelights to provide a level entry into the house because the ground floor had been lowered by approximately 45 centimetres to increase ceiling height in the principle first floor rooms.”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 3](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-284621.pdf#page=3)
+- [ ] **The owner also wanted new windows partly to fit security glass.**
+  - > “laminated, tempered insulated glass units could be integrated into the window assembly for added security”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 3](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-284621.pdf#page=3)
+- [ ] **Staff's opinion is that a longer entrance would throw off the proportions of the front of the house. They suggested the owner find a solution inside the house instead.**
+  - > “It is Heritage Planning's opinion that the elongation of the centrally featured entryway skews the proportions of the detailing on the front elevation of the residence.”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 6](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-284621.pdf#page=6)
+  - > “It is recommended that the owner explore an interior solution instead.”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 6](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-284621.pdf#page=6)
+- [ ] **The house was built in 1925-26 in the Georgian Revival style. The heritage district plan rates it as having citywide significance.**
+  - > “9 Drumsnab Road is a Georgian Revival residence built in 1925-26”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 2](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-284621.pdf#page=2)
+  - > “it is noteworthy for its overall quality and has citywide significance”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 2](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-284621.pdf#page=2)
+
+### Who does it affect?
+
+- [ ] **The owner of 9 Drumsnab Road. The house is on the north side of Drumsnab Road, overlooking the Don River ravine, in Ward 11 (University-Rosedale).**
+  - > “It is situated on the north side of Drumsnab Road, an enclave on the southeast edge of the SRHCD overlooking the Don River ravine lands.”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 2](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-284621.pdf#page=2)
+  - > “11 - University - Rosedale”
+    — [City of Toronto item page 2026.TE31.24](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24#:~:text=11%20%2D%20University%20%2D%20Rosedale)
+- [ ] **City budget: staff say the original recommendations have no cost to the City this year or in future years.**
+  - > “City Planning confirms there are no financial implications resulting from the recommendations included in this report in the current budget year or in future years.”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 2](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-284621.pdf#page=2)
+
+### Conditions and things not settled
+
+- [ ] **The approved windows must follow the plans by Browne & Perry Joinery Co. that were attached to a later staff report dated June 23, 2026.**
+  - Keep in mind: That later report is not summarized here, so this page does not describe what the approved windows look like.
+  - > “in accordance with the plans submitted by Browne & Perry Joinery Co., attached as Attachment 1 to the revised supplementary report (June 23, 2026) from the Chief Planner and Executive Director, City Planning.”
+    — [City of Toronto item page 2026.TE31.24](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24#:~:text=in%20accordance%20with%20the,Executive%20Director%2C%20City%20Planning.)
+- [ ] **If the owner appeals the refusal of the entrance change, City lawyers and staff will go to the Ontario Land Tribunal hearing to oppose the appeal.**
+  - Keep in mind: The record does not say whether an appeal was filed.
+  - > “City Council direct the City Solicitor and the appropriate City staff to attend the Ontario Land Tribunal hearing to oppose the appeal.”
+    — [City of Toronto item page 2026.TE31.24](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24#:~:text=City%20Council%20direct%20the,to%20oppose%20the%20appeal.)
+- [ ] **City Council put off its decision twice, in April and in May 2026, before deciding in June.**
+  - > “City Council on April 22 and 23, 2026, deferred consideration of Item TE31.24 to the May 20, 21, and 22, 2026, meeting of City Council.”
+    — [City of Toronto item page 2026.TE31.24](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24#:~:text=City%20Council%20on%20April,meeting%20of%20City%20Council.)
+  - > “City Council on May 20 and 21, 2026, deferred consideration of Item TE31.24 to the June 24, 25, and 26, 2026, meeting of City Council.”
+    — [City of Toronto item page 2026.TE31.24](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24#:~:text=City%20Council%20on%20May,meeting%20of%20City%20Council.)
+- [ ] **The Toronto Preservation Board also looked at this item and made recommendations to City Council.**
+  - Keep in mind: The City's item page does not say what the Preservation Board recommended.
+  - > “At its meeting on February 11, 2026 the Toronto Preservation Board considered Item”
+    — [City of Toronto item page 2026.TE31.24](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24#:~:text=At%20its%20meeting%20on,Preservation%20Board%20considered%20Item)
+
+### What happens next?
+
+- [ ] **City Council has made its decision. The owner can appeal the refusal of the entrance change to the Ontario Land Tribunal.**
+  - Keep in mind: The record does not say whether the owner appealed or what happens with the windows work next.
+  - > “If the owner appeals City Council’s decision to refuse the application to alter the entrance of the heritage property at 9 Drumsnab Road under Section 42 of the Ontario Heritage Act”
+    — [City of Toronto item page 2026.TE31.24](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24#:~:text=If%20the%20owner%20appeals,the%20Ontario%20Heritage%20Act)
+
+### One-line summary of each step
+
+*staff*
+
+- [ ] **In January 2026, staff recommended refusing the whole application, both the windows and the entrance. A revised staff report from June 23, 2026 followed; City Council adopted its recommendations, which approved the windows and refused only the entrance.**
+  - > “City Council refuse the alterations to the designated heritage property at 9 Drumsnab Road, in accordance with Section 42 of the Ontario Heritage Act, for alterations including the replacement of windows and alteration to the entryway assembly”
+    — [Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning, page 1](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-284621.pdf#page=1)
+  - > “That City Council adopt the following recommendations in the revised supplementary report (June 23, 2026) from the Chief Planner and Executive Director, City Planning [TE31.24a]:”
+    — [City of Toronto item page 2026.TE31.24](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24#:~:text=That%20City%20Council%20adopt,Director%2C%20City%20Planning%20%5BTE31.24a%5D%3A)
+
+*committee*
+
+- [ ] **Toronto and East York Community Council sent the item to City Council without making a recommendation.**
+  - > “The Toronto and East York Community Council forwards the Item to City Council without recommendation.”
+    — [City of Toronto item page 2026.TE31.24](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24#:~:text=The%20Toronto%20and%20East,City%20Council%20without%20recommendation.)
+
+*council*
+
+- [ ] **City Council approved the new windows and refused the front entrance change. The vote was 23 to 1.**
+  - > “City Council on June 24 and 25, 2026, adopted the following:”
+    — [City of Toronto item page 2026.TE31.24](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24#:~:text=City%20Council%20on%20June,2026%2C%20adopted%20the%20following%3A)
+  - > “Yes: 23”
+    — [City of Toronto item page 2026.TE31.24](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24#:~:text=Yes%3A%2023)
+  - > “No: 1”
+    — [City of Toronto item page 2026.TE31.24](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24#:~:text=No%3A%201)
+
+## 2026.TE32.46: Church Street closed to cars for a summer 2026 pilot
+
+- Official title: Pedestrianizing Church Street Pilot
+- City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46
+- Location shown: Church Street between Wellesley Street East and Alexander Street (line joining the intersections Church St and Wellesley St E and Church St and Alexander St, plus 530 and 500 Church St, matched with the City of Toronto geocoder, retrieved 2026-11-14)
+- Signed off by: **nobody yet**
+
+### What is being proposed?
+
+- [ ] **City Council allowed Church Street to be closed to cars between Wellesley Street East and Alexander Street from June 19 to August 21, 2026, for a street event called the Church Street Pedestrianization Plan / Village Fest.**
+  - > “requiring the closure of Church Street to vehicular traffic, between Wellesley Street East and Alexander Street, but not including east-west intersections, from June 19, 2026 to August 21, 2026, inclusive”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=requiring%20the%20closure%20of,August%2021%2C%202026%2C%20inclusive)
+- [ ] **The cross streets that run east-west stay open to traffic. Only Church Street itself is closed.**
+  - > “leaving all east-west corridors open to vehicular traffic”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=leaving%20all%20east%2Dwest%20corridors%20open%20to%20vehicular%20traffic)
+- [ ] **The City also waived its application and permit fees for the Church-Wellesley Business Improvement Area for this street event.**
+  - > “City Council direct the General Manager, Transportation Services to waive the application and permit fees charged in relation to any application by the Church-Wellesley Business Improvement Area”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=City%20Council%20direct%20the,Church%2DWellesley%20Business%20Improvement%20Area)
+
+### Why?
+
+- [ ] **The councillor's letter says closing the street to cars improves road safety and accessibility and brings in more business.**
+  - > “Pedestrianization significantly enhances urban quality of life by improving road safety, increasing accessibility, and driving sustained commercial activity.”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=Pedestrianization%20significantly%20enhances%20urban,driving%20sustained%20commercial%20activity.)
+- [ ] **The letter says this stretch has no bus or streetcar route, so closing it would cause little disruption to the TTC.**
+  - > “due to the absence of dedicated bus or streetcar routes, ensuring minimal disruption to the TTC’s broader network”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=due%20to%20the%20absence,the%20TTC%E2%80%99s%20broader%20network)
+- [ ] **The pilot is also meant to help the City write a policy on closing streets to cars, for the summer or for good.**
+  - > “to help inform the creation of a pedestrianization policy and identification of resource requirements for seasonal and permanent arterial roadway closures”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=to%20help%20inform%20the,permanent%20arterial%20roadway%20closures)
+
+### Who does it affect?
+
+- [ ] **People who drive, park or make deliveries on Church Street between Wellesley Street East and Alexander Street during the closure.**
+  - > “the closure of Church Street to vehicular traffic, between Wellesley Street East and Alexander Street”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=the%20closure%20of%20Church,East%20and%20Alexander%20Street)
+- [ ] **People who use Wheel-Trans: the letter says there would be pick-up and drop-off zones for Wheel-Trans and extra ramps.**
+  - > “including dedicated pick-up and drop-off zones for WheelTrans and installing additional ramps at regular intervals”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=including%20dedicated%20pick%2Dup%20and,ramps%20at%20regular%20intervals)
+- [ ] **Businesses, residents and visitors in the Church-Wellesley Village. The City lists one ward for this item: 13 (Toronto Centre).**
+  - > “13 - Toronto Centre”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=13%20%2D%20Toronto%20Centre)
+
+### Conditions and things not settled
+
+- [ ] **The closure comes with whatever conditions the head of Transportation Services and the City Solicitor think are appropriate.**
+  - > “with such conditions deemed appropriate in the opinion of the General Manager, Transportation Services and the City Solicitor”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=with%20such%20conditions%20deemed,and%20the%20City%20Solicitor)
+- [ ] **City Council added a rule that Transportation Services can cancel the closure if there are serious problems, such as public safety risks, slower emergency response, traffic problems, or if permit conditions are not followed.**
+  - > “cancel the temporary closure of Church Street on the basis of unacceptable impacts or concerns related to public safety or security, emergency service response times, traffic-related operational concerns, or non-compliance with any conditions attached to the permit authorizing the closure”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=cancel%20the%20temporary%20closure,permit%20authorizing%20the%20closure)
+- [ ] **City staff are asked to evaluate the closure afterward, looking at community participation, road safety, social and economic benefits, and risks.**
+  - Keep in mind: The record does not give a date for that evaluation or say who it will be reported to.
+  - > “to evaluate outcomes of the temporary closure of Church Street, including levels of community participation and engagement, improvements in road safety, and overall social and economic benefits, alongside risks and public safety impacts”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=to%20evaluate%20outcomes%20of,and%20public%20safety%20impacts)
+
+### What happens next?
+
+- [ ] **The closure was set for June 19 to August 21, 2026. After it, staff are to evaluate the results to help shape a future City policy on closing streets to cars.**
+  - Keep in mind: The record does not show whether the closure went ahead as planned or what the evaluation found.
+  - > “for the period June 19 to August 21, 2026”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=for%20the%20period%20June,to%20August%2021%2C%202026)
+  - > “to help inform the creation of a pedestrianization policy”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=to%20help%20inform%20the,of%20a%20pedestrianization%20policy)
+
+### One-line summary of each step
+
+*committee*
+
+- [ ] **Toronto and East York Community Council recommended the closure, the evaluation and the fee waiver. The vote was 6 to 0.**
+  - > “Toronto and East York Community Council recommends that:”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=Toronto%20and%20East%20York%20Community%20Council%20recommends%20that%3A)
+  - > “Yes: 6”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=Yes%3A%206)
+
+*council*
+
+- [ ] **City Council approved the pilot and added the power to cancel the closure if problems arise. The amendment passed 16 to 8, and the final item passed 20 to 4.**
+  - > “City Council adopted this item on May 20 and 21, 2026 with amendments.”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=City%20Council%20adopted%20this,21%2C%202026%20with%20amendments.)
+  - > “Yes: 16”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=Yes%3A%2016)
+  - > “Yes: 20”
+    — [City of Toronto item page 2026.TE32.46](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46#:~:text=Yes%3A%2020)
+
 ## 2026.TE34.104: A study of more ways to speed up the 505 Dundas streetcar
 
 - Official title: Initial Findings Report: Transit Priority Measures to Support the 505 Dundas 6-Minute Network
@@ -223,6 +1489,146 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - [ ] **City Council approved the request for a study, and added that the report must go to the Infrastructure and Environment Committee.**
   - > “City Council adopted this item on July 29 and 30, 2026 with amendments.”
     — [City of Toronto item page 2026.TE34.104](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.104#:~:text=City%20Council%20adopted%20this,30%2C%202026%20with%20amendments.)
+
+## 2026.TE34.21: Taller tower with more affordable homes approved at College Street and Henry Street
+
+- Official title: 191-199 College Street and 74-76 Henry Street - Official Plan and Zoning By-law Amendment Application - Decision Report - Approval
+- City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.21
+- Location shown: 191-199 College Street and 74-76 Henry Street (City of Toronto geocoder (map.toronto.ca), address match for "191 College St", retrieved 2026-11-14)
+- Signed off by: **nobody yet**
+
+### What is being proposed?
+
+- [ ] **A 31-storey building was already approved for this site in 2024. City Council has now changed the Official Plan and zoning rules so the building can be 45 storeys instead.**
+  - > “On June 26, 2024, City Council approved an Official Plan and Zoning By-law Amendment application permitting a 31-storey mixed-use building”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 4](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=4)
+  - > “to permit a 45-storey (158.5 metres, excluding mechanical penthouse) mixed-use building”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 6](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=6)
+- [ ] **The number of homes goes up from 490 to 684. Of these, 545 would be affordable rental homes.**
+  - > “an increase from 490 to 684 residential dwelling units, including 545 affordable rental units”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 1](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=1)
+- [ ] **The 408 affordable studio units approved in 2024 stay. The change adds 137 affordable two-bedroom rental units. Both groups stay affordable for 40 years.**
+  - Keep in mind: The two groups have different rent levels: the 408 studios are set at 100% of average market rent, and the 137 new units at the City's Affordable Rent levels.
+  - > “The applicant proposes to retain the 408 studio units in the 2024 approval as affordable rental housing”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 12](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=12)
+  - > “to add 137 additional affordable two-bedroom units”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 12](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=12)
+  - > “secured at 100 percent of Average Market Rent (AMR) for a minimum affordability period of 40 years”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 2](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=2)
+  - > “with rents set at the City’s Affordable Rent levels for a 40-year affordability period”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 2](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=2)
+- [ ] **Retail space grows from 1,356 to 1,931 square metres. The plan has only 6 car parking spaces and 695 bicycle parking spaces.**
+  - > “An increase in overall retail space from 1,356 to 1,931 square metres”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 6](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=6)
+  - > “The proposal includes a total of 6 vehicular parking spaces (including 1 accessible space) at-grade.”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 8](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=8)
+  - > “A total of 695 bicycle parking spaces are proposed”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 8](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=8)
+- [ ] **The old 3-storey heritage houses on the site would be kept and built into the base of the new building.**
+  - > “including the integration of the existing three-storey semi-detached heritage buildings”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 13](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=13)
+  - > “are to be retained and incorporated into the proposed development”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 14](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=14)
+
+### Why?
+
+- [ ] **The area plan for this site allowed a height of 96 metres (31 storeys). A taller building needed a change to that plan.**
+  - > “to permit a building height of 96 metres (31 storeys), including a mechanical penthouse”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 10](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=10)
+  - > “The Official Plan Amendment is required to amend Site and Area Specific Policy 533 to allow the revised building height.”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 8](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=8)
+- [ ] **Staff supported the taller building. They said it fits the area, is close to Queen's Park subway station, and matches other tall buildings approved nearby.**
+  - Keep in mind: This is the opinion of City staff.
+  - > “Staff find the proposed Official Plan Amendment to SASP 533 to permit an increase in height from 31 to 45 storeys to be acceptable”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 13](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=13)
+  - > “the site is within 500 metres of Queens Park Station”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 9](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=9)
+  - > “The height is consistent with surrounding approvals”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 13](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=13)
+- [ ] **Staff say it would be one of the largest affordable housing projects in a single building in Canada.**
+  - Keep in mind: This is staff's description.
+  - > “making it one of the largest affordable housing development proposed in a single building in Canada”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 11](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=11)
+
+### Who does it affect?
+
+- [ ] **The site is at the southwest corner of College Street and Henry Street, in Ward 11 (University-Rosedale), across from the University of Toronto.**
+  - > “The site is located on the southwest corner of College and Henry Streets.”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 4](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=4)
+  - > “The University of Toronto's St. George Campus, with 3-4 storey institutional buildings along the north side of College Street.”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 5](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=5)
+- [ ] **Former tenants: 12 replacement rooms for rent will still be provided. Eligible former tenants can return at similar rents.**
+  - > “a total of 12 replacement rental dwelling rooms will continue to be provided in the proposed development”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 7](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=7)
+  - > “Eligible tenants would reserve the right to return to replacement rental housing at similar rents”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 7](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=7)
+- [ ] **Neighbours on nearby streets: at the community meeting, people raised concerns about ride-share and delivery traffic on Henry Street, too little parking, and the height. Council asked staff to consider requiring a traffic study, made with the community, as part of the site plan.**
+  - > “with particular concerns about the impacts of rideshare and deliveries on Henry Street”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 11](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=11)
+  - > “Concern that the additional height is out of scale with the surrounding area”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 11](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=11)
+  - > “a Transportation Impact Study, in consultation with the community, that includes a traffic mitigation and loading strategy to limit the impacts on the surrounding road network”
+    — [City of Toronto item page 2026.TE34.21](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.21#:~:text=a%20Transportation%20Impact%20Study%2C,the%20surrounding%20road%20network)
+- [ ] **The City budget: staff estimate the City and the Province give up about $54.9 million in fees, charges and property taxes for the 545 affordable units. These are not cash payments.**
+  - > “The total estimated value of financial incentives, based on 2026 rates, is $54,940,054”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 2](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=2)
+  - > “These incentives are not direct cash payments from the City”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 2](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=2)
+
+### Conditions and things not settled
+
+- [ ] **The new zoning comes with a hold. The building cannot go ahead until the owner shows that sewers and water mains can handle it, or secures any needed upgrades.**
+  - > “restricting the proposed use of the lands until the conditions to lifting the holding provision, as set out in the By-law, are satisfied”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 16](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=16)
+  - > “have adequate capacity and supply to accommodate the development of the lands”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 16](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=16)
+- [ ] **City Council approved a new version of the draft zoning by-law, attached to a councillor's motion, in place of the one in the staff report. Council said the changes were minor, so no further public notice was needed.**
+  - Keep in mind: This page has not compared the two versions.
+  - > “substantially in accordance with the draft Zoning By-law Amendment included as Attachment 1 to motion 1”
+    — [City of Toronto item page 2026.TE34.21](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.21#:~:text=substantially%20in%20accordance%20with,1%20to%20motion%201)
+  - > “City Council determine that these amendments are minor in nature, and pursuant to section 34(17) of the Planning Act, no further notice is required.”
+    — [City of Toronto item page 2026.TE34.21](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.21#:~:text=City%20Council%20determine%20that,further%20notice%20is%20required.)
+- [ ] **The traffic study is a request for staff to consider. The record does not guarantee it will be required.**
+  - > “City Council request the Executive Director, Development Review to consider securing the following as part of the site plan agreement”
+    — [City of Toronto item page 2026.TE34.21](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.21#:~:text=City%20Council%20request%20the,the%20site%20plan%20agreement)
+- [ ] **The owner bought the house next door at 72 Henry Street. It is not part of this plan, but staff will check whether it has heritage value.**
+  - > “The existing detached dwelling at 72 Henry Street is not part of the application and will not be altered as a result of the proposed development.”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 4](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=4)
+  - > “This property will be further evaluated by staff for its heritage value”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 14](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=14)
+
+### What happens next?
+
+- [ ] **The City's item page links this decision to By-laws 1064-2026 and 1234-2026. The detailed design still goes through site plan review, and the hold must be lifted before the building can go ahead.**
+  - Keep in mind: The record does not give a construction date. This page has not checked whether anyone appealed.
+  - > “See also By-laws 1064-2026”
+    — [City of Toronto item page 2026.TE34.21](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.21#:~:text=See%20also%20By%2Dlaws%201064%2D2026)
+  - > “1234-2026”
+    — [City of Toronto item page 2026.TE34.21](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.21#:~:text=1234%2D2026)
+  - > “will be further addressed through the Site Plan Control process”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 13](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=13)
+
+### One-line summary of each step
+
+*staff*
+
+- [ ] **Staff recommended approval.**
+  - > “This Report recommends approval of an application to amend Official Plan Amendment 731 and Site-Specific Zoning By-law 1166-2025”
+    — [Staff report from the Acting Director, Community Planning, Toronto and East York District, page 1](https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf#page=1)
+
+*committee*
+
+- [ ] **Toronto and East York Community Council held the public meeting and recommended approval. It added a request for staff to consider a traffic study.**
+  - > “The Toronto and East York Community Council held a statutory public meeting on July 8, 2026”
+    — [City of Toronto item page 2026.TE34.21](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.21#:~:text=The%20Toronto%20and%20East,on%20July%208%2C%202026)
+  - > “This item was considered by Toronto and East York Community Council on July 8 and 9, 2026 and was adopted with amendments.”
+    — [City of Toronto item page 2026.TE34.21](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.21#:~:text=This%20item%20was%20considered,was%20adopted%20with%20amendments.)
+
+*council*
+
+- [ ] **City Council approved the item. It swapped in a new version of the draft zoning by-law.**
+  - > “City Council adopted this item on July 29 and 30, 2026 with amendments.”
+    — [City of Toronto item page 2026.TE34.21](https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.21#:~:text=City%20Council%20adopted%20this,30%2C%202026%20with%20amendments.)
 
 ## 2027.PB1.6: A taller base for the new affordable housing building at 1337 Queen Street West
 

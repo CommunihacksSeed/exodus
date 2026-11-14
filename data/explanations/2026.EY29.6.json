@@ -1,0 +1,231 @@
+{
+  "itemId": "2026.EY29.6",
+  "plainTitle": "Weston Lions Arena added to the City's Heritage Register",
+  "topic": "heritage",
+  "sources": [
+    {
+      "id": "report",
+      "label": "Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-264703.pdf",
+      "date": "January 20, 2026",
+      "textFile": "backgroundfile-264703.pages.json"
+    },
+    {
+      "id": "board",
+      "label": "Decision letter from the Toronto Preservation Board",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-284429.pdf",
+      "date": "Wednesday, February 11, 2026",
+      "textFile": "backgroundfile-284429.pages.json"
+    }
+  ],
+  "whatIsProposed": [
+    {
+      "text": "City Council added 2125 Lawrence Avenue West, the Weston Lions Arena, to the City's Heritage Register as a “listed” property.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council include 2125 Lawrence Avenue West on the City of Toronto's Heritage Register"
+        },
+        {
+          "source": "report",
+          "quote": "historically known as the Weston Lions Arena"
+        }
+      ]
+    },
+    {
+      "text": "The City owns the property. It holds an ice arena built around 1948-49 of concrete block, with a front wall of rough brick and imitation stone.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "It contains an ice- skating arena constructed c.1948-49 of concrete block with rugged-brick and simulated- stone main facade."
+        },
+        {
+          "source": "report",
+          "quote": "The subject property at 2125 Lawrence Avenue West, City-owned facility"
+        }
+      ]
+    },
+    {
+      "text": "Listing is not the same as full heritage designation. It is a first step that gives the City time to decide on designation if someone applies to demolish or redevelop.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "provides an opportunity for City Council to determine whether the property warrants conservation through designation under the Act should a development or demolition application be submitted"
+        }
+      ]
+    }
+  ],
+  "why": [
+    {
+      "text": "Staff say the building is a good example of a 1940s arena, with a curved roof and an open interior held up by heavy timber trusses.",
+      "caveat": "This is the evaluation of City staff.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The property has design and physical value for being representative of a 1940s-era ice-skating-arena building type."
+        },
+        {
+          "source": "report",
+          "quote": "with its heavy-timber, open-truss roof system"
+        }
+      ]
+    },
+    {
+      "text": "Staff say it has history: since 1949 it has hosted hockey teams, figure skating, recreational skaters and curlers. The Weston Lions, a community-service group, built it with local donations and volunteer work.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The property has historical value because it has direct associations with recreational activities in Weston since its opening in 1949."
+        },
+        {
+          "source": "report",
+          "quote": "primarily funded by local donations and local fund-raising efforts"
+        }
+      ]
+    },
+    {
+      "text": "Staff say it is linked to its setting. It stands on part of the old Weston Fairgrounds, a place for recreation since the 1800s that is now Lions Park.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The property occupies part of what was formerly the Weston Fairgrounds and has historically been a place of recreation in the community."
+        }
+      ]
+    }
+  ],
+  "whoIsAffected": [
+    {
+      "text": "The arena is in Lions Park, on the south side of Lawrence Avenue next to the Humber River, in Ward 5 (York South-Weston).",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "is in the Weston neighbourhood on the south side of Lawrence Avenue, in Lions Park adjacent to the Humber River"
+        },
+        {
+          "source": "item",
+          "quote": "Ward: 5 - York South - Weston"
+        }
+      ]
+    },
+    {
+      "text": "In November 2025, City Council allowed City staff to negotiate a low-cost lease of the arena with MLSE LaunchPad.",
+      "caveat": "The community council's chair ruled that the use of the arena was not the question before it. The record does not say how listing affects the lease.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "to negotiate and enter into a nominal lease agreement with MLSE LaunchPad"
+        },
+        {
+          "source": "item",
+          "quote": "ruled that the use of the arena, current or prior, is not before the Etobicoke York Community Council"
+        }
+      ]
+    }
+  ],
+  "conditionsAndUnknowns": [
+    {
+      "text": "Listing gives limited protection. The owner must give Council at least 60 days' notice before demolishing or removing a building.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "an owner must give Council at least 60 days’ notice of their intention to demolish or remove a structure on the property"
+        }
+      ]
+    },
+    {
+      "text": "Listing does not stop renovations or other changes that do not involve demolition, and does not add maintenance rules.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Listing does not trigger maintenance requirements over and above existing property standards and it does not restrict altering, removing or adding any features on the property."
+        }
+      ]
+    },
+    {
+      "text": "Under provincial law, a listing now lasts only two years.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The Act now also limits listing to a period of two years."
+        }
+      ]
+    },
+    {
+      "text": "Owners can object to a listing at any time. Council would then have to decide again.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Owners can object to listings at any time."
+        }
+      ]
+    }
+  ],
+  "stageSummaries": {
+    "staff": {
+      "text": "Heritage staff recommended adding the property to the Heritage Register. The Toronto Preservation Board recommended the same on February 11, 2026.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "This report recommends that City Council include 2125 Lawrence Avenue West on the City of Toronto's Heritage Register"
+        },
+        {
+          "source": "board",
+          "quote": "The Toronto Preservation Board recommends that:"
+        }
+      ]
+    },
+    "committee": {
+      "text": "Etobicoke York Community Council recommended the listing without changes, by a vote of 5 to 0.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "This item was considered by the Etobicoke York Community Council on February 18, 2026 and adopted without amendment."
+        },
+        {
+          "source": "item",
+          "quote": "Total members that voted Yes: 5"
+        }
+      ]
+    },
+    "council": {
+      "text": "City Council approved the listing without changes and without debate.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council adopted this item on March 25 and 26, 2026 without amendments and without debate."
+        }
+      ]
+    }
+  },
+  "whatHappensNext": [
+    {
+      "text": "No further step is scheduled. If a demolition or development application is made, Council could then decide whether to fully designate the arena. Such applications would also need a Heritage Impact Assessment.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Heritage Impact Assessments (HIA) are required for development applications that affect listed properties."
+        },
+        {
+          "source": "report",
+          "quote": "provides an opportunity for City Council to determine whether the property warrants conservation through designation under the Act should a development or demolition application be submitted"
+        }
+      ]
+    }
+  ],
+  "location": {
+    "label": "2125 Lawrence Avenue West (Weston Lions Arena)",
+    "points": [
+      [
+        43.698593515,
+        -79.518104712
+      ]
+    ],
+    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"2125 Lawrence Ave W\", retrieved 2026-11-14"
+  },
+  "participationCheck": null,
+  "review": {
+    "aiAssisted": true,
+    "humanReviewedBy": null,
+    "reviewedOn": null
+  }
+}

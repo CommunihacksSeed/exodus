@@ -1,0 +1,231 @@
+{
+  "itemId": "2026.TE31.24",
+  "plainTitle": "New windows allowed, front entrance change refused at heritage house at 9 Drumsnab Road",
+  "topic": "heritage",
+  "sources": [
+    {
+      "id": "report",
+      "label": "Staff report from the Senior Manager, Heritage Planning, Urban Design, City Planning",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-284621.pdf",
+      "date": "January 20, 2026",
+      "textFile": "backgroundfile-284621.pages.json"
+    }
+  ],
+  "whatIsProposed": [
+    {
+      "text": "The owner of 9 Drumsnab Road asked for a heritage permit to replace the original windows and to make the front entrance bigger, including the side windows, the window above the door and the door opening.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The applicant proposes to remove the existing original windows and to enlarge certain features of the entryway assembly, including the sidelights, transom window, and door opening."
+        }
+      ]
+    },
+    {
+      "text": "The house is in the South Rosedale Heritage Conservation District. Changes to the outside of a house in such a district need permission under the Ontario Heritage Act.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Permission is required under Section 42(1)1 of the Ontario Heritage Act to alter any part of a property other than the interior of any structure or building on the property within a heritage conservation district."
+        }
+      ]
+    },
+    {
+      "text": "City Council approved the window part of the application and refused the front entrance part.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council approve the portion of the application to alter the windows of the designated heritage property at 9 Drumsnab Road"
+        },
+        {
+          "source": "item",
+          "quote": "City Council refuse the portion of the application to alter the front entryway of the designated heritage property at 9 Drumsnab Road"
+        }
+      ]
+    }
+  ],
+  "why": [
+    {
+      "text": "The entrance would be made longer because the ground floor inside the house was lowered by about 45 centimetres to make the ceilings higher. A longer door would give a level entry.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The purpose of the alteration is to lengthen the door and sidelights to provide a level entry into the house because the ground floor had been lowered by approximately 45 centimetres to increase ceiling height in the principle first floor rooms."
+        }
+      ]
+    },
+    {
+      "text": "The owner also wanted new windows partly to fit security glass.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "laminated, tempered insulated glass units could be integrated into the window assembly for added security"
+        }
+      ]
+    },
+    {
+      "text": "Staff's opinion is that a longer entrance would throw off the proportions of the front of the house. They suggested the owner find a solution inside the house instead.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "It is Heritage Planning's opinion that the elongation of the centrally featured entryway skews the proportions of the detailing on the front elevation of the residence."
+        },
+        {
+          "source": "report",
+          "quote": "It is recommended that the owner explore an interior solution instead."
+        }
+      ]
+    },
+    {
+      "text": "The house was built in 1925-26 in the Georgian Revival style. The heritage district plan rates it as having citywide significance.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "9 Drumsnab Road is a Georgian Revival residence built in 1925-26"
+        },
+        {
+          "source": "report",
+          "quote": "it is noteworthy for its overall quality and has citywide significance"
+        }
+      ]
+    }
+  ],
+  "whoIsAffected": [
+    {
+      "text": "The owner of 9 Drumsnab Road. The house is on the north side of Drumsnab Road, overlooking the Don River ravine, in Ward 11 (University-Rosedale).",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "It is situated on the north side of Drumsnab Road, an enclave on the southeast edge of the SRHCD overlooking the Don River ravine lands."
+        },
+        {
+          "source": "item",
+          "quote": "11 - University - Rosedale"
+        }
+      ]
+    },
+    {
+      "text": "City budget: staff say the original recommendations have no cost to the City this year or in future years.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "City Planning confirms there are no financial implications resulting from the recommendations included in this report in the current budget year or in future years."
+        }
+      ]
+    }
+  ],
+  "conditionsAndUnknowns": [
+    {
+      "text": "The approved windows must follow the plans by Browne & Perry Joinery Co. that were attached to a later staff report dated June 23, 2026.",
+      "caveat": "That later report is not summarized here, so this page does not describe what the approved windows look like.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "in accordance with the plans submitted by Browne & Perry Joinery Co., attached as Attachment 1 to the revised supplementary report (June 23, 2026) from the Chief Planner and Executive Director, City Planning."
+        }
+      ]
+    },
+    {
+      "text": "If the owner appeals the refusal of the entrance change, City lawyers and staff will go to the Ontario Land Tribunal hearing to oppose the appeal.",
+      "caveat": "The record does not say whether an appeal was filed.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council direct the City Solicitor and the appropriate City staff to attend the Ontario Land Tribunal hearing to oppose the appeal."
+        }
+      ]
+    },
+    {
+      "text": "City Council put off its decision twice, in April and in May 2026, before deciding in June.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council on April 22 and 23, 2026, deferred consideration of Item TE31.24 to the May 20, 21, and 22, 2026, meeting of City Council."
+        },
+        {
+          "source": "item",
+          "quote": "City Council on May 20 and 21, 2026, deferred consideration of Item TE31.24 to the June 24, 25, and 26, 2026, meeting of City Council."
+        }
+      ]
+    },
+    {
+      "text": "The Toronto Preservation Board also looked at this item and made recommendations to City Council.",
+      "caveat": "The City's item page does not say what the Preservation Board recommended.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "At its meeting on February 11, 2026 the Toronto Preservation Board considered Item"
+        }
+      ]
+    }
+  ],
+  "stageSummaries": {
+    "staff": {
+      "text": "In January 2026, staff recommended refusing the whole application, both the windows and the entrance. A revised staff report from June 23, 2026 followed; City Council adopted its recommendations, which approved the windows and refused only the entrance.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "City Council refuse the alterations to the designated heritage property at 9 Drumsnab Road, in accordance with Section 42 of the Ontario Heritage Act, for alterations including the replacement of windows and alteration to the entryway assembly"
+        },
+        {
+          "source": "item",
+          "quote": "That City Council adopt the following recommendations in the revised supplementary report (June 23, 2026) from the Chief Planner and Executive Director, City Planning [TE31.24a]:"
+        }
+      ]
+    },
+    "committee": {
+      "text": "Toronto and East York Community Council sent the item to City Council without making a recommendation.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "The Toronto and East York Community Council forwards the Item to City Council without recommendation."
+        }
+      ]
+    },
+    "council": {
+      "text": "City Council approved the new windows and refused the front entrance change. The vote was 23 to 1.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council on June 24 and 25, 2026, adopted the following:"
+        },
+        {
+          "source": "item",
+          "quote": "Yes: 23"
+        },
+        {
+          "source": "item",
+          "quote": "No: 1"
+        }
+      ]
+    }
+  },
+  "whatHappensNext": [
+    {
+      "text": "City Council has made its decision. The owner can appeal the refusal of the entrance change to the Ontario Land Tribunal.",
+      "caveat": "The record does not say whether the owner appealed or what happens with the windows work next.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "If the owner appeals City Council’s decision to refuse the application to alter the entrance of the heritage property at 9 Drumsnab Road under Section 42 of the Ontario Heritage Act"
+        }
+      ]
+    }
+  ],
+  "location": {
+    "label": "9 Drumsnab Road",
+    "points": [
+      [
+        43.675719759,
+        -79.3682205287
+      ]
+    ],
+    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"9 Drumsnab Rd\", retrieved 2026-11-14"
+  },
+  "participationCheck": null,
+  "review": {
+    "aiAssisted": true,
+    "humanReviewedBy": null,
+    "reviewedOn": null
+  }
+}

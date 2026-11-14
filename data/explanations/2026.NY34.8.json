@@ -1,0 +1,305 @@
+{
+  "itemId": "2026.NY34.8",
+  "plainTitle": "14-storey apartment building approved at 1-11 Vinci Crescent",
+  "topic": "development",
+  "sources": [
+    {
+      "id": "report",
+      "label": "Staff report from the Director, Community Planning, North York District",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-288179.pdf",
+      "date": "June 17, 2026",
+      "textFile": "backgroundfile-288179.pages.json"
+    }
+  ],
+  "whatIsProposed": [
+    {
+      "text": "City Council changed the Official Plan and the zoning rules for 1-11 Vinci Crescent so that a 14-storey apartment building can be built there.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "to permit the development of a 14-storey residential building at 1-11 Vinci Cres"
+        },
+        {
+          "source": "item",
+          "quote": "City Council amend the Official Plan for the lands municipally known as 1-11 Vinci Crescent"
+        }
+      ]
+    },
+    {
+      "text": "The building would have 299 homes. Most would have two bedrooms. There would be 126 car parking spaces underground and 225 bicycle parking spaces.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The proposal includes 299 dwelling units comprised of 67 one-bedroom (22%), 202 two- bedroom (67%), and 30 three-bedroom units (10%)."
+        },
+        {
+          "source": "report",
+          "quote": "A total of 126 vehicular parking spaces and 225 bicycle parking spaces are proposed"
+        }
+      ]
+    },
+    {
+      "text": "The building would replace six houses. These contain seven homes, and two of those homes are rented.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The subject site is currently developed with six single-detached dwellings"
+        },
+        {
+          "source": "report",
+          "quote": "the proposal includes the demolition of seven residential dwelling units, two of which are rental"
+        }
+      ]
+    },
+    {
+      "text": "Cars would enter and leave from Vinci Crescent. This was moved from the laneway to the south after feedback from staff and residents.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "relocating the main vehicle access from the public laneway (Lane Total N Wilson E Faywood) to Vinci Crescent"
+        }
+      ]
+    }
+  ],
+  "why": [
+    {
+      "text": "The land is now planned for low-rise homes. Rules allow buildings of up to four storeys. A building this tall needed a change to the Official Plan.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "multiplexes and apartment buildings with heights up to four storeys are permitted"
+        },
+        {
+          "source": "report",
+          "quote": "An amendment to the Official Plan is required to permit a more intensive residential development at the proposed height and density."
+        }
+      ]
+    },
+    {
+      "text": "City staff supported the change. They pointed out the site sits between areas already planned for bigger buildings, and is close to Wilson subway station.",
+      "caveat": "This is the opinion of City staff.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Staff are of the opinion that the proposed redesignation is appropriate given the site’s location between Mixed Use Areas and Apartment Neighbourhoods designations"
+        },
+        {
+          "source": "report",
+          "quote": "It is within 500 metres of the centre point of the delineated Wilson Station"
+        }
+      ]
+    },
+    {
+      "text": "Staff said the building steps back from the houses to the east to ease the change in height. On the east side it is set back 10.8 metres, and 20 metres for the top three floors.",
+      "caveat": "This is the opinion of City staff.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "the building maintains an increased setback of 10.80 metres up to the 11 th storey adjacent to existing low-rise residential dwellings"
+        },
+        {
+          "source": "report",
+          "quote": "This setback increases to 20 metres starting from the 12 th to the 14 th storey."
+        }
+      ]
+    }
+  ],
+  "whoIsAffected": [
+    {
+      "text": "The site is at the southeast corner of Vinci Crescent and Faywood Boulevard, in Ward 6 (York Centre).",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The subject site is located at the southeast corner of Vinci Crescent and Faywood Boulevard."
+        }
+      ]
+    },
+    {
+      "text": "Tenants who live there now: staff say a Tenant Assistance Plan will help them. Their rented homes do not have to be replaced, because fewer than six are being torn down.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "A Tenant Assistance Plan will be secured to lessen hardship for existing tenants."
+        },
+        {
+          "source": "report",
+          "quote": "Replacement of the demolished rental units is not required"
+        }
+      ]
+    },
+    {
+      "text": "The house next door at 15 Vinci Crescent: the building's driveway would run beside it. The original shadow study found most added shadow on that house in the late afternoon in spring and fall.",
+      "caveat": "Staff say the building was later changed to reduce shadows. The report does not give updated shadow times for 15 Vinci Crescent.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "will be located along the east side of the property between the subject lands and 15 Vinci Crescent"
+        },
+        {
+          "source": "report",
+          "quote": "particularly on 15 Vinci Crescent between 3:18pm and 6:18pm during the spring and fall equinoxes"
+        }
+      ]
+    },
+    {
+      "text": "Families with school-age children: the public school board says local schools do not have room for students from new buildings.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "TDSB staff have determined that there is insufficient capacity at the local schools to accommodate students from new residential developments."
+        }
+      ]
+    }
+  ],
+  "conditionsAndUnknowns": [
+    {
+      "text": "The new zoning comes with a hold. Building cannot go ahead until the owner shows that water and sewer systems can handle it, and until studies on air quality, noise and vibration are accepted.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "restrict development on the site until such time as the owner has addressed servicing and stormwater management, land use compatibility, air quality, noise and vibration matters"
+        }
+      ]
+    },
+    {
+      "text": "Council asked the owner to try to buy 15 Vinci Crescent, so the site could include a park instead of the owner paying cash. If that does not happen and building starts, Council directed a construction plan that protects that house and limits noise.",
+      "caveat": "This only asks the owner to try. The record does not say whether the purchase will happen.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council request the owners of 1-11 Vinci Crescent to contact the owner of 15 Vinci Crescent"
+        },
+        {
+          "source": "item",
+          "quote": "a shoring-support system adjacent to 15 Vinci Crescent that will not affect the structure, frame, foundation of the property at 15 Vinci Crescent"
+        },
+        {
+          "source": "item",
+          "quote": "mitigation of construction noise and drilling"
+        }
+      ]
+    },
+    {
+      "text": "Council also asked the owner to look for park land nearby instead. This could include improving the City laneway to the south that leads to the new Faywood Park. If no land is found, the owner pays cash instead.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "that such could include enhancing the existing city-owned laneway to the south of the subject site to the newly opened Faywood Park"
+        },
+        {
+          "source": "item",
+          "quote": "the Owner will be required to satisfy the parkland dedication requirement through a cash-in-lieu of parkland payment"
+        }
+      ]
+    },
+    {
+      "text": "Council asked staff to keep working with the owner to lower the building's height and to look at other ways in and out of the building.",
+      "caveat": "This is a request. The by-laws allow 14 storeys, and the record does not say the height will change.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "continue to work with the applicant through site plan to reduce the height of the building, explore alternative exit and entry routes to the building"
+        }
+      ]
+    },
+    {
+      "text": "Traffic: the owner's consultant says nearby streets can handle the new traffic. City transportation staff said more study is needed.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Transportation staff have identified that further analysis is required"
+        }
+      ]
+    }
+  ],
+  "stageSummaries": {
+    "staff": {
+      "text": "Staff recommended approval.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "This Report recommends approval of the application to amend the Official Plan and Zoning By-law"
+        }
+      ]
+    },
+    "committee": {
+      "text": "The community council held the public meeting. It recommended approval and added requests about buying the house next door, construction protections, a traffic study and the ravine path. A proposal to have the City look at buying 1 Vinci Crescent for a park did not make it into its recommendations.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "on July 7, 2026 and was adopted with amendments."
+        },
+        {
+          "source": "item",
+          "quote": "explore the purchase of 1 Vinci Crescent with the north parkland acquisition fund"
+        }
+      ]
+    },
+    "council": {
+      "text": "City Council approved the Official Plan and zoning changes. It added the community council's requests and more about park land, a lower height and help for tenants.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council adopted this item on July 29 and 30, 2026 with amendments."
+        }
+      ]
+    }
+  },
+  "whatHappensNext": [
+    {
+      "text": "Two by-laws have been passed for this item: 986-2026 and 987-2026.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "See also By-laws 986-2026, 987-2026"
+        }
+      ]
+    },
+    {
+      "text": "City transportation staff are to study a no-right-turn sign at the building's exit and an all-way stop at Faywood Avenue and Vinci Crescent, and add them where possible.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "no right turn sign at the exit of 1-11 Vinci Crescent"
+        },
+        {
+          "source": "item",
+          "quote": "an all way stop at Faywood Avenue and Vinci Crescent"
+        }
+      ]
+    },
+    {
+      "text": "Other details, such as landscaping, wind protection and an updated traffic study, are to be settled in a later step called Site Plan Control.",
+      "caveat": "The record gives no dates for that step.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "An updated TIS is required through a future Site Plan Control application"
+        },
+        {
+          "source": "report",
+          "quote": "Outstanding items will be dealt with through the Site Plan Approval application and through the clearing of the holding provision."
+        }
+      ]
+    }
+  ],
+  "location": {
+    "label": "1-11 Vinci Crescent",
+    "points": [
+      [
+        43.735651025,
+        -79.446372296
+      ]
+    ],
+    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"1 Vinci Cres\", retrieved 2026-11-14",
+    "proposedStoreys": [
+      14
+    ]
+  },
+  "participationCheck": null,
+  "review": {
+    "aiAssisted": true,
+    "humanReviewedBy": null,
+    "reviewedOn": null
+  }
+}

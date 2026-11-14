@@ -20,10 +20,10 @@ FIELDS = {
     ),
     'what_changes': (
         'Today the record is published but not explained. Clear Council explains it without loosening accuracy: '
-        'unverified text cannot be published and deadlines are never guessed. Tested on three Toronto items.'
+        'unverified text cannot be published and deadlines are never guessed. Tested on 15 Toronto items.'
     ),
     'piloted': (
-        'Ready: item pages, source checking, decision route, address distance and print view, for three items. '
+        'Ready: item pages, source checking, decision route, address distance and print view, for 15 items. '
         'Not built: automatic intake of new items, a staff review screen, alerts. Next priority: other languages, '
         'and a phone or paper channel for offline residents.'
     ),

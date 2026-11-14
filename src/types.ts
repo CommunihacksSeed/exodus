@@ -151,7 +151,7 @@ export interface Explanation<C = Citation> {
     geocodeSource: string
     /**
      * Storeys of each proposed building, for the height block on the 3D map.
-     * The build refuses a number that is not in a checked quote ("16-storey").
+     * The build refuses a number that is not in a checked quote ("16-storey" or "16 storey").
      */
     proposedStoreys?: number[]
   }
