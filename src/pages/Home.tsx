@@ -12,6 +12,7 @@ import { usePlace } from '../lib/place.tsx'
 import { CAN_ACT, itemStatus, STATUS_LABEL } from '../lib/stages.ts'
 import type { PublishedItem } from '../types.ts'
 import { useLang } from '../i18n/index.tsx'
+import { MapBoundary } from '../components/MapBoundary.tsx'
 
 const TOPIC_LABEL = { development: 'New building', transit: 'Transit', heritage: 'Heritage and housing' } as const
 const ORDER = { open: 0, 'in-progress': 1, decided: 2 } as const
@@ -154,6 +155,7 @@ export function Home() {
 
       <div className="home-map">
         <div className="city-map-frame">
+          <MapBoundary fallback={<p className="map-fallback">{t('This device cannot draw the 3D map. Every decision on it is in the list on this page.')}</p>}>
           <Suspense fallback={<div className="city-map city-map-loading" aria-hidden="true" />}>
           <CityMap
             pins={PINS}
@@ -163,6 +165,7 @@ export function Home() {
             home={place ? { point: place.point, label: place.label } : null}
           />
           </Suspense>
+          </MapBoundary>
           {selected && <Preview item={selected.item} distance={selected.distance} onClose={() => setSelectedId(null)} />}
         </div>
         <ul className="legend" aria-label={t('What the markers mean')}>

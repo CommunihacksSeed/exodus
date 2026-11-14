@@ -15,6 +15,7 @@ import { usePlace } from '../lib/place.tsx'
 import { itemStatus, STATUS_LABEL } from '../lib/stages.ts'
 import { safeHref } from '../lib/safe.ts'
 import { fill, useLang } from '../i18n/index.tsx'
+import { MapBoundary } from '../components/MapBoundary.tsx'
 
 // The map library is large; load it after the text so the page is readable at once.
 const ItemMap = lazy(() => import('../components/ItemMap.tsx').then((m) => ({ default: m.ItemMap })))
@@ -147,6 +148,7 @@ export function ItemPage() {
               </p>
             ) : null}
             <AddressSearch compact />
+            <MapBoundary fallback={<p className="map-fallback">{t('This device cannot draw the 3D map. The location is described in the text here.')}</p>}>
             <Suspense fallback={<div className="item-map city-map-loading" aria-hidden="true" />}>
             <ItemMap
               points={explanation.location.points}
@@ -156,6 +158,7 @@ export function ItemPage() {
               proposedStoreys={explanation.location.proposedStoreys}
             />
             </Suspense>
+            </MapBoundary>
             <p className="fine">
               {explanation.location.points.length > 1 ? t('Red marks the route.') : t('Red marks the site.')} {t('The dashed line is the ward boundary.')}{' '}
               {explanation.location.proposedStoreys?.length

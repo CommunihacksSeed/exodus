@@ -227,3 +227,22 @@ test('every interface string has a French and a Chinese translation with the sam
   assert.ok(keys.size > 200, `found ${keys.size} strings`)
   assert.deepEqual(Object.keys(fr).sort(), Object.keys(zh).sort(), 'French and Chinese cover the same strings')
 })
+
+import { footprintCentre } from '../src/lib/footprint.ts'
+
+test('building footprints from map tiles: odd or empty shapes are skipped, never thrown on', () => {
+  assert.deepEqual(footprintCentre({ type: 'Polygon', coordinates: [[[0, 0], [2, 0], [2, 2], [0, 2]]] }), [1, 1])
+  assert.deepEqual(footprintCentre({ type: 'MultiPolygon', coordinates: [[[[0, 0], [4, 4]]]] }), [2, 2])
+  for (const bad of [
+    { type: 'MultiPolygon', coordinates: [] }, // the shape that blanked the page
+    { type: 'MultiPolygon', coordinates: [[]] },
+    { type: 'Polygon', coordinates: [] },
+    { type: 'Polygon', coordinates: [[]] },
+    { type: 'Polygon', coordinates: [[[NaN, 1], ['x', 2]]] },
+    { type: 'Point', coordinates: [1, 2] },
+    { type: 'Polygon' },
+    null,
+  ]) {
+    assert.equal(footprintCentre(bad as never), null, JSON.stringify(bad))
+  }
+})
