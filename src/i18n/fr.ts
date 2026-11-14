@@ -12,8 +12,6 @@ export const fr: Record<string, string> = {
   Language: 'Langue',
   'Built for CIVIC Hack 2026. Data: City of Toronto council records and Open Data, under the Open Government Licence – Toronto. Map: © OpenStreetMap contributors, tiles by OpenFreeMap.':
     'Créé pour CIVIC Hack 2026. Données : dossiers du conseil et données ouvertes de la Ville de Toronto, sous la Open Government Licence – Toronto. Carte : © contributeurs d’OpenStreetMap, tuiles d’OpenFreeMap.',
-  'The explanations and City records on this page are in English. Each sentence is checked word for word against the City’s English record, and a translation could not be checked the same way.':
-    'Les explications et les documents de la Ville sur cette page sont en anglais. Chaque phrase est vérifiée mot pour mot dans le dossier officiel anglais de la Ville; une traduction ne pourrait pas être vérifiée de la même façon.',
 
   // Status
   'You can still have a say': 'Vous pouvez encore vous exprimer',

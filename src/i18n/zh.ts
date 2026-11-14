@@ -12,8 +12,6 @@ export const zh: Record<string, string> = {
   Language: '语言',
   'Built for CIVIC Hack 2026. Data: City of Toronto council records and Open Data, under the Open Government Licence – Toronto. Map: © OpenStreetMap contributors, tiles by OpenFreeMap.':
     '为 CIVIC Hack 2026 制作。数据：多伦多市议会记录及开放数据，依据 Open Government Licence – Toronto 使用。地图：© OpenStreetMap 贡献者，瓦片由 OpenFreeMap 提供。',
-  'The explanations and City records on this page are in English. Each sentence is checked word for word against the City’s English record, and a translation could not be checked the same way.':
-    '本页的白话解释和市政记录保留英文。每一句都与市政府的英文官方记录逐字核对过，翻译后的文字无法用同样的方式核实。',
 
   // Status
   'You can still have a say': '仍可发表意见',

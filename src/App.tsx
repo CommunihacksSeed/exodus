@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { HashRouter, Link, NavLink, Route, Routes, useLocation } from 'react-router-dom'
-import { EnglishContentNote, LangPicker, LangProvider, useLang } from './i18n/index.tsx'
+import { LangPicker, LangProvider, useLang } from './i18n/index.tsx'
 import { PlaceProvider } from './lib/place.tsx'
 import { Home } from './pages/Home.tsx'
 import { HowItWorks } from './pages/HowItWorks.tsx'
@@ -88,7 +88,6 @@ function Shell() {
         </header>
         <OfflineNote />
         <main id="main">
-          <EnglishContentNote />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/item/:id" element={<ItemPage />} />
