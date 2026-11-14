@@ -20,7 +20,7 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - Official title: 2125 Lawrence Avenue West - Inclusion on the Heritage Register
 - City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.EY29.6
 - Location shown: 2125 Lawrence Avenue West (Weston Lions Arena) (City of Toronto geocoder (map.toronto.ca), address match for "2125 Lawrence Ave W", retrieved 2026-11-14)
-- Signed off by: **nobody yet**
+- Signed off by: Ray Tian on 2026-11-14
 
 ### What is being proposed?
 
@@ -121,7 +121,7 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - Official title: 2686 and 2688 Lake Shore Boulevard West - Official Plan and Zoning By-law Amendment Application - Decision Report - Approval
 - City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.EY32.1
 - Location shown: 2686 and 2688 Lake Shore Boulevard West (City of Toronto geocoder (map.toronto.ca), address match for "2686 Lake Shore Blvd W" (2688 matched about 20 m west), retrieved 2026-11-14)
-- Signed off by: **nobody yet**
+- Signed off by: Ray Tian on 2026-11-14
 
 ### What is being proposed?
 
@@ -262,7 +262,7 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - Official title: Speeding Up the College Streetcar Study
 - City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.IE31.9
 - Location shown: College Street in Ward 11, from Yonge Street west to about 801 College Street (approximate line joining 8 College Street addresses (1 College St to 801 College St) matched with the City of Toronto geocoder, all in Ward 11, retrieved 2026-11-14. The City record names the College streetcar and Ward 11, not exact blocks, so this shows the Ward 11 stretch of College Street)
-- Signed off by: **nobody yet**
+- Signed off by: Ray Tian on 2026-11-14
 
 ### What is being proposed?
 
@@ -336,7 +336,7 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - Official title: 245 Eglinton Avenue East - Official Plan Amendment and Zoning By-law Amendment Application- Decision Report - Approval
 - City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.12
 - Location shown: 245 Eglinton Avenue East (City of Toronto geocoder (map.toronto.ca), address match for "245 Eglinton Ave E", retrieved 2026-11-12)
-- Signed off by: **nobody yet**
+- Signed off by: Ray Tian on 2026-11-14
 
 ### What is being proposed?
 
@@ -455,7 +455,7 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - Official title: 922 Millwood Road - Official Plan Amendment and Zoning By-law Amendment Application - Decision Report - Approval
 - City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.25
 - Location shown: 922 Millwood Road (City of Toronto geocoder (map.toronto.ca), address match for "922 Millwood Rd", retrieved 2026-11-14)
-- Signed off by: **nobody yet**
+- Signed off by: Ray Tian on 2026-11-14
 
 ### What is being proposed?
 
@@ -574,7 +574,7 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - Official title: 1-11 Vinci Crescent - Official Plan Amendment and Zoning Amendment Applications - Decision Report - Approval
 - City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.NY34.8
 - Location shown: 1-11 Vinci Crescent (City of Toronto geocoder (map.toronto.ca), address match for "1 Vinci Cres", retrieved 2026-11-14)
-- Signed off by: **nobody yet**
+- Signed off by: Ray Tian on 2026-11-14
 
 ### What is being proposed?
 
@@ -707,7 +707,7 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - Official title: Toronto Builds: 970 Kipling Avenue - Zoning By-law Amendment Application - Decision Report - Approval
 - City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.PH30.2
 - Location shown: 970 Kipling Avenue (City of Toronto geocoder (map.toronto.ca), address match for "970 Kipling Ave", retrieved 2026-11-14)
-- Signed off by: **nobody yet**
+- Signed off by: Ray Tian on 2026-11-14
 
 ### What is being proposed?
 
@@ -845,7 +845,7 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - Official title: Nightstar Road - Traffic Calming (Speed Cushions) and Heavy Vehicle Prohibition
 - City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.SC30.8
 - Location shown: Nightstar Road, between Morningside Avenue and Mantis Road/Knotwood Crescent/Flower Crescent (approximate line joining 5 Nightstar Road addresses (2 to 99 Nightstar Rd) matched with the City of Toronto geocoder (map.toronto.ca), retrieved 2026-11-14. The exact speed cushion spots are shown only on the report's drawings)
-- Signed off by: **nobody yet**
+- Signed off by: Ray Tian on 2026-11-14
 
 ### What is being proposed?
 
@@ -953,7 +953,7 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - Official title: 468 to 480 Danforth Road and 509 Birchmount Road - Zoning By-law Amendment Application - Decision Report - Approval
 - City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.SC32.2
 - Location shown: 468 to 480 Danforth Road and 509 Birchmount Road (City of Toronto geocoder (map.toronto.ca), address match for "509 Birchmount Rd" (the parkland part of the site), retrieved 2026-11-14. The geocoder returned no match for 468 to 480 Danforth Road)
-- Signed off by: **nobody yet**
+- Signed off by: Ray Tian on 2026-11-14
 
 ### What is being proposed?
 
@@ -1090,7 +1090,7 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - Official title: 60 Guildwood Parkway - Official Plan and Zoning By-law Amendment - Decision Report - Approval
 - City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.SC33.12
 - Location shown: 60 Guildwood Parkway (City of Toronto geocoder (map.toronto.ca), address match for "60 Guildwood Pkwy" (Extendicare Guildwood), retrieved 2026-11-14)
-- Signed off by: **nobody yet**
+- Signed off by: Ray Tian on 2026-11-14
 
 ### What is being proposed?
 
@@ -1216,7 +1216,7 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - Official title: 9 Drumsnab Road - Alterations to a Designated Heritage Property in the South Rosedale Heritage Conservation District - Refusal
 - City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.TE31.24
 - Location shown: 9 Drumsnab Road (City of Toronto geocoder (map.toronto.ca), address match for "9 Drumsnab Rd", retrieved 2026-11-14)
-- Signed off by: **nobody yet**
+- Signed off by: Ray Tian on 2026-11-14
 
 ### What is being proposed?
 
@@ -1320,7 +1320,7 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - Official title: Pedestrianizing Church Street Pilot
 - City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.TE32.46
 - Location shown: Church Street between Wellesley Street East and Alexander Street (line joining the intersections Church St and Wellesley St E and Church St and Alexander St, plus 530 and 500 Church St, matched with the City of Toronto geocoder, retrieved 2026-11-14)
-- Signed off by: **nobody yet**
+- Signed off by: Ray Tian on 2026-11-14
 
 ### What is being proposed?
 
@@ -1405,7 +1405,7 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - Official title: Initial Findings Report: Transit Priority Measures to Support the 505 Dundas 6-Minute Network
 - City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.104
 - Location shown: Dundas Street West and East, along the 505 streetcar route (approximate line joining 13 Dundas Street addresses (2333 Dundas St W to 585 Dundas St E) matched with the City of Toronto geocoder on 2026-11-12. The City record names wards, not exact blocks)
-- Signed off by: **nobody yet**
+- Signed off by: Ray Tian on 2026-11-14
 
 ### What is being proposed?
 
@@ -1495,7 +1495,7 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - Official title: 191-199 College Street and 74-76 Henry Street - Official Plan and Zoning By-law Amendment Application - Decision Report - Approval
 - City page: https://secure.toronto.ca/council/agenda-item.do?item=2026.TE34.21
 - Location shown: 191-199 College Street and 74-76 Henry Street (City of Toronto geocoder (map.toronto.ca), address match for "191 College St", retrieved 2026-11-14)
-- Signed off by: **nobody yet**
+- Signed off by: Ray Tian on 2026-11-14
 
 ### What is being proposed?
 
@@ -1635,7 +1635,7 @@ file under `data/explanations/`, then run `npm run data`. The page then shows wh
 - Official title: 1337 Queen Street West - Demolition and New Construction on a Designated Heritage Property under Part V, Section 42 of the Ontario Heritage Act - Approval
 - City page: https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6
 - Location shown: 1337 Queen Street West (City of Toronto geocoder (map.toronto.ca), address match for "1337 Queen St W", retrieved 2026-11-12)
-- Signed off by: **nobody yet**
+- Signed off by: Ray Tian on 2026-11-14
 
 ### What is being proposed?
 
