@@ -46,6 +46,7 @@ Each requirement is traced to the challenge brief and to the code that implement
 | F14 | Explain City Hall words in plain language, in a glossary and in place on item pages | Same | `pages/Words.tsx`, `components/Term.tsx`, `content/civics.ts` |
 | F15 | Show everything for one ward, by address or from a list | "Is this near me?" | `pages/MyWard.tsx` |
 | F16 | Show how the site checks itself, with live numbers from the published data | "Show the source and date for each explanation"; AI transparency (N7) | `pages/HowWeCheck.tsx` |
+| F17 | Invite exploration: drive a toy car to each decision, with arrival prompts and a visited count | "Is this near me?"; engagement for residents who do not follow City Hall | `lib/drive.ts`, `components/CityMap.tsx` (drive effect) |
 
 ### 1.3 Non-functional requirements
 
@@ -564,6 +565,16 @@ thin light column and ground ring per decision. Keyboard flight (W A S D, Q E, R
 pulse run on `requestAnimationFrame`; `whenTilesLoaded` polls instead of waiting for `idle`,
 which never fires while the pulse is running.
 
+**`lib/drive.ts`** — drive mode as pure functions: `step` (throttle, brake, reverse, friction,
+speed-scaled steering), `carFeatures` (body, cabin and headlights as extrusion blocks, drawn
+5× real size so they read at street zoom) and `siteAt` (the decision within 80 m). `CityMap`
+runs it on `requestAnimationFrame` with a chase camera; the map's own keyboard handling and the
+flight keys stand down while driving. The car drives freely and does not follow roads.
+
+**`lib/footprint.ts`**, **`components/MapBoundary.tsx`** — `footprintCentre` reads building
+shapes from map tiles without assuming their structure; `MapBoundary` is an error boundary around
+both maps, so a map error shows the text fallback instead of blanking the page.
+
 **`components/ResidentTools.tsx`** — read aloud with the browser's speech engine (on-device voices
 ranked first, novelty voices never offered: `lib/voices.ts`), an `.ics` file for upcoming
 meetings (`lib/calendar.ts`), share and print.
@@ -601,7 +612,7 @@ back.
 | Check | Command | What it covers |
 |---|---|---|
 | Quote verification | `npm run data` | Every citation in every explanation, against page text. Currently 15 items, all passing |
-| Unit and regression tests | `npm test` (15 tests) | Date and ward parsing; stage states for an upcoming and a decided item; vote tallies (2–4 lost at committee, 25–1 at Council); no resident names in output; no double-counted correspondence; haversine and point-to-line distance; link allowlist (`javascript:`, `data:`, look-alike hosts, credentials) and every link in the published data; coordinate and saved-place validation; calendar rules and `.ics` format; read-aloud order; voice ranking |
+| Unit and regression tests | `npm test` (18 tests) | Date and ward parsing; stage states for an upcoming and a decided item; vote tallies (2–4 lost at committee, 25–1 at Council); no resident names in output; no double-counted correspondence; haversine and point-to-line distance; link allowlist (`javascript:`, `data:`, look-alike hosts, credentials) and every link in the published data; coordinate and saved-place validation; calendar rules and `.ics` format; read-aloud order; voice ranking; building footprints with empty or malformed shapes; drive physics (acceleration, top speed, no turning when parked, braking into reverse, coasting, boost), car shape and arrival |
 | Explainer quotes | `npm test`, `npm run data` | All 31 quotes on the guide and glossary found word for word in their saved sources |
 | Translations | `npm test` | Every interface string has a French and a Chinese translation with the same `{placeholders}` |
 | Untranslated-text scan | script in the browser, every page in French | Lists visible text and `aria-label`/`title` values that still look English outside `lang="en"` content. Found 50 interface strings the unit test could not see (text written straight into JSX, map library labels); all now translated |
@@ -634,7 +645,7 @@ The hackathon rules require disclosure. This section says exactly what AI did.
 | Plain-language explanations | Drafted by Claude from the City documents | Every quote machine-verified by `build.ts`. A separate Claude session, given only the files, compared all 62 sentences with their sources: none was wrong, 6 said slightly more than the source or could be misread and were reworded, and 4 gained an extra quote. Human sign-off is recorded per item in `review.humanReviewedBy` and displayed on the page; until then the page says no person has signed off |
 | Stage timeline, dates, votes, official wording | **None.** Rule-based code | Regression tests against real records |
 | Run-time behaviour | **None.** The site calls no AI model | — |
-| Security hardening, read-aloud, calendar, 3D map upgrades, guide/glossary/method/ward pages, languages, offline support | Written with the same AI coding tools, directed and reviewed by a team member, submitted as pull requests #1–#5 | Each pull request lists what was run (lint, tests, build, headless browser) and what was not checked |
+| Security hardening, read-aloud, calendar, 3D map upgrades, guide/glossary/method/ward pages, languages, offline support | Written with the same AI coding tools, directed and reviewed by a team member, submitted as pull requests #1–#5, #11, #13 (crash fix) and #14 (drive mode) | Each pull request lists what was run (lint, tests, build, headless browser) and what was not checked |
 | Glossary meanings, guide wording, French and Chinese interface text | Drafted with AI | Quotes machine-verified (31). Translations not yet reviewed by native speakers; the pull request says so |
 | Translation gaps, `lang` marking and the bug fixes listed below (pull request after #6) | Found by two AI review agents reading the merged code and by a scripted scan of every page in French, fixed with Claude Code | Tests, lint, build, the scan re-run, and an offline check against the production build |
 | This document | Drafted with Claude | Reviewed by the team against the code |
@@ -672,6 +683,10 @@ Bugs found and fixed during development, as evidence the code was read and not j
 - The service worker deleted every cache on the host, not only its own; saved any page it was
   sent to (a 404, a file opened in a tab) as the offline copy; and never saved the app's scripts,
   so an offline reload was blank.
+- Choosing a marker after driving around blanked the whole page: the clear-view camera read
+  `coordinates[0][0]` of every loaded building, and map tiles can hold an empty `MultiPolygon`.
+  With no error boundary, the error unmounted the app. Fixed with `footprintCentre` and
+  `MapBoundary` (pull request #13); found while testing drive mode.
 - About 50 interface strings were written straight into JSX and were never translated; the
   translation test only sees strings passed to `t()`. Found by scanning every page in French.
 

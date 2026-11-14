@@ -21,6 +21,8 @@ Around the item pages:
 - **A game-style 3D city.** Day, dusk and night; each proposed building drawn storey by storey
   beside the buildings there now; a guided tour that flies to every decision; fly with W A S D;
   full screen. The camera picks a side where existing towers do not hide the proposal.
+- **Drive mode.** Drive a toy car around the 3D city (arrow keys or on-screen pedals) and try to
+  visit every decision on the map; arriving at one offers its summary.
 - **Listen, add to calendar, share.** Any item page can be read aloud. An upcoming meeting can go
   in your calendar, labelled as a meeting date and never as a deadline.
 - **How decisions are made**: the route every item takes, with the real items at each stop.

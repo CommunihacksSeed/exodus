@@ -25,7 +25,8 @@ Deadline: **Saturday, November 14, 2026, 10:00 a.m. ET** on Devpost.
 > checks each quote word for word against the City's record before anything is published. If
 > the City's page does not state a comment deadline, the page says so and does not guess one.
 > It works today on 15 real City of Toronto items from all four parts of the city. Around them: a 3D city map with each
-> proposed building drawn storey by storey and a guided tour; pages that explain how City Hall
+> proposed building drawn storey by storey, a guided tour and a drive mode that invites you to
+> visit every decision; pages that explain how City Hall
 > decides and what its words mean, with every fact quoted from the City; a ward page; read-aloud
 > and add-to-calendar on every item; an interface in English, French and Chinese; offline use and
 > a print view for neighbours who are not online. The summaries were drafted with an AI model;
@@ -60,8 +61,8 @@ City of Toronto Open Data, Claude (Anthropic).
 
 - [x] Pull requests #1–#6 merged into `main` (security, resident tools, 3D map, new pages,
       languages and offline, documents)
-- [ ] **Merge the translation-and-bug-fix pull request** (French and Chinese gaps, map, glossary,
-      read-aloud and offline fixes). CI must be green.
+- [x] Translation-and-bug-fix pull request (#10), map and language-switch fixes (#11), 12 more
+      items (#12), map crash fix (#13) and drive mode (#14) merged into `main`
 - [ ] **Skim the French and Chinese interface** (language menu, top right) or ask a speaker to;
       they have not had a native-speaker review.
 
@@ -72,6 +73,6 @@ City of Toronto Open Data, Claude (Anthropic).
       Word or Google Docs, fill in team name, contact email and members, confirm the cost and
       review-time estimates, and save as PDF into `docs/readiness-report/`.
 - [ ] **Record the video** from [VIDEO_SCRIPT.md](VIDEO_SCRIPT.md). Keep it under 3:00.
-- [ ] **Make the repository public** before submitting, so judges can open it.
+- [x] Repository is public.
 - [ ] **Submit on Devpost:** repository link, video link, readiness report PDF, the text above.
 - [ ] Post Checkpoint 1 on Discord.
