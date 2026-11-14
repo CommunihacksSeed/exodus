@@ -1,0 +1,199 @@
+{
+  "itemId": "2026.IE31.9",
+  "plainTitle": "A study of ways to speed up the College streetcar",
+  "topic": "transit",
+  "sources": [
+    {
+      "id": "motion",
+      "label": "Motion to the Infrastructure and Environment Committee from the Ward 11 Councillor",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/ie/bgrd/backgroundfile-289576.pdf",
+      "date": "Monday, July 6, 2026",
+      "textFile": "backgroundfile-289576.pages.json"
+    }
+  ],
+  "whatIsProposed": [
+    {
+      "text": "The committee asked City transportation staff and the TTC to study how to make the College streetcar faster and more reliable.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "with recommendations how to improve the speed and reliability of the College Streetcar through transit priority measures that are within the control of the city"
+        }
+      ]
+    },
+    {
+      "text": "The study is about \"transit priority measures\". Examples given are changes to traffic signals and limits on parking and turns.",
+      "caveat": "These examples come from the motion's summary. The decision itself does not name any specific measure for College Street.",
+      "citations": [
+        {
+          "source": "motion",
+          "quote": "Transit priority measures (including signal changes, and parking and turn restrictions)"
+        }
+      ]
+    },
+    {
+      "text": "Staff and the TTC are asked to consult the community as part of this work. The decision asks for a study only. It does not change any road rules now.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "to consult the community and to report back to Infrastructure and Environment Committee in the first quarter of 2027"
+        }
+      ]
+    }
+  ],
+  "why": [
+    {
+      "text": "The motion says more than half of Ward 11 residents do not have a car and rely on transit, walking or cycling.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "More than half of Ward 11 residents do not have private vehicles and depend on transit and active transportation."
+        }
+      ]
+    },
+    {
+      "text": "The motion says Toronto streetcars are slow mainly because they get stuck in regular traffic.",
+      "caveat": "This is the motion's summary of outside research. The record does not include that research.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "due primarily to the vehicles being stuck in mixed traffic and lacking appropriate transit priority"
+        }
+      ]
+    },
+    {
+      "text": "The motion points to similar measures on Spadina, Bathurst and Dundas as showing that big improvements are possible.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "that have been rolled out on Spadina, Bathurst and Dundas have demonstrated that considerable improvements are possible when transit gets the priority it deserves"
+        }
+      ]
+    }
+  ],
+  "whoIsAffected": [
+    {
+      "text": "People who ride the College streetcar.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "improve the speed and reliability of the College Streetcar"
+        }
+      ]
+    },
+    {
+      "text": "People who drive, park, make deliveries or run a business on College Street could be affected later if parking or turning rules change.",
+      "caveat": "The record does not say which blocks or which rules could change. That would come after the study.",
+      "citations": [
+        {
+          "source": "motion",
+          "quote": "Now it’s time to learn what is possible and achievable on College Street."
+        }
+      ]
+    },
+    {
+      "text": "The City lists one ward for this item: 11 (University-Rosedale).",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "11 - University - Rosedale"
+        }
+      ]
+    }
+  ],
+  "conditionsAndUnknowns": [
+    {
+      "text": "The study only covers measures that the City itself controls.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "transit priority measures that are within the control of the city"
+        }
+      ]
+    },
+    {
+      "text": "One committee member declared a conflict of interest and was absent from the votes.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "The following member(s) declared an interest:"
+        },
+        {
+          "source": "item",
+          "quote": "(Interest Declared)"
+        }
+      ]
+    }
+  ],
+  "stageSummaries": {
+    "committee": {
+      "text": "The Infrastructure and Environment Committee adopted the motion without changes. The vote was 5 to 0.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "This item was considered by Infrastructure and Environment Committee on July 15, 2026 and was adopted without amendment."
+        },
+        {
+          "source": "item",
+          "quote": "Yes: 5"
+        }
+      ]
+    }
+  },
+  "whatHappensNext": [
+    {
+      "text": "Staff and the TTC are due to report back to the Infrastructure and Environment Committee in the first three months of 2027, with recommendations.",
+      "caveat": "No meeting date for that report is in the record yet. When it is scheduled, the City's page for that new item will show whether you can comment or speak.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "to report back to Infrastructure and Environment Committee in the first quarter of 2027"
+        }
+      ]
+    }
+  ],
+  "location": {
+    "label": "College Street in Ward 11, from Yonge Street west to about 801 College Street",
+    "points": [
+      [
+        43.6611023115,
+        -79.3833978922
+      ],
+      [
+        43.659795077,
+        -79.38878493
+      ],
+      [
+        43.659070022,
+        -79.395679171
+      ],
+      [
+        43.657970866,
+        -79.401727377
+      ],
+      [
+        43.656397817,
+        -79.405731527
+      ],
+      [
+        43.655753567,
+        -79.409763967
+      ],
+      [
+        43.655322732,
+        -79.414196876
+      ],
+      [
+        43.654592496,
+        -79.421028836
+      ]
+    ],
+    "geocodeSource": "approximate line joining 8 College Street addresses (1 College St to 801 College St) matched with the City of Toronto geocoder, all in Ward 11, retrieved 2026-11-14. The City record names the College streetcar and Ward 11, not exact blocks, so this shows the Ward 11 stretch of College Street"
+  },
+  "participationCheck": null,
+  "review": {
+    "aiAssisted": true,
+    "humanReviewedBy": null,
+    "reviewedOn": null
+  }
+}

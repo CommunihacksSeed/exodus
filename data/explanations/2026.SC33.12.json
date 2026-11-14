@@ -1,0 +1,283 @@
+{
+  "itemId": "2026.SC33.12",
+  "plainTitle": "New 9-storey long-term care home approved at 60 Guildwood Parkway",
+  "topic": "development",
+  "sources": [
+    {
+      "id": "report",
+      "label": "Staff report from the Director, Community Planning, Scarborough District",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/sc/bgrd/backgroundfile-288595.pdf",
+      "date": "June 22, 2026",
+      "textFile": "backgroundfile-288595.pages.json"
+    }
+  ],
+  "whatIsProposed": [
+    {
+      "text": "City Council changed the Official Plan and the zoning rules for 60 Guildwood Parkway so that a 9-storey long-term care home can be built there.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "to permit a 9-storey long-term care facility at 60 Guildwood Parkway"
+        },
+        {
+          "source": "item",
+          "quote": "City Council amend the Official Plan for the lands municipally known as 60 Guildwood Parkway"
+        }
+      ]
+    },
+    {
+      "text": "The new home would replace a one-storey long-term care home on the site. The number of resident rooms would go from 169 to 512.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The subject lands are currently occupied by a one-storey long-term care home consisting of 169 long-term care rooms and a surface parking lot."
+        },
+        {
+          "source": "report",
+          "quote": "The proposed long-term care home includes a total of 512 long-term care resident rooms"
+        }
+      ]
+    },
+    {
+      "text": "The plan has 149 surface parking spaces and 88 bicycle parking spaces. Cars would enter from two driveways on Guildwood Parkway.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "A total of 149 vehicular parking spaces"
+        },
+        {
+          "source": "report",
+          "quote": "A total of 88 bicycle parking spaces"
+        },
+        {
+          "source": "report",
+          "quote": "proposed via two accesses on Guildwood Parkway"
+        }
+      ]
+    },
+    {
+      "text": "The land is changed from an area for low-rise homes to an area for institutions such as schools and health care. A special policy limits the site to a long-term care home.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "redesignate the subject lands from Neighbourhoods to Institutional Areas"
+        },
+        {
+          "source": "report",
+          "quote": "a Site and Area Specific Policy will scope the permitted uses to a long-term care facility"
+        }
+      ]
+    }
+  ],
+  "why": [
+    {
+      "text": "Low-rise areas usually allow buildings up to four storeys, or six on major streets like Guildwood Parkway. A 9-storey building needed the change.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Generally the Neighbourhoods designation provides for buildings up to four storeys in height."
+        },
+        {
+          "source": "report",
+          "quote": "permit 6 storey residential development on lands designated Neighbourhoods fronting on Major Streets like Guildwood Parkway"
+        }
+      ]
+    },
+    {
+      "text": "City staff supported the plan. They said the site's large size, shape and slope make the height work, and that it is near Kingston Road and a planned rapid transit line.",
+      "caveat": "This is the opinion of City staff. The community council did not endorse it (see the steps below).",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "staff finds the redesignation of the property to Institutional Areas to be appropriate due to the property's distinct size, shape, and location"
+        },
+        {
+          "source": "report",
+          "quote": "within 400 metres of Kingston Road and the future Scarborough East Rapid Transit Line"
+        }
+      ]
+    },
+    {
+      "text": "Staff said the area needs more long-term care beds. The share of local residents over 64 grew from 15% in 2016 to 16.4% in 2021.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "providing much needed additional long-term care beds to support the needs of Toronto's growing and aging population"
+        },
+        {
+          "source": "report",
+          "quote": "identified 16.4% of residents over the age of 64 years, an increase from the 15% from the 2016 census"
+        }
+      ]
+    }
+  ],
+  "whoIsAffected": [
+    {
+      "text": "The site is on the north side of Guildwood Parkway, west of Livingston Road, in Ward 24 (Scarborough-Guildwood).",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The site is an irregularly shaped corner lot located on the north side of Guildwood Parkway, west of Livingston Road."
+        }
+      ]
+    },
+    {
+      "text": "Neighbours to the east and north: the building would be about 24.5 metres from the townhouses to the east and about 15.9 metres from the nearest houses to the north.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "an approximately 24.5 metre setback from the townhouses to the east, as well as an approximately 15.9 metre setback from the nearest single detached dwellings to the north"
+        }
+      ]
+    },
+    {
+      "text": "In spring and fall, shadows would reach some houses to the northeast from 1:18 pm. They would reach part of the townhouses to the east from 3:18 pm.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "no shadows will be cast on the adjacent Neighbourhood lots until 1:18pm"
+        },
+        {
+          "source": "report",
+          "quote": "There will be no shadow impacts on the townhomes to the east until 3:18pm"
+        }
+      ]
+    },
+    {
+      "text": "Trees: 39 private trees and 4 City street trees would be removed. The owner plans to plant 91 new trees on the site and 4 on the street.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "this development would require the removal of 39 by-law protect privately-owned trees and 4 City-owned street trees"
+        },
+        {
+          "source": "report",
+          "quote": "The submitted landscape plans propose the planting of 91 large-growing shade trees on the subject lands"
+        },
+        {
+          "source": "report",
+          "quote": "the planting of 4 new trees within the adjacent road allowances"
+        }
+      ]
+    },
+    {
+      "text": "About 100 people came to a public meeting run by staff. Concerns included traffic, privacy, construction, height and trees.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Approximately 100 members of the public were in attendance"
+        },
+        {
+          "source": "report",
+          "quote": "Concerns about possible impacts on trees as a result of excavation."
+        }
+      ]
+    }
+  ],
+  "conditionsAndUnknowns": [
+    {
+      "text": "The new zoning comes with a hold. The new building cannot go ahead until the owner shows that sewer and water systems can handle it. Until then, only the existing uses are allowed.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Revisions are required to the Functional Servicing Report to demonstrate adequate servicing capacity"
+        },
+        {
+          "source": "report",
+          "quote": "the subject site shall not be used for any purpose s other than those uses and buildings that currently exist on the site"
+        }
+      ]
+    },
+    {
+      "text": "The draft zoning by-law was not included in the staff report. It was to be provided before the community council meeting.",
+      "caveat": "This page has not checked the zoning by-law that was later added to the item.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "This attachment will be provided prior to the July 9, 2026, Scarborough Community Council Meeting."
+        }
+      ]
+    },
+    {
+      "text": "Long-term care homes do not have to give land for parks or pay cash instead.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "This proposed long-term care use is exempt from the parkland dedication requirement"
+        }
+      ]
+    }
+  ],
+  "stageSummaries": {
+    "staff": {
+      "text": "Staff recommended approval.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Staff recommend that Council approve the Official Plan Amendment and Zoning By-law Amendment application."
+        }
+      ]
+    },
+    "committee": {
+      "text": "The community council held the public meeting. A motion to approve tied 3 to 3 and lost, so it went to City Council with no recommendation either way.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "Scarborough Community Council forwards the item to City Council without recommendation as the motion to adopt the item lost on a tie vote."
+        }
+      ]
+    },
+    "council": {
+      "text": "City Council voted to adopt staff's recommendations and approved the Official Plan and zoning changes.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council adopted this item on July 29 and 30, 2026 with amendments."
+        },
+        {
+          "source": "item",
+          "quote": "That City Council adopt the following recommendations in the report (June 22, 2026) from the Director, Community Planning, Scarborough District:"
+        }
+      ]
+    }
+  },
+  "whatHappensNext": [
+    {
+      "text": "Two by-laws have been passed for this item: 1222-2026 and 1223-2026.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "See also By-laws 1222-2026, 1223-2026"
+        }
+      ]
+    },
+    {
+      "text": "Details such as wind protection at the outdoor garden and transit passes for staff are to be settled in a later step called Site Plan Control. The owner had not yet applied for it when the report was written.",
+      "caveat": "The record gives no dates for that step.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "A Site Plan application has not been submitted."
+        },
+        {
+          "source": "report",
+          "quote": "will work with the applicant through the Site Plan application process to secure this along with other potential TDM measures"
+        }
+      ]
+    }
+  ],
+  "location": {
+    "label": "60 Guildwood Parkway",
+    "points": [
+      [43.746908026, -79.203149366]
+    ],
+    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"60 Guildwood Pkwy\" (Extendicare Guildwood), retrieved 2026-11-14",
+    "proposedStoreys": [9]
+  },
+  "participationCheck": null,
+  "review": {
+    "aiAssisted": true,
+    "humanReviewedBy": null,
+    "reviewedOn": null
+  }
+}

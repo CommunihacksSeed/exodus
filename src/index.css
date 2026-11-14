@@ -112,6 +112,9 @@ main:has(.home) { max-width: 84rem; }
   font-family: var(--display); font-weight: 700; font-size: 0.8rem; line-height: 1.25; color: var(--ink); background: #fff;
   border: 1.5px solid var(--ink); border-radius: 4px; padding: 0.18rem 0.45rem 0.05rem; pointer-events: none;
 }
+.pin-name.is-crowded { visibility: hidden; }
+.pin:hover, .pin:focus-visible { z-index: 5; }
+.pin:hover .pin-name.is-crowded, .pin:focus-visible .pin-name.is-crowded, .pin.is-selected .pin-name.is-crowded { visibility: visible; }
 .pin-home .pin-name { top: calc(100% + 2px); bottom: auto; color: var(--line-dark); border-color: var(--line); }
 .pin-site .pin-dot { background: var(--stop); box-shadow: 0 0 0 2px var(--stop), 0 2px 6px rgb(15 27 38 / 0.35); }
 .pin-site, .pin-home { cursor: default; }

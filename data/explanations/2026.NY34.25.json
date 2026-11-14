@@ -1,0 +1,263 @@
+{
+  "itemId": "2026.NY34.25",
+  "plainTitle": "City Council refused a 7-storey building at 922 Millwood Road",
+  "topic": "development",
+  "sources": [
+    {
+      "id": "report",
+      "label": "Revised staff report from the Director, Community Planning, North York District",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/ny/bgrd/backgroundfile-289045.pdf",
+      "date": "July 2, 2026",
+      "textFile": "backgroundfile-289045.pages.json"
+    }
+  ],
+  "whatIsProposed": [
+    {
+      "text": "The owner asked to change the Official Plan and the zoning rules for 922 Millwood Road to build a 7-storey building. It would have homes above and a small shop on the ground floor. City Council said no.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The application proposes a 7-storey (21 metres plus 4 metre mechanical penthouse and rooftop amenity space) mixed-use building at 922 Millwood Road."
+        },
+        {
+          "source": "item",
+          "quote": "City Council refuse the application to amend the Official Plan for the lands municipally known as 922 Millwood Road."
+        }
+      ]
+    },
+    {
+      "text": "The building would have 44 homes, 29 car parking spaces underground and 52 bicycle parking spaces. Most homes would have one bedroom.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The proposal includes 44 dwelling units, 33 one-bedroom (75%), 6 two-bedroom (13.6%), and 5 three-bedroom units (11.4%)."
+        },
+        {
+          "source": "report",
+          "quote": "The proposal includes a total of 29 vehicular parking spaces (25 resident and 4 visitor)"
+        },
+        {
+          "source": "report",
+          "quote": "A total of 52 bicycle parking spaces"
+        }
+      ]
+    },
+    {
+      "text": "The top floor would hold only shared amenity space and equipment, with no homes. It would cover about half the roof.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The seventh storey is a partial storey and consists solely of amenity space and mechanical penthouse and is limited to approximately 50 percent of the roof area."
+        }
+      ]
+    },
+    {
+      "text": "The plan is smaller than first proposed. The original application asked for 8 storeys and 60 homes.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The original application was for an 8 storey (26.3 metres plus a 4 metre mechanical penthouse) residential building"
+        },
+        {
+          "source": "report",
+          "quote": "60 residential dwelling units and 29 vehicular parking spaces"
+        }
+      ]
+    },
+    {
+      "text": "The site is empty now. It used to hold a one-storey dry cleaner.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The site is generally flat and is currently vacant."
+        },
+        {
+          "source": "report",
+          "quote": "The subject site was previously occupied by a single storey dry-cleaning establishment"
+        }
+      ]
+    }
+  ],
+  "why": [
+    {
+      "text": "The site is in an area planned for low-rise homes, where buildings can be up to four storeys. A 7-storey building needed a change to the Official Plan.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "While the Neighbourhoods designation only permits buildings up to four storeys in height"
+        },
+        {
+          "source": "report",
+          "quote": "An Official Plan Amendment application is required to permit a 7-storey mixed-use building in a Neighbourhoods designation."
+        }
+      ]
+    },
+    {
+      "text": "City staff supported the building. They said Millwood Road already has a mix of building types, and that nearby apartment buildings range from three to seven storeys.",
+      "caveat": "This is the opinion of City staff. City Council did not follow it.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Staff are of the opinion that the proposed 7-storey residential apartment building is an acceptable form of modest intensification"
+        },
+        {
+          "source": "report",
+          "quote": "a number of existing apartment buildings with heights ranging from three to seven storeys"
+        }
+      ]
+    },
+    {
+      "text": "City Council voted 12 to 11 to refuse the application.",
+      "caveat": "The City's item page does not state Council's reasons for refusing.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council refuse the application to amend City of Toronto Zoning By-law 569-2013"
+        },
+        {
+          "source": "item",
+          "quote": "Yes: 12"
+        },
+        {
+          "source": "item",
+          "quote": "No: 11"
+        }
+      ]
+    }
+  ],
+  "whoIsAffected": [
+    {
+      "text": "The site is at the northeast corner of Millwood Road and Randolph Road, in Ward 15 (Don Valley West).",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The site is located at the north east corner of Millwood Road and Randolph Road."
+        }
+      ]
+    },
+    {
+      "text": "People in the two-storey houses across Krawchuk Lane to the north: cars and delivery trucks would use a driveway off the lane.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Krawchuk Lane and two-storey single detached homes to the north."
+        },
+        {
+          "source": "report",
+          "quote": "Parking and loading are proposed to be accessed via a private driveway from Krawchuk Lane."
+        }
+      ]
+    },
+    {
+      "text": "At a public meeting run by staff, about 98 people attended. Concerns included height, traffic, parking, shadows and privacy. Some people supported more housing.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "attended by approximately 98 members of the public"
+        },
+        {
+          "source": "report",
+          "quote": "Concerns regarding shadowing, privacy, overlook, setbacks, and impacts on adjacent residential properties"
+        },
+        {
+          "source": "report",
+          "quote": "Support for additional housing, mixed-use development, walkability, and senior housing options."
+        }
+      ]
+    }
+  ],
+  "conditionsAndUnknowns": [
+    {
+      "text": "The owner may appeal the refusal to the Ontario Land Tribunal. Council allowed the City's lawyer to defend the decision there if that happens.",
+      "caveat": "This page has not checked whether an appeal was filed.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council authorize the City Solicitor to attend at the Ontario Land Tribunal if the matter is appealed and to retain outside consultants as necessary."
+        }
+      ]
+    },
+    {
+      "text": "Before its vote on the item, the community council voted to add requests for privacy screening on the rooftop and a less blank side wall.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "appropriate buffer / screening is provided between the rooftop amenity area and the residential neighbourhood across Krawchuk Lane"
+        },
+        {
+          "source": "item",
+          "quote": "Forwarded this item to City Council without recomendation."
+        }
+      ],
+      "caveat": "City Council refused the application, so the record does not show these requests as part of any approval."
+    }
+  ],
+  "stageSummaries": {
+    "staff": {
+      "text": "Staff recommended approval.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "This report reviews and recommends approval of the application"
+        }
+      ]
+    },
+    "committee": {
+      "text": "The community council held the public meeting. A motion to approve the item lost, 2 to 3, so it went to City Council with no recommendation either way.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "Forwarded this item to City Council without recomendation."
+        },
+        {
+          "source": "item",
+          "quote": "Result: Lost Majority Required Total members that voted Yes: 2"
+        }
+      ]
+    },
+    "council": {
+      "text": "City Council refused the Official Plan and zoning changes, against staff's advice.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council adopted this item on July 29 and 30, 2026 with amendments."
+        },
+        {
+          "source": "item",
+          "quote": "City Council refuse the application to amend the Official Plan for the lands municipally known as 922 Millwood Road."
+        }
+      ]
+    }
+  },
+  "whatHappensNext": [
+    {
+      "text": "The building cannot go ahead under this decision. If the owner appeals, the Ontario Land Tribunal would decide the matter.",
+      "caveat": "The record does not say whether an appeal has been made.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "if the matter is appealed"
+        }
+      ]
+    }
+  ],
+  "location": {
+    "label": "922 Millwood Road",
+    "points": [
+      [
+        43.7032291111,
+        -79.3628697594
+      ]
+    ],
+    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"922 Millwood Rd\", retrieved 2026-11-14",
+    "proposedStoreys": [
+      7
+    ]
+  },
+  "participationCheck": null,
+  "review": {
+    "aiAssisted": true,
+    "humanReviewedBy": null,
+    "reviewedOn": null
+  }
+}

@@ -24,7 +24,7 @@ Deadline: **Saturday, November 14, 2026, 10:00 a.m. ET** on Devpost.
 > decision are never blended. Every sentence shows the exact passage it rests on, and a program
 > checks each quote word for word against the City's record before anything is published. If
 > the City's page does not state a comment deadline, the page says so and does not guess one.
-> It works today on three real City of Toronto items. Around them: a 3D city map with each
+> It works today on 15 real City of Toronto items from all four parts of the city. Around them: a 3D city map with each
 > proposed building drawn storey by storey and a guided tour; pages that explain how City Hall
 > decides and what its words mean, with every fact quoted from the City; a ward page; read-aloud
 > and add-to-calendar on every item; an interface in English, French and Chinese; offline use and
@@ -48,7 +48,7 @@ City of Toronto Open Data, Claude (Anthropic).
 
 ## What is ready
 
-- [x] Working app on three real items; `npm run data`, `npm test`, `npm run lint` and
+- [x] Working app on 15 real items; `npm run data`, `npm test`, `npm run lint` and
       `npm run build` all pass
 - [x] Design document with UML, rationale, scalability, AI disclosure and references
 - [x] Readiness report text within every word limit, filled into the organizers' template
@@ -65,7 +65,7 @@ City of Toronto Open Data, Claude (Anthropic).
 - [ ] **Skim the French and Chinese interface** (language menu, top right) or ask a speaker to;
       they have not had a native-speaker review.
 
-- [ ] **Sign off the three explanations.** Work through [REVIEW.md](REVIEW.md), then set
+- [ ] **Sign off the 15 explanations.** Work through [REVIEW.md](REVIEW.md), then set
       `review.humanReviewedBy` and `review.reviewedOn` in each file under `data/explanations/`
       and run `npm run data`. Until then every page says no person has signed off.
 - [ ] **Finish the readiness report.** Open `readiness-report/readiness-report-draft.docx` in

@@ -1,0 +1,319 @@
+{
+  "itemId": "2026.EY32.1",
+  "plainTitle": "A 12-storey rental building approved at 2686 and 2688 Lake Shore Boulevard West",
+  "topic": "development",
+  "sources": [
+    {
+      "id": "report",
+      "label": "Staff report from the Director, Community Planning, Etobicoke York District",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/ey/bgrd/backgroundfile-286769.pdf",
+      "date": "May 7, 2026",
+      "textFile": "backgroundfile-286769.pages.json"
+    }
+  ],
+  "whatIsProposed": [
+    {
+      "text": "City Council changed the Official Plan and the zoning rules for 2686 and 2688 Lake Shore Boulevard West so that a 12-storey apartment building can be built there. It would be 47 metres tall, counting the equipment room on the roof.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "A 12-storey (47 metres, including the Mechanical Penthouse) residential building with approximately 172 dwelling units, including four live/work units on the ground floor."
+        },
+        {
+          "source": "item",
+          "quote": "City Council amend the Official Plan for the lands municipally known as 2686 and 2688 Lake Shore Boulevard West"
+        }
+      ]
+    },
+    {
+      "text": "The building would have about 172 homes, including four live/work units on the ground floor facing Lake Shore Boulevard West. The staff report lists all 172 as rental homes.",
+      "caveat": "One section of the same staff report says the proposal would result in 150 units. The record does not explain the difference.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "four live/work units on the ground floor fronting Lake Shore Boulevard West"
+        },
+        {
+          "source": "report",
+          "quote": "Rental: 5 5 172 172"
+        },
+        {
+          "source": "report",
+          "quote": "This proposal would result in 150 dwelling units"
+        }
+      ]
+    },
+    {
+      "text": "The mix is 23 studios, 103 one-bedroom, 28 two-bedroom and 18 three-bedroom units. The zoning requires at least 15% two-bedroom and 10% three-bedroom units.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "23 studios (13%), 103 one- bedroom (60%), 28 two-bedroom (16%), and 18 three-bedroom units (10%)"
+        },
+        {
+          "source": "report",
+          "quote": "The draft zoning by-law amendment secures a minimum of 15% two-bedroom units, and 10% three-bedroom units"
+        }
+      ]
+    },
+    {
+      "text": "There would be 100 car parking spaces in two underground levels and 132 bicycle parking spaces. Cars and trucks would enter from Lake Shore Boulevard West, on the east side of the site.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The proposal includes 100 vehicular parking spaces with two-levels of underground parking"
+        },
+        {
+          "source": "report",
+          "quote": "The proposal includes 132 bicycle parking spaces"
+        },
+        {
+          "source": "report",
+          "quote": "is from Lake Shore Boulevard West along the east side of the property."
+        }
+      ]
+    },
+    {
+      "text": "The site is now a fenced-off vacant lot and a house with five rental apartments. That house would be torn down.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "a one and a half storey single detached dwelling with five rental dwelling units (2688 Lake Shore Boulevard West)"
+        },
+        {
+          "source": "report",
+          "quote": "Currently, the 2686 Lake Shore Boulevard West site is fenced off due to prior construction activity"
+        },
+        {
+          "source": "report",
+          "quote": "The proposed development includes the demolition of five occupied rental dwelling units."
+        }
+      ]
+    }
+  ],
+  "why": [
+    {
+      "text": "The current rules for part of the site only allow a three-storey building. The land was also designated for low-rise homes. Both had to change for a 12-storey building.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Site and Area Specific Policy (SASP) 365 which limits development on the site to a three-storey residential building"
+        },
+        {
+          "source": "report",
+          "quote": "redesignating the subject lands from Neighbourhoods to Apartment Neighbourhoods and deleting Site and Area Specific Policy (SASP) 365"
+        }
+      ]
+    },
+    {
+      "text": "Lake Shore Boulevard West here is an “Avenue”, a main street where the City plans mid-rise buildings. Staff said this lot is deep enough to support a building taller than eight storeys.",
+      "caveat": "This is the opinion of City staff.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Avenues are intended to develop in mid-rise scale that is generally no taller than the planned ROW."
+        },
+        {
+          "source": "report",
+          "quote": "can support a mid-rise building taller than eight storeys (27 metres)"
+        }
+      ]
+    },
+    {
+      "text": "Staff found the plan fits provincial policy and the City's Official Plan. They also found the shadow and wind effects acceptable.",
+      "caveat": "These are the opinions of City staff.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The application is consistent with the Provincial Planning Statement (2024) and conforms to the City's Official Plan."
+        },
+        {
+          "source": "report",
+          "quote": "City staff find the shadow impact resulting from the proposal to be acceptable."
+        },
+        {
+          "source": "report",
+          "quote": "no pedestrian areas surrounding the subject site would experience unsafe conditions"
+        }
+      ]
+    }
+  ],
+  "whoIsAffected": [
+    {
+      "text": "The site is on the north side of Lake Shore Boulevard West, between Royal York Road and Dwight Avenue, in Ward 3 (Etobicoke-Lakeshore).",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The site is located on the north side of Lake Shore Boulevard West, between Royal York Road and Dwight Avenue"
+        },
+        {
+          "source": "item",
+          "quote": "Ward: 3 - Etobicoke - Lakeshore"
+        }
+      ]
+    },
+    {
+      "text": "Tenants of the five rental apartments that would be torn down. The owner must give eligible tenants a Tenant Assistance Plan. Staff say it includes longer notice, help with the rent difference, moving money and a leasing agent.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "provide and implement an acceptable Tenant Assistance Plan for eligible tenants of the five existing rental dwelling unit(s) proposed to be demolished"
+        },
+        {
+          "source": "report",
+          "quote": "The accepted tenant assistance plan includes extended notice to move out, rent gap assistance, moving allowances and the services of a leasing agent."
+        }
+      ]
+    },
+    {
+      "text": "People in the low-rise homes north of the site: staff say shadows would reach them mostly in the morning, from about 9:18 to 11:18 am, in March and September.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The proposal would minimize impacts on the low-rise Neighbourhoods properties to the north, primarily experienced during the morning hours of 9:18 am to 11:18 am"
+        }
+      ]
+    },
+    {
+      "text": "Neighbours raised concerns about height, shadows, parking, school space and construction impacts, including on groundwater.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Concerns over the proposed height and massing;"
+        },
+        {
+          "source": "report",
+          "quote": "Concerns with potential hydro geologic impacts as a result of construction activities;"
+        },
+        {
+          "source": "report",
+          "quote": "Lack of local school capacity for additional residents"
+        }
+      ]
+    }
+  ],
+  "conditionsAndUnknowns": [
+    {
+      "text": "Before the by-laws could be passed, the owner had to legally secure the Tenant Assistance Plan, through a lawyer's promise or an agreement registered on the property title.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "provide a lawyer’s undertaking to the City, or alternatively enter into a legal agreement and register a Section 118 restriction on title"
+        }
+      ]
+    },
+    {
+      "text": "City Council added three requests: look at safety of cars going in and out of the site, consider asking for a construction plan that deals with digging and groundwater pumping and involves neighbours, and consider spending the project's Community Benefits Charges on local streets and parks.",
+      "caveat": "These are requests to “consider”. The record does not guarantee the results.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "safety implications related to sightlines and vehicular movements into and out of the site from Lake Shore Boulevard West"
+        },
+        {
+          "source": "item",
+          "quote": "the potential impacts of excavation and dewatering"
+        },
+        {
+          "source": "item",
+          "quote": "improvements to the local street and intersection design, and parkland expansion and improvement"
+        }
+      ]
+    },
+    {
+      "text": "The owner must pay cash instead of giving land for parks.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "the owner is required to satisfy the parkland dedication requirement through cash-in-lieu"
+        }
+      ]
+    },
+    {
+      "text": "Trees: the project would remove one City tree and one private tree, and injure eight private trees.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "including removal of one city-owned tree and one private tree, and injury to eight private trees"
+        }
+      ]
+    }
+  ],
+  "stageSummaries": {
+    "staff": {
+      "text": "Staff recommended approval, with a Tenant Assistance Plan for the five rental homes.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "This Report recommends approval of the application to amend the Official Plan and Zoning By-law"
+        }
+      ]
+    },
+    "committee": {
+      "text": "Etobicoke York Community Council held the public meeting and recommended approval without changes.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "This item was considered by the Etobicoke York Community Council on May 26, 2026 and adopted without amendment."
+        }
+      ]
+    },
+    "council": {
+      "text": "City Council approved the Official Plan and zoning changes and added three requests about site safety, construction and Community Benefits Charges. The vote was 19 to 1.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council adopted this item on June 24 and 25, 2026 with amendments."
+        },
+        {
+          "source": "item",
+          "quote": "Total members that voted Yes: 19"
+        }
+      ]
+    }
+  },
+  "whatHappensNext": [
+    {
+      "text": "Two by-laws have been passed for this item: 661-2026 and 662-2026.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "See also By-laws 661-2026, 662-2026"
+        }
+      ]
+    },
+    {
+      "text": "Details such as site access, screening and wind features are to be reviewed in a later step called Site Plan Control.",
+      "caveat": "The record gives no dates for that step and does not say whether the public can comment on it.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "as part of their review of a potential site plan control application for the development"
+        },
+        {
+          "source": "report",
+          "quote": "Additional screening around outdoor amenity areas and private terraces will be reviewed and secured through the Site Plan Control process."
+        }
+      ]
+    }
+  ],
+  "location": {
+    "label": "2686 and 2688 Lake Shore Boulevard West",
+    "points": [
+      [
+        43.603005576,
+        -79.495486493
+      ]
+    ],
+    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"2686 Lake Shore Blvd W\" (2688 matched about 20 m west), retrieved 2026-11-14",
+    "proposedStoreys": [
+      12
+    ]
+  },
+  "participationCheck": null,
+  "review": {
+    "aiAssisted": true,
+    "humanReviewedBy": null,
+    "reviewedOn": null
+  }
+}

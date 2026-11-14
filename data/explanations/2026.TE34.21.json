@@ -1,0 +1,314 @@
+{
+  "itemId": "2026.TE34.21",
+  "plainTitle": "Taller tower with more affordable homes approved at College Street and Henry Street",
+  "topic": "development",
+  "sources": [
+    {
+      "id": "report",
+      "label": "Staff report from the Acting Director, Community Planning, Toronto and East York District",
+      "url": "https://www.toronto.ca/legdocs/mmis/2026/te/bgrd/backgroundfile-288412.pdf",
+      "date": "June 19, 2026",
+      "textFile": "backgroundfile-288412.pages.json"
+    }
+  ],
+  "whatIsProposed": [
+    {
+      "text": "A 31-storey building was already approved for this site in 2024. City Council has now changed the Official Plan and zoning rules so the building can be 45 storeys instead.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "On June 26, 2024, City Council approved an Official Plan and Zoning By-law Amendment application permitting a 31-storey mixed-use building"
+        },
+        {
+          "source": "report",
+          "quote": "to permit a 45-storey (158.5 metres, excluding mechanical penthouse) mixed-use building"
+        }
+      ]
+    },
+    {
+      "text": "The number of homes goes up from 490 to 684. Of these, 545 would be affordable rental homes.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "an increase from 490 to 684 residential dwelling units, including 545 affordable rental units"
+        }
+      ]
+    },
+    {
+      "text": "The 408 affordable studio units approved in 2024 stay. The change adds 137 affordable two-bedroom rental units. Both groups stay affordable for 40 years.",
+      "caveat": "The two groups have different rent levels: the 408 studios are set at 100% of average market rent, and the 137 new units at the City's Affordable Rent levels.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The applicant proposes to retain the 408 studio units in the 2024 approval as affordable rental housing"
+        },
+        {
+          "source": "report",
+          "quote": "to add 137 additional affordable two-bedroom units"
+        },
+        {
+          "source": "report",
+          "quote": "secured at 100 percent of Average Market Rent (AMR) for a minimum affordability period of 40 years"
+        },
+        {
+          "source": "report",
+          "quote": "with rents set at the City’s Affordable Rent levels for a 40-year affordability period"
+        }
+      ]
+    },
+    {
+      "text": "Retail space grows from 1,356 to 1,931 square metres. The plan has only 6 car parking spaces and 695 bicycle parking spaces.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "An increase in overall retail space from 1,356 to 1,931 square metres"
+        },
+        {
+          "source": "report",
+          "quote": "The proposal includes a total of 6 vehicular parking spaces (including 1 accessible space) at-grade."
+        },
+        {
+          "source": "report",
+          "quote": "A total of 695 bicycle parking spaces are proposed"
+        }
+      ]
+    },
+    {
+      "text": "The old 3-storey heritage houses on the site would be kept and built into the base of the new building.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "including the integration of the existing three-storey semi-detached heritage buildings"
+        },
+        {
+          "source": "report",
+          "quote": "are to be retained and incorporated into the proposed development"
+        }
+      ]
+    }
+  ],
+  "why": [
+    {
+      "text": "The area plan for this site allowed a height of 96 metres (31 storeys). A taller building needed a change to that plan.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "to permit a building height of 96 metres (31 storeys), including a mechanical penthouse"
+        },
+        {
+          "source": "report",
+          "quote": "The Official Plan Amendment is required to amend Site and Area Specific Policy 533 to allow the revised building height."
+        }
+      ]
+    },
+    {
+      "text": "Staff supported the taller building. They said it fits the area, is close to Queen's Park subway station, and matches other tall buildings approved nearby.",
+      "caveat": "This is the opinion of City staff.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "Staff find the proposed Official Plan Amendment to SASP 533 to permit an increase in height from 31 to 45 storeys to be acceptable"
+        },
+        {
+          "source": "report",
+          "quote": "the site is within 500 metres of Queens Park Station"
+        },
+        {
+          "source": "report",
+          "quote": "The height is consistent with surrounding approvals"
+        }
+      ]
+    },
+    {
+      "text": "Staff say it would be one of the largest affordable housing projects in a single building in Canada.",
+      "caveat": "This is staff's description.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "making it one of the largest affordable housing development proposed in a single building in Canada"
+        }
+      ]
+    }
+  ],
+  "whoIsAffected": [
+    {
+      "text": "The site is at the southwest corner of College Street and Henry Street, in Ward 11 (University-Rosedale), across from the University of Toronto.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The site is located on the southwest corner of College and Henry Streets."
+        },
+        {
+          "source": "report",
+          "quote": "The University of Toronto's St. George Campus, with 3-4 storey institutional buildings along the north side of College Street."
+        }
+      ]
+    },
+    {
+      "text": "Former tenants: 12 replacement rooms for rent will still be provided. Eligible former tenants can return at similar rents.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "a total of 12 replacement rental dwelling rooms will continue to be provided in the proposed development"
+        },
+        {
+          "source": "report",
+          "quote": "Eligible tenants would reserve the right to return to replacement rental housing at similar rents"
+        }
+      ]
+    },
+    {
+      "text": "Neighbours on nearby streets: at the community meeting, people raised concerns about ride-share and delivery traffic on Henry Street, too little parking, and the height. Council asked staff to consider requiring a traffic study, made with the community, as part of the site plan.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "with particular concerns about the impacts of rideshare and deliveries on Henry Street"
+        },
+        {
+          "source": "report",
+          "quote": "Concern that the additional height is out of scale with the surrounding area"
+        },
+        {
+          "source": "item",
+          "quote": "a Transportation Impact Study, in consultation with the community, that includes a traffic mitigation and loading strategy to limit the impacts on the surrounding road network"
+        }
+      ]
+    },
+    {
+      "text": "The City budget: staff estimate the City and the Province give up about $54.9 million in fees, charges and property taxes for the 545 affordable units. These are not cash payments.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The total estimated value of financial incentives, based on 2026 rates, is $54,940,054"
+        },
+        {
+          "source": "report",
+          "quote": "These incentives are not direct cash payments from the City"
+        }
+      ]
+    }
+  ],
+  "conditionsAndUnknowns": [
+    {
+      "text": "The new zoning comes with a hold. The building cannot go ahead until the owner shows that sewers and water mains can handle it, or secures any needed upgrades.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "restricting the proposed use of the lands until the conditions to lifting the holding provision, as set out in the By-law, are satisfied"
+        },
+        {
+          "source": "report",
+          "quote": "have adequate capacity and supply to accommodate the development of the lands"
+        }
+      ]
+    },
+    {
+      "text": "City Council approved a new version of the draft zoning by-law, attached to a councillor's motion, in place of the one in the staff report. Council said the changes were minor, so no further public notice was needed.",
+      "caveat": "This page has not compared the two versions.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "substantially in accordance with the draft Zoning By-law Amendment included as Attachment 1 to motion 1"
+        },
+        {
+          "source": "item",
+          "quote": "City Council determine that these amendments are minor in nature, and pursuant to section 34(17) of the Planning Act, no further notice is required."
+        }
+      ]
+    },
+    {
+      "text": "The traffic study is a request for staff to consider. The record does not guarantee it will be required.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council request the Executive Director, Development Review to consider securing the following as part of the site plan agreement"
+        }
+      ]
+    },
+    {
+      "text": "The owner bought the house next door at 72 Henry Street. It is not part of this plan, but staff will check whether it has heritage value.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "The existing detached dwelling at 72 Henry Street is not part of the application and will not be altered as a result of the proposed development."
+        },
+        {
+          "source": "report",
+          "quote": "This property will be further evaluated by staff for its heritage value"
+        }
+      ]
+    }
+  ],
+  "stageSummaries": {
+    "staff": {
+      "text": "Staff recommended approval.",
+      "citations": [
+        {
+          "source": "report",
+          "quote": "This Report recommends approval of an application to amend Official Plan Amendment 731 and Site-Specific Zoning By-law 1166-2025"
+        }
+      ]
+    },
+    "committee": {
+      "text": "Toronto and East York Community Council held the public meeting and recommended approval. It added a request for staff to consider a traffic study.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "The Toronto and East York Community Council held a statutory public meeting on July 8, 2026"
+        },
+        {
+          "source": "item",
+          "quote": "This item was considered by Toronto and East York Community Council on July 8 and 9, 2026 and was adopted with amendments."
+        }
+      ]
+    },
+    "council": {
+      "text": "City Council approved the item. It swapped in a new version of the draft zoning by-law.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "City Council adopted this item on July 29 and 30, 2026 with amendments."
+        }
+      ]
+    }
+  },
+  "whatHappensNext": [
+    {
+      "text": "The City's item page links this decision to By-laws 1064-2026 and 1234-2026. The detailed design still goes through site plan review, and the hold must be lifted before the building can go ahead.",
+      "caveat": "The record does not give a construction date. This page has not checked whether anyone appealed.",
+      "citations": [
+        {
+          "source": "item",
+          "quote": "See also By-laws 1064-2026"
+        },
+        {
+          "source": "item",
+          "quote": "1234-2026"
+        },
+        {
+          "source": "report",
+          "quote": "will be further addressed through the Site Plan Control process"
+        }
+      ]
+    }
+  ],
+  "location": {
+    "label": "191-199 College Street and 74-76 Henry Street",
+    "points": [
+      [
+        43.65868,
+        -79.3948
+      ]
+    ],
+    "geocodeSource": "City of Toronto geocoder (map.toronto.ca), address match for \"191 College St\", retrieved 2026-11-14",
+    "proposedStoreys": [
+      45
+    ]
+  },
+  "participationCheck": null,
+  "review": {
+    "aiAssisted": true,
+    "humanReviewedBy": null,
+    "reviewedOn": null
+  }
+}
