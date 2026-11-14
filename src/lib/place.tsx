@@ -5,7 +5,7 @@
 import { createContext, useContext, useState, type ReactNode } from 'react'
 import { isPlaceMatch, type PlaceMatch } from './geo.ts'
 
-const KEY = 'clear-council:place'
+const KEY = 'exodus:place'
 
 interface PlaceContextValue {
   place: PlaceMatch | null

@@ -202,7 +202,7 @@ export const fr: Record<string, string> = {
   'Step {n}': 'Étape {n}',
   Who: 'Qui',
   'What you can do here': 'Ce que vous pouvez faire à cette étape',
-  'At this stop in Clear Council right now': 'À cet arrêt dans Clear Council en ce moment',
+  'At this stop in Exodus right now': 'À cet arrêt dans Exodus en ce moment',
   'None of the items in this prototype are at this stop right now.': 'Aucun point de ce prototype n’est à cet arrêt en ce moment.',
   'Words you will see after a vote': 'Mots que vous verrez après un vote',
   'The City record uses short status words. This is what they mean in plain language.': 'Le dossier de la Ville utilise de courts mots d’état. Voici ce qu’ils veulent dire en langage simple.',
@@ -225,8 +225,8 @@ export const fr: Record<string, string> = {
   // Glossary page
   Glossary: 'Lexique',
   'City Hall words, in plain language': 'Les mots de l’hôtel de ville, en langage simple',
-  'The meanings are written in plain words by the Clear Council team. Under each one is a passage from a City document where the word is used, so you can see it in context and check it.':
-    'Les définitions sont rédigées en mots simples par l’équipe de Clear Council. Sous chacune se trouve un passage d’un document de la Ville où le mot est employé, pour le voir en contexte et le vérifier.',
+  'The meanings are written in plain words by the Exodus team. Under each one is a passage from a City document where the word is used, so you can see it in context and check it.':
+    'Les définitions sont rédigées en mots simples par l’équipe d’Exodus. Sous chacune se trouve un passage d’un document de la Ville où le mot est employé, pour le voir en contexte et le vérifier.',
   'Find a word': 'Trouver un mot',
   'e.g. zoning, motion, heritage': 'p. ex. zoning, motion, heritage',
   'Used in a City document': 'Employé dans un document de la Ville',

@@ -4,7 +4,7 @@ Deadline: **Saturday, November 14, 2026, 10:00 a.m. ET** on Devpost.
 
 ## Devpost text
 
-**Project name:** Clear Council
+**Project name:** Exodus
 
 **Tagline:** City Hall decisions, in plain words, with the source beside every sentence.
 
@@ -18,7 +18,7 @@ Deadline: **Saturday, November 14, 2026, 10:00 a.m. ET** on Devpost.
 > but do not follow City Hall. Also the clerks and councillors' staff who are asked to explain
 > these items.
 >
-> **What we built.** Clear Council turns one agenda item into one page: a four-line summary, a
+> **What we built.** Exodus turns one agenda item into one page: a four-line summary, a
 > map with the distance from your address, a route that shows which body has decided what, and
 > how to comment while you still can. Staff advice, committee recommendations and Council's
 > decision are never blended. Every sentence shows the exact passage it rests on, and a program
@@ -43,7 +43,7 @@ City of Toronto Open Data, Claude (Anthropic).
 
 > **Problem and user:** A Toronto resident cannot tell from a council agenda what is proposed near
 > them, who has decided it, or whether they can still comment.
-> **Idea:** Clear Council turns one agenda item into one plain-language page with a map, a
+> **Idea:** Exodus turns one agenda item into one plain-language page with a map, a
 > "who decided what" route and how to take part, where every sentence is checked against the
 > City's own record before it is published.
 

@@ -37,7 +37,7 @@ export function ItemPage() {
   if (!item) {
     return (
       <section>
-        <title>{`${t('Item not found')} — Clear Council`}</title>
+        <title>{`${t('Item not found')} — Exodus`}</title>
         <h1>{t('We do not have that item')}</h1>
         <p>
           <Link to="/">{t('Back to the list')}</Link>
@@ -55,7 +55,7 @@ export function ItemPage() {
 
   return (
     <article className="item">
-      <title>{`${explanation?.plainTitle ?? record.title} — Clear Council`}</title>
+      <title>{`${explanation?.plainTitle ?? record.title} — Exodus`}</title>
       <p className="back">
         <Link to="/">{t('← All decisions')}</Link>
       </p>

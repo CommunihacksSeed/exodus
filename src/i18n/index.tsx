@@ -17,7 +17,7 @@ export const LANGS: { id: Lang; label: string; short: string; htmlLang: string }
   { id: 'zh', label: '中文', short: '中文', htmlLang: 'zh-Hans' },
 ]
 const DICTS: Record<Exclude<Lang, 'en'>, Record<string, string>> = { fr, zh }
-const KEY = 'clear-council:lang'
+const KEY = 'exodus:lang'
 
 function initial(): Lang {
   try {

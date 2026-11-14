@@ -1,4 +1,4 @@
-# Clear Council — Software Design
+# Exodus — Software Design
 
 This document covers requirements, UML diagrams, architecture rationale, scalability, a
 walk-through of the source code (including which parts were AI-assisted) and references.
@@ -80,7 +80,7 @@ flowchart LR
   staff(["Municipal staff /<br/>councillor's office"])
   editor(["Editor<br/>(human reviewer)"])
 
-  subgraph CC["Clear Council"]
+  subgraph CC["Exodus"]
     uc1("Browse decisions")
     uc2("Read plain-language explanation")
     uc3("Check distance from my address")
@@ -108,7 +108,7 @@ flowchart LR
 
 ## 3. Architecture
 
-Clear Council has two halves that share one data model:
+Exodus has two halves that share one data model:
 
 - a **build-time pipeline** (Node.js) that turns saved City records into a checked JSON file, and
 - a **static web app** (React) that renders that file in the browser.

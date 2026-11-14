@@ -50,7 +50,7 @@ export function HowWeCheck() {
 
   return (
     <article className="page method">
-      <title>{`${t('How we check')} — Clear Council`}</title>
+      <title>{`${t('How we check')} — Exodus`}</title>
       <p className="kicker">{t('Method')}</p>
       <h1>{t('How we check every sentence')}</h1>
       <p className="lede">

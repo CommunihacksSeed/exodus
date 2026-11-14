@@ -19,7 +19,7 @@ function sectionFor(id: string): HTMLElement | null {
   return document.getElementById(id)?.closest('section') ?? null
 }
 
-const VOICE_KEY = 'clear-council:voice'
+const VOICE_KEY = 'exodus:voice'
 
 /** The device's voices, best first. Voices load asynchronously, so this updates when they arrive. */
 function useVoices(enabled: boolean): SpeechSynthesisVoice[] {
@@ -153,7 +153,7 @@ export function ResidentTools({ item }: { item: PublishedItem }) {
     const url = URL.createObjectURL(new Blob([ics], { type: 'text/calendar;charset=utf-8' }))
     const a = document.createElement('a')
     a.href = url
-    a.download = `clear-council-${item.record.id}.ics`
+    a.download = `exodus-${item.record.id}.ics`
     document.body.append(a)
     a.click()
     a.remove()
@@ -164,7 +164,7 @@ export function ResidentTools({ item }: { item: PublishedItem }) {
     const url = window.location.href
     try {
       if (navigator.share) {
-        await navigator.share({ title: `${title} — Clear Council`, url })
+        await navigator.share({ title: `${title} — Exodus`, url })
         return
       }
       await navigator.clipboard.writeText(url)

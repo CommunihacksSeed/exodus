@@ -16,8 +16,8 @@ visuals; storytelling. Each scene below is marked with the part it covers.
 - [ ] Open in separate tabs, in this order:
   1. The staff report PDF: https://www.toronto.ca/legdocs/mmis/2027/pb/bgrd/backgroundfile-290746.pdf
   2. The City item page: https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6
-  3. Clear Council home: http://localhost:5173/
-- [ ] A terminal in the `clear-council` folder, font size large, cleared
+  3. Exodus home: http://localhost:5173/
+- [ ] A terminal in the `exodus` folder, font size large, cleared
 - [ ] A text editor with `data/explanations/2027.PB1.6.json` open at the first quote (line 20)
 - [ ] Record the screen and your voice separately if you can; a clean voice track matters more
       than a perfect take of the clicks
@@ -29,14 +29,14 @@ visuals; storytelling. Each scene below is marked with the part it covers.
 | Time | On screen | Narration |
 |---|---|---|
 | **0:00–0:20** Problem | Tab 1: scroll the 17-page staff report quickly. Cut to tab 2, the City item page. | Next Monday, a Toronto board will consider a new sixteen-storey building in Parkdale. If you live on that block, this is what the City gives you: a seventeen-page report in planning language. Is it near me? Has it been decided? Can I still say something? Most residents never find out. |
-| **0:20–0:32** Users and value | Tab 3: Clear Council home page. | Clear Council is for those residents, especially renters and newcomers, and for the clerks and councillors' staff who have to explain these items. One page per decision, in plain words. |
+| **0:20–0:32** Users and value | Tab 3: Exodus home page. | Exodus is for those residents, especially renters and newcomers, and for the clerks and councillors' staff who have to explain these items. One page per decision, in plain words. |
 | **0:32–0:50** Core workflow: near me | Type `1303 Queen St W`, press **Check distance**. The top card now shows a distance. Click it. | I enter an address nearby. It goes only to the City's own address lookup. The item that is still open comes first, with how far away it is. |
 | **0:50–1:12** Core workflow: status and participation | Item page. Pause on the route strip, then the four-line summary, then scroll to **Can I still have a say?** | This line is the heart of it. Staff have given advice. The board has not decided. Council has no date yet. Below it: yes, I can still comment, and here are the City's own forms. Notice the deadline. The City's page does not state one, so we say that, and we never guess one from the meeting date. |
 | **1:12–1:32** Outputs: sources | Scroll to **What is being proposed?** Open **Where this comes from** on the first claim. Click **Open the original**; the City page opens with the passage highlighted. | Every sentence shows the exact passage it rests on, with the document, its date and a link to that spot in the City's record. |
 | **1:32–1:52** Outputs: three kinds of decision | Back, open **Two 59-storey towers**. Show the route strip. Scroll to **Who has decided what so far?**, open **Motions and votes** under North York Community Council. | A decided item shows why the steps matter. Staff said approve. The community council voted it down, two to four. City Council then approved it with changes. A summary that blends those three would be wrong. |
 | **1:52–2:15** How accuracy is enforced | Editor: change `16-storey` to `18-storey` in the first quote, save. Terminal: `npm run data`. The red failure message appears. Undo the edit, run again, it passes. | The summaries were drafted with an AI model, so we do not trust them. Before anything is published, a program checks every quote against the source, word for word. If I change one number, the build stops and nothing is published. |
 | **2:15–2:35** Working versus planned, and other cities | Item page, click **Print this page** to show the paper view, then cut to the adapter diagram in `docs/DESIGN.md` on GitHub. | What works today: three real Toronto items, source checking, the decision route, distance from an address, and a print view for neighbours who are offline. Not built yet: automatic intake of new items, a review screen for staff, and other languages. Only the page reader is specific to Toronto, so another city needs one adapter. |
-| **2:35–2:40** Close | Home page. | Clear Council. City Hall decisions, in plain words. |
+| **2:35–2:40** Close | Home page. | Exodus. City Hall decisions, in plain words. |
 
 ## Notes for the take
 

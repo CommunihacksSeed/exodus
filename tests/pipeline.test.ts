@@ -1,5 +1,5 @@
 /**
- * Regression tests for the rule-based parts of Clear Council.
+ * Regression tests for the rule-based parts of Exodus.
  * Run with: npm test
  *
  * The parser tests run against the real saved City pages in data/snapshots,

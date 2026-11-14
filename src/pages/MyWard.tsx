@@ -34,7 +34,7 @@ function WardOutline({ ward, home }: { ward: WardShape; home: [number, number] |
   )
 }
 
-/** Everything in Clear Council for one ward, chosen by address or from the list. */
+/** Everything in Exodus for one ward, chosen by address or from the list. */
 export function MyWard() {
   const { t } = useLang()
   const { place } = usePlace()
@@ -55,7 +55,7 @@ export function MyWard() {
 
   return (
     <article className="page ward-page">
-      <title>{`${ward ? t('Ward {n}: {name}', { n: ward.number, name: ward.name }) : t('My ward')} — Clear Council`}</title>
+      <title>{`${ward ? t('Ward {n}: {name}', { n: ward.number, name: ward.name }) : t('My ward')} — Exodus`}</title>
       <p className="kicker">{t('My ward')}</p>
       <h1>{ward ? t('Ward {n}: {name}', { n: ward.number, name: ward.name }) : t('What is happening in my ward?')}</h1>
       <p className="lede">
