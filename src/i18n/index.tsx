@@ -11,10 +11,10 @@ import { zh } from './zh.ts'
 
 export type Lang = 'en' | 'fr' | 'zh'
 // eslint-disable-next-line react-refresh/only-export-components
-export const LANGS: { id: Lang; label: string; htmlLang: string }[] = [
-  { id: 'en', label: 'English', htmlLang: 'en' },
-  { id: 'fr', label: 'Français', htmlLang: 'fr-CA' },
-  { id: 'zh', label: '中文', htmlLang: 'zh-Hans' },
+export const LANGS: { id: Lang; label: string; short: string; htmlLang: string }[] = [
+  { id: 'en', label: 'English', short: 'EN', htmlLang: 'en' },
+  { id: 'fr', label: 'Français', short: 'FR', htmlLang: 'fr-CA' },
+  { id: 'zh', label: '中文', short: '中文', htmlLang: 'zh-Hans' },
 ]
 const DICTS: Record<Exclude<Lang, 'en'>, Record<string, string>> = { fr, zh }
 const KEY = 'clear-council:lang'
@@ -72,33 +72,37 @@ export function LangProvider({ children }: { children: ReactNode }) {
 // eslint-disable-next-line react-refresh/only-export-components
 export const useLang = () => useContext(LangContext)
 
-/** Language menu for the site header. */
+/** Language switch for the site header: three short choices, the current one highlighted. */
 export function LangPicker() {
   const { lang, setLang, t } = useLang()
+  const choose = (i: number) => {
+    const next = LANGS[(i + LANGS.length) % LANGS.length]
+    setLang(next.id)
+    document.getElementById(`lang-${next.id}`)?.focus()
+  }
   return (
-    <label className="lang-pick">
-      <span className="sr-only">{t('Language')}</span>
-      <span aria-hidden="true" className="lang-icon">
-        文A
-      </span>
-      <select value={lang} onChange={(e) => setLang(e.target.value as Lang)}>
-        {LANGS.map((l) => (
-          <option key={l.id} value={l.id} lang={l.htmlLang}>
-            {l.label}
-          </option>
-        ))}
-      </select>
-    </label>
-  )
-}
-
-/** Shown on pages with English-only content when another interface language is chosen. */
-export function EnglishContentNote() {
-  const { lang, t } = useLang()
-  if (lang === 'en') return null
-  return (
-    <p className="lang-note" role="note">
-      {t('The explanations and City records on this page are in English. Each sentence is checked word for word against the City’s English record, and a translation could not be checked the same way.')}
-    </p>
+    <div className="lang-switch" role="radiogroup" aria-label={t('Language')}>
+      {LANGS.map((l, i) => (
+        <button
+          key={l.id}
+          id={`lang-${l.id}`}
+          type="button"
+          role="radio"
+          aria-checked={lang === l.id}
+          tabIndex={lang === l.id ? 0 : -1}
+          lang={l.htmlLang}
+          aria-label={l.label}
+          title={l.label}
+          className={lang === l.id ? 'is-on' : ''}
+          onClick={() => setLang(l.id)}
+          onKeyDown={(e) => {
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') { e.preventDefault(); choose(i + 1) }
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); choose(i - 1) }
+          }}
+        >
+          {l.short}
+        </button>
+      ))}
+    </div>
   )
 }
