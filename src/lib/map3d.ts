@@ -28,8 +28,26 @@ export function boundsOf(points: LatLng[]) {
   return b
 }
 
+/** Labels for the map library's own buttons and hints, in the interface language. */
+export function mapLocale(t: Translate): Record<string, string> {
+  return {
+    'Map.Title': t('Map'),
+    'Marker.Title': t('Map marker'),
+    'NavigationControl.ZoomIn': t('Zoom in'),
+    'NavigationControl.ZoomOut': t('Zoom out'),
+    'NavigationControl.ResetBearing': t('Drag to rotate map, click to reset north'),
+    'FullscreenControl.Enter': t('Enter fullscreen'),
+    'FullscreenControl.Exit': t('Exit fullscreen'),
+    'AttributionControl.ToggleAttribution': t('Toggle attribution'),
+    'AttributionControl.MapFeedback': t('Map feedback'),
+    'CooperativeGesturesHandler.WindowsHelpText': t('Use Ctrl + scroll to zoom the map'),
+    'CooperativeGesturesHandler.MacHelpText': t('Use ⌘ + scroll to zoom the map'),
+    'CooperativeGesturesHandler.MobileHelpText': t('Use two fingers to move the map'),
+  }
+}
+
 /** Returns null when the device cannot draw a 3D map (no WebGL); callers then show text only. */
-export function create3dMap(container: HTMLElement, options: { cooperative?: boolean } = {}): GlMap | null {
+export function create3dMap(container: HTMLElement, options: { cooperative?: boolean; locale?: Record<string, string> } = {}): GlMap | null {
   try {
     const map = new maplibregl.Map({
       container,
@@ -41,6 +59,8 @@ export function create3dMap(container: HTMLElement, options: { cooperative?: boo
       maxPitch: 75,
       // On an item page the map sits in the middle of a long page: one finger scrolls the page, two move the map.
       cooperativeGestures: options.cooperative ?? false,
+      // The map library's own control labels, in the interface language.
+      locale: options.locale,
     })
     map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), 'top-left')
     const fullscreen = new maplibregl.FullscreenControl()
@@ -110,6 +130,7 @@ export function addRoute(map: GlMap, name: string, points: LatLng[], colour: str
 }
 
 import { METRES_PER_STOREY } from './storey.ts'
+import type { Translate } from '../i18n/index.tsx'
 export { METRES_PER_STOREY }
 
 /**
@@ -369,6 +390,7 @@ export function pinElement(kind: string, name: string): HTMLDivElement {
   dot.className = 'pin-dot'
   const label = document.createElement('span')
   label.className = 'pin-name'
+  label.lang = 'en'
   label.textContent = name
   el.append(dot, label)
   return el

@@ -23,7 +23,7 @@ const PINS: MapPin[] = items.flatMap(({ record, explanation }) =>
         {
           id: record.id,
           label: explanation.location.label,
-          description: `${explanation.plainTitle}. ${STATUS_LABEL[itemStatus(record)]}.`,
+          description: explanation.plainTitle,
           points: explanation.location.points,
           status: itemStatus(record),
           proposedStoreys: explanation.location.proposedStoreys,
@@ -54,7 +54,7 @@ function ItemCard({
         {explanation && <span className="topic">{t(TOPIC_LABEL[explanation.topic])}</span>}
       </p>
       <h3>
-        <Link to={`/item/${record.id}`}>{explanation?.plainTitle ?? record.title}</Link>
+        <Link to={`/item/${record.id}`} lang="en">{explanation?.plainTitle ?? record.title}</Link>
       </h3>
       <RouteMini record={record} />
       <p className="card-meta">
@@ -63,7 +63,7 @@ function ItemCard({
       </p>
       {last && (
         <p className="card-meta">
-          {status === 'decided' ? t('Decided by') : t('Next:')} {last.body}, {last.dateText}
+          {status === 'decided' ? t('Decided by') : t('Next:')} <span lang="en">{last.body}, {last.dateText}</span>
         </p>
       )}
       {!explanation && <p className="card-note">{t('Plain-language explanation not published yet. Official record only.')}</p>}
@@ -83,9 +83,9 @@ function Preview({ item, distance, onClose }: { item: PublishedItem; distance: n
       </button>
       <p className="card-top">
         <span className={`badge badge-status-${status}`}>{t(STATUS_LABEL[status])}</span>
-        {explanation && <span className="topic">{explanation.location.label}</span>}
+        {explanation && <span className="topic" lang="en">{explanation.location.label}</span>}
       </p>
-      <h2>{explanation?.plainTitle ?? record.title}</h2>
+      <h2 lang="en">{explanation?.plainTitle ?? record.title}</h2>
       {explanation && <p className="preview-what">{explanation.whatIsProposed[0].text}</p>}
       <RouteMini record={record} />
       <dl className="preview-facts">

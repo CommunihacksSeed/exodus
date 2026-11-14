@@ -19,21 +19,21 @@ export function AtAGlance({ item }: { item: PublishedItem }) {
       {explanation && (
         <div className="glance-what">
           <dt>{t('What')}</dt>
-          <dd>{explanation.whatIsProposed[0].text}</dd>
+          <dd lang="en">{explanation.whatIsProposed[0].text}</dd>
         </div>
       )}
       <div>
         <dt>{t('Where')}</dt>
         <dd>
-          {explanation ? `${explanation.location.label}. ` : ''}
-          {record.wards.map((w) => `Ward ${w.number}`).join(', ')}
+          {explanation ? <span lang="en">{explanation.location.label}. </span> : ''}
+          {record.wards.map((w) => t('Ward {n}', { n: w.number })).join(', ')}
         </dd>
       </div>
       <div>
         <dt>{t('Where it stands')}</dt>
         <dd>
-          {here.who}: {t(here.badge)}
-          {here.dateText ? ` (${here.dateText})` : ''}
+          <span lang="en">{here.who}</span>: {t(here.badge)}
+          {here.dateText ? <span lang="en"> ({here.dateText})</span> : ''}
         </dd>
       </div>
       <div className={`glance-act glance-act-${status}`}>

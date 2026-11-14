@@ -13,6 +13,7 @@ const FIND_COUNCILLOR = 'https://www.toronto.ca/city-government/council/members-
 
 /** The ward's outline as a small SVG, drawn from the City's ward boundaries (no map library needed). */
 function WardOutline({ ward, home }: { ward: WardShape; home: [number, number] | null }) {
+  const { t } = useLang()
   const pts = ward.polygons.flat()
   const lats = pts.map((p) => p[0])
   const lngs = pts.map((p) => p[1])
@@ -26,7 +27,7 @@ function WardOutline({ ward, home }: { ward: WardShape; home: [number, number] |
   const d = ward.polygons.map((ring) => 'M' + ring.map(([la, ln]) => `${x(ln).toFixed(2)},${y(la).toFixed(2)}`).join('L') + 'Z').join(' ')
   const inside = home && home[0] >= minLat && home[0] <= maxLat && home[1] >= minLng && home[1] <= maxLng
   return (
-    <svg className="ward-shape" viewBox="-4 -4 108 108" role="img" aria-label={`Outline of Ward ${ward.number}, ${ward.name}`}>
+    <svg className="ward-shape" viewBox="-4 -4 108 108" role="img" aria-label={t('Outline of Ward {n}, {name}', { n: ward.number, name: ward.name })}>
       <path d={d} />
       {inside && <circle cx={x(home[1])} cy={y(home[0])} r="3.2" className="ward-home" />}
     </svg>
@@ -38,7 +39,9 @@ export function MyWard() {
   const { t } = useLang()
   const { place } = usePlace()
   const sorted = useMemo(() => [...wards].sort((a, b) => a.number - b.number), [])
-  const [picked, setPicked] = useState<number | null>(null)
+  // A ward chosen from the list holds only until a new address is searched; then the address's ward wins.
+  const [pick, setPick] = useState<{ n: number | null; place: typeof place } | null>(null)
+  const picked = pick && pick.place === place ? pick.n : null
   const wardNo = picked ?? place?.wardNumber ?? null
   const ward = sorted.find((w) => w.number === wardNo) ?? null
 
@@ -63,7 +66,7 @@ export function MyWard() {
         <AddressSearch compact />
         <label className="ward-select">
           <span>{t('Or choose a ward')}</span>
-          <select value={wardNo ?? ''} onChange={(e) => setPicked(e.target.value ? Number(e.target.value) : null)}>
+          <select value={wardNo ?? ''} onChange={(e) => setPick({ n: e.target.value ? Number(e.target.value) : null, place })}>
             <option value="">{t('Choose…')}</option>
             {sorted.map((w) => (
               <option key={w.number} value={w.number}>
@@ -101,7 +104,7 @@ export function MyWard() {
                     <span className={`badge badge-status-${itemStatus(record)}`}>{t(STATUS_LABEL[itemStatus(record)])}</span>
                   </p>
                   <h3>
-                    <Link to={`/item/${record.id}`}>{explanation?.plainTitle ?? record.title}</Link>
+                    <Link to={`/item/${record.id}`} lang="en">{explanation?.plainTitle ?? record.title}</Link>
                   </h3>
                   <RouteMini record={record} />
                 </li>
@@ -121,7 +124,7 @@ export function MyWard() {
           <ul className="nearby">
             {nearby.map(({ item, d }) => (
               <li key={item.record.id}>
-                <Link to={`/item/${item.record.id}`}>{item.explanation!.plainTitle}</Link>{' '}
+                <Link to={`/item/${item.record.id}`} lang="en">{item.explanation!.plainTitle}</Link>{' '}
                 <span className="fine">· {t('{distance} from {place}', { distance: formatDistance(d), place: place!.label })}</span>
               </li>
             ))}

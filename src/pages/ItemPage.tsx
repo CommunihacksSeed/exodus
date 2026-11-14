@@ -36,10 +36,10 @@ export function ItemPage() {
   if (!item) {
     return (
       <section>
-        <title>Item not found — Clear Council</title>
-        <h1>We do not have that item</h1>
+        <title>{`${t('Item not found')} — Clear Council`}</title>
+        <h1>{t('We do not have that item')}</h1>
         <p>
-          <Link to="/">Back to the list</Link>
+          <Link to="/">{t('Back to the list')}</Link>
         </p>
       </section>
     )
@@ -64,8 +64,10 @@ export function ItemPage() {
           <span className={`badge badge-status-${status}`}>{t(STATUS_LABEL[status])}</span>
           <span className="item-id">{t('Item {id}', { id: record.id })}</span>
         </p>
-        <h1>{explanation?.plainTitle ?? record.title}</h1>
-        <p className="official-title">{t('Official title:')} {record.title}</p>
+        <h1 lang="en">{explanation?.plainTitle ?? record.title}</h1>
+        <p className="official-title">
+          {t('Official title:')} <span lang="en">{record.title}</span>
+        </p>
 
         <section aria-label={t('Where this proposal is in the process')} className="route-wrap">
           <RouteStrip record={record} />
@@ -135,7 +137,7 @@ export function ItemPage() {
           <section aria-labelledby="where-h" className="panel">
             <h2 id="where-h" tabIndex={-1}>{t('Is this near me? Who does it affect?')}</h2>
             <p className="where-line">
-              <strong>{explanation.location.label}</strong>, {record.wards.map((w) => `Ward ${w.number} (${w.name})`).join(', ')}
+              <strong lang="en">{explanation.location.label}</strong>, {record.wards.map((w) => `${t('Ward {n}', { n: w.number })} (${w.name})`).join(', ')}
             </p>
             {place && distance !== null ? (
               <p className="near-result" role="status">
@@ -155,11 +157,21 @@ export function ItemPage() {
             />
             </Suspense>
             <p className="fine">
-              Red marks the {explanation.location.points.length > 1 ? 'route' : 'site'}. The dashed line is the ward boundary.{' '}
+              {explanation.location.points.length > 1 ? t('Red marks the route.') : t('Red marks the site.')} {t('The dashed line is the ward boundary.')}{' '}
               {explanation.location.proposedStoreys?.length
-                ? `The yellow ${explanation.location.proposedStoreys.length > 1 ? 'blocks show' : 'block shows'} how tall ${explanation.location.proposedStoreys.join(' and ')} storeys would be beside the buildings there now, one slab per storey, at about ${METRES_PER_STOREY} metres a storey. Only the height comes from the City record; the real building will have a different shape. `
+                ? `${
+                    explanation.location.proposedStoreys.length > 1
+                      ? t('The yellow blocks show how tall {storeys} storeys would be beside the buildings there now, one slab per storey, at about {m} metres a storey.', {
+                          storeys: explanation.location.proposedStoreys.join(t(' and ')),
+                          m: METRES_PER_STOREY,
+                        })
+                      : t('The yellow block shows how tall {storeys} storeys would be beside the buildings there now, one slab per storey, at about {m} metres a storey.', {
+                          storeys: explanation.location.proposedStoreys[0],
+                          m: METRES_PER_STOREY,
+                        })
+                  } ${t('Only the height comes from the City record; the real building will have a different shape.')} `
                 : ''}
-              Other buildings are from OpenStreetMap and may be out of date. Location from: {explanation.location.geocodeSource}.
+              {t('Other buildings are from OpenStreetMap and may be out of date. Location from:')} <span lang="en">{explanation.location.geocodeSource}</span>.
             </p>
             <ClaimList claims={explanation.whoIsAffected} />
           </section>
@@ -179,7 +191,7 @@ export function ItemPage() {
         <StageTracker record={record} summaries={explanation?.stageSummaries} />
         {record.bylaws.length > 0 && (
           <p className="fine">
-            By-laws passed for this item:{' '}
+            {t('By-laws passed for this item:')}{' '}
             {record.bylaws.map((b, i) => (
               <span key={b.url}>
                 {i > 0 && ', '}
@@ -222,7 +234,7 @@ export function ItemPage() {
             <ul>
               {[...new Map(record.considerations.flatMap((c) => c.documents).filter((d) => d.url).map((d) => [d.url, d])).values()].map((d) => (
                 <li key={d.url}>
-                  <a href={safeHref(d.url!)} target="_blank" rel="noreferrer">
+                  <a href={safeHref(d.url!)} target="_blank" rel="noreferrer" lang="en">
                     {d.label}
                   </a>
                 </li>

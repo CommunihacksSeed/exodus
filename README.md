@@ -133,7 +133,8 @@ paper copy to someone who is not online.
 - The 3D map needs WebGL. Without it the page says so and the list still works.
 - The voting record covers recorded votes only, and a vote may be on an amendment rather than
   the item. The app labels each vote with its motion.
-- Interface in English, French and Chinese; explanations and City records in English only. The
+- Interface in English, French and Chinese (screen-reader labels and map controls included);
+  explanations and City records in English only, marked as English for screen readers. The
   translations have not been reviewed by native speakers yet.
 - Offline only for pages already opened; the map and address lookup need a connection. No phone channel.
 
