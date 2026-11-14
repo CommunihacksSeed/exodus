@@ -403,7 +403,7 @@ details summary:hover { color: var(--line-dark); }
 .tool-select select:hover { border-color: var(--line); }
 
 /* ---------- Game-style map HUD ---------- */
-.city-map-wrap { position: relative; }
+.city-map-wrap { position: relative; container-type: inline-size; }
 .hud {
   position: absolute; top: 0.6rem; right: 0.6rem; z-index: 5;
   display: flex; flex-direction: column; align-items: flex-end; gap: 0.4rem;
@@ -541,3 +541,45 @@ details summary:hover { color: var(--line-dark); }
   .brand, .site-nav, .lang-switch { flex: none; }
   .brand-note { flex: 1 1 auto; min-width: 7rem; line-height: 1.3; }
 }
+
+/* ---------- Drive mode ---------- */
+.drive-dash {
+  position: absolute; left: 0.6rem; bottom: 2.1rem; z-index: 5; display: grid; gap: 0.25rem;
+  padding: 0.55rem 0.8rem 0.6rem; border-radius: 10px; background: #0a1020; color: #e7eeff;
+  box-shadow: 0 4px 18px rgb(0 0 0 / 0.3); min-width: 9.5rem;
+}
+.drive-dash p { margin: 0; }
+.drive-speed { font-family: var(--mono); font-size: 0.8rem; color: #b8c6e6; }
+.drive-speed strong { font-family: var(--display); font-size: 1.9rem; line-height: 1; color: var(--hi); margin-right: 0.15rem; font-variant-numeric: tabular-nums; }
+.drive-visited { font-family: var(--display); font-weight: 700; font-size: 0.8rem; }
+.drive-dots { display: flex; gap: 0.3rem; list-style: none; padding: 0; margin: 0.1rem 0 0; }
+.drive-dots li { width: 0.7rem; height: 0.7rem; border-radius: 50%; border: 2px solid #5b6c93; }
+.drive-dots li.is-done { background: var(--hi); border-color: var(--hi); box-shadow: 0 0 8px rgb(255 229 102 / 0.7); }
+.drive-arrive {
+  position: absolute; left: 3.7rem; top: 0.6rem; z-index: 6;
+  display: flex; align-items: center; gap: 0.7rem; padding: 0.5rem 0.55rem 0.5rem 0.9rem; border-radius: 10px;
+  background: var(--hi); color: var(--ink); box-shadow: 0 6px 22px rgb(0 0 0 / 0.3); max-width: calc(100% - 25rem);
+}
+.drive-arrive p { margin: 0; font-family: var(--display); font-weight: 800; font-size: 0.92rem; }
+.drive-arrive button { font-size: 0.82rem; padding: 0.4rem 0.7rem; white-space: nowrap; }
+@media (prefers-reduced-motion: no-preference) { .drive-arrive { animation: pop 260ms ease-out both; } @keyframes pop { from { opacity: 0; transform: translateY(-8px); } } }
+.drive-pad { display: none; }
+/* While driving, the summary card would cover the dashboard; it comes back when the car parks. */
+.city-map-frame:has(.city-map[data-driving]) .preview { display: none; }
+.drive-keys { white-space: nowrap; }
+@media (max-width: 40rem) { .drive-keys { display: none; } }
+@media (hover: none) {
+  .drive-pad {
+    position: absolute; right: 0.6rem; bottom: 2.2rem; z-index: 6; display: grid; gap: 0.35rem;
+    grid-template-columns: repeat(3, 3.1rem); grid-template-areas: '. gas .' 'left brake right';
+  }
+  .drive-pad button {
+    width: 3.1rem; height: 3.1rem; padding: 0; border-radius: 12px; font-size: 1.1rem; touch-action: none; user-select: none;
+    background: rgb(10 16 32 / 0.88); color: #fff; border: 1px solid rgb(255 255 255 / 0.25);
+  }
+  .drive-pad button:active { background: var(--hi); color: var(--ink); }
+  .drive-gas { grid-area: gas; } .drive-brake { grid-area: brake; } .drive-left { grid-area: left; } .drive-right { grid-area: right; }
+  .drive-dash { bottom: 0.6rem; }
+}
+/* A narrow map has no room beside the map controls: put the arrival note below them. */
+@container (max-width: 44rem) { .drive-arrive { top: 6.6rem; left: 3.7rem; max-width: calc(100% - 4.3rem); } }

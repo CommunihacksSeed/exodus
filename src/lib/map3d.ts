@@ -365,6 +365,7 @@ function enableFlightKeys(map: GlMap) {
   }
   canvas.addEventListener('keydown', (e) => {
     if (e.ctrlKey || e.metaKey || e.altKey) return
+    if (map.getContainer().dataset.driving) return // drive mode owns these keys
     const k = e.key.toLowerCase()
     if (!'wasdqerf'.includes(k) || k.length !== 1) return
     e.preventDefault()
