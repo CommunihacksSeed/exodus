@@ -147,7 +147,7 @@ export function ItemPage() {
             <p className="fine">
               Red marks the {explanation.location.points.length > 1 ? 'route' : 'site'}. The dashed line is the ward boundary.{' '}
               {explanation.location.proposedStoreys?.length
-                ? `The yellow ${explanation.location.proposedStoreys.length > 1 ? 'blocks show' : 'block shows'} how tall ${explanation.location.proposedStoreys.join(' and ')} storeys would be beside the buildings there now, at about ${METRES_PER_STOREY} metres a storey. Only the height comes from the City record; the real building will have a different shape. `
+                ? `The yellow ${explanation.location.proposedStoreys.length > 1 ? 'blocks show' : 'block shows'} how tall ${explanation.location.proposedStoreys.join(' and ')} storeys would be beside the buildings there now, one slab per storey, at about ${METRES_PER_STOREY} metres a storey. Only the height comes from the City record; the real building will have a different shape. `
                 : ''}
               Other buildings are from OpenStreetMap and may be out of date. Location from: {explanation.location.geocodeSource}.
             </p>
