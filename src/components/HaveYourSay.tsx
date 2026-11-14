@@ -1,6 +1,7 @@
 import type { PublishedItem } from '../types.ts'
 import { formatCaptured } from '../lib/data.ts'
 import { itemStatus } from '../lib/stages.ts'
+import { safeHref } from '../lib/safe.ts'
 
 /**
  * Participation information. Hard rule: only show what the City's own item
@@ -24,12 +25,12 @@ export function HaveYourSay({ item }: { item: PublishedItem }) {
         </p>
         <div className="say-actions">
           {commentsUrl && (
-            <a className="button" href={commentsUrl} target="_blank" rel="noreferrer">
+            <a className="button" href={safeHref(commentsUrl)} target="_blank" rel="noreferrer">
               Send a written comment<span className="sr-only"> on the City’s website (opens in a new tab)</span>
             </a>
           )}
           {speakUrl && (
-            <a className="button button-secondary" href={speakUrl} target="_blank" rel="noreferrer">
+            <a className="button button-secondary" href={safeHref(speakUrl)} target="_blank" rel="noreferrer">
               Ask to speak at the meeting<span className="sr-only"> on the City’s website (opens in a new tab)</span>
             </a>
           )}
@@ -53,7 +54,7 @@ export function HaveYourSay({ item }: { item: PublishedItem }) {
               <dd>
                 {check.contact.label}: <a href={`mailto:${check.contact.email}`}>{check.contact.email}</a> or{' '}
                 <a href={`tel:${check.contact.phone.replace(/\D/g, '')}`}>{check.contact.phone}</a> (
-                <a href={check.contact.sourceUrl} target="_blank" rel="noreferrer">
+                <a href={safeHref(check.contact.sourceUrl)} target="_blank" rel="noreferrer">
                   source
                 </a>
                 , checked {check.checkedOn})
@@ -112,7 +113,7 @@ export function HaveYourSay({ item }: { item: PublishedItem }) {
         change as the item moves forward.
       </p>
       <p>
-        <a href={record.sourceUrl} target="_blank" rel="noreferrer">
+        <a href={safeHref(record.sourceUrl)} target="_blank" rel="noreferrer">
           Check the City’s page for item {record.id}
         </a>
       </p>

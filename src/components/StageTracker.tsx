@@ -1,5 +1,6 @@
 import type { Claim, ItemRecord, Motion, StageKind, VerifiedCitation } from '../types.ts'
 import { buildStages, type Stage } from '../lib/stages.ts'
+import { safeHref } from '../lib/safe.ts'
 
 function VoteLine({ motion }: { motion: Motion }) {
   return (
@@ -65,7 +66,7 @@ function StageCard({ stage, summary, sourceUrl }: { stage: Stage; summary?: Clai
             ))}
             <p className="fine">
               Copied word for word from the{' '}
-              <a href={sourceUrl} target="_blank" rel="noreferrer">
+              <a href={safeHref(sourceUrl)} target="_blank" rel="noreferrer">
                 City’s item page
               </a>
               .

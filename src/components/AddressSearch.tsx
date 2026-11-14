@@ -1,5 +1,5 @@
 import { useId, useState, type FormEvent } from 'react'
-import { findAddress, type PlaceMatch } from '../lib/geo.ts'
+import { AddressLookupError, findAddress, type PlaceMatch } from '../lib/geo.ts'
 import { usePlace } from '../lib/place.tsx'
 
 type State =
@@ -28,8 +28,9 @@ export function AddressSearch({ compact = false }: { compact?: boolean }) {
       } else {
         setState({ kind: 'results', matches })
       }
-    } catch {
-      setState({ kind: 'error', message: 'The City address lookup did not respond. You can still read everything below.' })
+    } catch (err) {
+      const why = err instanceof AddressLookupError ? err.message : 'The City address lookup did not respond.'
+      setState({ kind: 'error', message: `${why} You can still read everything below.` })
     }
   }
 
@@ -54,6 +55,7 @@ export function AddressSearch({ compact = false }: { compact?: boolean }) {
         <input
           id={inputId}
           type="text"
+          maxLength={120}
           autoComplete="street-address"
           placeholder="e.g. 100 Queen St W"
           value={query}
