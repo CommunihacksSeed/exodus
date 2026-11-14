@@ -367,4 +367,14 @@ export const fr: Record<string, string> = {
   'Other buildings are from OpenStreetMap and may be out of date. Location from:': 'Les autres bâtiments proviennent d’OpenStreetMap et peuvent être périmés. Emplacement selon :',
   'By-laws passed for this item:': 'Règlements adoptés pour ce point :',
   'Outline of Ward {n}, {name}': 'Contour du quartier {n}, {name}',
+  // Drive mode
+  '■ Stop driving': '■ Arrêter de conduire',
+  '🚗 Drive': '🚗 Conduire',
+  'You visited every decision on the map!': 'Vous avez visité toutes les décisions de la carte!',
+  'Visited {n} of {total} decisions': '{n} décisions visitées sur {total}',
+  'You reached {place}.': 'Vous êtes arrivé à {place}.',
+  'See this decision': 'Voir cette décision',
+  'drive': 'conduire',
+  'boost': 'accélérer',
+  'stop': 'arrêter',
 }

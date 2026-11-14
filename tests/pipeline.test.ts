@@ -246,3 +246,56 @@ test('building footprints from map tiles: odd or empty shapes are skipped, never
     assert.equal(footprintCentre(bad as never), null, JSON.stringify(bad))
   }
 })
+
+import { CITY_HALL, carFeatures, DRIVE, kmh, siteAt, step, type Car } from '../src/lib/drive.ts'
+
+test('drive mode: the toy car accelerates, steers only when moving, brakes, reverses and stops', () => {
+  const start: Car = { lat: CITY_HALL[0], lng: CITY_HALL[1], heading: 0, speed: 0 }
+  const go = { throttle: 1 as const, steer: 0 as const, boost: false }
+  let car = start
+  for (let i = 0; i < 120; i++) car = step(car, go, 1 / 60)
+  assert.ok(car.speed > 30 && car.speed <= DRIVE.maxSpeed, `speed ${car.speed}`)
+  assert.ok(car.lat > start.lat && Math.abs(car.lng - start.lng) < 1e-9, 'heading 0 drives north')
+  for (let i = 0; i < 600; i++) car = step(car, go, 1 / 60)
+  assert.equal(car.speed, DRIVE.maxSpeed, 'capped at top speed')
+  // Steering while parked does nothing; steering while moving turns.
+  assert.equal(step(start, { throttle: 0, steer: 1, boost: false }, 1).heading, 0)
+  assert.ok(step(car, { throttle: 0, steer: 1, boost: false }, 0.5).heading > 30)
+  // Coasting stops the car; holding brake from a stop reverses, slowly.
+  let coast = car
+  for (let i = 0; i < 400; i++) coast = step(coast, { throttle: 0, steer: 0, boost: false }, 1 / 60)
+  assert.equal(coast.speed, 0)
+  let back = start
+  for (let i = 0; i < 300; i++) back = step(back, { throttle: -1, steer: 0, boost: false }, 1 / 60)
+  assert.equal(back.speed, -DRIVE.maxReverse)
+  assert.ok(back.lat < start.lat)
+  // Boost goes faster, and the dashboard shows km/h.
+  let fast = start
+  for (let i = 0; i < 600; i++) fast = step(fast, { throttle: 1, steer: 0, boost: true }, 1 / 60)
+  assert.equal(fast.speed, DRIVE.boostSpeed)
+  assert.equal(kmh(-10), 36)
+  // Heading wraps into 0..360.
+  const wrapped = step({ ...car, heading: 359 }, { throttle: 1, steer: 1, boost: false }, 0.2).heading
+  assert.ok(wrapped >= 0 && wrapped < 360)
+})
+
+test('drive mode: car shape and arriving at a decision', () => {
+  const car: Car = { lat: 43.65, lng: -79.38, heading: 90, speed: 0 }
+  const fc = carFeatures(car)
+  assert.equal(fc.features.length, 3)
+  for (const f of fc.features) {
+    const ring = f.geometry.coordinates[0]
+    assert.deepEqual(ring[0], ring[ring.length - 1], 'closed ring')
+    assert.ok(f.properties.top > f.properties.base)
+  }
+  // Heading 90 (east): the body is longer east-west than north-south.
+  const body = fc.features[0].geometry.coordinates[0]
+  const width = (k: 0 | 1) => Math.max(...body.map((p) => p[k])) - Math.min(...body.map((p) => p[k]))
+  assert.ok(width(0) * Math.cos((43.65 * Math.PI) / 180) > width(1))
+  const sites = [
+    { id: 'a', label: 'Near', points: [[43.6503, -79.38] as [number, number]] },
+    { id: 'b', label: 'Far', points: [[43.7, -79.4] as [number, number]] },
+  ]
+  assert.equal(siteAt(car, sites)?.id, 'a')
+  assert.equal(siteAt({ ...car, lat: 43.66 }, sites), null)
+})

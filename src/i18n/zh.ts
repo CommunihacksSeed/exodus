@@ -367,4 +367,14 @@ export const zh: Record<string, string> = {
   'Other buildings are from OpenStreetMap and may be out of date. Location from:': '其他建筑来自 OpenStreetMap，可能已过时。位置来源：',
   'By-laws passed for this item:': '此议程项已通过的法规：',
   'Outline of Ward {n}, {name}': '第 {n} 选区（{name}）轮廓',
+  // Drive mode
+  '■ Stop driving': '■ 停止驾驶',
+  '🚗 Drive': '🚗 驾驶',
+  'You visited every decision on the map!': '地图上的决策点你全部到访了！',
+  'Visited {n} of {total} decisions': '已到访 {n} / {total} 个决策点',
+  'You reached {place}.': '你到了 {place}。',
+  'See this decision': '查看这项决策',
+  'drive': '驾驶',
+  'boost': '加速',
+  'stop': '停止',
 }

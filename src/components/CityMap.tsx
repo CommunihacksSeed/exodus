@@ -4,6 +4,7 @@ import type { LatLng } from '../lib/geo.ts'
 import { addBeacons, addProposedHeights, addRoute, addWards, boundsOf, clearViewBearing, create3dMap, mapLocale, METRES_PER_STOREY, GRID_BEARING, lngLat, maplibregl, pinElement, TILT } from '../lib/map3d.ts'
 import { STATUS_LABEL, type ItemStatus } from '../lib/stages.ts'
 import { applyTheme, savedTheme, saveTheme, THEMES, type MapTheme } from '../lib/mapTheme.ts'
+import { carFeatures, CITY_HALL, kmh, siteAt, step, type Car, type DriveInput, type Site } from '../lib/drive.ts'
 import { translate, useLang } from '../i18n/index.tsx'
 
 export interface MapPin {
@@ -56,6 +57,13 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
   const [orbiting, setOrbiting] = useState(false)
   const [touring, setTouring] = useState(false)
   const [flat, setFlat] = useState(false)
+  const [driving, setDriving] = useState(false)
+  const drivingRef = useRef(false)
+  const [speedKmh, setSpeedKmh] = useState(0)
+  const [arrived, setArrived] = useState<Site | null>(null)
+  const [visited, setVisited] = useState<Set<string>>(() => new Set())
+  // On-screen pedals and wheel for touch screens; the keyboard writes to the same input.
+  const touchInput = useRef<{ throttle: DriveInput['throttle']; steer: DriveInput['steer'] }>({ throttle: 0, steer: 0 })
   useEffect(() => {
     onSelectRef.current = onSelect
   }, [onSelect])
@@ -145,6 +153,8 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
     // On wide screens the summary card sits over the left of the map; keep the marker clear of it.
     const card = ref.current?.parentElement?.querySelector<HTMLElement>('.preview')
     const covered = card && getComputedStyle(card).position === 'absolute' ? card.offsetWidth + 16 : 0
+    // While driving, the chase camera owns the view.
+    if (drivingRef.current) return
     const pin = pins.find((p) => p.id === selectedId)
     if (!pin) {
       const all = [...pins.flatMap((p) => p.points), ...(home ? [home.point] : [])]
@@ -252,6 +262,119 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
     }
   }, [touring, ready, pins])
 
+  // Drive mode: a toy car with a chase camera. Visit every decision on the map.
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !ready || !driving) return
+    drivingRef.current = true
+    const container = map.getContainer()
+    container.dataset.driving = '1'
+    map.keyboard.disable()
+    if (map.getLayer('building-3d')) map.setLayoutProperty('building-3d', 'visibility', 'visible')
+
+    const sites: Site[] = pins.map((p) => ({ id: p.id, label: p.label, points: p.points }))
+    const from = pins.find((p) => p.id === selectedRef.current)
+    const startAt = from ? from.points[Math.floor(from.points.length / 2)] : CITY_HALL
+    let car: Car = { lat: startAt[0], lng: startAt[1], heading: map.getBearing(), speed: 0 }
+    let camBearing = car.heading
+    // Starting at a decision counts as arriving there, so the first frame reports it.
+    let lastArrived: string | null = null
+
+    map.addSource('cc-car', { type: 'geojson', data: carFeatures(car) })
+    map.addLayer({
+      id: 'cc-car-shadow',
+      type: 'circle',
+      source: 'cc-car',
+      filter: ['==', ['get', 'kind'], 'body'],
+      paint: { 'circle-radius': 40, 'circle-color': '#000', 'circle-opacity': 0.18, 'circle-blur': 0.9, 'circle-pitch-alignment': 'map' },
+    })
+    map.addLayer({
+      id: 'cc-car',
+      type: 'fill-extrusion',
+      source: 'cc-car',
+      paint: {
+        'fill-extrusion-color': ['match', ['get', 'kind'], 'body', '#ff3b30', 'cabin', '#16233f', '#fff4b8'],
+        'fill-extrusion-base': ['get', 'base'],
+        'fill-extrusion-height': ['get', 'top'],
+        'fill-extrusion-opacity': 1,
+      },
+    })
+
+    const keys = new Set<string>()
+    const KEYS = new Set(['arrowup', 'arrowdown', 'arrowleft', 'arrowright', 'w', 'a', 's', 'd', 'shift', ' '])
+    const typing = (e: KeyboardEvent) => e.target instanceof HTMLElement && /^(INPUT|TEXTAREA|SELECT)$/.test(e.target.tagName)
+    const down = (e: KeyboardEvent) => {
+      if (typing(e) || e.metaKey || e.ctrlKey || e.altKey) return
+      const k = e.key.toLowerCase()
+      if (k === 'escape') return setDriving(false)
+      if (!KEYS.has(k)) return
+      e.preventDefault() // arrows and space would scroll the page
+      keys.add(k)
+    }
+    const up = (e: KeyboardEvent) => keys.delete(e.key.toLowerCase())
+    const clear = () => keys.clear()
+    window.addEventListener('keydown', down)
+    window.addEventListener('keyup', up)
+    window.addEventListener('blur', clear)
+
+    let frame = 0
+    let last = performance.now()
+    let lastDash = 0
+    const tick = (now: number) => {
+      frame = requestAnimationFrame(tick)
+      const dt = Math.min(0.05, (now - last) / 1000)
+      last = now
+      const touch = touchInput.current
+      const input: DriveInput = {
+        throttle: keys.has('arrowup') || keys.has('w') || touch.throttle === 1 ? 1 : keys.has('arrowdown') || keys.has('s') || keys.has(' ') || touch.throttle === -1 ? -1 : 0,
+        steer: keys.has('arrowleft') || keys.has('a') || touch.steer === -1 ? -1 : keys.has('arrowright') || keys.has('d') || touch.steer === 1 ? 1 : 0,
+        boost: keys.has('shift'),
+      }
+      car = step(car, input, dt)
+      ;(map.getSource('cc-car') as maplibregl.GeoJSONSource | undefined)?.setData(carFeatures(car))
+      // The camera swings round behind the car a little after it turns, like a chase camera.
+      const diff = ((car.heading - camBearing + 540) % 360) - 180
+      camBearing += diff * Math.min(1, dt * 5)
+      const h = container.clientHeight
+      map.jumpTo({
+        center: [car.lng, car.lat],
+        bearing: camBearing,
+        pitch: 63,
+        zoom: 17.7 - Math.min(1.3, Math.abs(car.speed) / 85),
+        padding: { top: h * 0.38, bottom: 0, left: 0, right: 0 },
+      })
+      const at = siteAt(car, sites)
+      if ((at?.id ?? null) !== lastArrived) {
+        lastArrived = at?.id ?? null
+        setArrived(at)
+        if (at) setVisited((v) => (v.has(at.id) ? v : new Set(v).add(at.id)))
+      }
+      if (now - lastDash > 120) {
+        lastDash = now
+        setSpeedKmh(kmh(car.speed))
+      }
+    }
+    frame = requestAnimationFrame(tick)
+
+    return () => {
+      cancelAnimationFrame(frame)
+      window.removeEventListener('keydown', down)
+      window.removeEventListener('keyup', up)
+      window.removeEventListener('blur', clear)
+      touchInput.current = { throttle: 0, steer: 0 }
+      drivingRef.current = false
+      delete container.dataset.driving
+      map.keyboard.enable()
+      if (map.getLayer('cc-car')) map.removeLayer('cc-car')
+      if (map.getLayer('cc-car-shadow')) map.removeLayer('cc-car-shadow')
+      if (map.getSource('cc-car')) map.removeSource('cc-car')
+      map.setPadding({ top: 0, bottom: 0, left: 0, right: 0 })
+      map.easeTo({ pitch: TILT, zoom: 15.5, duration: reducedMotion() ? 0 : 900 })
+      setArrived(null)
+      setSpeedKmh(0)
+    }
+  }, [driving, ready, pins])
+
   // 2D / 3D view.
   useEffect(() => {
     const map = mapRef.current
@@ -306,13 +429,91 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
             <button type="button" aria-pressed={flat} className={flat ? 'is-on' : ''} onClick={() => setFlat((v) => !v)}>
               {flat ? t('3D') : t('2D')}
             </button>
+            <button
+              type="button"
+              aria-pressed={driving}
+              className={driving ? 'is-on' : ''}
+              onClick={() => {
+                setTouring(false)
+                setOrbiting(false)
+                setFlat(false)
+                setDriving((v) => !v)
+                // Keys go to the page while driving; take focus off the button so Space does not press it again.
+                ;(document.activeElement as HTMLElement | null)?.blur()
+              }}
+            >
+              {driving ? t('■ Stop driving') : t('🚗 Drive')}
+            </button>
           </div>
         </div>
       )}
-      {ready && (
+      {ready && !driving && (
         <p className="hud-keys" aria-hidden="true">
           <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> {t('fly')} · <kbd>Q</kbd><kbd>E</kbd> {t('turn')} · <kbd>R</kbd><kbd>F</kbd> {t('tilt')} · {t('scroll to zoom')}
         </p>
+      )}
+      {driving && (
+        <>
+          <div className="drive-dash" role="status" aria-live="polite">
+            <p className="drive-speed">
+              <strong>{speedKmh}</strong> km/h
+            </p>
+            <p className="drive-visited">
+              {visited.size >= pins.length
+                ? t('You visited every decision on the map!')
+                : t('Visited {n} of {total} decisions', { n: visited.size, total: pins.length })}
+            </p>
+            <ol className="drive-dots" aria-hidden="true">
+              {pins.map((p) => (
+                <li key={p.id} className={visited.has(p.id) ? 'is-done' : ''} title={p.label} />
+              ))}
+            </ol>
+          </div>
+          {arrived && (
+            <div className="drive-arrive" role="status">
+              <p>{t('You reached {place}.', { place: arrived.label })}</p>
+              <button
+                type="button"
+                onClick={() => {
+                  // Park and read: stop driving and open this decision's card.
+                  const id = arrived.id
+                  setDriving(false)
+                  onSelectRef.current(id)
+                }}
+              >
+                {t('See this decision')}
+              </button>
+            </div>
+          )}
+          <p className="hud-keys drive-keys" aria-hidden="true">
+            <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> {t('drive')} · <kbd>Shift</kbd> {t('boost')} · <kbd>Esc</kbd> {t('stop')}
+          </p>
+          <div className="drive-pad" aria-hidden="true">
+            {(
+              [
+                ['steer', -1, '◀', 'drive-left'],
+                ['throttle', 1, '▲', 'drive-gas'],
+                ['throttle', -1, '▼', 'drive-brake'],
+                ['steer', 1, '▶', 'drive-right'],
+              ] as const
+            ).map(([axis, value, label, cls]) => (
+              <button
+                key={cls}
+                type="button"
+                tabIndex={-1}
+                className={cls}
+                onPointerDown={(e) => {
+                  e.currentTarget.setPointerCapture(e.pointerId)
+                  touchInput.current = { ...touchInput.current, [axis]: value }
+                }}
+                onPointerUp={() => (touchInput.current = { ...touchInput.current, [axis]: 0 })}
+                onPointerCancel={() => (touchInput.current = { ...touchInput.current, [axis]: 0 })}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </>
       )}
     </div>
   )
