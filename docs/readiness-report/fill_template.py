@@ -5,7 +5,7 @@ from xml.sax.saxutils import escape
 SRC, OUT, MD = sys.argv[1:4]
 
 FIELDS = {
-    'project_name': 'Clear Council',
+    'project_name': 'Exodus',
     'problem': (
         'Residents cannot tell from a council agenda what is proposed near them, who has decided it, '
         'or whether they can still comment. An item can span several meetings and a 30-page report. We focused on '
@@ -13,13 +13,13 @@ FIELDS = {
         'conditions preserved, and participation shown only as the City states it.'
     ),
     'solution': (
-        'Clear Council gives each agenda item one web page. Residents see a plain-language summary, a map with the '
+        'Exodus gives each agenda item one web page. Residents see a plain-language summary, a map with the '
         'distance from their address, a route showing which body has decided what, and how to comment. Clerks and '
         'councillors’ offices can share it. Every sentence shows the passage it rests on, checked word for word '
         'by software before publishing.'
     ),
     'what_changes': (
-        'Today the record is published but not explained. Clear Council explains it without loosening accuracy: '
+        'Today the record is published but not explained. Exodus explains it without loosening accuracy: '
         'unverified text cannot be published and deadlines are never guessed. Tested on 15 Toronto items.'
     ),
     'piloted': (
@@ -104,7 +104,7 @@ md = ['# Municipal Readiness Report — draft text', '',
       'Text for the organizers’ one-page template (`CIVIC-Hack_submission-template.docx`).',
       'The filled template is `readiness-report-draft.docx` in this folder. Team name, contact email and',
       'member details still need to be added before exporting it to PDF.', '',
-      '**Project name:** Clear Council', '']
+      '**Project name:** Exodus', '']
 for key, title in [('problem', 'The problem (60 words)'), ('solution', 'Your solution (60 words)'),
                    ('what_changes', 'What changes (30 words)')]:
     md += [f'## {title}', '', FIELDS[key], '']

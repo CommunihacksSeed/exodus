@@ -31,11 +31,11 @@ export function Words() {
 
   return (
     <article className="page words">
-      <title>{`${t('Words')} — Clear Council`}</title>
+      <title>{`${t('Words')} — Exodus`}</title>
       <p className="kicker">{t('Glossary')}</p>
       <h1>{t('City Hall words, in plain language')}</h1>
       <p className="lede">
-        {t('The meanings are written in plain words by the Clear Council team. Under each one is a passage from a City document where the word is used, so you can see it in context and check it.')}
+        {t('The meanings are written in plain words by the Exodus team. Under each one is a passage from a City document where the word is used, so you can see it in context and check it.')}
       </p>
 
       <label className="words-search">

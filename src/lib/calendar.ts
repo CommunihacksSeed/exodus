@@ -64,7 +64,7 @@ export function meetingsToIcs(record: ItemRecord, title: string, meetings: Meeti
   const lines = [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Clear Council//Meeting dates//EN',
+    'PRODID:-//Exodus//Meeting dates//EN',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
   ]
@@ -74,7 +74,7 @@ export function meetingsToIcs(record: ItemRecord, title: string, meetings: Meeti
       `This is a meeting date, not a deadline to comment. Check the City page for how and when to have a say: ${record.sourceUrl}`
     lines.push(
       'BEGIN:VEVENT',
-      `UID:${esc(record.id)}-${compact(m.date)}-${esc(m.body).replace(/[^A-Za-z0-9]/g, '')}@clear-council`,
+      `UID:${esc(record.id)}-${compact(m.date)}-${esc(m.body).replace(/[^A-Za-z0-9]/g, '')}@exodus`,
       `DTSTAMP:${dtstamp}`,
       `DTSTART;VALUE=DATE:${compact(m.date)}`,
       `DTEND;VALUE=DATE:${compact(nextDay(m.date))}`,

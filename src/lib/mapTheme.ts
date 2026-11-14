@@ -12,7 +12,7 @@ export const THEMES: { id: MapTheme; label: string }[] = [
   { id: 'night', label: 'Night' },
 ]
 
-const KEY = 'clear-council:map-theme'
+const KEY = 'exodus:map-theme'
 
 export function savedTheme(): MapTheme {
   try {

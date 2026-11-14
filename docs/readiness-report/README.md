@@ -4,7 +4,7 @@ Text for the organizers’ one-page template (`CIVIC-Hack_submission-template.do
 The filled template is `readiness-report-draft.docx` in this folder. Team name, contact email and
 member details still need to be added before exporting it to PDF.
 
-**Project name:** Clear Council
+**Project name:** Exodus
 
 ## The problem (60 words)
 
@@ -12,11 +12,11 @@ Residents cannot tell from a council agenda what is proposed near them, who has 
 
 ## Your solution (60 words)
 
-Clear Council gives each agenda item one web page. Residents see a plain-language summary, a map with the distance from their address, a route showing which body has decided what, and how to comment. Clerks and councillors’ offices can share it. Every sentence shows the passage it rests on, checked word for word by software before publishing.
+Exodus gives each agenda item one web page. Residents see a plain-language summary, a map with the distance from their address, a route showing which body has decided what, and how to comment. Clerks and councillors’ offices can share it. Every sentence shows the passage it rests on, checked word for word by software before publishing.
 
 ## What changes (30 words)
 
-Today the record is published but not explained. Clear Council explains it without loosening accuracy: unverified text cannot be published and deadlines are never guessed. Tested on 15 Toronto items.
+Today the record is published but not explained. Exodus explains it without loosening accuracy: unverified text cannot be published and deadlines are never guessed. Tested on 15 Toronto items.
 
 ## Data sources and tools
 

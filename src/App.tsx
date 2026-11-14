@@ -74,7 +74,7 @@ function Shell() {
               <i />
               <i />
             </span>
-            Clear Council
+            Exodus
           </Link>
           <span className="brand-note">{t('Independent prototype. Not a City of Toronto service.')}</span>
           <nav className="site-nav" aria-label="Main">

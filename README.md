@@ -1,9 +1,9 @@
-# Clear Council
+# Exodus
 
 **City Hall decisions, in plain words.** A proof of concept for CIVIC Hack 2026, challenge
 *"Making municipal decisions easier to understand"*.
 
-For a real City of Toronto agenda item, Clear Council shows a resident:
+For a real City of Toronto agenda item, Exodus shows a resident:
 
 - **What is proposed and why**, in plain language
 - **Is it near me?** The home page is a 3D map of the city with a marker for each decision;

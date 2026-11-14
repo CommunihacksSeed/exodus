@@ -7,7 +7,7 @@ import { items } from '../lib/data.ts'
 import { buildStages, currentIndex, itemStatus, STATUS_WORDS } from '../lib/stages.ts'
 import { fill, useLang } from '../i18n/index.tsx'
 
-/** Which real items in Clear Council are at each stop right now (from the record only). */
+/** Which real items in Exodus are at each stop right now (from the record only). */
 function itemsAt(stop: ProcessStop['id']) {
   return items.filter(({ record }) => {
     if (stop === 'after') return itemStatus(record) === 'decided'
@@ -30,7 +30,7 @@ export function HowItWorks() {
 
   return (
     <article className="page explainer">
-      <title>{`${t('How decisions are made')} — Clear Council`}</title>
+      <title>{`${t('How decisions are made')} — Exodus`}</title>
       <p className="kicker">{t('Guide')}</p>
       <h1>{t('How City Hall makes a decision')}</h1>
       <p className="lede">
@@ -79,7 +79,7 @@ export function HowItWorks() {
           <p>{lang === 'en' ? withTerms(stop.youCan, seen) : t(stop.youCan)}</p>
         </div>
         <div className="guide-now">
-          <h3>{t('At this stop in Clear Council right now')}</h3>
+          <h3>{t('At this stop in Exodus right now')}</h3>
           {here.length > 0 ? (
             <ul className="guide-items">
               {here.map(({ record, explanation }) => (

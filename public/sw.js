@@ -1,5 +1,5 @@
 /*
- * Offline support for Clear Council. Caches only this site's own files:
+ * Offline support for Exodus. Caches only this site's own files:
  * pages you have opened keep working without a connection. Map tiles and the
  * City's address lookup are other sites and are never cached here.
  *
@@ -9,7 +9,7 @@
  */
 const VERSION = 'dev'
 const PRECACHE = []
-const PREFIX = 'clear-council-'
+const PREFIX = 'exodus-'
 const CACHE = PREFIX + VERSION
 const SHELL = './index.html'
 

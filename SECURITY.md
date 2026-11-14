@@ -1,6 +1,6 @@
 # Security
 
-Clear Council is a static site: no server, no database, no accounts, no cookies, no analytics,
+Exodus is a static site: no server, no database, no accounts, no cookies, no analytics,
 and no AI calls at run time.
 
 ## What the site contacts

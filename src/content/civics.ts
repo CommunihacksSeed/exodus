@@ -7,7 +7,7 @@
  * Two kinds of text:
  *  - Facts about the process (the "How decisions are made" page) are claims; each one's quote
  *    says the same thing.
- *  - Glossary definitions are plain-language explanations written by the Clear Council team. Each is
+ *  - Glossary definitions are plain-language explanations written by the Exodus team. Each is
  *    paired with a passage from a City document where the word is used, so a reader can see it in
  *    context. The page says so; it never presents a definition as the City's own wording.
  */
@@ -191,7 +191,7 @@ export interface Term {
   term: string
   /** Other spellings to recognise in City text, lower case. The term itself is always included. */
   aliases?: string[]
-  /** Plain-language explanation by the Clear Council team. */
+  /** Plain-language explanation by the Exodus team. */
   meaning: string
   /** Where the word is used in a City document. */
   inContext: Omit<Sourced, 'text'>

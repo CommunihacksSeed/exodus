@@ -26,7 +26,7 @@ const CSP = [
 
 function securityMeta(): Plugin {
   return {
-    name: 'clear-council-security-meta',
+    name: 'exodus-security-meta',
     apply: 'build',
     transformIndexHtml() {
       return [
@@ -45,7 +45,7 @@ function securityMeta(): Plugin {
 function serviceWorkerManifest(): Plugin {
   let outDir = 'dist'
   return {
-    name: 'clear-council-sw-manifest',
+    name: 'exodus-sw-manifest',
     apply: 'build',
     configResolved(config) {
       outDir = path.resolve(config.root, config.build.outDir)

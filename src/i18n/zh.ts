@@ -202,7 +202,7 @@ export const zh: Record<string, string> = {
   'Step {n}': '第 {n} 步',
   Who: '负责方',
   'What you can do here': '你在这一步可以做什么',
-  'At this stop in Clear Council right now': 'Clear Council 中目前停在这一步的议程项',
+  'At this stop in Exodus right now': 'Exodus 中目前停在这一步的议程项',
   'None of the items in this prototype are at this stop right now.': '本原型中目前没有议程项停在这一步。',
   'Words you will see after a vote': '投票后常见的词',
   'The City record uses short status words. This is what they mean in plain language.': '市政记录用简短的状态词，下面是它们的白话意思。',
@@ -225,8 +225,8 @@ export const zh: Record<string, string> = {
   // Glossary page
   Glossary: '术语表',
   'City Hall words, in plain language': '市政厅常用词，白话解释',
-  'The meanings are written in plain words by the Clear Council team. Under each one is a passage from a City document where the word is used, so you can see it in context and check it.':
-    '这些解释由 Clear Council 团队用白话写成。每条下面附有市政文件中实际使用这个词的原文，方便你结合上下文核对。',
+  'The meanings are written in plain words by the Exodus team. Under each one is a passage from a City document where the word is used, so you can see it in context and check it.':
+    '这些解释由 Exodus 团队用白话写成。每条下面附有市政文件中实际使用这个词的原文，方便你结合上下文核对。',
   'Find a word': '查找词语',
   'e.g. zoning, motion, heritage': '例如 zoning、motion、heritage',
   'Used in a City document': '在市政文件中的用法',
