@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useId, useRef, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { GLOSSARY, type Term as TermEntry } from '../content/civics.ts'
-import { useLang } from '../i18n/index.tsx'
+import { LANGS, useLang } from '../i18n/index.tsx'
 
 /** Longest first, so "Zoning By-law" wins over "By-law". */
 const MATCHERS = GLOSSARY.flatMap((t) => [t.term, ...(t.aliases ?? [])].map((w) => ({ word: w.toLowerCase(), term: t }))).sort(
@@ -16,7 +16,7 @@ const byWord = new Map(MATCHERS.map((m) => [m.word, m.term]))
  * The underlying text is never changed: the word is shown exactly as it was written.
  */
 export function Term({ entry, children }: { entry: TermEntry; children: ReactNode }) {
-  const { t } = useLang()
+  const { lang, t } = useLang()
   const [open, setOpen] = useState(false)
   const id = useId()
   const ref = useRef<HTMLSpanElement>(null)
@@ -37,13 +37,23 @@ export function Term({ entry, children }: { entry: TermEntry; children: ReactNod
   }, [open])
 
   return (
-    <span className="term" ref={ref} onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
-      <button type="button" className="term-word" aria-expanded={open} aria-controls={id} onClick={() => setOpen((v) => !v)}>
+    <span
+      className="term"
+      ref={ref}
+      // Hover only for a mouse: a tap also fires hover events, which would open and then close it at once.
+      onPointerEnter={(e) => e.pointerType === 'mouse' && setOpen(true)}
+      onPointerLeave={(e) => e.pointerType === 'mouse' && setOpen(false)}
+      onFocus={() => setOpen(true)}
+      onBlur={(e) => !e.currentTarget.contains(e.relatedTarget as Node | null) && setOpen(false)}
+    >
+      <button type="button" className="term-word" aria-expanded={open} aria-controls={id} onClick={() => setOpen(true)}>
         {children}
       </button>
       {open && (
-        <span className="term-pop" id={id} role="note">
-          <strong className="term-pop-title">{entry.term}</strong>
+        <span className="term-pop" id={id} role="note" lang={LANGS.find((l) => l.id === lang)!.htmlLang}>
+          <strong className="term-pop-title" lang="en">
+            {entry.term}
+          </strong>
           <span>{t(entry.meaning)}</span>
           <Link to={`/words#${entry.id}`} className="term-pop-link">
             {t('More in Words')}

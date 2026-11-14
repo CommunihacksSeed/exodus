@@ -59,8 +59,8 @@ Each requirement is traced to the challenge brief and to the code that implement
 | N6 | **Low cost to run** | No server, no database, no AI calls at run time. Any static host works |
 | N7 | **Transparency about AI** | Each page states which parts are rule-based and which were AI-drafted, and whether a person signed off. *How we check* summarises it for the whole site |
 | N8 | **Security** | Content-Security-Policy allowing only the map tiles and the City geocoder; every data link must be `https` to a City of Toronto host (checked at build and at render); geocoder replies validated with a timeout; saved state shape-checked; CI on every pull request; Dependabot. See `SECURITY.md` |
-| N9 | **Languages** | Interface in English, French and Chinese. Explanations and City records stay in English, because each sentence is checked word for word against the City's English record; the page says so. A test fails on any untranslated interface string |
-| N10 | **Works offline once visited** | A service worker caches the site's own files; map tiles and the geocoder are never cached. A banner says what needs a connection |
+| N9 | **Languages** | Interface in English, French and Chinese, including screen-reader labels and the map library's own controls (passed through its `locale` option). Explanations and City records stay in English, because each sentence is checked word for word against the City's English record; the page says so, and that content is marked `lang="en"` so a screen reader pronounces it as English. A test fails on any untranslated interface string |
+| N10 | **Works offline once visited** | A service worker saves the app page and every built script, style and Latin font at install (the build writes the list into `sw.js`), under a cache name that changes with each build. It touches only its own caches, because the host's other sites share the origin. Map tiles and the geocoder are never cached. A banner says what needs a connection |
 | N11 | **Motion and maps** | All map motion (fly-to, orbit, tour, pulse) stops when the system asks for reduced motion. The map library loads after the text |
 
 ### 1.4 Out of scope for this prototype
@@ -538,8 +538,11 @@ Cooperative gestures are on, so one finger scrolls the page and two move the map
 **`components/CityMap.tsx`** — the home page's 3D map of the whole city. Choosing a marker flies down to street level. One marker per decision,
 drawn like the stops of the route strip and coloured by status; a streetcar route is a line with
 a marker at its middle. Choosing a marker (click, Enter or Space) tells the page which decision
-to summarise. The map is built once; the resident's address and the chosen marker are applied
-by separate effects so the map is not rebuilt. When the summary card overlaps the map on a wide
+to summarise. The map is built once per language (the map library reads its button labels only
+when built); the resident's address and the chosen marker are applied by separate effects so the
+map is not rebuilt. Orbit pauses while the camera is flying, because setting the bearing would
+cancel the flight; the guided tour ends as soon as the selection differs from the one it made, so
+a person's own choice always wins. When the summary card overlaps the map on a wide
 screen, the map pans so the chosen marker stays visible. Every marker has a spoken name, and
 the same decisions are listed beside the map, so nothing depends on using the map.
 
@@ -571,13 +574,18 @@ where the word is used. `checkCivics` looks for every quote in saved copies unde
 (toronto.ca pages, with URL and capture date) and in the saved reports and item pages.
 
 **`components/Term.tsx`** — `withTerms(text)` marks glossary words the first time each appears
-in a section; the word itself is never changed. Tap, click or focus shows the meaning.
+in a section; the word itself is never changed. Tap, click or focus shows the meaning. Hover
+opens it only for a mouse (`pointerType`), because a tap also fires hover events and would open
+and close it in one go. The pop-up carries the interface language; the term stays in English.
 
 **`i18n/`** — `LangProvider`, `t()` and `fill()` (a translated sentence with a link inside it).
-Keys are the English text, so a missing translation falls back to English.
+Keys are the English text, so a missing translation falls back to English. `mapLocale(t)` in
+`lib/map3d.ts` translates MapLibre's own labels.
 
 **`public/sw.js`** — offline support: network first for pages, cache first for hashed build files,
-nothing from other origins.
+nothing from other origins. Only a successful HTML response for the app's own address replaces
+the saved page, so an error page can never become the offline copy. The `serviceWorkerManifest`
+plugin in `vite.config.ts` fills in the precache list and a version hash after each build.
 
 **`pages/HowItWorks.tsx`**, **`pages/Words.tsx`**, **`pages/HowWeCheck.tsx`**, **`pages/MyWard.tsx`** —
 the guide, glossary, method and ward pages (F13–F16).
@@ -596,6 +604,8 @@ back.
 | Unit and regression tests | `npm test` (15 tests) | Date and ward parsing; stage states for an upcoming and a decided item; vote tallies (2–4 lost at committee, 25–1 at Council); no resident names in output; no double-counted correspondence; haversine and point-to-line distance; link allowlist (`javascript:`, `data:`, look-alike hosts, credentials) and every link in the published data; coordinate and saved-place validation; calendar rules and `.ics` format; read-aloud order; voice ranking |
 | Explainer quotes | `npm test`, `npm run data` | All 31 quotes on the guide and glossary found word for word in their saved sources |
 | Translations | `npm test` | Every interface string has a French and a Chinese translation with the same `{placeholders}` |
+| Untranslated-text scan | script in the browser, every page in French | Lists visible text and `aria-label`/`title` values that still look English outside `lang="en"` content. Found 50 interface strings the unit test could not see (text written straight into JSX, map library labels); all now translated |
+| Offline check | production build in the browser | After the first visit the cache holds the page, every script, style, Latin font and the map worker; opening another file in a tab does not replace the saved page; another cache on the same origin survives activation |
 | Continuous integration | GitHub Actions on every pull request | Lint, tests, quote checks, generated data up to date, build, `npm audit --audit-level=high` |
 | Headless browser checks | Playwright's Chromium with SwiftShader WebGL, against the built site | The 3D map under the CSP; night mode; storey slabs visible from the chosen viewpoint; tour and keyboard flight; the four new pages; glossary popover; Chinese interface; a page opened offline |
 | Type check and build | `npm run build` | The pipeline output matches what the app expects |
@@ -626,6 +636,7 @@ The hackathon rules require disclosure. This section says exactly what AI did.
 | Run-time behaviour | **None.** The site calls no AI model | — |
 | Security hardening, read-aloud, calendar, 3D map upgrades, guide/glossary/method/ward pages, languages, offline support | Written with the same AI coding tools, directed and reviewed by a team member, submitted as pull requests #1–#5 | Each pull request lists what was run (lint, tests, build, headless browser) and what was not checked |
 | Glossary meanings, guide wording, French and Chinese interface text | Drafted with AI | Quotes machine-verified (31). Translations not yet reviewed by native speakers; the pull request says so |
+| Translation gaps, `lang` marking and the bug fixes listed below (pull request after #6) | Found by two AI review agents reading the merged code and by a scripted scan of every page in French, fixed with Claude Code | Tests, lint, build, the scan re-run, and an offline check against the production build |
 | This document | Drafted with Claude | Reviewed by the team against the code |
 
 Bugs found and fixed during development, as evidence the code was read and not just accepted:
@@ -649,6 +660,20 @@ Bugs found and fixed during development, as evidence the code was read and not j
   hid every floor. Floors are now drawn first.
 - Waiting for the map's `idle` event never finished, because the pulse animation keeps the map
   repainting. Replaced with a check that the tiles in view have loaded.
+- With Orbit on, choosing a marker opened its card but the camera never flew there: the orbit
+  loop set the bearing every frame, which cancels any camera animation. Orbit now pauses while the
+  camera is moving.
+- The guided tour moved on to the next decision even after the person had chosen another one.
+- Glossary pop-ups opened and closed in the same tap on phones, and did not open on keyboard focus.
+- On *My ward*, a ward picked from the list stayed after a new address search, so the search
+  looked as if it had done nothing.
+- After Stop while paused, *Listen* was silent in Chrome and Safari, which keep the speech engine
+  paused after `cancel()`.
+- The service worker deleted every cache on the host, not only its own; saved any page it was
+  sent to (a 404, a file opened in a tab) as the offline copy; and never saved the app's scripts,
+  so an offline reload was blank.
+- About 50 interface strings were written straight into JSX and were never translated; the
+  translation test only sees strings passed to `t()`. Found by scanning every page in French.
 
 Known limits of the AI-drafted text are stated in section 6.
 

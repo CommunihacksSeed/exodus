@@ -58,9 +58,10 @@ City of Toronto Open Data, Claude (Anthropic).
 
 ## What only a team member can do
 
-- [ ] **Merge the open pull requests in order, before submitting:** #1 security → #2 resident tools
-      → #3 3D map → #4 new pages → #5 languages and offline → #6 these documents. Each is
-      stacked on the one before, so merging in order needs no conflict fixes. CI must be green.
+- [x] Pull requests #1–#6 merged into `main` (security, resident tools, 3D map, new pages,
+      languages and offline, documents)
+- [ ] **Merge the translation-and-bug-fix pull request** (French and Chinese gaps, map, glossary,
+      read-aloud and offline fixes). CI must be green.
 - [ ] **Skim the French and Chinese interface** (language menu, top right) or ask a speaker to;
       they have not had a native-speaker review.
 

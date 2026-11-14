@@ -78,7 +78,11 @@ export function ResidentTools({ item }: { item: PublishedItem }) {
 
   function stop() {
     runRef.current++
-    if (canSpeak) window.speechSynthesis.cancel()
+    if (canSpeak) {
+      window.speechSynthesis.cancel()
+      // Chrome and Safari keep a paused synthesiser paused after cancel(), so the next Listen would be silent.
+      window.speechSynthesis.resume()
+    }
     clearHighlight()
     setSpeaking('idle')
   }
@@ -121,6 +125,7 @@ export function ResidentTools({ item }: { item: PublishedItem }) {
       return
     }
     window.speechSynthesis.cancel()
+    window.speechSynthesis.resume()
     const run = ++runRef.current
     setSpeaking('playing')
     speakFrom(0, run)

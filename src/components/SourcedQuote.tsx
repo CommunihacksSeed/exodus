@@ -8,9 +8,9 @@ export function SourceLine({ quote, source }: { quote: string; source: string })
   const s = sourceById(source)
   return (
     <>
-      <blockquote>“{quote}”</blockquote>
+      <blockquote lang="en">“{quote}”</blockquote>
       <p className="source-line">
-        {s.label} · {s.date} ·{' '}
+        <span lang="en">{s.label}</span> · <span lang="en">{s.date}</span> ·{' '}
         <a href={safeHref(s.url)} target="_blank" rel="noreferrer">
           {t('Open the original')}<span className="sr-only"> {t('(opens in a new tab)')}</span>
         </a>
@@ -24,7 +24,9 @@ export function SourcedQuote({ text, quote, source }: { text: string; quote: str
   const { t } = useLang()
   return (
     <li className="claim">
-      <p className="claim-text">{text}</p>
+      <p className="claim-text" lang="en">
+        {text}
+      </p>
       <details className="sources">
         <summary>
           {t('Where this comes from')} <span className="count">(1)</span>

@@ -1,16 +1,16 @@
 import { useEffect, useRef, useState } from 'react'
 import type { Map as GlMap, Marker } from 'maplibre-gl'
 import type { LatLng } from '../lib/geo.ts'
-import { addBeacons, addProposedHeights, addRoute, addWards, boundsOf, clearViewBearing, create3dMap, METRES_PER_STOREY, GRID_BEARING, lngLat, maplibregl, pinElement, TILT } from '../lib/map3d.ts'
-import type { ItemStatus } from '../lib/stages.ts'
+import { addBeacons, addProposedHeights, addRoute, addWards, boundsOf, clearViewBearing, create3dMap, mapLocale, METRES_PER_STOREY, GRID_BEARING, lngLat, maplibregl, pinElement, TILT } from '../lib/map3d.ts'
+import { STATUS_LABEL, type ItemStatus } from '../lib/stages.ts'
 import { applyTheme, savedTheme, saveTheme, THEMES, type MapTheme } from '../lib/mapTheme.ts'
-import { useLang } from '../i18n/index.tsx'
+import { translate, useLang } from '../i18n/index.tsx'
 
 export interface MapPin {
   id: string
   /** Short place name shown beside the marker. */
   label: string
-  /** What a screen reader hears for the marker. */
+  /** What a screen reader hears for the marker, before its status. */
   description: string
   /** One point for a site, several for a route. */
   points: LatLng[]
@@ -43,11 +43,12 @@ const wait = (ms: number) => new Promise((r) => setTimeout(r, ms))
  * works without the map.
  */
 export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props) {
-  const { t } = useLang()
+  const { lang, t } = useLang()
   const ref = useRef<HTMLDivElement>(null)
   const mapRef = useRef<GlMap | null>(null)
   const markersRef = useRef(new Map<string, Marker>())
   const onSelectRef = useRef(onSelect)
+  const selectedRef = useRef(selectedId)
   const [failed, setFailed] = useState(false)
   const [ready, setReady] = useState(false)
   const firstView = useRef(true)
@@ -58,11 +59,14 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
   useEffect(() => {
     onSelectRef.current = onSelect
   }, [onSelect])
+  useEffect(() => {
+    selectedRef.current = selectedId
+  }, [selectedId])
 
   // Build the map once.
   useEffect(() => {
     if (!ref.current) return
-    const map = create3dMap(ref.current)
+    const map = create3dMap(ref.current, { locale: mapLocale((s, v) => translate(lang, s, v)) })
     if (!map) {
       setFailed(true)
       return
@@ -76,7 +80,6 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
       const el = pinElement(pin.status, pin.label)
       el.tabIndex = 0
       el.setAttribute('role', 'button')
-      el.setAttribute('aria-label', pin.description)
       const choose = (e: Event) => {
         e.stopPropagation()
         onSelectRef.current(pin.id)
@@ -112,7 +115,14 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
       setReady(false)
       map.remove()
     }
-  }, [pins])
+  // The map library takes its button labels only when built, so a language change rebuilds the map.
+  }, [pins, lang])
+
+  // Marker labels follow the interface language. The title is the checked English one.
+  const statusWord = (status: ItemStatus) => t(STATUS_LABEL[status])
+  useEffect(() => {
+    for (const pin of pins) markersRef.current.get(pin.id)?.getElement().setAttribute('aria-label', `${pin.description}. ${statusWord(pin.status)}.`)
+  })
 
   // The resident's address, when they have given one.
   useEffect(() => {
@@ -185,7 +195,8 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
     let frame = 0
     let last = performance.now()
     const turn = (t: number) => {
-      map.setBearing(map.getBearing() + ((t - last) / 1000) * 9)
+      // Pause while the camera is flying somewhere (a chosen marker, the 2D/3D switch): setting the bearing would cancel that flight.
+      if (!map.isMoving()) map.setBearing(map.getBearing() + ((t - last) / 1000) * 9)
       last = t
       frame = requestAnimationFrame(turn)
     }
@@ -211,18 +222,25 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
     const canvas = map.getCanvas()
     canvas.addEventListener('pointerdown', stop)
     canvas.addEventListener('wheel', stop, { passive: true })
+    // The person chose something else (a marker, the list, closing the card): their choice wins and the tour ends.
+    const overridden = (id: string) => {
+      if (selectedRef.current === id) return false
+      setTouring(false)
+      return true
+    }
     ;(async () => {
       for (const pin of pins) {
         if (!alive()) return
         onSelectRef.current(pin.id)
         await wait(reducedMotion() ? 2500 : 2600)
-        if (!alive()) return
+        if (!alive() || overridden(pin.id)) return
         if (!reducedMotion()) {
           map.easeTo({ bearing: map.getBearing() + 70, duration: 5200, easing: (x) => x })
           await wait(5400)
         } else {
           await wait(2500)
         }
+        if (!alive() || overridden(pin.id)) return
       }
       if (alive()) setTouring(false)
     })()
@@ -245,7 +263,7 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
   if (failed) {
     return (
       <p className="map-fallback">
-        This device cannot draw the 3D map. Every decision on it is in the list on this page.
+        {t('This device cannot draw the 3D map. Every decision on it is in the list on this page.')}
       </p>
     )
   }
@@ -255,7 +273,7 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
         ref={ref}
         className="city-map"
         role="application"
-        aria-label="3D map of Toronto. Each marker is a decision; press Enter on a marker to see it. With the map focused, W A S D fly, Q and E turn, R and F tilt, plus and minus zoom."
+        aria-label={t('3D map of Toronto. Each marker is a decision; press Enter on a marker to see it. With the map focused, W A S D fly, Q and E turn, R and F tilt, plus and minus zoom.')}
       />
       {ready && (
         <div className="hud" role="toolbar" aria-label={t('Map view')}>

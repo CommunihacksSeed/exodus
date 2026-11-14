@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import type { LatLng } from '../lib/geo.ts'
-import { addProposedHeights, addRoute, addWards, boundsOf, clearViewBearing, create3dMap, whenTilesLoaded, METRES_PER_STOREY, GRID_BEARING, lngLat, maplibregl, pinElement, TILT } from '../lib/map3d.ts'
+import { addProposedHeights, addRoute, addWards, boundsOf, clearViewBearing, create3dMap, mapLocale, whenTilesLoaded, METRES_PER_STOREY, GRID_BEARING, lngLat, maplibregl, pinElement, TILT } from '../lib/map3d.ts'
 import type { Ward } from '../types.ts'
+import { translate, useLang } from '../i18n/index.tsx'
 
 interface Props {
   points: LatLng[]
@@ -18,12 +19,13 @@ interface Props {
  * nothing depends on being able to see or use it.
  */
 export function ItemMap({ points, label, itemWards, home, proposedStoreys }: Props) {
+  const { lang, t } = useLang()
   const ref = useRef<HTMLDivElement>(null)
   const [failed, setFailed] = useState(false)
 
   useEffect(() => {
     if (!ref.current) return
-    const map = create3dMap(ref.current, { cooperative: true })
+    const map = create3dMap(ref.current, { cooperative: true, locale: mapLocale((s, v) => translate(lang, s, v)) })
     if (!map) {
       setFailed(true)
       return
@@ -63,15 +65,15 @@ export function ItemMap({ points, label, itemWards, home, proposedStoreys }: Pro
     return () => {
       map.remove()
     }
-  }, [points, label, itemWards, home, proposedStoreys])
+  }, [points, label, itemWards, home, proposedStoreys, lang])
 
-  if (failed) return <p className="map-fallback">This device cannot draw the 3D map. The location is described in the text here.</p>
+  if (failed) return <p className="map-fallback">{t('This device cannot draw the 3D map. The location is described in the text here.')}</p>
   return (
     <div
       ref={ref}
       className="item-map"
       role="img"
-      aria-label={`3D map showing ${label}${home ? ` and the address you entered` : ''}`}
+      aria-label={home ? t('3D map showing {place} and the address you entered', { place: label }) : t('3D map showing {place}', { place: label })}
     />
   )
 }

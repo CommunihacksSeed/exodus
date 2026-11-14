@@ -84,7 +84,7 @@ export function HowItWorks() {
             <ul className="guide-items">
               {here.map(({ record, explanation }) => (
                 <li key={record.id}>
-                  <Link to={`/item/${record.id}`}>{explanation?.plainTitle ?? record.title}</Link>
+                  <Link to={`/item/${record.id}`} lang="en">{explanation?.plainTitle ?? record.title}</Link>
                 </li>
               ))}
             </ul>
@@ -100,7 +100,7 @@ export function HowItWorks() {
         <dl className="outcomes">
           {Object.entries(STATUS_WORDS).map(([word, plain]) => (
             <div key={word}>
-              <dt>{word}</dt>
+              <dt lang="en">{word}</dt>
               <dd>{t(plain)}</dd>
             </div>
           ))}

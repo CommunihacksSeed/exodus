@@ -2,14 +2,15 @@ import type { Claim, ItemRecord, Motion, StageKind, VerifiedCitation } from '../
 import { buildStages, type Stage } from '../lib/stages.ts'
 import { safeHref } from '../lib/safe.ts'
 import { withTerms } from './Term.tsx'
-import { useLang } from '../i18n/index.tsx'
+import { fill, useLang } from '../i18n/index.tsx'
 
 function VoteLine({ motion }: { motion: Motion }) {
+  const { t } = useLang()
   return (
     <li className="motion">
       <p>
-        <strong>{motion.header.replace(/^\d+ - /, '')}</strong>
-        {motion.result && <span className={`result result-${motion.result.toLowerCase()}`}> {motion.result}</span>}
+        <strong lang="en">{motion.header.replace(/^\d+ - /, '')}</strong>
+        {motion.result && <span className={`result result-${motion.result.toLowerCase()}`} lang="en"> {motion.result}</span>}
       </p>
       {motion.votes.map((v, i) => (
         <details key={i} className="vote">
@@ -18,22 +19,26 @@ function VoteLine({ motion }: { motion: Motion }) {
               <span className="votebar-yes" style={{ flexGrow: v.yes.length }} />
               <span className="votebar-no" style={{ flexGrow: v.no.length }} />
             </span>
-            Recorded vote: {v.yes.length} yes, {v.no.length} no
-            {v.absent.length ? `, ${v.absent.length} absent` : ''} — {v.result}
+            {v.absent.length
+              ? t('Recorded vote: {yes} yes, {no} no, {absent} absent', { yes: v.yes.length, no: v.no.length, absent: v.absent.length })
+              : t('Recorded vote: {yes} yes, {no} no', { yes: v.yes.length, no: v.no.length })}{' '}
+            — <span lang="en">{v.result}</span>
           </summary>
           <dl>
-            <dt>Yes</dt>
-            <dd>{v.yes.join(', ') || 'None'}</dd>
-            <dt>No</dt>
-            <dd>{v.no.join(', ') || 'None'}</dd>
+            <dt>{t('Yes')}</dt>
+            <dd>{v.yes.join(', ') || t('None')}</dd>
+            <dt>{t('No')}</dt>
+            <dd>{v.no.join(', ') || t('None')}</dd>
             {v.absent.length > 0 && (
               <>
-                <dt>Absent</dt>
+                <dt>{t('Absent')}</dt>
                 <dd>{v.absent.join(', ')}</dd>
               </>
             )}
           </dl>
-          <p className="fine">{v.when}. This vote was on the motion named above, which may be a change to the item rather than the item itself.</p>
+          <p className="fine">
+            <span lang="en">{v.when}</span>. {t('This vote was on the motion named above, which may be a change to the item rather than the item itself.')}
+          </p>
         </details>
       ))}
     </li>
@@ -49,37 +54,46 @@ function StageCard({ stage, summary, sourceUrl }: { stage: Stage; summary?: Clai
       <div className="stage-marker" aria-hidden="true" />
       <div className="stage-body">
         <p className="stage-kind">{t(stage.title)}</p>
-        <h3>{stage.who}</h3>
+        <h3 lang="en">{stage.who}</h3>
         <p className="stage-meta">
-          {stage.dateText && <span>{stage.dateText}</span>}
+          {stage.dateText && <span lang="en">{stage.dateText}</span>}
           <span className={`badge badge-${stage.state}`}>{t(stage.badge)}</span>
         </p>
-        {summary && <p className="stage-summary">{summary.text}</p>}
+        {summary && (
+          <p className="stage-summary" lang="en">
+            {summary.text}
+          </p>
+        )}
         {stage.state === 'not-in-record' && (
           <p className="stage-summary">
-            The City’s page for this item does not list a City Council date yet. We do not guess one.
+            {t('The City’s page for this item does not list a City Council date yet. We do not guess one.')}
           </p>
         )}
         {stage.outcome && (
           <details className="verbatim">
             <summary>
-              Official wording: {stage.outcome.heading.toLowerCase() === 'recommendations' ? 'staff recommendations' : stage.outcome.heading}
+              {t('Official wording:')}{' '}
+              {stage.outcome.heading.toLowerCase() === 'recommendations' ? t('staff recommendations') : <span lang="en">{stage.outcome.heading}</span>}
             </summary>
             {stage.outcome.paragraphs.map((p, i) => (
-              <p key={i}>{withTerms(p, seen)}</p>
+              <p key={i} lang="en">
+                {withTerms(p, seen)}
+              </p>
             ))}
             <p className="fine">
-              Copied word for word from the{' '}
-              <a href={safeHref(sourceUrl)} target="_blank" rel="noreferrer">
-                City’s item page
-              </a>
-              .
+              {fill(t('Copied word for word from the {link}.'), {
+                link: (
+                  <a href={safeHref(sourceUrl)} target="_blank" rel="noreferrer">
+                    {t('City’s item page')}
+                  </a>
+                ),
+              })}
             </p>
           </details>
         )}
         {c && c.motions.length > 0 && (
           <details className="verbatim">
-            <summary>Motions and votes at this meeting ({c.motions.length})</summary>
+            <summary>{t('Motions and votes at this meeting ({n})', { n: c.motions.length })}</summary>
             <ul className="motions">
               {c.motions.map((m, i) => (
                 <VoteLine key={i} motion={m} />
@@ -89,9 +103,11 @@ function StageCard({ stage, summary, sourceUrl }: { stage: Stage; summary?: Clai
         )}
         {c && (c.communicationsCount > 0 || c.speakersCount > 0) && (
           <p className="fine">
-            Public input on the record at this step: {c.communicationsCount} written{' '}
-            {c.communicationsCount === 1 ? 'submission' : 'submissions'}
-            {c.speakersCount > 0 ? ` and ${c.speakersCount} ${c.speakersCount === 1 ? 'speaker' : 'speakers'}` : ''}.
+            {t('Public input on the record at this step:')}{' '}
+            {c.communicationsCount === 1
+              ? t('{n} written submission', { n: c.communicationsCount })
+              : t('{n} written submissions', { n: c.communicationsCount })}
+            {c.speakersCount === 1 ? ` ${t('and {n} speaker', { n: 1 })}` : c.speakersCount > 1 ? ` ${t('and {n} speakers', { n: c.speakersCount })}` : ''}.
           </p>
         )}
       </div>

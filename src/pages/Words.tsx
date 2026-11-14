@@ -55,7 +55,7 @@ export function Words() {
             <dl>
               {terms.map((term) => (
                 <div key={term.id} id={term.id} tabIndex={-1} className="word" data-target={hash === `#${term.id}` || undefined}>
-                  <dt>{term.term}</dt>
+                  <dt lang="en">{term.term}</dt>
                   <dd>
                     <p>{t(term.meaning)}</p>
                     <details className="sources">

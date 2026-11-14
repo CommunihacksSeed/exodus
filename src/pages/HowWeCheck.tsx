@@ -87,7 +87,9 @@ export function HowWeCheck() {
           <div className="compare">
             <div>
               <p className="compare-label">{t('What we wrote')}</p>
-              <p className="compare-text">{ex.claim.text}</p>
+              <p className="compare-text" lang="en">
+                {ex.claim.text}
+              </p>
               <p className="fine">
                 {fill(t('From {link}'), { link: <Link to={`/item/${ex.itemId}`}>{ex.title}</Link> })}
               </p>
@@ -96,10 +98,10 @@ export function HowWeCheck() {
               <p className="compare-label">{t('What the City’s record says')}</p>
               {ex.claim.citations.map((c, i) => (
                 <div key={i} className="compare-quote">
-                  <blockquote>“{c.quote}”</blockquote>
+                  <blockquote lang="en">“{c.quote}”</blockquote>
                   <p className="source-line">
-                    {c.sourceLabel}
-                    {c.page ? `, page ${c.page}` : ''} · {c.sourceDate} ·{' '}
+                    <span lang="en">{c.sourceLabel}</span>
+                    {c.page ? `, ${t('page {n}', { n: c.page })}` : ''} · <span lang="en">{c.sourceDate}</span> ·{' '}
                     <a href={safeHref(c.url)} target="_blank" rel="noreferrer">
                       {t('Open the original')}<span className="sr-only"> {t('(opens in a new tab)')}</span>
                     </a>

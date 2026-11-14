@@ -8,10 +8,12 @@ export function ClaimItem({ claim, seen }: { claim: Claim<VerifiedCitation>; see
   const { t } = useLang()
   return (
     <li className="claim">
-      <p className="claim-text">{withTerms(claim.text, seen)}</p>
+      <p className="claim-text" lang="en">
+        {withTerms(claim.text, seen)}
+      </p>
       {claim.caveat && (
         <p className="claim-caveat">
-          <span className="caveat-tag">{t('Keep in mind')}</span> {claim.caveat}
+          <span className="caveat-tag">{t('Keep in mind')}</span> <span lang="en">{claim.caveat}</span>
         </p>
       )}
       <details className="sources">
@@ -21,10 +23,10 @@ export function ClaimItem({ claim, seen }: { claim: Claim<VerifiedCitation>; see
         <ul>
           {claim.citations.map((c, i) => (
             <li key={i}>
-              <blockquote>“{c.quote}”</blockquote>
+              <blockquote lang="en">“{c.quote}”</blockquote>
               <p className="source-line">
-                {c.sourceLabel}
-                {c.page ? `, page ${c.page}` : ''} · {c.sourceDate} ·{' '}
+                <span lang="en">{c.sourceLabel}</span>
+                {c.page ? `, ${t('page {n}', { n: c.page })}` : ''} · <span lang="en">{c.sourceDate}</span> ·{' '}
                 <a href={safeHref(c.url)} target="_blank" rel="noreferrer">
                   {t('Open the original')}<span className="sr-only"> {t('(opens in a new tab)')}</span>
                 </a>
