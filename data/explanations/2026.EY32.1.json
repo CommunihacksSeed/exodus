@@ -313,7 +313,7 @@
   "participationCheck": null,
   "review": {
     "aiAssisted": true,
-    "humanReviewedBy": null,
-    "reviewedOn": null
+    "humanReviewedBy": "Ray Tian",
+    "reviewedOn": "2026-11-14"
   }
 }
