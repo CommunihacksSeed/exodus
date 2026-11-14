@@ -40,6 +40,12 @@ Each requirement is traced to the challenge brief and to the code that implement
 | F8 | Keep conditions, amendments and open questions visible | "Summaries must preserve important conditions and uncertainty" | `conditionsAndUnknowns`, `Claim.caveat` |
 | F9 | Show motions and recorded votes, labelled by motion | Dataset caveat: "a vote may concern an amendment" | `pipeline/parse-tmmis.ts` (`parseMotions`), `StageTracker.tsx` |
 | F10 | Show the capture date of the record on every page | "Show the source and date for each explanation" | `ItemPage.tsx` (provenance line) |
+| F11 | Read an item page aloud, highlighting each section as it is read | Residents "with lower literacy or limited English" (users, 1.1) | `components/ResidentTools.tsx`, `lib/speech.ts`, `lib/voices.ts` |
+| F12 | Put an upcoming meeting in the resident's calendar, labelled as a meeting date and not a deadline | "Key dates" without inferring a deadline (F5) | `lib/calendar.ts` (only scheduled, undecided, future dates) |
+| F13 | Explain the decision process itself, stop by stop, with sourced facts and the real items at each stop | "Making municipal decisions easier to understand" | `pages/HowItWorks.tsx`, `content/civics.ts` |
+| F14 | Explain City Hall words in plain language, in a glossary and in place on item pages | Same | `pages/Words.tsx`, `components/Term.tsx`, `content/civics.ts` |
+| F15 | Show everything for one ward, by address or from a list | "Is this near me?" | `pages/MyWard.tsx` |
+| F16 | Show how the site checks itself, with live numbers from the published data | "Show the source and date for each explanation"; AI transparency (N7) | `pages/HowWeCheck.tsx` |
 
 ### 1.3 Non-functional requirements
 
@@ -51,12 +57,17 @@ Each requirement is traced to the challenge brief and to the code that implement
 | N4 | **Neutral tone** | Explanations describe; staff opinions are labelled as opinions; no adjectives of approval |
 | N5 | **Usable without the team** | Static site, no login, no configuration. `npm run data && npm run dev` |
 | N6 | **Low cost to run** | No server, no database, no AI calls at run time. Any static host works |
-| N7 | **Transparency about AI** | Each page states which parts are rule-based and which were AI-drafted, and whether a person signed off |
+| N7 | **Transparency about AI** | Each page states which parts are rule-based and which were AI-drafted, and whether a person signed off. *How we check* summarises it for the whole site |
+| N8 | **Security** | Content-Security-Policy allowing only the map tiles and the City geocoder; every data link must be `https` to a City of Toronto host (checked at build and at render); geocoder replies validated with a timeout; saved state shape-checked; CI on every pull request; Dependabot. See `SECURITY.md` |
+| N9 | **Languages** | Interface in English, French and Chinese. Explanations and City records stay in English, because each sentence is checked word for word against the City's English record; the page says so. A test fails on any untranslated interface string |
+| N10 | **Works offline once visited** | A service worker caches the site's own files; map tiles and the geocoder are never cached. A banner says what needs a connection |
+| N11 | **Motion and maps** | All map motion (fly-to, orbit, tour, pulse) stops when the system asks for reduced motion. The map library loads after the text |
 
 ### 1.4 Out of scope for this prototype
 
-Translation, notifications, automatic ingestion of new items, an editing interface for staff,
-and offline or phone channels. Section 7 describes how each would be added.
+Translated explanations (only the interface is translated; see N9), notifications, automatic
+ingestion of new items, an editing interface for staff, and a phone channel. Section 7 describes
+how each would be added.
 
 ---
 
@@ -532,6 +543,45 @@ by separate effects so the map is not rebuilt. When the summary card overlaps th
 screen, the map pans so the chosen marker stays visible. Every marker has a spoken name, and
 the same decisions are listed beside the map, so nothing depends on using the map.
 
+**`lib/safe.ts`** — the trust boundary. `isSafeLink` accepts only `https` links to an allowlisted
+City of Toronto host; `findUnsafeLinks` walks the published data so `npm run data` can refuse a
+bad link; `safeHref` is used on every data-driven link in the app. `isTorontoPoint` rejects
+coordinates outside the city.
+
+**`lib/mapTheme.ts`** — Day, Dusk and Night. The base style is restyled layer by layer from a
+small palette (land, water, parks, roads, labels, buildings), with matching light and sky. Each
+original paint value is remembered before the first change, so Day restores the style exactly.
+Our own layers (ids starting `cc-`) are never restyled.
+
+**`lib/map3d.ts` (additions)** — `addProposedHeights` now draws one slab per storey inside a faint
+shell, floors first (a shell drawn first hides the floors through the depth test).
+`clearViewBearing` scores the four street-grid directions by the tall existing buildings between
+camera and site and returns the clearest; real buildings are never hidden. `addBeacons` draws a
+thin light column and ground ring per decision. Keyboard flight (W A S D, Q E, R F) and a slow
+pulse run on `requestAnimationFrame`; `whenTilesLoaded` polls instead of waiting for `idle`,
+which never fires while the pulse is running.
+
+**`components/ResidentTools.tsx`** — read aloud with the browser's speech engine (on-device voices
+ranked first, novelty voices never offered: `lib/voices.ts`), an `.ics` file for upcoming
+meetings (`lib/calendar.ts`), share and print.
+
+**`content/civics.ts`**, **`pipeline/civics.ts`** — text for the guide and glossary. Facts about the
+process each carry a quote; glossary meanings are team-written and each is paired with a passage
+where the word is used. `checkCivics` looks for every quote in saved copies under `data/civics/`
+(toronto.ca pages, with URL and capture date) and in the saved reports and item pages.
+
+**`components/Term.tsx`** — `withTerms(text)` marks glossary words the first time each appears
+in a section; the word itself is never changed. Tap, click or focus shows the meaning.
+
+**`i18n/`** — `LangProvider`, `t()` and `fill()` (a translated sentence with a link inside it).
+Keys are the English text, so a missing translation falls back to English.
+
+**`public/sw.js`** — offline support: network first for pages, cache first for hashed build files,
+nothing from other origins.
+
+**`pages/HowItWorks.tsx`**, **`pages/Words.tsx`**, **`pages/HowWeCheck.tsx`**, **`pages/MyWard.tsx`** —
+the guide, glossary, method and ward pages (F13–F16).
+
 **`pages/Home.tsx`**, **`pages/ItemPage.tsx`** — map and detail views. On the item page the
 participation panel comes first, because a deadline is the one thing a resident cannot get
 back.
@@ -543,7 +593,11 @@ back.
 | Check | Command | What it covers |
 |---|---|---|
 | Quote verification | `npm run data` | Every citation in every explanation, against page text. Currently 3 items, all passing |
-| Unit and regression tests | `npm test` | Date and ward parsing; stage states for an upcoming and a decided item; vote tallies (2–4 lost at committee, 25–1 at Council); no resident names in output; no double-counted correspondence; haversine and point-to-line distance |
+| Unit and regression tests | `npm test` (15 tests) | Date and ward parsing; stage states for an upcoming and a decided item; vote tallies (2–4 lost at committee, 25–1 at Council); no resident names in output; no double-counted correspondence; haversine and point-to-line distance; link allowlist (`javascript:`, `data:`, look-alike hosts, credentials) and every link in the published data; coordinate and saved-place validation; calendar rules and `.ics` format; read-aloud order; voice ranking |
+| Explainer quotes | `npm test`, `npm run data` | All 31 quotes on the guide and glossary found word for word in their saved sources |
+| Translations | `npm test` | Every interface string has a French and a Chinese translation with the same `{placeholders}` |
+| Continuous integration | GitHub Actions on every pull request | Lint, tests, quote checks, generated data up to date, build, `npm audit --audit-level=high` |
+| Headless browser checks | Playwright's Chromium with SwiftShader WebGL, against the built site | The 3D map under the CSP; night mode; storey slabs visible from the chosen viewpoint; tour and keyboard flight; the four new pages; glossary popover; Chinese interface; a page opened offline |
 | Type check and build | `npm run build` | The pipeline output matches what the app expects |
 | Lint | `npm run lint` | oxlint, no warnings |
 | Manual browser check | — | All three item pages and the map home page at phone and desktop widths; choosing a marker by click and by keyboard; address lookup end to end; no console errors |
@@ -554,8 +608,9 @@ back.
 The regression tests run against the real saved City pages, so they also document what each
 test item is expected to say.
 
-**Not yet tested**: screen-reader walkthrough, a full WCAG audit by a specialist, usability
-sessions with residents, behaviour when the geocoder is slow.
+**Not yet tested**: screen-reader walkthrough (including the guide tabs and glossary popovers), a
+full WCAG audit by a specialist, usability sessions with residents, real GPUs on phones and
+Windows, native-speaker review of the French and Chinese text, installing the site as an app.
 
 ---
 
@@ -569,6 +624,8 @@ The hackathon rules require disclosure. This section says exactly what AI did.
 | Plain-language explanations | Drafted by Claude from the City documents | Every quote machine-verified by `build.ts`. A separate Claude session, given only the files, compared all 62 sentences with their sources: none was wrong, 6 said slightly more than the source or could be misread and were reworded, and 4 gained an extra quote. Human sign-off is recorded per item in `review.humanReviewedBy` and displayed on the page; until then the page says no person has signed off |
 | Stage timeline, dates, votes, official wording | **None.** Rule-based code | Regression tests against real records |
 | Run-time behaviour | **None.** The site calls no AI model | — |
+| Security hardening, read-aloud, calendar, 3D map upgrades, guide/glossary/method/ward pages, languages, offline support | Written with the same AI coding tools, directed and reviewed by a team member, submitted as pull requests #1–#5 | Each pull request lists what was run (lint, tests, build, headless browser) and what was not checked |
+| Glossary meanings, guide wording, French and Chinese interface text | Drafted with AI | Quotes machine-verified (31). Translations not yet reviewed by native speakers; the pull request says so |
 | This document | Drafted with Claude | Reviewed by the team against the code |
 
 Bugs found and fixed during development, as evidence the code was read and not just accepted:
@@ -584,6 +641,14 @@ Bugs found and fixed during development, as evidence the code was read and not j
   said "captured 2026-11-13" beside a header that said November 12. Both now use Toronto's date.
 - The entry-point check in `extract-pdf.ts` failed silently when the project path contained a
   space. Now uses `pathToFileURL`.
+- The first Content-Security-Policy blocked the map's own web worker (`worker-src blob:` only), so
+  the map drew no tiles. Caught in the browser before the pull request; now `'self' blob:`.
+- On 2027.PB1.6 the yellow height block was almost completely hidden behind a 74 m existing tower
+  standing between the default camera and the site. The camera now picks a clear side.
+- The first storey-slab version drew the see-through shell before the floors, so the depth test
+  hid every floor. Floors are now drawn first.
+- Waiting for the map's `idle` event never finished, because the pulse animation keeps the map
+  repainting. Replaced with a check that the tiles in view have loaded.
 
 Known limits of the AI-drafted text are stated in section 6.
 
