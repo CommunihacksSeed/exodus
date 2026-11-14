@@ -9,6 +9,7 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 // MapLibre does its heavy work in a web worker. Let the bundler build that file and tell MapLibre where it is.
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url'
 import { wards } from './data.ts'
+import { applyTheme, savedTheme } from './mapTheme.ts'
 import type { LatLng } from './geo.ts'
 
 maplibregl.setWorkerUrl(workerUrl)
@@ -42,17 +43,20 @@ export function create3dMap(container: HTMLElement, options: { cooperative?: boo
       cooperativeGestures: options.cooperative ?? false,
     })
     map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), 'top-left')
+    const fullscreen = new maplibregl.FullscreenControl()
+    map.addControl(fullscreen, 'top-left')
+    // Full screen is the map's own space: let one finger and the scroll wheel move and zoom it freely.
+    if (options.cooperative) {
+      fullscreen.on('fullscreenstart', () => map.cooperativeGestures.disable())
+      fullscreen.on('fullscreenend', () => map.cooperativeGestures.enable())
+    }
+    map.addControl(new maplibregl.ScaleControl({ unit: 'metric' }), 'bottom-right')
     map.on('style.load', () => {
-      // Stronger, cooler buildings so their height reads clearly against the ground.
-      if (map.getLayer('building-3d')) {
-        map.setPaintProperty('building-3d', 'fill-extrusion-color', [
-          'interpolate', ['linear'], ['get', 'render_height'], 0, '#dfe5ea', 40, '#b9c8d6', 200, '#8ea6c0',
-        ])
-        map.setPaintProperty('building-3d', 'fill-extrusion-opacity', 0.92)
-      }
-      // Sky above the horizon only. Ground fog is off: at city scale it would white out the whole map.
-      map.setSky({ 'sky-color': '#9cc3ee', 'horizon-color': '#e8f0f7', 'fog-color': '#e8f0f7', 'sky-horizon-blend': 0.6, 'horizon-fog-blend': 0.3, 'fog-ground-blend': 1 })
+      if (map.getLayer('building-3d')) map.setPaintProperty('building-3d', 'fill-extrusion-opacity', 0.92)
+      applyTheme(map, savedTheme())
     })
+    enableFlightKeys(map)
+    startAmbient(map)
     return map
   } catch {
     return null
@@ -62,7 +66,7 @@ export function create3dMap(container: HTMLElement, options: { cooperative?: boo
 /** Ward outlines. Pass ward numbers to draw only those, more boldly. */
 export function addWards(map: GlMap, only?: number[]) {
   const shown = only ? wards.filter((w) => only.includes(w.number)) : wards
-  map.addSource('wards', {
+  map.addSource('cc-wards', {
     type: 'geojson',
     data: {
       type: 'FeatureCollection',
@@ -74,26 +78,35 @@ export function addWards(map: GlMap, only?: number[]) {
     },
   })
   map.addLayer({
-    id: 'wards',
+    id: 'cc-wards',
     type: 'line',
-    source: 'wards',
+    source: 'cc-wards',
     paint: { 'line-color': '#1747c9', 'line-width': only ? 2.5 : 1.2, 'line-opacity': only ? 0.8 : 0.5, 'line-dasharray': only ? [3, 2] : [1] },
   })
 }
 
-/** A route (a line through several points) drawn on the ground. */
-export function addRoute(map: GlMap, id: string, points: LatLng[], colour: string) {
+/** A route (a line through several points) drawn on the ground, with a soft glow under it. Returns the clickable layer id. */
+export function addRoute(map: GlMap, name: string, points: LatLng[], colour: string): string {
+  const id = `cc-${name}`
   map.addSource(id, {
     type: 'geojson',
     data: { type: 'Feature', properties: {}, geometry: { type: 'LineString', coordinates: points.map(([lat, lng]) => [lng, lat]) } },
+  })
+  map.addLayer({
+    id: `${id}-glow`,
+    type: 'line',
+    source: id,
+    layout: { 'line-cap': 'round', 'line-join': 'round' },
+    paint: { 'line-color': colour, 'line-width': 18, 'line-opacity': 0.25, 'line-blur': 8 },
   })
   map.addLayer({
     id,
     type: 'line',
     source: id,
     layout: { 'line-cap': 'round', 'line-join': 'round' },
-    paint: { 'line-color': colour, 'line-width': 7, 'line-opacity': 0.9 },
+    paint: { 'line-color': colour, 'line-width': 7, 'line-opacity': 0.95 },
   })
+  return id
 }
 
 /** Assumed floor-to-floor height. Real buildings vary; the block is a guide to scale, not a drawing. */
@@ -104,9 +117,11 @@ export const METRES_PER_STOREY = 3
  * Only the height comes from the City record. The footprint is a plain square,
  * because the record we read does not give the building's outline.
  */
-export function addProposedHeights(map: GlMap, id: string, [lat, lng]: LatLng, storeys: number[]) {
+export function addProposedHeights(map: GlMap, name: string, [lat, lng]: LatLng, storeys: number[]) {
+  const id = `cc-${name}`
   const SIDE = 26
   const GAP = 44
+  const SLAB = METRES_PER_STOREY * 0.78 // a thin gap between floors makes each storey countable
   const rad = (d: number) => (d * Math.PI) / 180
   // Unit vectors along and across the street grid, as [east, north].
   const along = [Math.sin(rad(90 + GRID_BEARING)), Math.cos(rad(90 + GRID_BEARING))]
@@ -116,23 +131,234 @@ export function addProposedHeights(map: GlMap, id: string, [lat, lng]: LatLng, s
     const north = a * along[1] + c * across[1]
     return [lng + east / (111320 * Math.cos(rad(lat))), lat + north / 111320]
   }
-  const features = storeys.map((n, i) => {
+  const square = (centre: number, half: number) =>
+    [[-half, -half], [half, -half], [half, half], [-half, half], [-half, -half]].map(([a, c]) => toLngLat(centre + a, c))
+  const floors = storeys.flatMap((n, i) => {
     const centre = (i - (storeys.length - 1) / 2) * GAP
-    const h = SIDE / 2
-    const ring = [[-h, -h], [h, -h], [h, h], [-h, h], [-h, -h]].map(([a, c]) => toLngLat(centre + a, c))
-    return {
+    const ring = square(centre, SIDE / 2)
+    return Array.from({ length: n }, (_, f) => ({
       type: 'Feature' as const,
-      properties: { height: n * METRES_PER_STOREY },
+      properties: { min_height: f * METRES_PER_STOREY, height: f * METRES_PER_STOREY + SLAB, share: n > 1 ? f / (n - 1) : 1 },
       geometry: { type: 'Polygon' as const, coordinates: [ring] },
-    }
+    }))
   })
-  map.addSource(id, { type: 'geojson', data: { type: 'FeatureCollection', features } })
+  // A faint full-height shell around the floors, so the whole volume reads as one building.
+  const shells = storeys.map((n, i) => ({
+    type: 'Feature' as const,
+    properties: { height: n * METRES_PER_STOREY },
+    geometry: { type: 'Polygon' as const, coordinates: [square((i - (storeys.length - 1) / 2) * GAP, SIDE / 2 + 1.5)] },
+  }))
+  map.addSource(id, { type: 'geojson', data: { type: 'FeatureCollection', features: floors } })
+  map.addSource(`${id}-shell`, { type: 'geojson', data: { type: 'FeatureCollection', features: shells } })
+  // Floors first, then the see-through shell: a shell drawn first would hide the floors inside it (depth test).
   map.addLayer({
     id,
     type: 'fill-extrusion',
     source: id,
-    paint: { 'fill-extrusion-color': '#ffd21f', 'fill-extrusion-height': ['get', 'height'], 'fill-extrusion-opacity': 0.82 },
+    paint: {
+      'fill-extrusion-color': ['interpolate', ['linear'], ['get', 'share'], 0, '#ffb000', 1, '#fff27a'],
+      'fill-extrusion-base': ['get', 'min_height'],
+      'fill-extrusion-height': ['get', 'height'],
+      'fill-extrusion-opacity': 0.88,
+      'fill-extrusion-vertical-gradient': true,
+    },
   })
+  map.addLayer({
+    id: `${id}-shell`,
+    type: 'fill-extrusion',
+    source: `${id}-shell`,
+    paint: { 'fill-extrusion-color': '#ffe680', 'fill-extrusion-height': ['get', 'height'], 'fill-extrusion-opacity': 0.18 },
+  })
+  ambientLayers.get(map)?.add(id)
+}
+
+/**
+ * Light columns rising from each decision, like quest markers in a game, plus a glowing ring on the ground.
+ * The column is a very thin, tall, see-through extrusion so it never hides the buildings around it.
+ */
+export function addBeacons(map: GlMap, sites: { point: LatLng; colour: string }[]) {
+  const rad = (d: number) => (d * Math.PI) / 180
+  const column = ([lat, lng]: LatLng, r: number) =>
+    Array.from({ length: 13 }, (_, k) => {
+      const a = (k / 12) * 2 * Math.PI
+      return [lng + (r * Math.cos(a)) / (111320 * Math.cos(rad(lat))), lat + (r * Math.sin(a)) / 111320]
+    })
+  map.addSource('cc-beacons', {
+    type: 'geojson',
+    data: {
+      type: 'FeatureCollection',
+      features: sites.map((s) => ({
+        type: 'Feature' as const,
+        properties: { colour: s.colour },
+        geometry: { type: 'Polygon' as const, coordinates: [column(s.point, 9)] },
+      })),
+    },
+  })
+  map.addSource('cc-beacon-points', {
+    type: 'geojson',
+    data: {
+      type: 'FeatureCollection',
+      features: sites.map((s) => ({
+        type: 'Feature' as const,
+        properties: { colour: s.colour },
+        geometry: { type: 'Point' as const, coordinates: [s.point[1], s.point[0]] },
+      })),
+    },
+  })
+  map.addLayer({
+    id: 'cc-beacon-ring',
+    type: 'circle',
+    source: 'cc-beacon-points',
+    paint: {
+      'circle-radius': ['interpolate', ['exponential', 2], ['zoom'], 10, 6, 17, 60],
+      'circle-color': ['get', 'colour'],
+      'circle-opacity': 0.25,
+      'circle-blur': 0.8,
+      'circle-pitch-alignment': 'map',
+    },
+  })
+  map.addLayer({
+    id: 'cc-beacons',
+    type: 'fill-extrusion',
+    source: 'cc-beacons',
+    minzoom: 11,
+    paint: {
+      'fill-extrusion-color': ['get', 'colour'],
+      'fill-extrusion-height': 420,
+      'fill-extrusion-opacity': 0.4,
+      'fill-extrusion-vertical-gradient': true,
+    },
+  })
+}
+
+/**
+ * A camera direction from which the site is not hidden behind a tall existing building.
+ * Looks at the four directions along the street grid and scores each by the existing buildings
+ * standing between the camera and the site, weighted by how tall they are. Real buildings are
+ * never hidden or removed from the map; only the viewpoint changes.
+ */
+export function clearViewBearing(map: GlMap, [lat, lng]: LatLng, heightM: number): number {
+  const candidates = [GRID_BEARING, GRID_BEARING + 180, GRID_BEARING + 90, GRID_BEARING - 90]
+  let features: { geometry: { type: string; coordinates: unknown }; properties: Record<string, unknown> }[] = []
+  try {
+    features = map.querySourceFeatures('openmaptiles', { sourceLayer: 'building' }) as typeof features
+  } catch {
+    return GRID_BEARING
+  }
+  const mPerLng = 111320 * Math.cos((lat * Math.PI) / 180)
+  const blockers = features
+    .map((f) => {
+      const c = f.geometry.coordinates
+      const ring: number[][] | null =
+        f.geometry.type === 'Polygon' ? (c as number[][][])[0] : f.geometry.type === 'MultiPolygon' ? (c as number[][][][])[0][0] : null
+      if (!ring?.length) return null
+      const cx = ring.reduce((a, p) => a + p[0], 0) / ring.length
+      const cy = ring.reduce((a, p) => a + p[1], 0) / ring.length
+      const east = (cx - lng) * mPerLng
+      const north = (cy - lat) * 111320
+      const dist = Math.hypot(east, north)
+      const h = Number(f.properties.render_height ?? 0)
+      if (dist < 18 || dist > 260 || h < Math.max(12, heightM * 0.35)) return null
+      return { dist, h, dir: (Math.atan2(east, north) * 180) / Math.PI }
+    })
+    .filter((b): b is { dist: number; h: number; dir: number } => b !== null)
+  const angleBetween = (a: number, b: number) => Math.abs(((a - b + 540) % 360) - 180)
+  let best = GRID_BEARING
+  let bestScore = Infinity
+  for (const bearing of candidates) {
+    const towardCamera = bearing + 180 // the camera sits behind the view direction
+    const score = blockers.reduce((sum, b) => (angleBetween(b.dir, towardCamera) < 28 ? sum + b.h / Math.sqrt(b.dist) : sum), 0)
+    if (score < bestScore - 0.01) {
+      bestScore = score
+      best = bearing
+    }
+  }
+  return best
+}
+
+/**
+ * Calls back once the tiles in view have loaded (or after a few seconds regardless).
+ * MapLibre's "idle" event is not used because the ambient glow keeps the map repainting.
+ */
+export function whenTilesLoaded(map: GlMap, done: () => void, timeoutMs = 8000) {
+  const started = performance.now()
+  const check = () => {
+    if (!map.getCanvas().isConnected) return
+    if (map.areTilesLoaded() || performance.now() - started > timeoutMs) done()
+    else setTimeout(check, 250)
+  }
+  setTimeout(check, 250)
+}
+
+const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+/** Layers that breathe gently (proposed buildings). */
+const ambientLayers = new WeakMap<GlMap, Set<string>>()
+
+/** A slow pulse on the proposed buildings and the beacon rings. Off when the system asks for reduced motion. */
+function startAmbient(map: GlMap) {
+  ambientLayers.set(map, new Set())
+  if (reducedMotion()) return
+  let frame = 0
+  let last = 0
+  const tick = (t: number) => {
+    frame = requestAnimationFrame(tick)
+    if (t - last < 66) return // about 15 updates a second is plenty for a slow glow
+    last = t
+    const wave = (Math.sin(t / 700) + 1) / 2
+    for (const id of ambientLayers.get(map) ?? []) {
+      if (map.getLayer(id)) map.setPaintProperty(id, 'fill-extrusion-opacity', 0.72 + wave * 0.24)
+    }
+    if (map.getLayer('cc-beacon-ring')) {
+      map.setPaintProperty('cc-beacon-ring', 'circle-opacity', 0.12 + wave * 0.28)
+    }
+  }
+  frame = requestAnimationFrame(tick)
+  map.on('remove', () => cancelAnimationFrame(frame))
+}
+
+/**
+ * Game-style flying with the keyboard while the map has focus:
+ * W/S forward and back, A/D sideways, Q/E turn, R/F tilt, Shift to go faster.
+ * (MapLibre's own arrow keys and +/- zoom keep working.)
+ */
+function enableFlightKeys(map: GlMap) {
+  const canvas = map.getCanvas()
+  const held = new Set<string>()
+  let frame = 0
+  let fast = false
+  const step = () => {
+    frame = 0
+    if (held.size === 0) return
+    const speed = fast ? 26 : 11
+    let x = 0
+    let y = 0
+    if (held.has('w')) y -= speed
+    if (held.has('s')) y += speed
+    if (held.has('a')) x -= speed
+    if (held.has('d')) x += speed
+    if (x || y) map.panBy([x, y], { duration: 0 })
+    if (held.has('q')) map.setBearing(map.getBearing() - (fast ? 2.4 : 1.2))
+    if (held.has('e')) map.setBearing(map.getBearing() + (fast ? 2.4 : 1.2))
+    if (held.has('r')) map.setPitch(Math.min(map.getMaxPitch(), map.getPitch() + 0.8))
+    if (held.has('f')) map.setPitch(Math.max(0, map.getPitch() - 0.8))
+    frame = requestAnimationFrame(step)
+  }
+  canvas.addEventListener('keydown', (e) => {
+    if (e.ctrlKey || e.metaKey || e.altKey) return
+    const k = e.key.toLowerCase()
+    if (!'wasdqerf'.includes(k) || k.length !== 1) return
+    e.preventDefault()
+    fast = e.shiftKey
+    held.add(k)
+    if (!frame) frame = requestAnimationFrame(step)
+  })
+  canvas.addEventListener('keyup', (e) => {
+    held.delete(e.key.toLowerCase())
+    fast = e.shiftKey
+  })
+  canvas.addEventListener('blur', () => held.clear())
+  map.on('remove', () => cancelAnimationFrame(frame))
 }
 
 /** A marker drawn like a stop on the route strip, with its name above it. */

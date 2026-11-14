@@ -398,3 +398,35 @@ details summary:hover { color: var(--line-dark); }
 .tool-select-label { font-family: var(--display); font-weight: 700; }
 .tool-select select { font: inherit; font-size: 0.88rem; padding: 0.4rem 0.5rem; border: 2px solid var(--rule); border-radius: 6px; background: #fff; color: var(--ink); max-width: 13rem; }
 .tool-select select:hover { border-color: var(--line); }
+
+/* ---------- Game-style map HUD ---------- */
+.city-map-wrap { position: relative; }
+.hud {
+  position: absolute; top: 0.6rem; right: 0.6rem; z-index: 5;
+  display: flex; flex-direction: column; align-items: flex-end; gap: 0.4rem;
+}
+.hud-group {
+  display: flex; gap: 2px; padding: 3px; border-radius: 10px;
+  background: rgb(10 16 32 / 0.78); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 18px rgb(0 0 0 / 0.28), inset 0 0 0 1px rgb(255 255 255 / 0.12);
+}
+.hud button {
+  font-family: var(--display); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.02em;
+  padding: 0.38rem 0.7rem; border: none; border-radius: 7px; background: transparent; color: #e7eeff; min-height: 0;
+}
+.hud button:hover { background: rgb(255 255 255 / 0.12); color: #fff; }
+.hud button.is-on { background: var(--hi); color: var(--ink); box-shadow: 0 0 12px rgb(255 229 102 / 0.55); }
+.hud button:focus-visible { outline: 2px solid #fff; outline-offset: 1px; box-shadow: none; }
+.hud-keys {
+  position: absolute; left: 50%; bottom: 2.1rem; transform: translateX(-50%); z-index: 4; margin: 0;
+  font-size: 0.72rem; color: #e7eeff; white-space: nowrap; pointer-events: none;
+  background: rgb(10 16 32 / 0.7); padding: 0.3rem 0.65rem; border-radius: 999px; backdrop-filter: blur(6px);
+}
+.hud-keys kbd {
+  font-family: var(--mono); font-size: 0.68rem; display: inline-block; min-width: 1.15rem; text-align: center;
+  padding: 0 0.2rem; margin: 0 1px; border-radius: 3px; background: rgb(255 255 255 / 0.16); border: 1px solid rgb(255 255 255 / 0.28);
+}
+@media (hover: none) { .hud-keys { display: none; } }
+/* At night the pin labels stay readable and markers glow. */
+[data-theme='night'] .pin-dot, [data-theme='dusk'] .pin-dot { filter: drop-shadow(0 0 8px rgb(255 229 102 / 0.55)); }
+[data-theme='night'] .city-map, [data-theme='night'].item-map { background: #0b1020; }

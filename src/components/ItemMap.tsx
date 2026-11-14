@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import type { LatLng } from '../lib/geo.ts'
-import { addProposedHeights, addRoute, addWards, boundsOf, create3dMap, GRID_BEARING, lngLat, maplibregl, pinElement, TILT } from '../lib/map3d.ts'
+import { addProposedHeights, addRoute, addWards, boundsOf, clearViewBearing, create3dMap, whenTilesLoaded, METRES_PER_STOREY, GRID_BEARING, lngLat, maplibregl, pinElement, TILT } from '../lib/map3d.ts'
 import type { Ward } from '../types.ts'
 
 interface Props {
@@ -49,7 +49,16 @@ export function ItemMap({ points, label, itemWards, home, proposedStoreys }: Pro
     map.on('load', () => {
       addWards(map, itemWards.map((w) => w.number))
       if (isRoute) addRoute(map, 'route', points, '#b3261e')
-      if (proposedStoreys?.length) addProposedHeights(map, 'proposed', points[0], proposedStoreys)
+      if (proposedStoreys?.length) {
+        addProposedHeights(map, 'proposed', points[0], proposedStoreys)
+        // Once the buildings around the site have loaded, turn to a view where they do not hide it.
+        if (!isRoute && !home) {
+          whenTilesLoaded(map, () => {
+            const bearing = clearViewBearing(map, points[0], Math.max(...proposedStoreys) * METRES_PER_STOREY)
+            if (bearing !== GRID_BEARING) map.easeTo({ bearing, duration: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1200 })
+          })
+        }
+      }
     })
     return () => {
       map.remove()

@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import type { Map as GlMap, Marker } from 'maplibre-gl'
 import type { LatLng } from '../lib/geo.ts'
-import { addProposedHeights, addRoute, addWards, boundsOf, create3dMap, GRID_BEARING, lngLat, maplibregl, pinElement, TILT } from '../lib/map3d.ts'
+import { addBeacons, addProposedHeights, addRoute, addWards, boundsOf, clearViewBearing, create3dMap, METRES_PER_STOREY, GRID_BEARING, lngLat, maplibregl, pinElement, TILT } from '../lib/map3d.ts'
 import type { ItemStatus } from '../lib/stages.ts'
+import { applyTheme, savedTheme, saveTheme, THEMES, type MapTheme } from '../lib/mapTheme.ts'
 
 export interface MapPin {
   id: string
@@ -28,6 +29,11 @@ interface Props {
 }
 
 const STATUS_COLOUR: Record<ItemStatus, string> = { open: '#0a6b43', 'in-progress': '#8a4b00', decided: '#0f1b26' }
+/** Beacon colours: brighter versions of the status colours, so they glow against any time of day. */
+const BEACON_COLOUR: Record<ItemStatus, string> = { open: '#2fe08a', 'in-progress': '#ffb02e', decided: '#7fa8ff' }
+
+const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches
+const wait = (ms: number) => new Promise((r) => setTimeout(r, ms))
 
 /**
  * The whole city in 3D with one marker per decision. Choosing a marker flies
@@ -43,6 +49,10 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
   const [failed, setFailed] = useState(false)
   const [ready, setReady] = useState(false)
   const firstView = useRef(true)
+  const [theme, setTheme] = useState<MapTheme>(savedTheme)
+  const [orbiting, setOrbiting] = useState(false)
+  const [touring, setTouring] = useState(false)
+  const [flat, setFlat] = useState(false)
   useEffect(() => {
     onSelectRef.current = onSelect
   }, [onSelect])
@@ -81,11 +91,11 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
 
     map.on('load', () => {
       addWards(map)
+      addBeacons(map, pins.map((p) => ({ point: p.points[Math.floor(p.points.length / 2)], colour: BEACON_COLOUR[p.status] })))
       for (const pin of pins) {
         if (pin.proposedStoreys?.length) addProposedHeights(map, `proposed-${pin.id}`, pin.points[0], pin.proposedStoreys)
         if (pin.points.length < 2) continue
-        const layer = `route-${pin.id}`
-        addRoute(map, layer, pin.points, STATUS_COLOUR[pin.status])
+        const layer = addRoute(map, `route-${pin.id}`, pin.points, STATUS_COLOUR[pin.status])
         map.on('click', layer, () => onSelectRef.current(pin.id))
         map.on('mouseenter', layer, () => (map.getCanvas().style.cursor = 'pointer'))
         map.on('mouseleave', layer, () => (map.getCanvas().style.cursor = ''))
@@ -135,11 +145,16 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
         duration: motion(1800),
       })
     } else {
+      // For a proposed building, arrive from the side where existing towers do not hide it.
+      // Buildings near the site may not be loaded yet; then the street-grid view is used.
+      const bearing = pin.proposedStoreys?.length
+        ? clearViewBearing(map, pin.points[0], Math.max(...pin.proposedStoreys) * METRES_PER_STOREY)
+        : GRID_BEARING
       map.flyTo({
         center: lngLat(pin.points[0]),
         zoom: 16.6,
         pitch: 64,
-        bearing: GRID_BEARING,
+        bearing,
         padding: { top: 0, bottom: 0, right: 0, left: covered },
         duration: motion(2200),
       })
@@ -155,6 +170,76 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
     }
   }, [selectedId, highlightId, ready])
 
+  // Time of day.
+  useEffect(() => {
+    const map = mapRef.current
+    if (map && ready) applyTheme(map, theme)
+  }, [theme, ready])
+
+  // Orbit: turn slowly around the centre of the view, like a game's showcase camera.
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !ready || !orbiting) return
+    let frame = 0
+    let last = performance.now()
+    const turn = (t: number) => {
+      map.setBearing(map.getBearing() + ((t - last) / 1000) * 9)
+      last = t
+      frame = requestAnimationFrame(turn)
+    }
+    frame = requestAnimationFrame(turn)
+    const stop = () => setOrbiting(false)
+    const canvas = map.getCanvas()
+    canvas.addEventListener('pointerdown', stop)
+    canvas.addEventListener('wheel', stop, { passive: true })
+    return () => {
+      cancelAnimationFrame(frame)
+      canvas.removeEventListener('pointerdown', stop)
+      canvas.removeEventListener('wheel', stop)
+    }
+  }, [orbiting, ready])
+
+  // Guided tour: fly to each decision in turn and circle it, showing its summary card.
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !ready || !touring) return
+    let cancelled = false
+    const alive = () => !cancelled
+    const stop = () => setTouring(false)
+    const canvas = map.getCanvas()
+    canvas.addEventListener('pointerdown', stop)
+    canvas.addEventListener('wheel', stop, { passive: true })
+    ;(async () => {
+      for (const pin of pins) {
+        if (!alive()) return
+        onSelectRef.current(pin.id)
+        await wait(reducedMotion() ? 2500 : 2600)
+        if (!alive()) return
+        if (!reducedMotion()) {
+          map.easeTo({ bearing: map.getBearing() + 70, duration: 5200, easing: (x) => x })
+          await wait(5400)
+        } else {
+          await wait(2500)
+        }
+      }
+      if (alive()) setTouring(false)
+    })()
+    return () => {
+      cancelled = true
+      map.stop()
+      canvas.removeEventListener('pointerdown', stop)
+      canvas.removeEventListener('wheel', stop)
+    }
+  }, [touring, ready, pins])
+
+  // 2D / 3D view.
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !ready) return
+    map.easeTo({ pitch: flat ? 0 : TILT, duration: reducedMotion() ? 0 : 900 })
+    if (map.getLayer('building-3d')) map.setLayoutProperty('building-3d', 'visibility', flat ? 'none' : 'visible')
+  }, [flat, ready])
+
   if (failed) {
     return (
       <p className="map-fallback">
@@ -163,11 +248,52 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
     )
   }
   return (
-    <div
-      ref={ref}
-      className="city-map"
-      role="application"
-      aria-label="3D map of Toronto. Each marker is a decision; press Enter on a marker to see it."
-    />
+    <div className="city-map-wrap" data-theme={theme}>
+      <div
+        ref={ref}
+        className="city-map"
+        role="application"
+        aria-label="3D map of Toronto. Each marker is a decision; press Enter on a marker to see it. With the map focused, W A S D fly, Q and E turn, R and F tilt, plus and minus zoom."
+      />
+      {ready && (
+        <div className="hud" role="toolbar" aria-label="Map view">
+          <div className="hud-group" role="radiogroup" aria-label="Time of day">
+            {THEMES.map((t) => (
+              <button
+                key={t.id}
+                type="button"
+                role="radio"
+                aria-checked={theme === t.id}
+                className={theme === t.id ? 'is-on' : ''}
+                onClick={() => {
+                  setTheme(t.id)
+                  saveTheme(t.id)
+                }}
+              >
+                {t.label}
+              </button>
+            ))}
+          </div>
+          <div className="hud-group">
+            <button type="button" aria-pressed={touring} className={touring ? 'is-on' : ''} onClick={() => { setOrbiting(false); setTouring((v) => !v) }}>
+              {touring ? '■ Stop tour' : '▶ Tour'}
+            </button>
+            {!reducedMotion() && (
+              <button type="button" aria-pressed={orbiting} className={orbiting ? 'is-on' : ''} onClick={() => { setTouring(false); setOrbiting((v) => !v) }}>
+                ⟳ Orbit
+              </button>
+            )}
+            <button type="button" aria-pressed={flat} className={flat ? 'is-on' : ''} onClick={() => setFlat((v) => !v)}>
+              {flat ? '3D' : '2D'}
+            </button>
+          </div>
+        </div>
+      )}
+      {ready && (
+        <p className="hud-keys" aria-hidden="true">
+          <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> fly · <kbd>Q</kbd><kbd>E</kbd> turn · <kbd>R</kbd><kbd>F</kbd> tilt · scroll to zoom
+        </p>
+      )}
+    </div>
   )
 }
