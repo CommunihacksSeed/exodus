@@ -1,4 +1,5 @@
 import type { Claim, VerifiedCitation } from '../types.ts'
+import { safeHref } from '../lib/safe.ts'
 
 /** One plain-language statement with its sources one tap away. */
 export function ClaimItem({ claim }: { claim: Claim<VerifiedCitation> }) {
@@ -21,7 +22,7 @@ export function ClaimItem({ claim }: { claim: Claim<VerifiedCitation> }) {
               <p className="source-line">
                 {c.sourceLabel}
                 {c.page ? `, page ${c.page}` : ''} · {c.sourceDate} ·{' '}
-                <a href={c.url} target="_blank" rel="noreferrer">
+                <a href={safeHref(c.url)} target="_blank" rel="noreferrer">
                   Open the original<span className="sr-only"> (opens in a new tab)</span>
                 </a>
               </p>

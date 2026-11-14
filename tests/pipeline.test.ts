@@ -75,3 +75,43 @@ test('distance: haversine, and nearest point on a route line', () => {
   assert.equal(formatDistance(4321), 'about 4.3 km')
   assert.equal(formatDistance(260), 'about 250 m')
 })
+
+import { findUnsafeLinks, isSafeLink, isTorontoPoint, safeHref } from '../src/lib/safe.ts'
+import { isPlaceMatch } from '../src/lib/geo.ts'
+import { readFileSync as readJson } from 'node:fs'
+
+test('links must be https to a City of Toronto host', () => {
+  assert.equal(isSafeLink('https://secure.toronto.ca/council/agenda-item.do?item=2027.PB1.6'), true)
+  assert.equal(isSafeLink('https://www.toronto.ca/legdocs/x.pdf#page=3'), true)
+  for (const bad of [
+    'javascript:alert(1)',
+    'data:text/html,hi',
+    'http://www.toronto.ca/',
+    'https://toronto.ca.evil.com/',
+    'https://evil.com/?https://toronto.ca',
+    'https://user:pw@www.toronto.ca/',
+    'not a url',
+    '',
+    null,
+  ]) {
+    assert.equal(isSafeLink(bad), false, String(bad))
+  }
+  assert.equal(safeHref('javascript:alert(1)'), '#')
+})
+
+test('every link in the published data is safe', () => {
+  const items = JSON.parse(readJson(path.resolve(import.meta.dirname, '../src/generated/items.json'), 'utf8'))
+  assert.deepEqual(findUnsafeLinks(items), [])
+  assert.deepEqual(findUnsafeLinks({ a: [{ sourceUrl: 'javascript:1' }] }), ['$.a[0].sourceUrl'])
+})
+
+test('coordinates outside Toronto and malformed saved places are rejected', () => {
+  assert.equal(isTorontoPoint(43.65, -79.38), true)
+  assert.equal(isTorontoPoint(0, 0), false)
+  assert.equal(isTorontoPoint(NaN, -79.38), false)
+  assert.equal(isTorontoPoint('43.65', -79.38), false)
+  assert.equal(isPlaceMatch({ label: '100 Queen St W', point: [43.65, -79.38], wardNumber: 10, wardName: 'Spadina' }), true)
+  assert.equal(isPlaceMatch({ label: 1, point: [43.65, -79.38], wardNumber: null, wardName: null }), false)
+  assert.equal(isPlaceMatch({ label: 'x', point: [99, 99], wardNumber: null, wardName: null }), false)
+  assert.equal(isPlaceMatch('<script>'), false)
+})

@@ -47,6 +47,8 @@ export function walkMinutes(m: number): number | null {
   return m <= 2500 ? Math.max(1, Math.round(m / 75)) : null
 }
 
+import { isTorontoPoint } from './safe.ts'
+
 export interface PlaceMatch {
   label: string
   point: LatLng
@@ -55,31 +57,81 @@ export interface PlaceMatch {
 }
 
 const GEOCODER = 'https://map.toronto.ca/cotgeocoder/rest/geocoder'
+const TIMEOUT_MS = 8000
+const MAX_QUERY = 120
+
+/** Thrown for any lookup failure, with a message that is safe and useful to show a resident. */
+export class AddressLookupError extends Error {}
+
+async function getJson(url: string): Promise<unknown> {
+  let res: Response
+  try {
+    res = await fetch(url, { signal: AbortSignal.timeout(TIMEOUT_MS), credentials: 'omit', referrerPolicy: 'no-referrer' })
+  } catch {
+    throw new AddressLookupError('The City address service did not answer in time. Please try again.')
+  }
+  if (!res.ok) throw new AddressLookupError('The City address service is unavailable right now.')
+  try {
+    return await res.json()
+  } catch {
+    throw new AddressLookupError('The City address service sent something we could not read.')
+  }
+}
+
+const text = (v: unknown, max = 200): string | null =>
+  typeof v === 'string' && v.trim() ? v.trim().slice(0, max) : null
 
 /**
  * Address lookup against the City of Toronto's own public geocoder.
- * The typed address goes to map.toronto.ca and nowhere else.
+ * The typed address goes to map.toronto.ca and nowhere else: no cookies, no referrer.
+ * Every field of the reply is checked, because it is not our data.
  */
 export async function findAddress(query: string): Promise<PlaceMatch[]> {
-  const suggest = await fetch(
-    `${GEOCODER}/suggest?f=json&addressOnly=1&retRowLimit=5&searchString=${encodeURIComponent(query)}`,
-  ).then((r) => r.json())
-  const rows: { KEYSTRING: string }[] = suggest?.result?.rows ?? []
+  const q = query.trim().slice(0, MAX_QUERY)
+  if (q.length < 3) return []
+  const suggest = (await getJson(
+    `${GEOCODER}/suggest?f=json&addressOnly=1&retRowLimit=5&searchString=${encodeURIComponent(q)}`,
+  )) as { result?: { rows?: { KEYSTRING?: unknown }[] } }
+  const keys = (suggest?.result?.rows ?? [])
+    .map((r) => text(r?.KEYSTRING, 300))
+    .filter((k): k is string => k !== null)
+    .slice(0, 5)
   const matches = await Promise.all(
-    rows.map(async (row) => {
-      const res = await fetch(
-        `${GEOCODER}/findAddressCandidates?f=json&retRowLimit=1&keyString=${encodeURIComponent(row.KEYSTRING)}`,
-      ).then((r) => r.json())
+    keys.map(async (key) => {
+      const res = (await getJson(
+        `${GEOCODER}/findAddressCandidates?f=json&retRowLimit=1&keyString=${encodeURIComponent(key)}`,
+      )) as { result?: { rows?: Record<string, unknown>[] } }
       const hit = res?.result?.rows?.[0]
-      if (!hit || typeof hit.LATITUDE !== 'number' && typeof hit.OUTY !== 'number') return null
+      if (!hit) return null
+      const lat = hit.OUTY ?? hit.LATITUDE
+      const lng = hit.OUTX ?? hit.LONGITUDE
+      const label = text(hit.ADDRESS_FULL) ?? text(hit.KEY_DESC)
+      if (!label || !isTorontoPoint(lat, lng)) return null
+      const ward = Number(hit.WARD_NUMBER)
       const match: PlaceMatch = {
-        label: hit.ADDRESS_FULL ?? hit.KEY_DESC,
-        point: [hit.OUTY ?? hit.LATITUDE, hit.OUTX ?? hit.LONGITUDE],
-        wardNumber: hit.WARD_NUMBER ? Number(hit.WARD_NUMBER) : null,
-        wardName: hit.WARD ?? null,
+        label,
+        point: [lat, lng as number],
+        wardNumber: Number.isInteger(ward) && ward > 0 && ward <= 50 ? ward : null,
+        wardName: text(hit.WARD, 80),
       }
       return match
     }),
   )
   return matches.filter((m): m is PlaceMatch => m !== null)
+}
+
+/** Shape check for a PlaceMatch read back from sessionStorage. */
+export function isPlaceMatch(v: unknown): v is PlaceMatch {
+  if (!v || typeof v !== 'object') return false
+  const m = v as Record<string, unknown>
+  const p = m.point
+  return (
+    typeof m.label === 'string' &&
+    m.label.length <= 200 &&
+    Array.isArray(p) &&
+    p.length === 2 &&
+    isTorontoPoint(p[0], p[1]) &&
+    (m.wardNumber === null || Number.isInteger(m.wardNumber)) &&
+    (m.wardName === null || typeof m.wardName === 'string')
+  )
 }

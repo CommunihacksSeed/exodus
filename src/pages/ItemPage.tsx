@@ -11,6 +11,7 @@ import { formatDistance, nearestDistance, walkMinutes } from '../lib/geo.ts'
 import { METRES_PER_STOREY } from '../lib/map3d.ts'
 import { usePlace } from '../lib/place.tsx'
 import { itemStatus, STATUS_LABEL } from '../lib/stages.ts'
+import { safeHref } from '../lib/safe.ts'
 
 /** In-page jumps. Plain anchors would clash with the hash-based router. */
 function jumpTo(id: string) {
@@ -67,7 +68,7 @@ export function ItemPage() {
 
         <p className="provenance">
           Based on the{' '}
-          <a href={record.sourceUrl} target="_blank" rel="noreferrer">
+          <a href={safeHref(record.sourceUrl)} target="_blank" rel="noreferrer">
             City of Toronto’s page for this item
           </a>{' '}
           as it was on <strong>{captured}</strong>. The City can change it after that date.{' '}
@@ -174,7 +175,7 @@ export function ItemPage() {
             {record.bylaws.map((b, i) => (
               <span key={b.url}>
                 {i > 0 && ', '}
-                <a href={b.url} target="_blank" rel="noreferrer">
+                <a href={safeHref(b.url)} target="_blank" rel="noreferrer">
                   {b.label}
                 </a>
               </span>
@@ -213,7 +214,7 @@ export function ItemPage() {
             <ul>
               {[...new Map(record.considerations.flatMap((c) => c.documents).filter((d) => d.url).map((d) => [d.url, d])).values()].map((d) => (
                 <li key={d.url}>
-                  <a href={d.url!} target="_blank" rel="noreferrer">
+                  <a href={safeHref(d.url!)} target="_blank" rel="noreferrer">
                     {d.label}
                   </a>
                 </li>

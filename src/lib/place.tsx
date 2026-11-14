@@ -3,7 +3,7 @@
  * so it disappears when the browser tab is closed. It is never sent to us.
  */
 import { createContext, useContext, useState, type ReactNode } from 'react'
-import type { PlaceMatch } from './geo.ts'
+import { isPlaceMatch, type PlaceMatch } from './geo.ts'
 
 const KEY = 'clear-council:place'
 
@@ -17,7 +17,8 @@ const PlaceContext = createContext<PlaceContextValue>({ place: null, setPlace: (
 function load(): PlaceMatch | null {
   try {
     const raw = sessionStorage.getItem(KEY)
-    return raw ? (JSON.parse(raw) as PlaceMatch) : null
+    const parsed: unknown = raw ? JSON.parse(raw) : null
+    return isPlaceMatch(parsed) ? parsed : null
   } catch {
     return null
   }
