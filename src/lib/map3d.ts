@@ -10,6 +10,7 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url'
 import { wards } from './data.ts'
 import { applyTheme, savedTheme } from './mapTheme.ts'
+import { footprintCentre } from './footprint.ts'
 import type { LatLng } from './geo.ts'
 
 maplibregl.setWorkerUrl(workerUrl)
@@ -269,16 +270,13 @@ export function clearViewBearing(map: GlMap, [lat, lng]: LatLng, heightM: number
   const mPerLng = 111320 * Math.cos((lat * Math.PI) / 180)
   const blockers = features
     .map((f) => {
-      const c = f.geometry.coordinates
-      const ring: number[][] | null =
-        f.geometry.type === 'Polygon' ? (c as number[][][])[0] : f.geometry.type === 'MultiPolygon' ? (c as number[][][][])[0][0] : null
-      if (!ring?.length) return null
-      const cx = ring.reduce((a, p) => a + p[0], 0) / ring.length
-      const cy = ring.reduce((a, p) => a + p[1], 0) / ring.length
+      const centre = footprintCentre(f.geometry)
+      if (!centre) return null
+      const [cx, cy] = centre
       const east = (cx - lng) * mPerLng
       const north = (cy - lat) * 111320
       const dist = Math.hypot(east, north)
-      const h = Number(f.properties.render_height ?? 0)
+      const h = Number(f.properties?.render_height ?? 0)
       if (dist < 18 || dist > 260 || h < Math.max(12, heightM * 0.35)) return null
       return { dist, h, dir: (Math.atan2(east, north) * 180) / Math.PI }
     })
