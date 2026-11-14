@@ -109,8 +109,8 @@ export function addRoute(map: GlMap, name: string, points: LatLng[], colour: str
   return id
 }
 
-/** Assumed floor-to-floor height. Real buildings vary; the block is a guide to scale, not a drawing. */
-export const METRES_PER_STOREY = 3
+import { METRES_PER_STOREY } from './storey.ts'
+export { METRES_PER_STOREY }
 
 /**
  * Blocks showing how tall the proposed buildings would be beside their neighbours.

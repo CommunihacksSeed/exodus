@@ -5,6 +5,7 @@ import { withTerms } from '../components/Term.tsx'
 import { PROCESS, type ProcessStop } from '../content/civics.ts'
 import { items } from '../lib/data.ts'
 import { buildStages, currentIndex, itemStatus, STATUS_WORDS } from '../lib/stages.ts'
+import { fill, useLang } from '../i18n/index.tsx'
 
 /** Which real items in Clear Council are at each stop right now (from the record only). */
 function itemsAt(stop: ProcessStop['id']) {
@@ -21,6 +22,7 @@ function itemsAt(stop: ProcessStop['id']) {
  * Choose a stop to see what happens there, what you can do, and which real items are there now.
  */
 export function HowItWorks() {
+  const { t, lang } = useLang()
   const [chosen, setChosen] = useState<ProcessStop['id']>('committee')
   const stop = PROCESS.find((s) => s.id === chosen)!
   const here = itemsAt(chosen)
@@ -28,14 +30,14 @@ export function HowItWorks() {
 
   return (
     <article className="page explainer">
-      <title>How decisions are made — Clear Council</title>
-      <p className="kicker">Guide</p>
-      <h1>How City Hall makes a decision</h1>
+      <title>{`${t('How decisions are made')} — Clear Council`}</title>
+      <p className="kicker">{t('Guide')}</p>
+      <h1>{t('How City Hall makes a decision')}</h1>
       <p className="lede">
-        Most proposals travel the same route. Choose a stop to see what happens there and when you can have a say.
+        {t('Most proposals travel the same route. Choose a stop to see what happens there and when you can have a say.')}
       </p>
 
-      <ol className="route route-guide" role="tablist" aria-label="Steps of a decision">
+      <ol className="route route-guide" role="tablist" aria-label={t('Steps of a decision')}>
         {PROCESS.map((s, i) => (
           <li key={s.id} className={`stop ${s.id === chosen ? 'stop-decided' : 'stop-advice'}`} role="presentation">
             <button
@@ -55,17 +57,17 @@ export function HowItWorks() {
               }}
             >
               <span className="stop-dot" aria-hidden="true" />
-              <span className="stop-who">{s.title}</span>
-              <span className="stop-date">Step {i + 1}</span>
+              <span className="stop-who">{t(s.title)}</span>
+              <span className="stop-date">{t('Step {n}', { n: i + 1 })}</span>
             </button>
           </li>
         ))}
       </ol>
 
       <section id="stop-panel" role="tabpanel" aria-labelledby={`tab-${stop.id}`} className="panel guide-panel" key={stop.id}>
-        <h2>{stop.title}</h2>
+        <h2>{t(stop.title)}</h2>
         <p className="guide-who">
-          <span className="caveat-tag">Who</span> {withTerms(stop.who, seen)}
+          <span className="caveat-tag">{t('Who')}</span> {lang === 'en' ? withTerms(stop.who, seen) : t(stop.who)}
         </p>
         <ul className="claims">
           {stop.facts.map((f) => (
@@ -73,11 +75,11 @@ export function HowItWorks() {
           ))}
         </ul>
         <div className="guide-you">
-          <h3>What you can do here</h3>
-          <p>{withTerms(stop.youCan, seen)}</p>
+          <h3>{t('What you can do here')}</h3>
+          <p>{lang === 'en' ? withTerms(stop.youCan, seen) : t(stop.youCan)}</p>
         </div>
         <div className="guide-now">
-          <h3>At this stop in Clear Council right now</h3>
+          <h3>{t('At this stop in Clear Council right now')}</h3>
           {here.length > 0 ? (
             <ul className="guide-items">
               {here.map(({ record, explanation }) => (
@@ -87,24 +89,24 @@ export function HowItWorks() {
               ))}
             </ul>
           ) : (
-            <p className="fine">None of the items in this prototype are at this stop right now.</p>
+            <p className="fine">{t('None of the items in this prototype are at this stop right now.')}</p>
           )}
         </div>
       </section>
 
       <section className="panel" aria-labelledby="outcomes-h">
-        <h2 id="outcomes-h">Words you will see after a vote</h2>
-        <p className="section-intro">The City record uses short status words. This is what they mean in plain language.</p>
+        <h2 id="outcomes-h">{t('Words you will see after a vote')}</h2>
+        <p className="section-intro">{t('The City record uses short status words. This is what they mean in plain language.')}</p>
         <dl className="outcomes">
           {Object.entries(STATUS_WORDS).map(([word, plain]) => (
             <div key={word}>
               <dt>{word}</dt>
-              <dd>{plain}</dd>
+              <dd>{t(plain)}</dd>
             </div>
           ))}
         </dl>
         <p className="fine">
-          More words are explained in <Link to="/words">Words</Link>.
+          {fill(t('More words are explained in {link}.'), { link: <Link to="/words">{t('Words')}</Link> })}
         </p>
       </section>
     </article>

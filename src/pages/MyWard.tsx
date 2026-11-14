@@ -7,6 +7,7 @@ import { formatDistance, nearestDistance } from '../lib/geo.ts'
 import { usePlace } from '../lib/place.tsx'
 import { safeHref } from '../lib/safe.ts'
 import { itemStatus, STATUS_LABEL } from '../lib/stages.ts'
+import { useLang } from '../i18n/index.tsx'
 
 const FIND_COUNCILLOR = 'https://www.toronto.ca/city-government/council/members-of-council/'
 
@@ -34,6 +35,7 @@ function WardOutline({ ward, home }: { ward: WardShape; home: [number, number] |
 
 /** Everything in Clear Council for one ward, chosen by address or from the list. */
 export function MyWard() {
+  const { t } = useLang()
   const { place } = usePlace()
   const sorted = useMemo(() => [...wards].sort((a, b) => a.number - b.number), [])
   const [picked, setPicked] = useState<number | null>(null)
@@ -50,22 +52,22 @@ export function MyWard() {
 
   return (
     <article className="page ward-page">
-      <title>{ward ? `Ward ${ward.number} ${ward.name} — Clear Council` : 'My ward — Clear Council'}</title>
-      <p className="kicker">My ward</p>
-      <h1>{ward ? `Ward ${ward.number}: ${ward.name}` : 'What is happening in my ward?'}</h1>
+      <title>{`${ward ? t('Ward {n}: {name}', { n: ward.number, name: ward.name }) : t('My ward')} — Clear Council`}</title>
+      <p className="kicker">{t('My ward')}</p>
+      <h1>{ward ? t('Ward {n}: {name}', { n: ward.number, name: ward.name }) : t('What is happening in my ward?')}</h1>
       <p className="lede">
-        Toronto has 25 wards. Each elects one councillor to City Council. Find yours by address, or choose it from the list.
+        {t('Toronto has 25 wards. Each elects one councillor to City Council. Find yours by address, or choose it from the list.')}
       </p>
 
       <div className="ward-pick">
         <AddressSearch compact />
         <label className="ward-select">
-          <span>Or choose a ward</span>
+          <span>{t('Or choose a ward')}</span>
           <select value={wardNo ?? ''} onChange={(e) => setPicked(e.target.value ? Number(e.target.value) : null)}>
-            <option value="">Choose…</option>
+            <option value="">{t('Choose…')}</option>
             {sorted.map((w) => (
               <option key={w.number} value={w.number}>
-                Ward {w.number}: {w.name}
+                {t('Ward {n}: {name}', { n: w.number, name: w.name })}
               </option>
             ))}
           </select>
@@ -76,14 +78,13 @@ export function MyWard() {
         <section className="panel ward-card" aria-labelledby="ward-h">
           <WardOutline ward={ward} home={place && place.wardNumber === ward.number ? place.point : null} />
           <div>
-            <h2 id="ward-h">Ward {ward.number}: {ward.name}</h2>
-            {place && place.wardNumber === ward.number && <p className="near-result">{place.label} is in this ward.</p>}
+            <h2 id="ward-h">{t('Ward {n}: {name}', { n: ward.number, name: ward.name })}</h2>
+            {place && place.wardNumber === ward.number && <p className="near-result">{t('{place} is in this ward.', { place: place.label })}</p>}
             <p>
-              Your councillor speaks and votes for this ward at City Council. The City lists every councillor and how to
-              reach them.
+              {t('Your councillor speaks and votes for this ward at City Council. The City lists every councillor and how to reach them.')}
             </p>
             <a className="button" href={safeHref(FIND_COUNCILLOR)} target="_blank" rel="noreferrer">
-              Find this ward’s councillor<span className="sr-only"> (City of Toronto, opens in a new tab)</span>
+              {t('Find this ward’s councillor')}<span className="sr-only"> (City of Toronto, opens in a new tab)</span>
             </a>
           </div>
         </section>
@@ -91,13 +92,13 @@ export function MyWard() {
 
       {ward && (
         <section aria-labelledby="in-ward-h">
-          <h2 id="in-ward-h">Decisions in this ward</h2>
+          <h2 id="in-ward-h">{t('Decisions in this ward')}</h2>
           {inWard.length > 0 ? (
             <ul className="cards">
               {inWard.map(({ record, explanation }) => (
                 <li key={record.id} className="card">
                   <p className="card-top">
-                    <span className={`badge badge-status-${itemStatus(record)}`}>{STATUS_LABEL[itemStatus(record)]}</span>
+                    <span className={`badge badge-status-${itemStatus(record)}`}>{t(STATUS_LABEL[itemStatus(record)])}</span>
                   </p>
                   <h3>
                     <Link to={`/item/${record.id}`}>{explanation?.plainTitle ?? record.title}</Link>
@@ -108,8 +109,7 @@ export function MyWard() {
             </ul>
           ) : (
             <p className="notice">
-              None of the {items.length} items in this prototype are in Ward {ward.number}. A full version would cover
-              every item on every agenda.
+              {t('None of the {n} items in this prototype are in Ward {w}. A full version would cover every item on every agenda.', { n: items.length, w: ward.number })}
             </p>
           )}
         </section>
@@ -117,12 +117,12 @@ export function MyWard() {
 
       {nearby.length > 0 && (
         <section aria-labelledby="nearby-h">
-          <h2 id="nearby-h">Nearby, in other wards</h2>
+          <h2 id="nearby-h">{t('Nearby, in other wards')}</h2>
           <ul className="nearby">
             {nearby.map(({ item, d }) => (
               <li key={item.record.id}>
                 <Link to={`/item/${item.record.id}`}>{item.explanation!.plainTitle}</Link>{' '}
-                <span className="fine">· {formatDistance(d)} from {place!.label}</span>
+                <span className="fine">· {t('{distance} from {place}', { distance: formatDistance(d), place: place!.label })}</span>
               </li>
             ))}
           </ul>

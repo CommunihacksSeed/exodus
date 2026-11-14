@@ -4,6 +4,7 @@ import type { LatLng } from '../lib/geo.ts'
 import { addBeacons, addProposedHeights, addRoute, addWards, boundsOf, clearViewBearing, create3dMap, METRES_PER_STOREY, GRID_BEARING, lngLat, maplibregl, pinElement, TILT } from '../lib/map3d.ts'
 import type { ItemStatus } from '../lib/stages.ts'
 import { applyTheme, savedTheme, saveTheme, THEMES, type MapTheme } from '../lib/mapTheme.ts'
+import { useLang } from '../i18n/index.tsx'
 
 export interface MapPin {
   id: string
@@ -42,6 +43,7 @@ const wait = (ms: number) => new Promise((r) => setTimeout(r, ms))
  * works without the map.
  */
 export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props) {
+  const { t } = useLang()
   const ref = useRef<HTMLDivElement>(null)
   const mapRef = useRef<GlMap | null>(null)
   const markersRef = useRef(new Map<string, Marker>())
@@ -256,42 +258,42 @@ export function CityMap({ pins, selectedId, highlightId, onSelect, home }: Props
         aria-label="3D map of Toronto. Each marker is a decision; press Enter on a marker to see it. With the map focused, W A S D fly, Q and E turn, R and F tilt, plus and minus zoom."
       />
       {ready && (
-        <div className="hud" role="toolbar" aria-label="Map view">
-          <div className="hud-group" role="radiogroup" aria-label="Time of day">
-            {THEMES.map((t) => (
+        <div className="hud" role="toolbar" aria-label={t('Map view')}>
+          <div className="hud-group" role="radiogroup" aria-label={t('Time of day')}>
+            {THEMES.map((th) => (
               <button
-                key={t.id}
+                key={th.id}
                 type="button"
                 role="radio"
-                aria-checked={theme === t.id}
-                className={theme === t.id ? 'is-on' : ''}
+                aria-checked={theme === th.id}
+                className={theme === th.id ? 'is-on' : ''}
                 onClick={() => {
-                  setTheme(t.id)
-                  saveTheme(t.id)
+                  setTheme(th.id)
+                  saveTheme(th.id)
                 }}
               >
-                {t.label}
+                {t(th.label)}
               </button>
             ))}
           </div>
           <div className="hud-group">
             <button type="button" aria-pressed={touring} className={touring ? 'is-on' : ''} onClick={() => { setOrbiting(false); setTouring((v) => !v) }}>
-              {touring ? '■ Stop tour' : '▶ Tour'}
+              {touring ? t('■ Stop tour') : t('▶ Tour')}
             </button>
             {!reducedMotion() && (
               <button type="button" aria-pressed={orbiting} className={orbiting ? 'is-on' : ''} onClick={() => { setTouring(false); setOrbiting((v) => !v) }}>
-                ⟳ Orbit
+                {t('⟳ Orbit')}
               </button>
             )}
             <button type="button" aria-pressed={flat} className={flat ? 'is-on' : ''} onClick={() => setFlat((v) => !v)}>
-              {flat ? '3D' : '2D'}
+              {flat ? t('3D') : t('2D')}
             </button>
           </div>
         </div>
       )}
       {ready && (
         <p className="hud-keys" aria-hidden="true">
-          <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> fly · <kbd>Q</kbd><kbd>E</kbd> turn · <kbd>R</kbd><kbd>F</kbd> tilt · scroll to zoom
+          <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> {t('fly')} · <kbd>Q</kbd><kbd>E</kbd> {t('turn')} · <kbd>R</kbd><kbd>F</kbd> {t('tilt')} · {t('scroll to zoom')}
         </p>
       )}
     </div>

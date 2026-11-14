@@ -519,3 +519,14 @@ details summary:hover { color: var(--line-dark); }
 .ward-card h2 { margin-top: 0; }
 .cards { list-style: none; padding: 0; display: grid; gap: 0.7rem; }
 .nearby { padding-left: 1.1rem; display: grid; gap: 0.4rem; }
+
+/* ---------- Language, offline, loading ---------- */
+.lang-pick { display: inline-flex; align-items: center; gap: 0.3rem; color: #dfe7ee; }
+.lang-icon { font-family: var(--display); font-weight: 800; font-size: 0.8rem; }
+.lang-pick select { font: inherit; font-size: 0.82rem; font-family: var(--display); font-weight: 700; background: transparent; color: #fff; border: 1px solid rgb(255 255 255 / 0.35); border-radius: 6px; padding: 0.2rem 0.35rem; }
+.lang-pick select option { color: var(--ink); }
+.lang-note { max-width: 47rem; margin: 0 auto 1rem; font-size: 0.85rem; padding: 0.55rem 0.8rem; background: var(--advice-bg); color: #4a2a00; border-radius: 6px; border-left: 4px solid var(--advice); }
+main:has(.home) .lang-note { max-width: none; }
+.offline-note { margin: 0; padding: 0.45rem 1rem; text-align: center; font-size: 0.85rem; background: var(--advice-bg); color: #4a2a00; }
+.city-map-loading { background: linear-gradient(110deg, #dfe6ea 30%, #eef2f5 50%, #dfe6ea 70%) 0 0 / 300% 100%; }
+@media (prefers-reduced-motion: no-preference) { .city-map-loading { animation: shimmer 1.4s linear infinite; } @keyframes shimmer { to { background-position: -150% 0; } } }

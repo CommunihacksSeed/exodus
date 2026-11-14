@@ -1,13 +1,17 @@
-import { useEffect, useRef, useState } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AddressSearch } from '../components/AddressSearch.tsx'
-import { CityMap, type MapPin } from '../components/CityMap.tsx'
+import type { MapPin } from '../components/CityMap.tsx'
+
+// The map library is large; load it after the text so the page is readable at once.
+const CityMap = lazy(() => import('../components/CityMap.tsx').then((m) => ({ default: m.CityMap })))
 import { RouteMini } from '../components/RouteStrip.tsx'
 import { items } from '../lib/data.ts'
 import { formatDistance, nearestDistance } from '../lib/geo.ts'
 import { usePlace } from '../lib/place.tsx'
 import { CAN_ACT, itemStatus, STATUS_LABEL } from '../lib/stages.ts'
 import type { PublishedItem } from '../types.ts'
+import { useLang } from '../i18n/index.tsx'
 
 const TOPIC_LABEL = { development: 'New building', transit: 'Transit', heritage: 'Heritage and housing' } as const
 const ORDER = { open: 0, 'in-progress': 1, decided: 2 } as const
@@ -39,14 +43,15 @@ function ItemCard({
   selected: boolean
   onPoint: () => void
 }) {
+  const { t } = useLang()
   const { record, explanation } = item
   const status = itemStatus(record)
   const last = record.considerations.at(-1)
   return (
     <li className="card" data-selected={selected || undefined} onMouseEnter={onPoint} onFocus={onPoint}>
       <p className="card-top">
-        <span className={`badge badge-status-${status}`}>{STATUS_LABEL[status]}</span>
-        {explanation && <span className="topic">{TOPIC_LABEL[explanation.topic]}</span>}
+        <span className={`badge badge-status-${status}`}>{t(STATUS_LABEL[status])}</span>
+        {explanation && <span className="topic">{t(TOPIC_LABEL[explanation.topic])}</span>}
       </p>
       <h3>
         <Link to={`/item/${record.id}`}>{explanation?.plainTitle ?? record.title}</Link>
@@ -54,29 +59,30 @@ function ItemCard({
       <RouteMini record={record} />
       <p className="card-meta">
         {record.wards.map((w) => `Ward ${w.number} ${w.name}`).join(' · ')}
-        {distance !== null && <strong> · {formatDistance(distance)} from your address</strong>}
+        {distance !== null && <strong> · {t('{distance} from your address', { distance: formatDistance(distance) })}</strong>}
       </p>
       {last && (
         <p className="card-meta">
-          {status === 'decided' ? 'Decided by' : 'Next:'} {last.body}, {last.dateText}
+          {status === 'decided' ? t('Decided by') : t('Next:')} {last.body}, {last.dateText}
         </p>
       )}
-      {!explanation && <p className="card-note">Plain-language explanation not published yet. Official record only.</p>}
+      {!explanation && <p className="card-note">{t('Plain-language explanation not published yet. Official record only.')}</p>}
     </li>
   )
 }
 
 /** What a marker stands for: enough to decide whether to read the full page. */
 function Preview({ item, distance, onClose }: { item: PublishedItem; distance: number | null; onClose: () => void }) {
+  const { t } = useLang()
   const { record, explanation } = item
   const status = itemStatus(record)
   return (
-    <section className="preview" aria-live="polite" aria-label="Decision at the chosen marker">
-      <button type="button" className="preview-close" onClick={onClose} aria-label="Close this summary">
+    <section className="preview" aria-live="polite" aria-label={t('Decision at the chosen marker')}>
+      <button type="button" className="preview-close" onClick={onClose} aria-label={t('Close this summary')}>
         ×
       </button>
       <p className="card-top">
-        <span className={`badge badge-status-${status}`}>{STATUS_LABEL[status]}</span>
+        <span className={`badge badge-status-${status}`}>{t(STATUS_LABEL[status])}</span>
         {explanation && <span className="topic">{explanation.location.label}</span>}
       </p>
       <h2>{explanation?.plainTitle ?? record.title}</h2>
@@ -85,23 +91,24 @@ function Preview({ item, distance, onClose }: { item: PublishedItem; distance: n
       <dl className="preview-facts">
         {distance !== null && (
           <div>
-            <dt>How far</dt>
-            <dd>{formatDistance(distance)} from your address</dd>
+            <dt>{t('How far')}</dt>
+            <dd>{t('{distance} from your address', { distance: formatDistance(distance) })}</dd>
           </div>
         )}
         <div>
-          <dt>Can I have a say?</dt>
-          <dd>{CAN_ACT[status]}</dd>
+          <dt>{t('Can I have a say?')}</dt>
+          <dd>{t(CAN_ACT[status])}</dd>
         </div>
       </dl>
       <Link className="button" to={`/item/${record.id}`}>
-        Read the full page
+        {t('Read the full page')}
       </Link>
     </section>
   )
 }
 
 export function Home() {
+  const { t } = useLang()
   const { place } = usePlace()
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [pointedId, setPointedId] = useState<string | null>(null)
@@ -136,18 +143,18 @@ export function Home() {
   return (
     <div className="home">
       <section className="home-intro">
-        <p className="eyebrow">Toronto · City Council and committees</p>
+        <p className="eyebrow">{t('Toronto · City Council and committees')}</p>
         <h1>
-          City Hall decisions, <span className="mark">in plain words.</span>
+          {t('City Hall decisions,')} <span className="mark">{t('in plain words.')}</span>
         </h1>
         <p className="lede">
-          Choose a marker to fly there and see what is proposed, who has decided what so far, and whether you can still have a
-          say. Every statement links to the City’s own record.
+          {t('Choose a marker to fly there and see what is proposed, who has decided what so far, and whether you can still have a say. Every statement links to the City’s own record.')}
         </p>
       </section>
 
       <div className="home-map">
         <div className="city-map-frame">
+          <Suspense fallback={<div className="city-map city-map-loading" aria-hidden="true" />}>
           <CityMap
             pins={PINS}
             selectedId={selectedId}
@@ -155,41 +162,42 @@ export function Home() {
             onSelect={selectFromMap}
             home={place ? { point: place.point, label: place.label } : null}
           />
+          </Suspense>
           {selected && <Preview item={selected.item} distance={selected.distance} onClose={() => setSelectedId(null)} />}
         </div>
-        <ul className="legend" aria-label="What the markers mean">
+        <ul className="legend" aria-label={t('What the markers mean')}>
           <li>
             <span className="pin pin-open" aria-hidden="true">
               <span className="pin-dot" />
             </span>
-            You can still have a say
+            {t('You can still have a say')}
           </li>
           <li>
             <span className="pin pin-decided" aria-hidden="true">
               <span className="pin-dot" />
             </span>
-            Decided
+            {t('Decided')}
           </li>
           {place && (
             <li>
               <span className="pin pin-home" aria-hidden="true">
                 <span className="pin-dot" />
               </span>
-              Your address
+              {t('Your address')}
             </li>
           )}
           <li>
             <span className="swatch-proposed" aria-hidden="true" />
-            Height of a proposed building (shape not shown)
+            {t('Height of a proposed building (shape not shown)')}
           </li>
-          <li className="legend-note">Blue lines are ward boundaries. Drag with the right mouse button, or two fingers, to turn and tilt.</li>
+          <li className="legend-note">{t('Blue lines are ward boundaries. Drag with the right mouse button, or two fingers, to turn and tilt.')}</li>
         </ul>
       </div>
 
       <div className="home-side">
         <AddressSearch />
         <section aria-labelledby="items-heading">
-          <h2 id="items-heading">All decisions on the map</h2>
+          <h2 id="items-heading">{t('All decisions on the map')}</h2>
           <ul className="cards">
             {rows.map(({ item, distance }) => (
               <ItemCard
@@ -202,8 +210,7 @@ export function Home() {
             ))}
           </ul>
           <p className="fine">
-            This is a proof of concept covering {items.length} real City of Toronto agenda items. It is not a complete
-            list of what City Council is deciding.
+            {t('This is a proof of concept covering {n} real City of Toronto agenda items. It is not a complete list of what City Council is deciding.', { n: items.length })}
           </p>
         </section>
       </div>
