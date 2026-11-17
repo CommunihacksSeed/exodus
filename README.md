@@ -1,4 +1,4 @@
-# Exodus
+# Exodus(CIVIC Hack 2026 winners)
 
 **City Hall decisions, in plain words.** A proof of concept for CIVIC Hack 2026, challenge
 *"Making municipal decisions easier to understand"*.
