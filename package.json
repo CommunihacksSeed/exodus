@@ -28,7 +28,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
     "cheerio": "^1.2.0",
-    "oxlint": "^1.90.0",
+    "oxlint": "^1.94.0",
     "pdfjs-dist": "^6.5.438",
     "tsx": "^4.23.15",
     "typescript": "~7.0.2",
